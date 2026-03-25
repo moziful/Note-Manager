@@ -141,6 +141,21 @@ textarea {
   transform: translateY(10px);
 }
 
+.searchClearBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 999px;
+  background: transparent;
+  border: 0;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);

@@ -1,5 +1,2309 @@
 {
   "chapters": [
-    
+    {
+      "class": "4",
+      "chapterNumber": "5",
+      "chapterTitle": "গাণিতিক বাক্য",
+      "content": {
+        "mcq": [
+          {
+            "id": "0501001",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "কোনটি সম্পর্ক প্রতীক নয়?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": ">",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "≠",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "÷",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "≤",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0501002",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "(৪২ - ১২) ÷ ৬ = কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৫",
+                "isCorrect": true
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৭",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "১০",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৬",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0501003",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "গাণিতিক বাক্যে বন্ধনী না থাকলে কোনটির কাজ সবার আগে করতে হয়?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "যোগ",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "বিয়োগ",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "গুণ",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "ভাগ",
+                "isCorrect": true
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0501004",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "'ক' এর মান কত হলে ক × ৫ = ৮০ সঠিক হবে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "১৬",
+                "isCorrect": true
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "১৫",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "১৪",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "১২",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0501005",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "অজানা সংখ্যা প্রকাশের জন্য নিচের কোনটি ব্যবহৃত হয়?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "+",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "( )",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "☐",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "=",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0501006",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "নিচের কোনটি সঠিক গাণিতিক বাক্য?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৮ × ৫ < ৩০",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "২৫ ÷ ৫ = ৪",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "১২ + ৮ ≠ ২১",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "১৫ - ৫ > ২০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0501007",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "(৭ + ৩) × (৮ - ২) এর মান কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৫০",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৬০",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৭০",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৮০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0501008",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "পঁচিশকে পাঁচ দ্বারা ভাগ করে পঞ্চান্ন থেকে বিয়োগ করলে বিয়োগফল কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৫০",
+                "isCorrect": true
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৫",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৬০",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "১০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "Subtraction"
+          },
+          {
+            "id": "0501009",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "বন্ধনী প্রতীকের ক্ষেত্রে কোনটির কাজ সবার শেষে করতে হয়?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "প্রথম বন্ধনী",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "দ্বিতীয় বন্ধনী",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "তৃতীয় বন্ধনী",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "রেখা বন্ধনী",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0501010",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "নিচের কোনটি প্রক্রিয়া প্রতীক?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "<",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "≠",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "×",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "{ }",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0501011",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "৫৬ ÷ (ক + ২) = ৭ হলে 'ক' এর মান কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৬",
+                "isCorrect": true
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৮",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৭",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৫",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0501012",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "\"উনপঞ্চাশ ভাগ সাত\" এর সঠিক গাণিতিক রূপ কোনটি?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৪৯ + ৭",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৪৯ - ৭",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৪৯ × ৭",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৪৯ ÷ ৭",
+                "isCorrect": true
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "Division"
+          },
+          {
+            "id": "0501013",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "১২২ - (৬৫ + ৫৭) ☐ ০; খালিঘরে কোন প্রতীক বসবে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": ">",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "<",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "=",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "≠",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0501014",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "একটি সংখ্যার সাথে ১২ যোগ করলে ১৮০ হয়। সংখ্যাটি কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "১৬৮",
+                "isCorrect": true
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "১৯২",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "১৫",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "১৮০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "Addition"
+          },
+          {
+            "id": "0501015",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "৯ × ৯ + ১৯ এর মান কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৯০",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "১০০",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৮১",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "১৯",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0501016",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "কোনটি গাণিতিক বাক্যের বর্ণনা: \"৬ ও ২ এর যোগফল ৮ এর সমান\"?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৬ + ২ = ৮",
+                "isCorrect": true
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৬ - ২ = ৪",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৬ × ২ = ১২",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৬ ÷ ২ = ৩",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "Addition"
+          },
+          {
+            "id": "0501017",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "{ (৮ × ৬) - ৪ } ÷ ৪ এর মান কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "১০",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "১১",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "১২",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৯",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0501018",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "\"বৃহত্তর নয়\" বোঝাতে কোন প্রতীক ব্যবহৃত হয়?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": ">",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "<",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "≯",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "≮",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0501019",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "৩ + ৫ × ৪ = কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৩২",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "২৩",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "২০",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "১৫",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0501020",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "ভাগ প্রক্রিয়ায় অবশিষ্ট থাকলে গাণিতিক বাক্যটি কী হয়?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "সঠিক",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "ভুল",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "অনিশ্চিত",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "সমান",
+                "isCorrect": true
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "Division"
+          },
+          {
+            "id": "0501021",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "মামুন সাহেব ৭ মাসে কত জমা করবেন যদি মাসে ৫০০ টাকা সঞ্চয় করেন?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৩০০০ টাকা",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৩৫০০ টাকা",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৪০০০ টাকা",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "২৫০০ টাকা",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0501022",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "এক ডজন কলা ও এক হালি ডিমের মধ্যে মোট কয়টি জিনিস থাকে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "১২টি",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৪টি",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "১৬টি",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৮টি",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0501023",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "২০০ - ১০ × ১২ গাণিতিক বাক্যে প্রথমে কোন কাজ করতে হবে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "বিয়োগ",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "গুণ",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "যোগ",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "ভাগ",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0501024",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "নিচের কোনটি সংখ্যা প্রতীক?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "ক",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৮",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "=",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "÷",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0501025",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "(৩৬ - ১৮) ÷ ৩ + ৬ এর মান কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "১২",
+                "isCorrect": true
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৯",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৬",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "১৮",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0501026",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "\"ক্ষুদ্রতর নয়\" এর প্রতীক কোনটি?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "≮",
+                "isCorrect": true
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "<",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "≯",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "≠",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0501027",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "৪ × (ক + ৩) = ৩২ হলে 'ক' এর মান কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৫",
+                "isCorrect": true
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৮",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৪",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৩",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0501028",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "নিচের কোনটি সম্পর্ক প্রতীক?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "+",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "( )",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "≠",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "÷",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0501029",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "(৭২ ÷ ৯) × ৩ এর মান কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "২৪",
+                "isCorrect": true
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "২৭",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "১৮",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "১২",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0501030",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "গাণিতিক বাক্যের বামপক্ষ ও ডানপক্ষ সমান না হলে কোন চিহ্ন বসে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "=",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "≠",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": ">",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "<",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          }
+        ],
+        "blanks": [
+          {
+            "id": "0502001",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "যে প্রতীকগুলো সংখ্যা লেখার জন্য ব্যবহৃত হয় তাদের ______ প্রতীক বলে।",
+            "answer": "সংখ্যা",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0502002",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "+, -, ×, ÷ এগুলো হলো ______ প্রতীক।",
+            "answer": "প্রক্রিয়া",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0502003",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "সংখ্যার মধ্যকার পারস্পরিক সম্পর্ক বোঝাতে ______ প্রতীক ব্যবহৃত হয়।",
+            "answer": "সম্পর্ক",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0502004",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "( ), { }, [ ] এগুলো হলো ______ প্রতীক।",
+            "answer": "বন্ধনী",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0502005",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "অজানা সংখ্যাকে প্রকাশের জন্য ______ বা অক্ষর ব্যবহৃত হয়।",
+            "answer": "আকৃতি",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0502006",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "গাণিতিক বাক্যে হিসাবের ক্ষেত্রে বাম থেকে ______ হিসাব করতে হয়।",
+            "answer": "ডানে",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0502007",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "গাণিতিক বাক্য সঠিক কি না তা নির্ভর করে খালিঘরের ______ এর ওপর।",
+            "answer": "মানের",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0502008",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "একটি গাণিতিক বাক্যে বন্ধনী থাকলে প্রথমে ______ বন্ধনীর কাজ করতে হয়।",
+            "answer": "প্রথম",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0502009",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "\"সমান নয়\" এর গাণিতিক প্রতীক হলো ______।",
+            "answer": "≠",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0502010",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "(৭ + ৩) × ৬ = ______।",
+            "answer": "৬০",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0502011",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "৫২ - ১৫ + ১৩ = ______।",
+            "answer": "৫০",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0502012",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "৯ × ৭ ☐ ৮ × ৮; খালিঘরে ______ প্রতীক বসবে।",
+            "answer": "<",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0502013",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "৮ কে কত দ্বারা গুণ করলে গুণফল ৪৮ হবে? উত্তর হবে ______।",
+            "answer": "৬",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0502014",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "৫০ থেকে কত বিয়োগ করলে বিয়োগফল ৩৫ হয়? উত্তর হবে ______।",
+            "answer": "১৫",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "Subtraction"
+          },
+          {
+            "id": "0502015",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "উনপঞ্চাশ ভাগ সাত = ______।",
+            "answer": "৭",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "Division"
+          },
+          {
+            "id": "0502016",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "পঁচিশ ও চব্বিশের গুণফল ______-এর চেয়ে বড়ো।",
+            "answer": "পাঁচশ",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0502017",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "১৪২ - ৬৫ ☐ ৫৭ + ১২; খালিঘরে ______ প্রতীক বসবে।",
+            "answer": ">",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0502018",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "(৪২ - ১২) ÷ ৬ একটি ______।",
+            "answer": "সংখ্যারাশি",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0502019",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "১ জোড়া সমান ______ টি।",
+            "answer": "২",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0502020",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "১ ডজন সমান ______ টি।",
+            "answer": "১২",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0502021",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "১ হালি সমান ______ টি।",
+            "answer": "৪",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0502022",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "গাণিতিক বাক্যে গুণ ও ভাগের কাজ যোগ ও বিয়োগের ______ করতে হয়।",
+            "answer": "আগে",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "Addition"
+          },
+          {
+            "id": "0502023",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "\"সুতরাং\" বোঝাতে ______ প্রতীক ব্যবহার করা হয়।",
+            "answer": "...",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0502024",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "(৩৬ - ১৮) ÷ ৩ + ৬ এর মান হলো ______।",
+            "answer": "১২",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0502025",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "৭টি পেনসিলের দাম ৮৪ টাকা হলে ১টি পেনসিলের দাম ______ টাকা।",
+            "answer": "১২",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0502026",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "১৫০০ - ১৩০ × ১১ = ______।",
+            "answer": "৭০",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0502027",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "১২ + ৮ = ২১ গাণিতিক বাক্যটি একটি ______ বাক্য।",
+            "answer": "ভুল",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0502028",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "১৮ + ৯ = ২৭ গাণিতিক বাক্যটি একটি ______ বাক্য।",
+            "answer": "সঠিক",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0502029",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "গাণিতিক প্রতীক ব্যবহার করে বাক্য প্রকাশ করাকে ______ বাক্য বলে।",
+            "answer": "গাণিতিক",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0502030",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "পঁচিশকে ৫ দ্বারা ভাগ করে ৫৫ থেকে বিয়োগ করলে বিয়োগফল হয় ______।",
+            "answer": "৫০",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "Subtraction"
+          }
+        ],
+        "shorts": [
+          {
+            "id": "0503001",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "একটি ভাগ অংকে ভাজক ভাগশেষের তিনগুণ এবং ভাগফল ১০। ভাগশেষ ৫ হলে ভাজ্য কত?",
+            "answer": "১৫৫।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0503002",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৪ অঙ্কের কোন বৃহত্তম সংখ্যা ৮৮ দ্বারা নিঃশেষে বিভাজ্য?",
+            "answer": "৯৯৪৪।",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0503003",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "কোনো সংখ্যাকে ৩৪ দ্বারা ভাগ করলে ভাগফল ৩ এবং ভাগশেষ ১০ হয়। সংখ্যাটির সাথে কত যোগ করলে তা ৩৪ দ্বারা নিঃশেষে বিভাজ্য হবে?",
+            "answer": "২৪ যোগ করলে।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "Addition"
+          },
+          {
+            "id": "0503004",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "একটি গাণিতিক বাক্যে প্রথমে ভাগ, গুণ এবং তারপর বিয়োগ আছে। কোন কাজটি সবার শেষে করতে হবে?",
+            "answer": "বিয়োগের কাজ।",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "Subtraction"
+          },
+          {
+            "id": "0503005",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "একজন কৃষক ২,৪৫০ কেজি ধান বস্তায় ভরতে চান। প্রতি বস্তায় ৫০ কেজি ধান ধরলে কয়টি বস্তা লাগবে?",
+            "answer": "৪৯টি বস্তা।",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0503006",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "২৩০৪ মিটার লম্বা তারকে ৯৬ ভাগে ভাগ করার পর যদি প্রতিটি ভাগ থেকে ২ মিটার কেটে ফেলা হয়, তবে বর্তমান প্রতি ভাগের দৈর্ঘ্য কত?",
+            "answer": "২২ মিটার।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0503007",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "২৫ কেজি চালের দাম ২২৭৫ টাকা হলে, ১ কুইন্টাল চালের দাম কত?",
+            "answer": "৯১০০ টাকা।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0503008",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "ভাজক শূন্য হলে ভাগের ক্ষেত্রে কী ঘটে?",
+            "answer": "ভাগ করা সম্ভব নয় বা অসংজ্ঞায়িত।",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "Division"
+          },
+          {
+            "id": "0503009",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৫০০টি পেনসিল ১২টি করে বক্সে রাখলে যে ৮টি পেনসিল অবশিষ্ট থাকে, আর কয়টি পেনসিল দিলে আরও ১টি বক্স পূর্ণ হতো?",
+            "answer": "৪টি পেনসিল।",
+            "chapter": "5",
+            "hardness": "Hard",
+            "tag": "General"
+          },
+          {
+            "id": "0503010",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "২১২০৫ কে ২০ দিয়ে ভাগ করলে ভাগফল এবং ভাগশেষের গুণফল কত হবে?",
+            "answer": "৫৩০০।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0503011",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৩৬ জন লোকের মধ্যে ১৮২টি লিচু ভাগ করার পর অবশিষ্ট লিচুগুলো যদি শিশুদের দেওয়া হয়, তবে কয়জন শিশু ১টি করে লিচু পাবে?",
+            "answer": "২ জন শিশু।",
+            "chapter": "5",
+            "hardness": "Hard",
+            "tag": "Division"
+          },
+          {
+            "id": "0503012",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "১৫টি খাতার দাম ৯৭৫ টাকা। যদি ১টি খাতার দাম ৫ টাকা বেড়ে যায়, তবে ৩০টি খাতা কিনতে কত টাকা লাগবে?",
+            "answer": "২১০০ টাকা।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0503013",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৫৩৪৫ কে ৩৫ দিয়ে ভাগ করলে ভাগফল ১৫২ এবং ভাগশেষ ২৮ হয়। ভাজ্যের অঙ্কগুলোর সমষ্টি কত?",
+            "answer": "১৭।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0503014",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "দুটি সংখ্যার গুণফল ৩,২০০। একটি সংখ্যা ৮০ হলে, অপর সংখ্যাটি কত?",
+            "answer": "অপর সংখ্যাটি ৪০।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0503015",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "কোনো ক্ষুদ্রতম সংখ্যাকে ১২, ১৫ ও ২০ দিয়ে ভাগ করলে প্রতিবার ২ অবশিষ্ট থাকবে?",
+            "answer": "৬২।",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "Division"
+          },
+          {
+            "id": "0503016",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "একটি সংখ্যার ৩ গুণের সাথে ১০ যোগ করলে ১০০ হয়। সংখ্যাটি কত?",
+            "answer": "৩০।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "Addition"
+          },
+          {
+            "id": "0503017",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৬৩৮ কে ২২ দিয়ে ভাগ করে ভাগফলকে ৩৫ দিয়ে গুণ করলে গুণফল কত হবে?",
+            "answer": "১০১৫।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0503018",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "নিঃশেষে বিভাজ্যের ক্ষেত্রে ভাজ্য নির্ণয়ের সূত্র কী?",
+            "answer": "ভাজ্য = ভাজক × ভাগফল।",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0503019",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৩৭৪ কে ১৩ দিয়ে গুণ করে গুণফলকে ১৭ দিয়ে ভাগ করলে ভাগফল কত হবে?",
+            "answer": "২৮৬।",
+            "chapter": "5",
+            "hardness": "Hard",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0503020",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "এক ডজন কমলার মূল্য ৩১২ টাকা হলে, ৭৮ টাকায় কয়টি কমলা পাওয়া যাবে?",
+            "answer": "৩ টি কমলা।",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0503021",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "ভাজক ভাগফলের ১০ গুণ এবং ভাজ্য ১০০০ হলে ভাজক কত?",
+            "answer": "১০০।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0503022",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "১৫০০ টাকার ২/৫ অংশ কত টাকা?",
+            "answer": "৬০০ টাকা।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0503023",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "এমন একটি সংখ্যা নির্ণয় কর যাকে ৪৩ দ্বারা ভাগ করলে ভাগফল ১২৯ হয় এবং নিঃশেষে বিভাজ্য হয়।",
+            "answer": "৫৫৪৭।",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "Division"
+          },
+          {
+            "id": "0503024",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "২১০ কে ৫০ দিয়ে ভাগ করলে ভাগফল ও ভাগশেষের সমষ্টি কত?",
+            "answer": "১৪।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0503025",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "দুটি সংখ্যার গুণফল ২২৫। একটি সংখ্যা ২৫ হলে, সংখ্যা দুটির বিয়োগফল কত?",
+            "answer": "১৬।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "Subtraction"
+          },
+          {
+            "id": "0503026",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৬৭৫ জন শিক্ষার্থী বনভোজনে যাবে। একটি বাসে ৪৫ জন শিক্ষার্থী বসতে পারলে কতটি বাস লাগবে?",
+            "answer": "১৫টি বাস।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0503027",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "১২০ কে ৪০ দিয়ে ভাগ করলে ভাগফল যা হয়, তার দ্বিগুণ কত?",
+            "answer": "৬।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0503028",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "১৫৪ কে ৯ দ্বারা ভাগ করলে ভাগশেষ কত থাকে?",
+            "answer": "১।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0503029",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৮০টি চকলেট ২০টি করে ছোট প্যাকেটে রাখলে কয়টি প্যাকেট হবে?",
+            "answer": "৪টি।",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0503030",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "গুণ্য × গুণক = গুণফল। গুণফলকে গুণ্য দিয়ে ভাগ করলে কী পাওয়া যায়?",
+            "answer": "গুণক।",
+            "chapter": "5",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          }
+        ],
+        "words": [
+          {
+            "id": "0504001",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "ভাজক ২৩, ভাগফল ১০৭ এবং ভাগশেষ ১২ হলে ভাজ্য কত?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "দেওয়া আছে, ভাজক = ২৩ \nভাগফল = ১০৭ \nভাগশেষ = ১২ \nআমরা জানি, ভাজ্য = (ভাজক × ভাগফল) + ভাগশেষ \n= (২৩ × ১০৭) + ১২ \n= ২৪৬১ + ১২ \n= ২৪৭৩\nউত্তর: ভাজ্য ২৪৭৩।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0504002",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "২৩০৪ মিটার লম্বা একটি তারকে ৯৬টি সমান ভাগে ভাগ করা হলে, প্রতি ভাগের দৈর্ঘ্য কত মিটার?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "তারের মোট দৈর্ঘ্য = ২৩০৪ মিটার \nমোট ভাগ সংখ্যা = ৯৬টি \n∴ প্রতিটি ভাগের দৈর্ঘ্য = (২৩০৪ ÷ ৯৬) মিটার\n\t\t= ২৪ মিটার\nউত্তর: প্রতি ভাগের দৈর্ঘ্য ২৪ মিটার।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0504003",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "৫০০টি পেনসিল থেকে প্রতি বক্সে ১২টি করে পেনসিল রাখলে কতটি বক্সের প্রয়োজন পড়বে এবং কতটি পেনসিল অবশিষ্ট থাকবে?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "মোট পেনসিল = ৫০০টি \nপ্রতি বক্সে রাখা হয় = ১২টি \n∴ প্রয়োজনীয় বক্সের সংখ্যা (৫০০ ÷ ১২) টি\n= ৪১ টি এবং ভাগশেষ ৮\nউত্তর: ৪১টি বক্সের প্রয়োজন পড়বে এবং ৮টি পেনসিল অবশিষ্ট থাকবে।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0504004",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "৩৬ জন লোকের মধ্যে ১৮২টি লিচু বিতরণ করলে প্রত্যেকে কতটি করে পাবে?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "মোট লিচু = ১৮২টি \nমোট লোকসংখ্যা = ৩৬ জন \n∴ প্রত্যেকে লিচু পাবে = (১৮২ ÷ ৩৬) টি\n= ৫ এবং ভাগশেষ ২\nউত্তর: প্রত্যেকে ৫টি করে লিচু পাবে এবং ২টি লিচু অবশিষ্ট থাকবে।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0504005",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "১৫টি খাতার দাম ৯৭৫ টাকা হলে, ৩০টি খাতার দাম কত?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "১৫টি খাতার দাম = ৯৭৫ টাকা \nসুতরাং, ১টি খাতার দাম (৯৭৫ ÷ ১৫) টাকা \n= ৬৫ টাকা। \n∴ ৩০টি খাতার দাম (৬৫ × ৩০) টাকা \n= ১৯৫০ টাকা।\nউত্তর: ৩০টি খাতার দাম ১৯৫০ টাকা।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0504006",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি দোকানে ১১৭৫টি ফুল আছে। একটি মালা তৈরি করতে ২৫টি ফুল লাগলে দোকানদার এরূপ কয়টি মালা তৈরি করতে পারবে?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "মোট ফুল = ১১৭৫টি \n১টি মালার জন্য ফুল লাগে = ২৫টি \n∴ মোট মালা তৈরি হবে = (১১৭৫ ÷ ২৫) টি\n= ৪৭ টি\nউত্তর: দোকানদার ৪৭টি মালা তৈরি করতে পারবে।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "5",
+            "hardness": "Hard",
+            "tag": "General"
+          },
+          {
+            "id": "0504001",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "ভাগশেষ ৬। ভাজক ভাগশেষের ৩ গুণ। ভাগফল ভাজকের অর্ধেক। ভাজ্য কত?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "ভাগশেষ = ৬ \n∴ ভাজক = ৬ × ৩ = ১৮ \n∴ ভাগফল = ১৮ ÷ ২ = ৯ \nআমরা জানি, ভাজ্য = (ভাজক × ভাগফল) + ভাগশেষ ভাজ্য = (১৮ × ৯) + ৬ \n= ১৬২ + ৬ \n= ১৬৮\nউত্তর: ভাজ্য ১৬৮।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0504002",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "২২৫০টি আম কার্টনে ভরা হলো। প্রতি কার্টনে ২৫টি আম ধরে। যদি ৫টি কার্টন নষ্ট হয়ে যায়, তবে ভালো কার্টন কয়টি?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "মোট আম = ২২৫০ \nপ্রতি কার্টনে আম ধরে = ২৫টি \n∴ মোট কার্টন (২২৫০ ÷ ২৫) টি \n= ৯০টি \nআবার, \nমোট কার্টন \t৯০টি\nনষ্ট কার্টন \t(-) ৫টি \n∴ ভাল কার্টন \t= ৮৫টি\nউত্তর: ৮৫টি।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "5",
+            "hardness": "Hard",
+            "tag": "General"
+          },
+          {
+            "id": "0504003",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "এক ব্যক্তি বছরে ৯৬,০০০ টাকা আয় করেন। তার প্রতি মাসের খরচ ৫,৫০০ টাকা।",
+            "questionKo": "তিনি ১ মাসে কত টাকা আয় করেন?",
+            "questionKho": "তিনি ১ বছরে মোট কত টাকা সঞ্চয় করবেন?",
+            "solution": "",
+            "solutionKo": "আমরা জানি, ১ বছর = ১২ মাস\n১২ মাসে আয় করেন ৯৬০০০ টাকা\n∴ ১ মাসে আয় করেন (৯৬০০০ ÷ ১২) টাকা \n\t\t\t= ৮০০০ টাকা\nউত্তর: তিনি ১ মাসে ৮০০০ টাকা আয় করেন।",
+            "solutionKho": "তার ১ মাসের আয় \t ৮০০০ টাকা\t(ক হতে)\nতার ১ মাসের খরচ \t৫৫০০ টাকা\n১ মাসে সঞ্চয় করেন \t= ২৫০০ টাকা\nঅতএব, ১ বছরে সঞ্চয় করবেন (২৫০০ × ১২) টাকা\n\t\t= ৩০০০০ টাকা। \nউত্তর: তিনি ১ বছরে ৩০০০০ টাকা সঞ্চয় করবেন।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0504004",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি ট্রেন ৪ ঘণ্টায় ২৪০ কিমি যায়।",
+            "questionKo": "ট্রেনটি ১ ঘণ্টায় কত কিমি যায়?",
+            "questionKho": "ট্রেনটি একই গতিতে ৬০০ কিমি যেতে কত ঘণ্টা সময় নেবে?",
+            "solution": "",
+            "solutionKo": "৪ ঘণ্টায় যায় ২৪০ কিমি \nঅতএব, ১ ঘণ্টায় যায় = ২৪০ ÷ ৪ = ৬০ কিমি। \nউত্তর: ট্রেনটি ১ ঘণ্টায় ৬০ কিমি যায়।",
+            "solutionKho": "মোট দূরত্ব = ৬০০ কিমি\nট্রেনটি ১ ঘণ্টায় যায় ৬০ কিমি\nঅতএব, ৬০০ কিমি যেতে সময় লাগবে (৬০০ ÷ ৬০) ঘণ্টা\n\t\t\t\t= ১০ ঘণ্টা \nউত্তর: ১০ ঘণ্টা সময় নেবে।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0504005",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "৮টি শার্ট ও ৫টি প্যান্টের একত্রে মূল্য ৮,৫০০ টাকা। ১টি প্যান্টের মূল্য ৫০০ টাকা।",
+            "questionKo": "৫টি প্যান্টের মূল্য কত?",
+            "questionKho": "১টি শার্টের মূল্য কত?",
+            "solution": "",
+            "solutionKo": "১টি প্যান্টের মূল্য = ৫০০ টাকা \nঅতএব, ৫টি প্যান্টের মূল্য (৫০০ × ৫) টাকা \n= ২৫০০ টাকা\nউত্তর: ৫টি প্যান্টের মূল্য ২৫০০ টাকা।",
+            "solutionKho": "৮টি শার্ট ও ৫টি প্যান্টের একত্রে মূল্য\t৮৫০০ টাকা\n৫টি প্যান্টের মূল্য\t(-) ২৫০০ টাকা\t(ক হতে) \nঅতএব, ৮টি শার্টের মূল্য \t= ৬০০০ টাকা\nসুতরাং, ১টি শার্টের মূল্য (৬০০০ ÷ ৮) টাকা\n\t\t\t= ৭৫০ টাকা\nউত্তর: ১টি শার্টের মূল্য ৭৫০ টাকা।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0504006",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একজন ফল বিক্রেতার কাছে ৯৮০টি আপেল ছিল। এর মধ্যে ২০টি আপেল পচে গেল। ভালো আপেলগুলো তিনি প্রতি বক্সে ১২টি করে রাখলেন।",
+            "questionKo": "ভালো আপেলের সংখ্যা কত?",
+            "questionKho": "আপেলগুলো প্যাকেট করতে কয়টি বক্স লাগবে এবং ৩টি বক্স বিক্রি করার পর আর কয়টি আপেল অবশিষ্ট থাকবে?",
+            "solution": "",
+            "solutionKo": "মোট আপেল \t৯৮০টি\nপচে গেল \t(-) ২০টি\nভালো আপেলের সংখ্যা \t= ৯৬০টি\nউত্তর: ভালো আপেলের সংখ্যা ৯৬০টি।",
+            "solutionKho": "মোট ভালো আপেল = ৯৬০টি\nপ্রতি বক্সে থাকে ১২টি\n∴প্যাকেট করতে বক্স লাগবে (৯৬০ ÷ ১২) টি  = ৮০টি\n৩টি বক্স বিক্রি করার পর অবশিষ্ট বক্স = (৮০ – ৩) টি \n\t\t= ৭৭টি\nঅতএব, অবশিষ্ট আপেলের সংখ্যা (৭৭ × ১২) টি \n\t\t= ৯২৪টি\nউত্তর: মোট ৮০টি বক্স লাগবে এবং ৩টি বক্স বিক্রির পর ৯২৪টি আপেল অবশিষ্ট থাকবে।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0504007",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "৬০০ পৃষ্ঠার একটি বইয়ের প্রতিদিন ১৫ পৃষ্ঠা করে পড়লে বইটি শেষ করতে কিছু দিন লাগে।",
+            "questionKo": "বইটি পড়া শেষ করতে কত দিন লাগবে?",
+            "questionKho": "বইটি যদি ১০ দিন আগে পড়া শেষ করতে হয়, তবে প্রতিদিন গড়ে কত পৃষ্ঠা পড়তে হবে?",
+            "solution": "",
+            "solutionKo": "মোট পৃষ্ঠা = ৬০০\nপ্রতিদিন পড়া হয় = ১৫ পৃষ্ঠা\n∴ সময় লাগবে (৬০০ ÷ ১৫) দিন \n= ৪০ দিন\nউত্তর: ৪০ দিন লাগবে।",
+            "solutionKho": "‘ক’ হতে পাই, সময় লাগে ৪০ দিন\n১০ দিন আগে শেষ করতে চাইলে সময় লাগবে = ৪০ - ১০ \n= ৩০ দিন\n৩০ দিনে পড়তে হবে ৬০০ পৃষ্ঠা\n∴ ১ দিনে পড়তে হবে (৬০০ ÷ ৩০) পৃষ্ঠা \n\t\t\t\t= ২০ পৃষ্ঠা\nউত্তর: প্রতিদিন গড়ে ২০ পৃষ্ঠা পড়তে হবে।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0504008",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি কারখানায় ১ সপ্তাহে ২৫২০টি গাড়ি তৈরি হয়।",
+            "questionKo": "কারখানাটিতে ১ দিনে কতটি গাড়ি তৈরি হয়?",
+            "questionKho": "যদি প্রতিদিন গাড়িগুলো সমানভাবে ১৫টি শোরুমে পাঠানো হয়, তবে প্রতিটি শোরুম ১ মাসে কতটি গাড়ি পাবে?",
+            "solution": "",
+            "solutionKo": "আমরা জানি, ১ সপ্তাহ = ৭ দিন\n৭ দিনে তৈরি হয় ২৫২০টি গাড়ি\n∴ ১ দিনে তৈরি হয় (২৫২০ ÷ ৭) টি গাড়ি\n= ৩৬০টি গাড়ি\nউত্তর: ১ দিনে ৩৬০টি গাড়ি তৈরি হয়।",
+            "solutionKho": "‘ক’ হতে পাই, ১ দিনে তৈরি হয় ৩৬০টি গাড়ি\nপ্রতিদিন ১৫টি শোরুমে সমানভাবে পাঠানো হলে, \n১টি শোরুম ১ দিনে গাড়ি পাবে (৩৬০ ÷ ১৫) টি\n= ২৪টি\n১টি শোরুম ১ দিনে পায় ২৪টি গাড়ি\nঅতএব, ৩০ দিনে পাবে (২৪ × ৩০)\n= ৭২০টি গাড়ি\nউত্তর: প্রতিটি শোরুম ৩০ দিনে ৭২০টি গাড়ি পাবে।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0504009",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "এক ডজন ডিমের দাম ১৪৪ টাকা।",
+            "questionKo": "১টি ডিমের দাম কত?",
+            "questionKho": "১০০০ টাকায় সর্বোচ্চ কয় ডজন ডিম কেনা যাবে এবং কত টাকা অবশিষ্ট থাকবে?",
+            "solution": "",
+            "solutionKo": "আমরা জানি, ১ ডজন = ১২টি\n১২টি ডিমের দাম ১৪৪ টাকা\n১টি ডিমের দাম (১৪৪ ÷ ১২) টাকা \n= ১২ টাকা। \nউত্তর: ১টি ডিমের দাম ১২ টাকা।",
+            "solutionKho": "১ ডজন ডিমের দাম ১৪৪ টাকা\nমোট টাকা আছে ১০০০\n∴ ডিম কেনা যাবে (১০০০÷১৪৪) ডজন\n\t\t\t= ৬ এবং ভাগশেষ ১৩৬\nউত্তর: সর্বোচ্চ ৬ ডজন ডিম কেনা যাবে এবং ১৩৬ টাকা অবশিষ্ট থাকবে।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0504010",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "৭ জন শ্রমিক ১৫ দিনে একটি কাজ করতে পারে।",
+            "questionKo": "১ জন শ্রমিকের ওই কাজ করতে কত দিন লাগবে?",
+            "questionKho": "কাজটি যদি ৫ দিনে শেষ করতে হয়, তবে অতিরিক্ত কতজন শ্রমিক নিয়োগ দিতে হবে?",
+            "solution": "",
+            "solutionKo": "৭ জন শ্রমিকের লাগে ১৫ দিন\n১ জন শ্রমিকের লাগবে = ১৫ × ৭ = ১০৫ দিন\nউত্তর: ১০৫ দিন লাগবে।",
+            "solutionKho": "‘ক’ হতে পাই, ১০৫ দিনে শেষ করে ১ জন শ্রমিক\n∴ ৫ দিনে শেষ করে (১০৫ ÷ ৫) জন শ্রমিক\n= ২১ জন শ্রমিক\nঅতএব, অতিরিক্ত শ্রমিক লাগবে (২১ – ৭) জন = ১৪ জন\nউত্তর: অতিরিক্ত ১৪ জন শ্রমিক নিয়োগ দিতে হবে।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0504011",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি কারখানায় ১৫ দিনে ৩৬০০টি যন্ত্রাংশ তৈরি হয়।",
+            "questionKo": "কারখানাটি ১ দিনে কতটি যন্ত্রাংশ তৈরি করে?",
+            "questionKho": "যদি প্রতিদিন ২০টি যন্ত্রাংশ নষ্ট হয়, তবে ২৫ দিনে মোট ব্যবহারযোগ্য যন্ত্রাংশ কত হবে?",
+            "solution": "",
+            "solutionKo": "১৫ দিনে যন্ত্রাংশ তৈরি হয় ৩৬০০ টি \n১ দিনে যন্ত্রাংশ তৈরি হয় (৩৬০০ ÷ ১৫) টি\n= ২৪০ টি\nউত্তর: ২৪০টি।",
+            "solutionKho": "‘ক’ হতে পাই, ১ দিনে যন্ত্রাংশ তৈরি হয় ২৪০ টি\n∴ ২৫ দিনে মোট উৎপাদন = ২৪০ × ২৫ = ৬০০০ টি\nনষ্ট হয় প্রতিদিন ২০টি\n∴ ২৫ দিনে নষ্ট হয় (২০ × ২৫) টি  = ৫০০ টি\n∴ ব্যবহারযোগ্য যন্ত্রাংশ (৬০০০ – ৫০০) টি = ৫৫০০টি\nউত্তর: ৫৫০০টি ব্যবহারযোগ্য যন্ত্রাংশ।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "Addition"
+          },
+          {
+            "id": "0504012",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একজন ব্যবসায়ী ৯৬টি মোবাইল ৪৮,০০০ টাকায় কিনলেন।",
+            "questionKo": "১টি মোবাইলের ক্রয়মূল্য কত?",
+            "questionKho": "যদি ১২টি মোবাইল নষ্ট হয়ে যায় এবং বাকি মোবাইল ৭০০ টাকায় বিক্রি করেন, তবে লাভ বা ক্ষতি কত?",
+            "solution": "",
+            "solutionKo": "৯৬টি মোবাইলের দাম ৪৮০০০ টাক\n∴ ১টি মোবাইলের দাম (৪৮০০০ ÷ ৯৬) টাকা \n= ৫০০ টাকা\nউত্তর: ১টি মোবাইলের দাম ৫০০ টাকা।",
+            "solutionKho": "মোট মোবাইল \t৯৬টি\nনষ্ট মোবাইল \t(-) ১২ টি\n∴ বিক্রয়যোগ্য মোবাইল \t= ৮৪ টি\n∴ মোট বিক্রয়মূল্য = ৮৪ × ৭০০ = ৫৮৮০০ টাকা > ক্রয়মূল্য\n∴ লাভ = ৫৮৮০০ − ৪৮০০০ = ১০৮০০ টাকা\nউত্তর: ১০৮০০ টাকা লাভ।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "Addition"
+          },
+          {
+            "id": "0504013",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "১২ জন শ্রমিক ১৮ দিনে একটি কাজ শেষ করে।",
+            "questionKo": "১ জন শ্রমিক একই কাজ করতে কত দিন লাগবে?",
+            "questionKho": "কাজটি ৯ দিনে শেষ করতে কতজন শ্রমিক প্রয়োজন?",
+            "solution": "",
+            "solutionKo": "১২ জন শ্রমিকের সময় লাগে ১৮ দিন\n∴ ১ জন শ্রমিকের সময় লাগে (১২ × ১৮) দিন\n= ২১৬ দিন\nউত্তর: ২১৬ দিন।",
+            "solutionKho": "১৮ দিনে শেষ করতে প্রয়োজন ১২ জন\n    ১ দিনে শেষ করতে প্রয়োজন ১২ × ১৮ জন\n৯ দিনে শেষ করতে প্রয়োজন (১২ × ১৮)/৯ জন\n= ২৪ জন\nউত্তর: ২৪ জন শ্রমিক।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0504014",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি কোম্পানির ৩টি শাখায় মোট ৫৪০০ জন কর্মচারী কাজ করেন।",
+            "questionKo": "যদি ৩টি শাখায় সমান সংখ্যক কর্মচারী থাকে, তবে প্রতিটি শাখায় কতজন কাজ করেন?",
+            "questionKho": "যদি কোম্পানিটি প্রতিটি কর্মচারীকে উৎসব ভাতা হিসেবে ২৫০০ টাকা করে দেয়, তবে কেবল ১টি শাখার কর্মচারীদের ভাতা দিতে কোম্পানির মোট কত টাকা খরচ হবে?",
+            "solution": "",
+            "solutionKo": "মোট কর্মচারী = ৫৪০০ জন, শাখা = ৩টি।\n∴ \tপ্রতিটি শাখায় কাজ করেন (৫৪০০ ÷ ৩) জন\n= ১৮০০ জন\n\tউত্তর: প্রতিটি শাখায় ১৮০০ জন কাজ করেন।",
+            "solutionKho": "‘ক’ হতে পাই, ১টি শাখায় কর্মচারী আছেন ১৮০০ জন।\n\t১ জন কর্মচারীর উৎসব ভাতা = ২৫০০ টাকা।\n∴ ১৮০০ জন কর্মচারীর উৎসব ভাতা (২৫০০ × ১৮০০) টাকা\n\t\t\t\t= ৪৫০০০০০ টাকা\nউত্তর: ১টি শাখার কর্মচারীদের ভাতা দিতে ৪৫০০০০০ টাকা খরচ হবে।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0504015",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "৮৫০টি চকলেট কিছু শিশুর মধ্যে ভাগ করে দেওয়া হলো। প্রত্যেকে ১৫টি করে চকলেট পেল এবং ১০টি চকলেট অবশিষ্ট রইল।",
+            "questionKo": "শিশুর সংখ্যা কত ছিল?",
+            "questionKho": "যদি কোনো চকলেট অবশিষ্ট না রেখে প্রত্যেক শিশুকে ২০টি করে চকলেট দিতে চাওয়া হয়, তবে মোট কতটি চকলেটের প্রয়োজন হবে এবং আরও কতটি চকলেট কিনতে হবে?",
+            "solution": "",
+            "solutionKo": "মোট চকলেট = ৮৫০টি\nঅবশিষ্ট চকলেট = ১০টি।\n∴ সমানভাবে ভাগ করা চকলেটের সংখ্যা (৮৫০ – ১০) টি\n= ৮৪০টি\n\tপ্রত্যেকে পেল = ১৫টি\n\tঅতএব, শিশুর সংখ্যা (৮৪০ ÷ ১৫) জন\n\t\t\t\t= ৫৬ জন \nউত্তর: শিশুর সংখ্যা ৫৬ জন।",
+            "solutionKho": "‘ক’ হতে পাই, শিশুর সংখ্যা ৫৬ জন।\nপ্রত্যেককে ২০টি করে চকলেট দিলে প্রয়োজন (৫৬ × ২০) টি\n= ১১২০টি চকলেট\n\tআগে থেকে চকলেট আছে ৮৫০টি।\n\tঅতএব, আরও কিনতে হবে (১১২০ – ৮৫০) টি\n= ২৭০টি চকলেট।\nউত্তর: মোট ১১২০টি চকলেটের প্রয়োজন হবে এবং আরও ২৭০টি চকলেট কিনতে হবে।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0504016",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "৫০০০ তা কাগজ দিয়ে খাতা তৈরি করা হচ্ছে। প্রতিটি খাতা তৈরি করতে ১২০ তা কাগজ লাগে।",
+            "questionKo": "কতটি সম্পূর্ণ খাতা তৈরি করা যাবে এবং কত তা কাগজ অবশিষ্ট থাকবে?",
+            "questionKho": "যদি মোট ৫০টি খাতা তৈরি করতে হয়, তবে আরও কত তা কাগজের প্রয়োজন হবে?",
+            "solution": "",
+            "solutionKo": "মোট কাগজ ৫০০০ তা\nপ্রতি খাতায় লাগে ১২০ তা\n∴ খাতার সংখ্যা (৫০০০ ÷ ১২০) টি \n= ৪১ টি এবং অবশিষ্ট ৮০ তা\nউত্তর: ৪১টি খাতা এবং ৮০ তা কাগজ অবশিষ্ট থাকবে।",
+            "solutionKho": "মোট ৫০টি খাতার জন্য কাগজ লাগবে (৫০ × ১২০) তা \n= ৬০০০ তা।\nআগে থেকে কাগজ আছে ৫০০০ তা\nঅতএব, আরও কাগজ প্রয়োজন (৬০০০ – ৫০০০) তা\n= ১০০০ তা\nউত্তর: আরও ১০০০ তা কাগজের প্রয়োজন হবে।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0504017",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "১ ডজন কলমের দাম ১৮০ টাকা। রিনার কাছে ৮০০ টাকা আছে।",
+            "questionKo": "১টি কলমের দাম কত?",
+            "questionKho": "রিনা তার সম্পূর্ণ টাকা দিয়ে সর্বোচ্চ কয়টি কলম কিনতে পারবে এবং তার কাছে কত টাকা অবশিষ্ট থাকবে? যদি সে ঠিক ৬০টি কলম কিনতে চায়, তবে তার আরও কত টাকা লাগবে?",
+            "solution": "",
+            "solutionKo": "আমরা জানি, ১ ডজন = ১২টি\n\t১২টি কলমের দাম ১৮০ টাকা\n\tঅতএব, ১টি কলমের দাম (১৮০ ÷ ১২) টাকা\n\t\t\t\t\t= ১৫ টাকা \nউত্তর: ১টি কলমের দাম ১৫ টাকা।",
+            "solutionKho": "রিনার কাছে আছে ৮০০ টাকা\n১টি কলমের দাম ১৫ টাকা\n∴ কলম কিনতে পারবে (৮০০ ÷ ১৫) টি\n= ৫৩ টি, অবশিষ্ট ৫ টাকা\nঅর্থাৎ ৫৩টি কলম কিনতে পারবে এবং ৫ টাকা অবশিষ্ট থাকবে।\nআবার, \n৬০টি কলমের দাম = ৬০ × ১৫ = ৯০০ টাকা।\nতার কাছে আছে ৮০০ টাকা\n∴ আরও টাকা লাগবে (৯০০ – ৮০০) টাকা\n= ১০০ টাকা।\nউত্তর: সে ৫৩টি কলম কিনতে পারবে ও ৫ টাকা অবশিষ্ট থাকবে। তার আরও ১০০ টাকা লাগবে।",
+            "chapter": "5",
+            "hardness": "Medium",
+            "tag": "General"
+          }
+        ]
+      }
+    },
+    {
+      "class": "5",
+      "chapterNumber": "2",
+      "chapterTitle": "সাধারণ ভগ্নাংশ",
+      "content": {
+        "mcq": [
+          {
+            "id": "0021001",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "মিশ্র ভগ্নাংশ ৫৭/১২-কে অপ্রকৃত ভগ্নাংশে রূপান্তর করলে \tলব কত হবে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৬০",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৬৭",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৫৯",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৭০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0021002",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "২৪/৩৬ভগ্নাংশটির লঘিষ্ঠ আকার কোনটি?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৩/৪",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৪/৬",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "২/৩",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "১২/১৮",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0021003",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "দুটি ভগ্নাংশের হর সমান হলে, কোন ভগ্নাংশটি বড় \tহবে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "যার লব ছোট",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "যার লব বড়",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "লব ও হর সমান হলে",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "কোনোটিই নয়",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0021004",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "৫/৮এবং ৩/৫এর মধ্যে কোনটি বড় এবং কেন?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৫/৮, কারণ লব বড়",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৩/৫, কারণ হর ছোট",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৫/৮, কারণ সমহর করলে ২৫/৪০>২৪/৪০",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৩/৫, কারণ সমহর করলে ২৪/৪০>২৫/৪০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0021005",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "কোনো ভগ্নাংশকে লঘিষ্ঠ আকারে প্রকাশ করতে লব \tও হরকে কী দিয়ে ভাগ করতে হয়?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "ল.সা.গু.",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "গ.সা.গু.",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "গুণফল",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "ভাগফল",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "",
+            "hardness": "Easy",
+            "tag": "Division"
+          }
+        ],
+        "blanks": [
+          {
+            "id": "0022001",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "মিশ্র ভগ্নাংশ = পূর্ণ সংখ্যা + _______।",
+            "answer": "প্রকৃত ভগ্নাংশ",
+            "chapter": "",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0022002",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "যে ভগ্নাংশের লব হরের চেয়ে বড়, তাকে _______ \tভগ্নাংশ বলে।",
+            "answer": "অপ্রকৃত",
+            "chapter": "",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0022003",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "ভগ্নাংশের লব ও হরকে একই সংখ্যা দ্বারা গুণ \tকরলে \t_______ ভগ্নাংশ পাওয়া যায়।",
+            "answer": "সমতুল",
+            "chapter": "",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0022004",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "ভগ্নাংশকে লঘিষ্ঠ আকারে প্রকাশ করতে লব ও \tহরকে তাদের _______ দ্বারা ভাগ করতে হয়।",
+            "answer": "গ.সা.গু.",
+            "chapter": "",
+            "hardness": "Easy",
+            "tag": "Division"
+          },
+          {
+            "id": "0022005",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "একাধিক ভগ্নাংশের হর একই হলে, যার _______ \tবড় সেই ভগ্নাংশটি বড়।",
+            "answer": "লব",
+            "chapter": "",
+            "hardness": "Easy",
+            "tag": "General"
+          }
+        ],
+        "shorts": [
+          {
+            "id": "0023001",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "সমতুল ভগ্নাংশ কীভাবে পাওয়া যায়?",
+            "answer": "কোনো ভগ্নাংশের লব ও হরকে একই সংখ্যা \t(শূন্য ছাড়া) দ্বারা গুণ বা ভাগ করলে ওই ভগ্নাংশের \tসমতুল ভগ্নাংশ পাওয়া যায়।",
+            "chapter": "",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0023002",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "মিশ্র ভগ্নাংশ ও অপ্রকৃত ভগ্নাংশের মধ্যে মূল সম্পর্কটি কী?",
+            "answer": "মিশ্র ভগ্নাংশ এবং অপ্রকৃত ভগ্নাংশ মূলত একই \tমান নির্দেশ করে, শুধু প্রকাশভঙ্গি ভিন্ন। মিশ্র ভগ্নাংশে \tএকটি পূর্ণ সংখ্যার সাথে একটি প্রকৃত ভগ্নাংশ থাকে, \tযা অপ্রকৃত ভগ্নাংশ থেকে রূপান্তর করে পাওয়া যায় ।",
+            "chapter": "",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0023003",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "কোনো ভগ্নাংশকে 'লঘিষ্ঠ আকারে প্রকাশ করা' \tবলতে \tকী বোঝায়?",
+            "answer": "ভগ্নাংশকে এমনভাবে ছোট করা যেন লব ও \tহরের মধ্যে ১ ছাড়া অন্য কোনো সাধারণ গুণনীয়ক না \tথাকে। এটি করার জন্য লব ও হরকে তাদের গরিষ্ঠ \tসাধারণ গুণনীয়ক (গ.সা.গু.) দিয়ে ভাগ করতে হয় ।",
+            "chapter": "",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0023004",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "ভিন্ন হরবিশিষ্ট ভগ্নাংশ যোগ বা বিয়োগ করার সময় \tকেন সমহর বিশিষ্ট করতে হয়?",
+            "answer": "ভগ্নাংশের হরগুলো ভিন্ন হলে তাদের একক বা \tভাগের আকার ভিন্ন হয়, তাই সরাসরি তুলনা বা \tযোগ-বিয়োগ করা যায় না। তাই সাধারণ হর বা \tসমহর করে এককগুলো সমান করে নিতে হয় ।",
+            "chapter": "",
+            "hardness": "Easy",
+            "tag": "Addition"
+          },
+          {
+            "id": "0023005",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৩/৪এবং ৫/৭এর মধ্যে কোনটি বড় তা বের করার সহজ \tউপায় কী?",
+            "answer": "আড়াআড়ি গুণ পদ্ধতি। ৩×৭=২১এবং৪×৫= ২০। \tযেহেতু ২১>২০, তাই প্রথম ভগ্নাংশ ৩/৪বড়। অথবা সমহর \tকরেও বের করা যায়।",
+            "chapter": "",
+            "hardness": "Easy",
+            "tag": "General"
+          }
+        ],
+        "words": [
+          {
+            "id": "0024001",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "গীতার কাছে ১৫/৬লিটার ও মামুনের কাছে ১৩/৮লিটার জুস \tআছে। কার জুসের পরিমাণ বেশি এবং কত বেশি?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "দেওয়া আছে,\nগীতার জুস আছে = ১৫/৬লিটার \n= ((১×৬)+৫)/৬লিটার \n= ১১/৬লিটার।\nমামুনের জুস আছে = ১৩/৮লিটার।\nএখন, ৬ ও ৮ এর ল.সা.গু. = ২৪।\nভগ্নাংশগুলোকে সমহর বিশিষ্ট করে পাই:\nগীতার জুস: ১১/৬ = (১১×৪)/(৬×৪) = ৪৪/২৪\nমামুনের জুস: ১৩/৮ = (১৩×৩)/(৮×৩) = ৩৯/২৪\nযেহেতু ৪৪>৩৯, তাই ৪৪/২৪>৩৯/২৪।\nঅর্থাৎ, ১১/৬>১৩/৮।\nসুতরাং, গীতার জুসের পরিমাণ বেশি।\n∴পার্থক্য = (গীতার জুস - মামুনের জুস)\n= ৪৪/২৪ - ৩৯/২৪লিটার\n= ৪৪ -৩৯/২৪লিটার\n= ৫/২৪লিটার।\nউত্তর:গীতার জুসের পরিমাণ বেশি এবং ৫/২৪লিটার বেশি।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0024002",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "৩ ৩/৪মিটার ও ২১/৩মিটার দৈর্ঘ্যের দুইটি ফিতা একত্রে কত \tমিটার?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "দেওয়া আছে,\n১ম ফিতার দৈর্ঘ্য = ৩ ৩/৪মিটার= ((৪×৩)+৩)/৪মিটার = ১৫/৪মিটার।\n২য় ফিতার দৈর্ঘ্য = ২১/৩মিটার = ((২×৩)+১)/৩মিটার = ৭/৩মিটার।\nগাণিতিক বাক্য: ১৫/৪ + ৭/৩ = ▢\n= (৪৫+২৮)/১২\n= ৭৩/১২\n= ৬১/১২\nউত্তর:দুইটি ফিতা একত্রে ৬১/১২মিটার।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "",
+            "hardness": "Medium",
+            "tag": "General"
+          }
+        ]
+      }
+    }
   ]
 }
