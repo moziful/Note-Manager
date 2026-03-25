@@ -159,6 +159,16 @@ function updateSearchScopeButtons() {
     classBtn.className = `px-3 py-1 rounded-lg ${searchScope === 'class' ? 'bg-blue-400 text-white' : 'bg-slate-200'}`;
 }
 
+function jumpToSection(sectionKey, label) {
+    const target = document.getElementById(`section-${sectionKey}`);
+    if (!target) {
+        showBanner(`${label} section not available!`);
+        return;
+    }
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    showBanner(`${label} section opened!`);
+}
+
 function renderReport() {
     const chapter = getSelectedChapter();
     const totalChapters = viewerData.chapters.length;
@@ -205,8 +215,8 @@ function renderChapterSelectors() {
     }).join('');
 }
 
-function renderSectionHeading(label, count) {
-    return `<div class="sectionTitle px-4 py-2 rounded-xl shadow text-lg font-bold">${label} (${count})</div>`;
+function renderSectionHeading(key, label, count) {
+    return `<div id="section-${key}" class="sectionTitle px-4 py-2 rounded-xl shadow text-lg font-bold">${label} (${count})</div>`;
 }
 
 function renderMetaLine(item, index) {
@@ -279,19 +289,19 @@ function renderOutput() {
     const content = scopeData;
 
     if (content.mcq?.length) {
-        sections.push(renderSectionHeading(TYPE_LABELS.mcq, content.mcq.length));
+        sections.push(renderSectionHeading('mcq', TYPE_LABELS.mcq, content.mcq.length));
         sections.push(renderMcq(content.mcq));
     }
     if (content.blanks?.length) {
-        sections.push(renderSectionHeading(TYPE_LABELS.blanks, content.blanks.length));
+        sections.push(renderSectionHeading('blanks', TYPE_LABELS.blanks, content.blanks.length));
         sections.push(renderSimple(content.blanks, 'blanks'));
     }
     if (content.shorts?.length) {
-        sections.push(renderSectionHeading(TYPE_LABELS.shorts, content.shorts.length));
+        sections.push(renderSectionHeading('shorts', TYPE_LABELS.shorts, content.shorts.length));
         sections.push(renderSimple(content.shorts, 'shorts'));
     }
     if (content.words?.length) {
-        sections.push(renderSectionHeading(TYPE_LABELS.words, content.words.length));
+        sections.push(renderSectionHeading('words', TYPE_LABELS.words, content.words.length));
         sections.push(renderSimple(content.words, 'words'));
     }
 
@@ -428,6 +438,22 @@ document.getElementById('classSearchBtn').addEventListener('click', () => {
     renderOutput();
     saveViewerState();
     showBanner('Search scope: all chapters in class');
+});
+
+document.getElementById('jumpMcqBtn').addEventListener('click', () => {
+    jumpToSection('mcq', 'MCQ');
+});
+
+document.getElementById('jumpBlankBtn').addEventListener('click', () => {
+    jumpToSection('blanks', 'Blank');
+});
+
+document.getElementById('jumpShortBtn').addEventListener('click', () => {
+    jumpToSection('shorts', 'Short');
+});
+
+document.getElementById('jumpWordBtn').addEventListener('click', () => {
+    jumpToSection('words', 'Word');
 });
 
 window.onload = async () => {

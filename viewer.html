@@ -17,7 +17,11 @@
     <div class="appLayout flex gap-4">
         <div id="dashboard" class="sidebarPanel w-1/3 max-w-80 bg-blue-200 p-4 rounded-xl shadow space-y-4">
             <div class="flex items-center justify-between gap-2 mb-2">
-                <h1 class="text-xl font-bold">Viewer</h1>
+                <div class="flex items-center gap-2">
+                    <h1 class="text-xl font-bold">Viewer</h1>
+                    <a href="index.html"
+                        class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg shadow text-xs font-semibold hover:bg-white">Home</a>
+                </div>
                 <label for="jsonFileInput"
                     class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg shadow text-xs font-semibold hover:bg-white cursor-pointer">
                     Choose
@@ -25,6 +29,15 @@
                 <input id="jsonFileInput" type="file" accept=".json" class="hidden">
             </div>
             <div id="viewerReport" class="p-2 bg-slate-100 rounded-lg text-slate-800 font-semibold flex flex-col gap-2">
+            </div>
+            <div class="p-2 bg-slate-100 rounded-lg text-slate-800 font-semibold flex flex-col gap-2">
+                <div>Jump To</div>
+                <div class="flex gap-2 flex-wrap text-xs">
+                    <button id="jumpMcqBtn" class="px-3 py-1 rounded-lg bg-slate-200">MCQ</button>
+                    <button id="jumpBlankBtn" class="px-3 py-1 rounded-lg bg-slate-200">Blank</button>
+                    <button id="jumpShortBtn" class="px-3 py-1 rounded-lg bg-slate-200">Short</button>
+                    <button id="jumpWordBtn" class="px-3 py-1 rounded-lg bg-slate-200">Word</button>
+                </div>
             </div>
             <div class="p-2 bg-slate-100 rounded-lg text-slate-800 font-semibold flex flex-col gap-2">
                 <div>Search</div>

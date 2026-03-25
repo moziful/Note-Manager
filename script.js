@@ -362,6 +362,21 @@ function buildChapterPayload() {
     };
 }
 
+function reindexCollection(typeKey, sectionCode) {
+    const chapter = String(parsed.metadata.chapterNumber || '').padStart(2, '0');
+    parsed[typeKey] = (parsed[typeKey] || []).map((item, index) => ({
+        ...item,
+        id: `${chapter}${sectionCode}${String(index + 1).padStart(3, '0')}`
+    }));
+}
+
+function reindexAllIds() {
+    reindexCollection('mcq', '01');
+    reindexCollection('blanks', '02');
+    reindexCollection('shorts', '03');
+    reindexCollection('words', '04');
+}
+
 function showReport() {
     const all = getAllItems();
     const hardnessCount = { Easy: 0, Medium: 0, Hard: 0 };
@@ -607,6 +622,7 @@ async function parseAll(btn) {
         const text = inputText.value.trim();
         if (!text) throw new Error('Paste the whole note first!');
         parsed = parseWholeNote(text);
+        reindexAllIds();
         saveProgress();
         render();
         showReport();
@@ -670,6 +686,7 @@ document.getElementById('confirmDelete').addEventListener('click', event => {
     runAction(event.currentTarget, 'Deleting...', () => {
         if (questionToDelete) {
             parsed[questionToDelete.typeKey] = parsed[questionToDelete.typeKey].filter(q => q.id !== questionToDelete.qid);
+            reindexAllIds();
             saveProgress();
             render();
             showReport();
