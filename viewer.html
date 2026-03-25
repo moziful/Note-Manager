@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Note Viewer Pro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gradient-to-br from-purple-200 to-pink-300 text-slate-800 p-4">
+    <div class="appLayout flex gap-4">
+        <div id="dashboard" class="sidebarPanel w-1/3 max-w-80 bg-blue-200 p-4 rounded-xl shadow space-y-4">
+            <h1 class="text-xl font-bold mb-2">Viewer</h1>
+            <div class="p-2 bg-slate-100 rounded-lg text-slate-800 font-semibold flex flex-col gap-2">
+                <div>Data File:</div>
+                <input id="jsonFileInput" type="file" accept=".json" class="w-full p-2 bg-white rounded-lg shadow text-sm">
+            </div>
+            <div id="viewerReport" class="p-2 bg-slate-100 rounded-lg text-slate-800 font-semibold flex flex-col gap-2"></div>
+            <div class="p-2 bg-slate-100 rounded-lg text-slate-800 font-semibold flex flex-col gap-2">
+                <div>Search</div>
+                <div class="flex gap-2">
+                    <input id="searchInput" type="text" placeholder="Search live..."
+                        class="flex-1 p-2 bg-white rounded-lg shadow text-sm">
+                    <button id="clearSearchBtn" class="px-3 py-2 bg-red-500 text-white rounded-lg hover:bg-red-700 text-sm">Clear</button>
+                </div>
+                <div class="flex gap-2 flex-wrap text-xs">
+                    <button id="chapterSearchBtn" class="px-3 py-1 rounded-lg bg-blue-400 text-white">Opened Chapter</button>
+                    <button id="classSearchBtn" class="px-3 py-1 rounded-lg bg-slate-200">All In Class</button>
+                </div>
+            </div>
+            <div class="p-2 bg-slate-100 rounded-lg text-slate-800 font-semibold flex flex-col gap-2">
+                <div>Class</div>
+                <div id="classSelectors" class="flex gap-2 flex-wrap"></div>
+            </div>
+            <div class="p-2 bg-slate-100 rounded-lg text-slate-800 font-semibold flex flex-col gap-2">
+                <div>Chapter</div>
+                <div id="chapterSelectors" class="flex flex-col gap-2"></div>
+            </div>
+        </div>
+
+        <div class="flex-1 space-y-4">
+            <div id="viewerOutput" class="space-y-4"></div>
+        </div>
+
+        <div id="notificationBanner"
+            class="fixed bottom-4 left-4 min-w-72 bg-gray-800 text-white px-4 py-2 rounded-lg shadow-lg hidden z-40">
+            <span id="bannerText"></span>
+        </div>
+    </div>
+
+    <script src="viewer.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+body {
+  font-family: "Saira", sans-serif;
+}
+
+.bnFont {
+  font-family: "Baloo Da 2", sans-serif;
+}
+
+.appLayout {
+  align-items: flex-start;
+}
+
+.card {
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.opt,
+.qtext,
+.editableRow {
+  transition: all 0.15s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.editableRow {
+  align-items: flex-start;
+}
+
+.opt button,
+.qtext button,
+.editableRow button {
+  display: none;
+}
+
+.opt:hover button,
+.qtext:hover button,
+.editableRow:hover button {
+  display: inline-block;
+}
+
+.opt span,
+.qtext span,
+.editableValue {
+  cursor: text;
+}
+
+input,
+textarea {
+  cursor: text;
+}
+
+#dashboard {
+  position: sticky;
+  top: 1rem;
+  height: calc(100vh - 2rem);
+  overflow-y: auto;
+}
+
+.editing {
+  @apply bg-blue-200 text-black font-semibold;
+}
+
+.preserveLines {
+  white-space: pre-wrap;
+}
+
+.sectionTitle {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(2px);
+}
+
+.fraction {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  line-height: 1;
+  margin: 0 0.08rem;
+  min-width: 1.6em;
+}
+
+.fraction-top,
+.fraction-bottom {
+  display: block;
+  text-align: center;
+  padding: 0 0.15rem;
+}
+
+.fraction-top {
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.08rem;
+}
+
+.fraction-bottom {
+  padding-top: 0.08rem;
+}
+
+.action-btn {
+  position: relative;
+}
+
+.action-btn.loading {
+  opacity: 0.85;
+  cursor: wait;
+}
+
+.action-btn.loading::after {
+  content: "";
+  position: absolute;
+  right: 0.8rem;
+  top: 50%;
+  width: 0.9rem;
+  height: 0.9rem;
+  margin-top: -0.45rem;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-top-color: white;
+  border-radius: 999px;
+  animation: spin 0.7s linear infinite;
+}
+
+#notificationBanner {
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+#notificationBanner.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#notificationBanner.hide {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
