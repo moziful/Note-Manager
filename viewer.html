@@ -11,79 +11,98 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Hide scrollbar but keep scrolling */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+            /* Chrome, Safari */
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            /* IE, Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+    </style>
 </head>
 
-<body class="bg-gradient-to-br from-purple-200 to-pink-300 text-slate-800 p-4" style="font-family: 'Saira', sans-serif;">
-    <nav class="sticky top-4 z-50 mx-auto mb-5 w-[min(1220px,calc(100vw-2rem))] rounded-2xl border border-white/60 bg-white/65 px-4 py-3 shadow-[0_14px_30px_rgba(122,120,168,0.14)] backdrop-blur-xl">
-        <div class="flex flex-wrap items-center justify-between gap-3">
+<body class="h-screen p-2 bg-gradient-to-br from-purple-200 to-pink-300 text-slate-800"
+    style="font-family: 'Saira', sans-serif;">
+    <nav
+        class="sticky top-1 z-50 mx-auto mb-3 w-[min(1220px,calc(100vw-2rem))] h-12 rounded-lg border border-white/60 bg-white/65 px-2 shadow-[0_14px_30px_rgba(122,120,168,0.14)] backdrop-blur-xl">
+        <div class="h-full flex flex-wrap justify-between items-center gap-3">
             <a href="index.html" class="flex items-center gap-2 text-sm font-extrabold tracking-wide text-slate-800">
-                <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[linear-gradient(135deg,#f8b8d7,#b7dfff)] text-slate-800 shadow-sm">
-                    <i class="fa-solid fa-house"></i>
+                <span
+                    class="inline-flex h-8 w-24 items-center justify-center rounded-lg bg-[linear-gradient(135deg,#f8b8d7,#b7dfff)] text-slate-800 shadow-sm">
+                    <i class="fa-solid fa-house"></i>Note Hub
                 </span>
-                Note Hub
+
             </a>
             <div class="flex flex-wrap items-center gap-2 text-sm font-semibold">
-                <a href="index.html" class="rounded-xl px-3 py-2 text-slate-700 hover:bg-white/80">Home</a>
-                <a href="parser.html" class="rounded-xl px-3 py-2 text-slate-700 hover:bg-white/80">Parser</a>
-                <a href="viewer.html" class="rounded-xl bg-white px-3 py-2 text-slate-800 shadow-sm">Viewer</a>
-                <a href="question-maker.html" class="rounded-xl px-3 py-2 text-slate-700 hover:bg-white/80">Question Maker</a>
+                <a href="index.html" class="rounded-md px-3 py-1 text-slate-700 hover:bg-white/80">Home</a>
+                <a href="parser.html" class="rounded-md px-3 py-1 text-slate-700 hover:bg-white/80">Parser</a>
+                <a href="viewer.html" class="rounded-md bg-white px-3 py-1 text-slate-800 shadow-sm">Viewer</a>
+                <a href="question-maker.html" class="rounded-md px-3 py-1 text-slate-700 hover:bg-white/80">Question
+                    Maker</a>
             </div>
         </div>
     </nav>
 
-    <div class="mx-auto flex w-[min(1220px,calc(100vw-2rem))] items-start gap-4">
+    <div class="mx-auto h-auto flex w-[min(1220px,calc(100vw-2rem))] items-start gap-4">
+        <!-- Dashboard -->
         <div id="dashboard"
-            class="w-1/3 max-w-80 sticky top-4 h-[calc(100vh-2rem)] overflow-y-auto bg-blue-200 p-4 rounded-xl shadow space-y-4">
-            <div class="flex items-center justify-between gap-2 mb-2">
-                <div class="flex items-center gap-2">
-                    <h1 class="text-xl font-bold">Viewer</h1>
-                    <a href="index.html"
-                        class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg shadow text-xs font-semibold hover:bg-white">Home</a>
-                </div>
+            class="w-1/3 h-162 max-w-80 sticky top-4 overflow-y-auto bg-blue-200 p-3 rounded-lg shadow space-y-4">
+            <!-- Heading -->
+            <div class="flex justify-between items-center gap-1 mb-2">
+                <h1 class="text-xl font-bold mb-2">Notes</h1>
                 <label for="jsonFileInput"
                     class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg shadow text-xs font-semibold hover:bg-white cursor-pointer">
                     Choose
                 </label>
                 <input id="jsonFileInput" type="file" accept=".json" class="hidden">
             </div>
-            <div id="viewerReport" class="p-2 bg-slate-100 rounded-lg text-slate-800 font-semibold flex flex-col gap-2">
-            </div>
-            <div class="p-2 bg-slate-100 rounded-lg text-slate-800 font-semibold flex flex-col gap-2">
-                <div>Jump To</div>
-                <div class="flex gap-2 flex-wrap text-xs">
-                    <button id="jumpMcqBtn" class="px-3 py-1 rounded-lg bg-slate-200">MCQ</button>
-                    <button id="jumpBlankBtn" class="px-3 py-1 rounded-lg bg-slate-200">Blank</button>
-                    <button id="jumpShortBtn" class="px-3 py-1 rounded-lg bg-slate-200">Short</button>
-                    <button id="jumpWordBtn" class="px-3 py-1 rounded-lg bg-slate-200">Word</button>
+            <!-- Report -->
+            <div id="viewerReport" class="p-1 bg-slate-100 rounded-lg text-slate-800 flex flex-col gap-1"></div>
+            <!-- Search & Filter -->
+            <div class="w-full p-1 bg-slate-100 rounded-lg text-slate-800 flex flex-col gap-1 font-semibold">
+                <div>Search & Filter</div>
+                <!-- Jump buttons -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-1 text-xs">
+                    <button id="jumpMcqBtn" class="px-3 py-1 rounded-sm bg-slate-200">MCQ</button>
+                    <button id="jumpBlankBtn" class="px-3 py-1 rounded-sm bg-slate-200">Blank</button>
+                    <button id="jumpShortBtn" class="px-3 py-1 rounded-sm bg-slate-200">Short</button>
+                    <button id="jumpWordBtn" class="px-3 py-1 rounded-sm bg-slate-200">Word</button>
                 </div>
-            </div>
-            <div class="p-2 bg-slate-100 rounded-lg text-slate-800 font-semibold flex flex-col gap-2">
-                <div>Search</div>
+                <!-- Divider Line -->
+                <div class="bg-gray-300 h-[2px] rounded-full my-1"></div>
+                <!-- Scope Buttons -->
+                <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-2 text-xs">
+                    <button id="chapterSearchBtn" class="w-full px-3 py-1 rounded-sm bg-blue-400 text-white">Opened
+                        Chapter</button>
+                    <button id="classSearchBtn" class="w-full px-3 py-1 rounded-sm bg-slate-200">All In Class</button>
+                </div>
+                <!-- Search Bar -->
                 <div class="relative">
                     <input id="searchInput" type="text" placeholder="Search live..."
-                        class="w-full p-2 pr-10 bg-white rounded-lg shadow text-sm">
+                        class="w-full p-1 pr-10 bg-white rounded-sm shadow text-sm">
                     <button id="clearSearchBtn"
-                        class="absolute right-2 top-1/2 inline-flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-full border-0 bg-transparent text-sm font-bold leading-none whitespace-nowrap text-slate-500 hover:text-red-500"
+                        class="absolute right-1 top-1/2 inline-flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-full border-0 bg-transparent text-sm font-bold leading-none whitespace-nowrap text-slate-500 hover:text-red-500"
                         type="button" aria-label="Clear search">x</button>
                 </div>
-                <div class="flex gap-2 flex-wrap text-xs">
-                    <button id="chapterSearchBtn" class="px-3 py-1 rounded-lg bg-blue-400 text-white">Opened
-                        Chapter</button>
-                    <button id="classSearchBtn" class="px-3 py-1 rounded-lg bg-slate-200">All In Class</button>
-                </div>
             </div>
-            <div class="p-2 bg-slate-100 rounded-lg text-slate-800 font-semibold flex flex-col gap-2">
+
+            <div
+                class="p-2 bg-slate-100 rounded-lg text-slate-800 font-semibold flex flex-col gap-2 h-62 overflow-y-auto no-scrollbar">
                 <div>Class</div>
-                <div id="classSelectors" class="flex gap-2 flex-wrap"></div>
-            </div>
-            <div class="p-2 bg-slate-100 rounded-lg text-slate-800 font-semibold flex flex-col gap-2">
+                <div id="classSelectors" class="grid grid-cols-2 gap-2"></div>
                 <div>Chapter</div>
                 <div id="chapterSelectors" class="flex flex-col gap-2"></div>
             </div>
         </div>
 
         <div class="flex-1 space-y-4">
-            <div id="viewerOutput" class="space-y-4"></div>
+            <div id="viewerOutput" class="space-y-4 rounded-lg h-162 overflow-y-auto no-scrollbar"></div>
         </div>
 
         <div id="notificationBanner"

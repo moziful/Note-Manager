@@ -4654,41 +4654,6 @@
             "id": "0401005",
             "type": "mcq",
             "sectionType": "mcq",
-            "question": "০ কে কোনো সংখ্যা দিয়ে ভাগ করলে ভাগফল কী হবে?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "ঐ সংখ্যাটি",
-                "isCorrect": false
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "১",
-                "isCorrect": false
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "০",
-                "isCorrect": true
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "অসীম",
-                "isCorrect": false
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Division"
-          },
-          {
-            "id": "0401006",
-            "type": "mcq",
-            "sectionType": "mcq",
             "question": "নিচের কোনটি ভাজক হতে পারে না?",
             "options": [
               {
@@ -4721,7 +4686,7 @@
             "tag": "General"
           },
           {
-            "id": "0401007",
+            "id": "0401006",
             "type": "mcq",
             "sectionType": "mcq",
             "question": "যদি ভাজক ৮ হয় এবং ভাগফল ১ হয়, তবে ভাগশেষ ৭ হলে ভাজ্য কত?",
@@ -4756,7 +4721,7 @@
             "tag": "Division"
           },
           {
-            "id": "0401008",
+            "id": "0401007",
             "type": "mcq",
             "sectionType": "mcq",
             "question": "৯৯ কে ১০ দিয়ে ভাগ করলে ভাগশেষ কত হবে?",
@@ -4791,7 +4756,7 @@
             "tag": "Division"
           },
           {
-            "id": "0401009",
+            "id": "0401008",
             "type": "mcq",
             "sectionType": "mcq",
             "question": "ভাজক ৫, ভাগফল ১২ এবং ভাগশেষ ৩ হলে ভাজ্য কত?",
@@ -4826,7 +4791,7 @@
             "tag": "Division"
           },
           {
-            "id": "0401010",
+            "id": "0401009",
             "type": "mcq",
             "sectionType": "mcq",
             "question": "ভাজ্য থেকে ভাজক একবারও বিয়োগ করা না গেলে ভাগফল কত?",
@@ -4857,11 +4822,11 @@
               }
             ],
             "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Subtraction"
+            "hardness": "Easy",
+            "tag": "Multiplication"
           },
           {
-            "id": "0401011",
+            "id": "0401010",
             "type": "mcq",
             "sectionType": "mcq",
             "question": "ভাগের উত্তর সঠিক হয়েছে কি না তা যাচাই করতে ভাগশেষের সাথে কোনটির তুলনা করতে হয়?",
@@ -4896,7 +4861,7 @@
             "tag": "Division"
           },
           {
-            "id": "0401012",
+            "id": "0401011",
             "type": "mcq",
             "sectionType": "mcq",
             "question": "৫৩৮ ÷ ৩ অঙ্কে ভাগফলের শতকের ঘরের অঙ্কটি কত?",
@@ -4931,7 +4896,7 @@
             "tag": "Division"
           },
           {
-            "id": "0401013",
+            "id": "0401012",
             "type": "mcq",
             "sectionType": "mcq",
             "question": "কোনো সংখ্যাকে ওই একই সংখ্যা দ্বারা ভাগ করলে ভাগফল কত?",
@@ -4966,7 +4931,7 @@
             "tag": "Division"
           },
           {
-            "id": "0401014",
+            "id": "0401013",
             "type": "mcq",
             "sectionType": "mcq",
             "question": "ভাজ্য ১৪৮ এবং ভাগফল ১৪৮ হলে ভাজক কত?",
@@ -5001,7 +4966,7 @@
             "tag": "Division"
           },
           {
-            "id": "0401015",
+            "id": "0401014",
             "type": "mcq",
             "sectionType": "mcq",
             "question": "৭৫ মিটারের একটি দড়িকে ৮ মিটার করে টুকরো করলে কত মিটার দড়ি অবশিষ্ট থাকবে?",
@@ -5036,7 +5001,7 @@
             "tag": "General"
           },
           {
-            "id": "0401016",
+            "id": "0401015",
             "type": "mcq",
             "sectionType": "mcq",
             "question": "ভাগের বিপরীত প্রক্রিয়া কোনটি?",
@@ -5071,7 +5036,7 @@
             "tag": "Division"
           },
           {
-            "id": "0401017",
+            "id": "0401016",
             "type": "mcq",
             "sectionType": "mcq",
             "question": "ভাজ্য ৪৫ এবং ভাজক ৯ হলে ভাগশেষ কত?",
@@ -5106,7 +5071,7 @@
             "tag": "Division"
           },
           {
-            "id": "0401018",
+            "id": "0401017",
             "type": "mcq",
             "sectionType": "mcq",
             "question": "ভাগের সময় ভাজ্যের কোনো অঙ্ক যদি ভাজকের চেয়ে ছোট হয়, তবে ভাগফলে কী বসাতে হয়?",
@@ -5141,7 +5106,7 @@
             "tag": "Division"
           },
           {
-            "id": "0401019",
+            "id": "0401018",
             "type": "mcq",
             "sectionType": "mcq",
             "question": "নিচের কোন সম্পর্কটি সঠিক?",
@@ -5176,7 +5141,7 @@
             "tag": "General"
           },
           {
-            "id": "0401020",
+            "id": "0401019",
             "type": "mcq",
             "sectionType": "mcq",
             "question": "০ ÷ ১০০ = কত?",
@@ -5211,7 +5176,7 @@
             "tag": "General"
           },
           {
-            "id": "0401021",
+            "id": "0401020",
             "type": "mcq",
             "sectionType": "mcq",
             "question": "প্রশ্নের অংকে \"কতটি দল হবে\" বা \"প্রতি দলে কয়টি থাকবে\" বের করতে সাধারণত কী করতে হয়?",
@@ -5246,7 +5211,7 @@
             "tag": "General"
           },
           {
-            "id": "0401022",
+            "id": "0401021",
             "type": "mcq",
             "sectionType": "mcq",
             "question": "যদি ৫০ ÷ ৫ = ১০ হয়, তবে ১০ × ৫ + ২ = কত?",
@@ -5281,7 +5246,7 @@
             "tag": "General"
           },
           {
-            "id": "0401023",
+            "id": "0401022",
             "type": "mcq",
             "sectionType": "mcq",
             "question": "২৫ ÷ ৪ = ৬ (ভাগশেষ ১) — এর সঠিক যাচাই পদ্ধতি নিচের কোনটি?",
@@ -5316,7 +5281,7 @@
             "tag": "Division"
           },
           {
-            "id": "0401024",
+            "id": "0401023",
             "type": "mcq",
             "sectionType": "mcq",
             "question": "আপনার কাছে ৫০টি চকলেট আছে, প্রত্যেককে ১২টি করে দিলে কতজন বন্ধু চকলেট পাবে?",
@@ -5351,7 +5316,7 @@
             "tag": "General"
           },
           {
-            "id": "0401025",
+            "id": "0401024",
             "type": "mcq",
             "sectionType": "mcq",
             "question": "ভাগের পর যে সংখ্যাটি অবশিষ্ট থাকে তাকে কী বলে?",
@@ -5386,7 +5351,7 @@
             "tag": "Division"
           },
           {
-            "id": "0401026",
+            "id": "0401025",
             "type": "mcq",
             "sectionType": "mcq",
             "question": "ভাজক ৫ হলে ভাগশেষ কি ৫ হতে পারে?",
@@ -5421,7 +5386,7 @@
             "tag": "Division"
           },
           {
-            "id": "0401027",
+            "id": "0401026",
             "type": "mcq",
             "sectionType": "mcq",
             "question": "১০০ ÷ ১০ ÷ ২ = কত?",
@@ -5456,7 +5421,7 @@
             "tag": "General"
           },
           {
-            "id": "0401028",
+            "id": "0401027",
             "type": "mcq",
             "sectionType": "mcq",
             "question": "৫টি কলমের দাম ১০০ টাকা হলে, ১টি কলমের দাম কত?",
@@ -5491,7 +5456,7 @@
             "tag": "General"
           },
           {
-            "id": "0401029",
+            "id": "0401028",
             "type": "mcq",
             "sectionType": "mcq",
             "question": "ভাজ্য, ভাগফল ও ভাগশেষ জানা থাকলে ভাজক বের করার সূত্র কী?",
@@ -5526,7 +5491,7 @@
             "tag": "Division"
           },
           {
-            "id": "0401030",
+            "id": "0401029",
             "type": "mcq",
             "sectionType": "mcq",
             "question": "৪২ ÷ ৭ = ৬ গাণিতিক বাক্যে ৪২ সংখ্যাটিকে কী বলা হয়?",

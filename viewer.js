@@ -188,15 +188,18 @@ function renderReport() {
     const totalChapters = viewerData.chapters.length;
     const scopeData = getFilteredScopeData();
     const selectedCount = Object.values(scopeData).reduce((sum, items) => sum + (items?.length || 0), 0);
-
     document.getElementById('viewerReport').innerHTML = `
-        <div>Source: ${escapeHtml(dataSourceLabel)}</div>
-        <div>Total Chapters: ${totalChapters}</div>
-        <div>Selected Class: ${selectedClass || '-'}</div>
-        <div>Selected Chapter: ${chapter ? `${chapter.chapterNumber} - ${chapter.chapterTitle || '-'}` : '-'}</div>
-        <div>Search Scope: ${searchScope === 'class' ? 'All In Class' : 'Opened Chapter'}</div>
-        <div>Search Text: ${searchTerm ? escapeHtml(searchTerm) : '-'}</div>
-        <div>Visible Items: ${selectedCount}</div>
+    <div class="bg-white p-1 rounded-sm"><span class="font-semibold">Class: </span>${selectedClass || '-'}</div>
+        <div class="bg-white p-1 rounded-sm"><span class="font-semibold">Chapter: </span>${chapter ? `${chapter.chapterNumber} - ${chapter.chapterTitle || '-'}` : '-'}</div>    
+    <div class="bg-white p-1 rounded-sm text-sm"><span class="font-semibold">Source: </span>${escapeHtml(dataSourceLabel)}</div>
+        <div class="bg-white p-1 rounded-sm text-sm"><span class="font-semibold">Visible Items: </span>${selectedCount}
+        <div class="grid grid-cols-2 md:grid-cols-4 p-1 gap-1 text-xs">
+                <div>MCQ: ${scopeData.mcq.length}</div>
+                <div>Blanks: ${scopeData.blanks.length}</div>
+                <div>Shorts: ${scopeData.shorts.length}</div>
+                <div>Words: ${scopeData.words.length}</div>
+            </div> 
+        </div> 
     `;
 }
 
@@ -220,12 +223,10 @@ function renderChapterSelectors() {
     wrap.innerHTML = chapters.map(chapter => {
         const key = `${chapter.class}-${chapter.chapterNumber}`;
         const selected = selectedChapterKey === key;
-        const label = selected
-            ? `${chapter.chapterNumber}`
-            : `${chapter.chapterNumber} - ${chapter.chapterTitle || 'Untitled'}`;
+        const label = `${chapter.chapterNumber} - ${chapter.chapterTitle}`;
 
         return `<button onclick="selectChapter('${key}')"
-            class="px-3 py-2 rounded-lg text-sm text-left ${selected ? 'bg-blue-400 text-white' : 'bg-slate-200'}">${escapeHtml(label)}</button>`;
+            class="px-3 py-1 rounded-lg text-sm text-left ${selected ? 'bg-blue-400 text-white' : 'bg-slate-200'}">${escapeHtml(label)}</button>`;
     }).join('');
 }
 
