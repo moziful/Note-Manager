@@ -639,7 +639,7 @@ function renderEditableRow(label, value, qid, typeKey, field, preserve = false, 
         <div class="editableRow ${cls} px-3 py-2 rounded-lg justify-between items-start mt-2 group flex">
             <div class="flex-1">
                 <div class="text-xs uppercase opacity-70 mb-1">${label}</div>
-                <div class="editableValue bnFont font-semibold ${preserveClass}">${formatFractions(value || '')}</div>
+                <div class="editableValue bnFont font-semibold whitespace-pre-line ${preserveClass}">${formatFractions(value || '')}</div>
             </div>
             <button onclick="editField('${qid}','${typeKey}','${field}',this)" class="w-0 h-10 group-hover:w-20 ml-2 opacity-0 group-hover:opacity-100 cursor-pointer hover:bg-gray-500 transition-all duration-200 whitespace-nowrap hover:text-white px-1 rounded">
         <i class="fa-regular fa-pen-to-square"></i> Edit
