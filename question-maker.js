@@ -102,7 +102,7 @@ function renderChapterList() {
     const host = document.getElementById('qmChapterList');
     const chapters = getChaptersForClass();
     host.innerHTML = chapters.map(ch => `
-        <label class="flex items-start gap-2 rounded-lg bg-white px-3 py-2">
+        <label class="flex items-start gap-1 rounded-sm bg-white px-3 py-1">
             <input type="checkbox" value="${ch.chapterNumber}" checked class="mt-1">
             <span><strong>${ch.chapterNumber}</strong> - ${escapeHtml(ch.chapterTitle || 'Untitled')}</span>
         </label>
@@ -322,16 +322,13 @@ function updateReport() {
     const chapterGroups = splitSelectedChapters();
     const report = document.getElementById('qmReport');
     report.innerHTML = `
-        <div>Selected Class: ${selectedClass || '-'}</div>
-        <div>Selected Chapters: ${getSelectedChapters().length}</div>
-        <div>Regular Chapters: ${chapterGroups.regular.length} | Geometry Chapters: ${chapterGroups.geometry.length}</div>
-        <div>Full Mark: ${selectedFullMark}</div>
-        <div>Hardness Mix: ${selectedHardness}</div>
-        <div>Available: MCQ ${pool.mcq.length}, Blank ${pool.blanks.length}, Short ${pool.shorts.length}, Word ${pool.words.length}, Geometry ${pool.geometry.length}</div>
-        <div>Requested: MCQ ${requested.mcq}, Blank ${requested.blanks}, Short ${requested.shorts}, Word ${requested.words}, Geometry ${requested.geometry}</div>
-        <div>Coverage: MCQ and Word use regular chapters. Geometry uses only geometry chapter word problems.</div>
+        <div><span class="font-semibold">Selected Chapters: </span>${getSelectedChapters().length}: Regular: ${chapterGroups.regular.length} | Geometry: ${chapterGroups.geometry.length}</div>
+        <div><span class="font-semibold">Available: </span>MCQ ${pool.mcq.length}, Blank ${pool.blanks.length}, Short ${pool.shorts.length}, Word ${pool.words.length}, Geometry ${pool.geometry.length}</div>
     `;
 }
+
+// Requested part from report function
+// <div><span class="font-semibold">Requested: </span>MCQ ${requested.mcq}, Blank ${requested.blanks}, Short ${requested.shorts}, Word ${requested.words}, Geometry ${requested.geometry}</div>
 
 async function loadData() {
     const response = await fetch('notes-data.json', { cache: 'no-store' });
