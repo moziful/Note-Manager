@@ -13,11 +13,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-gradient-to-br from-purple-200 to-pink-300 text-slate-800 p-4" style="font-family: 'Saira', sans-serif;">
-    <nav class="sticky top-4 z-50 mx-auto mb-5 w-[min(1220px,calc(100vw-2rem))] rounded-2xl border border-white/60 bg-white/65 px-4 py-3 shadow-[0_14px_30px_rgba(122,120,168,0.14)] backdrop-blur-xl">
+<body class="bg-gradient-to-br from-purple-200 to-pink-300 text-slate-800 p-4"
+    style="font-family: 'Saira', sans-serif;">
+    <nav
+        class="sticky top-4 z-50 mx-auto mb-5 w-[min(1220px,calc(100vw-2rem))] rounded-2xl border border-white/60 bg-white/65 px-4 py-3 shadow-[0_14px_30px_rgba(122,120,168,0.14)] backdrop-blur-xl">
         <div class="flex flex-wrap items-center justify-between gap-3">
             <a href="index.html" class="flex items-center gap-2 text-sm font-extrabold tracking-wide text-slate-800">
-                <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[linear-gradient(135deg,#f8b8d7,#b7dfff)] text-slate-800 shadow-sm">
+                <span
+                    class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[linear-gradient(135deg,#f8b8d7,#b7dfff)] text-slate-800 shadow-sm">
                     <i class="fa-solid fa-house"></i>
                 </span>
                 Note Hub
@@ -26,7 +29,8 @@
                 <a href="index.html" class="rounded-xl px-3 py-2 text-slate-700 hover:bg-white/80">Home</a>
                 <a href="parser.html" class="rounded-xl bg-white px-3 py-2 text-slate-800 shadow-sm">Parser</a>
                 <a href="viewer.html" class="rounded-xl px-3 py-2 text-slate-700 hover:bg-white/80">Viewer</a>
-                <a href="question-maker.html" class="rounded-xl px-3 py-2 text-slate-700 hover:bg-white/80">Question Maker</a>
+                <a href="question-maker.html" class="rounded-xl px-3 py-2 text-slate-700 hover:bg-white/80">Question
+                    Maker</a>
             </div>
         </div>
     </nav>
@@ -42,20 +46,27 @@
             <div>
                 <div class="mb-3 grid grid-cols-1 gap-2">
                     <div>
-                        <label for="classNameInput" class="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-600">Class</label>
+                        <label for="classNameInput"
+                            class="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-600">Class</label>
                         <input id="classNameInput" type="text" onkeydown="commitMetadataField(event, 'className', this)"
                             class="w-full rounded-lg border border-white/70 bg-white/80 px-3 py-2 text-sm font-semibold text-slate-800 shadow-sm outline-none ring-0 placeholder:text-slate-400"
                             placeholder="Class">
                     </div>
                     <div>
-                        <label for="chapterNumberInput" class="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-600">Chapter Number</label>
-                        <input id="chapterNumberInput" type="text" onkeydown="commitMetadataField(event, 'chapterNumber', this)"
+                        <label for="chapterNumberInput"
+                            class="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-600">Chapter
+                            Number</label>
+                        <input id="chapterNumberInput" type="text"
+                            onkeydown="commitMetadataField(event, 'chapterNumber', this)"
                             class="w-full rounded-lg border border-white/70 bg-white/80 px-3 py-2 text-sm font-semibold text-slate-800 shadow-sm outline-none ring-0 placeholder:text-slate-400"
                             placeholder="Chapter number">
                     </div>
                     <div>
-                        <label for="chapterTitleInput" class="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-600">Chapter Title</label>
-                        <input id="chapterTitleInput" type="text" onkeydown="commitMetadataField(event, 'chapterTitle', this)"
+                        <label for="chapterTitleInput"
+                            class="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-600">Chapter
+                            Title</label>
+                        <input id="chapterTitleInput" type="text"
+                            onkeydown="commitMetadataField(event, 'chapterTitle', this)"
                             class="w-full rounded-lg border border-white/70 bg-white/80 px-3 py-2 text-sm font-semibold text-slate-800 shadow-sm outline-none ring-0 placeholder:text-slate-400"
                             placeholder="Chapter title">
                     </div>
@@ -122,7 +133,7 @@
             <span id="bannerText"></span>
         </div>
 
-        <script src="./script.js"></script>
+        <script src="./parser.js"></script>
 </body>
 
 </html>
