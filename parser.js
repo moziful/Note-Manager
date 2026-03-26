@@ -553,12 +553,39 @@ function showReport() {
     });
 
     report.innerHTML = `
-        <div class="bg-slate-200 p-2 rounded-lg">Class: ${parsed.metadata.className || '-'}</div>
-        <div class="bg-slate-200 p-2 rounded-lg">Chapter: ${parsed.metadata.chapterNumber || '-'}${parsed.metadata.chapterTitle ? ` - ${parsed.metadata.chapterTitle}` : ''}</div>
-        <div class="bg-slate-200 p-2 rounded-lg">Total Items: ${all.length}</div>
-        <div class="bg-slate-200 p-2 rounded-lg">MCQ: ${parsed.mcq.length}, <br> Blanks: ${parsed.blanks.length}, <br> Shorts: ${parsed.shorts.length}, <br> Words: ${parsed.words.length}</div>
-        <div class="bg-slate-200 p-2 rounded-lg">Easy: ${hardnessCount.Easy}, <br> Medium: ${hardnessCount.Medium}, <br> Hard: ${hardnessCount.Hard}</div>
-        <div class="bg-slate-200 p-2 rounded-lg">Tags: <br> ${Object.entries(tagCount).map(e => `${e[0]}: ${e[1]}`).join(',<br>') || '-'}</div>
+        <div class="bg-slate-200 p-2 rounded-lg"><div class="text-base font-semibold border-b-2 border-gray-300">Total Items: ${all.length}</div>
+            <div class="grid grid-cols-2 mt-1 gap-1 text-xs">
+                <div>MCQ: ${parsed.mcq.length}</div>
+                <div>Blanks: ${parsed.blanks.length}</div>
+                <div>Shorts: ${parsed.shorts.length}</div>
+                <div>Words: ${parsed.words.length}</div>
+            </div>
+        </div>
+        <div class="bg-slate-200 p-2 rounded-lg">
+            <div class="text-base font-semibold border-b-2 border-gray-300">Hardness</div>
+                <div class="grid grid-cols-3 mt-1 gap-1 text-xs">
+                    <div>Easy: ${hardnessCount.Easy}</div>
+                    <div>Medium: ${hardnessCount.Medium}</div>
+                    <div>Hard: ${hardnessCount.Hard}</div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-slate-200 p-2 rounded-lg">
+    <div class="text-base font-semibold border-b-2 border-gray-300">Tags</div>
+
+    <div class="grid grid-cols-2 mt-1 text-xs">
+        ${Object.entries(tagCount).length
+            ? Object.entries(tagCount)
+                .map(([tag, count]) => `
+                    <div class="py-1 rounded flex">
+                        <span>${tag}:</span>
+                        <span>${count}</span>
+                    </div>
+                `).join('')
+            : '<div>-</div>'
+        }
+    </div>
+</div>
     `;
 }
 
@@ -583,17 +610,14 @@ function renderMcqCard(q) {
     </span>
 
     <button onclick="editQuestion('${q.id}','mcq',this)"
-        class="w-0 h-10 group-hover:w-20 ml-2 opacity-0 group-hover:opacity-100 cursor-pointer hover:bg-gray-500 transition-all duration-200 whitespace-nowrap hover:text-white px-1 rounded">
+        class="w-0 h-8 group-hover:w-20 ml-2 opacity-0 group-hover:opacity-100 cursor-pointer hover:bg-gray-500 transition-all duration-200 whitespace-nowrap hover:text-white px-1 rounded">
         <i class="fa-regular fa-pen-to-square"></i> Edit
     </button>
 </div>
             <div class="bnFont grid grid-cols-2 lg:grid-cols-4 gap-2 mt-2">${q.options.map(o => `<div
-                class="opt px-3 py-2 rounded-lg ${o.isCorrect ? 'bg-green-400 text-white border-green-400' : 'bg-slate-100 border-slate-200'} flex justify-between items-center group">
+                class="opt px-3 pr-1 py-1 rounded-lg ${o.isCorrect ? 'bg-green-400 text-white border-green-400' : 'bg-slate-100 border-slate-200'} flex justify-between items-center group">
                 <span class="w-full font-semibold" onclick="selectCorrect('${q.id}','${o.id}')">${formatFractions(o.text)}</span>
-                <button onclick="editOption('${q.id}','${o.id}',this)"
-    class="w-0 h-10 overflow-hidden group-hover:w-10 opacity-0 group-hover:opacity-100 
-           transition-all duration-200 cursor-pointer px-1 rounded whitespace-nowrap
-           hover:bg-gray-500 hover:text-white">
+                <button onclick="editOption('${q.id}','${o.id}',this)" class="w-0 h-8 overflow-hidden group-hover:w-10 opacity-0 group-hover:opacity-100 transition-all duration-200 cursor-pointer px-1 rounded whitespace-nowrap hover:bg-gray-500 hover:text-white">
     <i class="fa-regular fa-pen-to-square"></i>
 </button>
             </div>`).join('')}</div>
@@ -631,7 +655,7 @@ function renderAnswerCard(q, typeKey, answerFieldLabel = 'Answer') {
         </div>
     `;
 }
-
+// Render every question+Answer here 
 function renderEditableRow(label, value, qid, typeKey, field, preserve = false, amber = false) {
     const cls = amber ? 'bg-amber-50 border border-amber-200' : 'bg-slate-100';
     const preserveClass = preserve ? 'preserveLines' : '';
