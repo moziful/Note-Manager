@@ -577,16 +577,25 @@ function renderMcqCard(q) {
                 <div class="text-gray-500 font-mono">ID: ${q.id}</div>
                 <button onclick="deleteQuestion('${q.id}','mcq')" class="px-2 py-1 bg-red-500 text-white rounded hover:bg-red-700">Delete</button>
             </div>
-            <div class='qtext px-2 py-1 rounded bg-slate-100 flex justify-between items-center w-auto'>
-                <span class="bnFont font-semibold text-lg">${formatFractions(q.question)}</span>
-                <button onclick="editQuestion('${q.id}','mcq',this)" class="w-20 ml-2 hover:bg-gray-500 hover:text-white px-1 rounded">
-                    <i class="fa-regular fa-pen-to-square"></i> Edit
-                </button>
-            </div>
+            <div class='qtext px-2 py-1 rounded bg-slate-100 flex justify-between items-center w-auto group'>
+    <span class="bnFont font-semibold text-lg">
+        ${formatFractions(q.question)}
+    </span>
+
+    <button onclick="editQuestion('${q.id}','mcq',this)"
+        class="w-0 h-10 group-hover:w-20 ml-2 opacity-0 group-hover:opacity-100 cursor-pointer hover:bg-gray-500 transition-all duration-200 whitespace-nowrap hover:text-white px-1 rounded">
+        <i class="fa-regular fa-pen-to-square"></i> Edit
+    </button>
+</div>
             <div class="bnFont grid grid-cols-2 lg:grid-cols-4 gap-2 mt-2">${q.options.map(o => `<div
-                class="opt px-3 py-2 rounded-lg ${o.isCorrect ? 'bg-green-400 text-white border-green-400' : 'bg-slate-100 border-slate-200'} justify-between">
+                class="opt px-3 py-2 rounded-lg ${o.isCorrect ? 'bg-green-400 text-white border-green-400' : 'bg-slate-100 border-slate-200'} flex justify-between items-center group">
                 <span class="w-full font-semibold" onclick="selectCorrect('${q.id}','${o.id}')">${formatFractions(o.text)}</span>
-                <button onclick="editOption('${q.id}','${o.id}',this)" class="hover:cursor-pointer px-1 rounded"><i class="fa-regular fa-pen-to-square"></i></button>
+                <button onclick="editOption('${q.id}','${o.id}',this)"
+    class="w-0 h-10 overflow-hidden group-hover:w-10 opacity-0 group-hover:opacity-100 
+           transition-all duration-200 cursor-pointer px-1 rounded whitespace-nowrap
+           hover:bg-gray-500 hover:text-white">
+    <i class="fa-regular fa-pen-to-square"></i>
+</button>
             </div>`).join('')}</div>
             ${renderFooter(q, 'mcq')}
         </div>
