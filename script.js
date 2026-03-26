@@ -1,5 +1,8 @@
 const TAGS = ['Addition', 'Subtraction', 'Division', 'Multiplication', '4 Operation', 'LCM-GCD', 'Geometry', 'Area', 'Theory', 'General'];
 const STORAGE_KEY = 'noteParserProProgress';
+const DATA_FILE_HANDLE_DB = 'noteParserHandles';
+const DATA_FILE_HANDLE_STORE = 'handles';
+const DATA_FILE_HANDLE_KEY = 'notesDataJsonHandle';
 const TYPE_LABELS = {
     mcq: 'বহুনির্বাচনী প্রশ্ন',
     blanks: 'শূন্যস্থান পূরণ',
@@ -10,6 +13,8 @@ const TYPE_LABELS = {
 let questionToDelete = null;
 let parsed = emptyParsed();
 let bannerTimeout = null;
+let dataPushTarget = null;
+let confirmActionState = null;
 
 function emptyParsed() {
     return {
@@ -23,6 +28,48 @@ function emptyParsed() {
         shorts: [],
         words: []
     };
+}
+
+function openHandleDb() {
+    return new Promise((resolve, reject) => {
+        const request = indexedDB.open(DATA_FILE_HANDLE_DB, 1);
+        request.onupgradeneeded = () => {
+            request.result.createObjectStore(DATA_FILE_HANDLE_STORE);
+        };
+        request.onsuccess = () => resolve(request.result);
+        request.onerror = () => reject(request.error);
+    });
+}
+
+async function getStoredDataFileHandle() {
+    if (!('indexedDB' in window)) return null;
+    const db = await openHandleDb();
+    return new Promise((resolve, reject) => {
+        const tx = db.transaction(DATA_FILE_HANDLE_STORE, 'readonly');
+        const store = tx.objectStore(DATA_FILE_HANDLE_STORE);
+        const request = store.get(DATA_FILE_HANDLE_KEY);
+        request.onsuccess = () => resolve(request.result || null);
+        request.onerror = () => reject(request.error);
+    });
+}
+
+async function setStoredDataFileHandle(handle) {
+    if (!('indexedDB' in window)) return;
+    const db = await openHandleDb();
+    return new Promise((resolve, reject) => {
+        const tx = db.transaction(DATA_FILE_HANDLE_STORE, 'readwrite');
+        const store = tx.objectStore(DATA_FILE_HANDLE_STORE);
+        const request = store.put(handle, DATA_FILE_HANDLE_KEY);
+        request.onsuccess = () => resolve();
+        request.onerror = () => reject(request.error);
+    });
+}
+
+async function ensureHandlePermission(handle) {
+    if (!handle?.queryPermission || !handle?.requestPermission) return false;
+    const options = { mode: 'readwrite' };
+    if (await handle.queryPermission(options) === 'granted') return true;
+    return (await handle.requestPermission(options)) === 'granted';
 }
 
 function showBanner(message) {
@@ -362,6 +409,96 @@ function buildChapterPayload() {
     };
 }
 
+function openConfirmModal({ title, text, confirmLabel = 'Confirm', confirmClass = 'bg-red-500 hover:bg-red-700', onConfirm }) {
+    const modal = document.getElementById('confirmModal');
+    const titleNode = document.getElementById('confirmModalTitle');
+    const textNode = document.getElementById('confirmModalText');
+    const confirmBtn = document.getElementById('confirmDelete');
+
+    confirmActionState = { onConfirm };
+    titleNode.textContent = title;
+    textNode.textContent = text;
+    confirmBtn.className = `px-4 py-2 text-white rounded action-btn ${confirmClass}`;
+    const labelNode = confirmBtn.querySelector('.btn-label');
+    if (labelNode) {
+        labelNode.textContent = confirmLabel;
+    }
+    delete confirmBtn.dataset.originalLabel;
+    modal.classList.remove('hidden');
+}
+
+function closeConfirmModal() {
+    confirmActionState = null;
+    document.getElementById('confirmModal').classList.add('hidden');
+}
+
+async function pickDataFileHandle() {
+    if (!window.showOpenFilePicker) {
+        throw new Error('This browser cannot write directly to notes-data.json.');
+    }
+
+    const [handle] = await window.showOpenFilePicker({
+        multiple: false,
+        suggestedName: 'notes-data.json',
+        types: [{
+            description: 'JSON files',
+            accept: { 'application/json': ['.json'] }
+        }]
+    });
+
+    if (!handle) throw new Error('No file selected.');
+    await setStoredDataFileHandle(handle);
+    return handle;
+}
+
+async function getWritableDataFileHandle() {
+    let handle = await getStoredDataFileHandle();
+    if (!handle) {
+        handle = await pickDataFileHandle();
+    }
+
+    const granted = await ensureHandlePermission(handle);
+    if (!granted) {
+        handle = await pickDataFileHandle();
+        if (!await ensureHandlePermission(handle)) {
+            throw new Error('Write permission was not granted.');
+        }
+    }
+
+    return handle;
+}
+
+function mergeChapterIntoData(data, chapterPayload) {
+    const root = Array.isArray(data?.chapters) ? data : { chapters: [] };
+    const chapterIndex = root.chapters.findIndex(item =>
+        String(item.class || '') === String(chapterPayload.class || '') &&
+        String(item.chapterNumber || '') === String(chapterPayload.chapterNumber || '')
+    );
+
+    if (chapterIndex >= 0) {
+        root.chapters[chapterIndex] = chapterPayload;
+    } else {
+        root.chapters.push(chapterPayload);
+    }
+
+    return root;
+}
+
+async function pushChapterToDataFile() {
+    if (!parsed.metadata.chapterNumber) {
+        throw new Error('Parse a chapter first before pushing.');
+    }
+
+    const handle = await getWritableDataFileHandle();
+    const file = await handle.getFile();
+    const text = await file.text();
+    const existingData = text.trim() ? JSON.parse(text) : { chapters: [] };
+    const merged = mergeChapterIntoData(existingData, buildChapterPayload());
+    const writable = await handle.createWritable();
+    await writable.write(JSON.stringify(merged, null, 2));
+    await writable.close();
+}
+
 function reindexCollection(typeKey, sectionCode) {
     const chapter = String(parsed.metadata.chapterNumber || '').padStart(2, '0');
     parsed[typeKey] = (parsed[typeKey] || []).map((item, index) => ({
@@ -375,6 +512,35 @@ function reindexAllIds() {
     reindexCollection('blanks', '02');
     reindexCollection('shorts', '03');
     reindexCollection('words', '04');
+}
+
+function syncMetadataInputs() {
+    const classInput = document.getElementById('classNameInput');
+    const chapterNumberInput = document.getElementById('chapterNumberInput');
+    const chapterTitleInput = document.getElementById('chapterTitleInput');
+
+    if (classInput) classInput.value = parsed.metadata.className || '';
+    if (chapterNumberInput) chapterNumberInput.value = parsed.metadata.chapterNumber || '';
+    if (chapterTitleInput) chapterTitleInput.value = parsed.metadata.chapterTitle || '';
+}
+
+function updateMetadataField(field, value) {
+    if (field === 'chapterNumber') {
+        parsed.metadata.chapterNumber = banglaToEnglishNumber(String(value || '').trim());
+        reindexAllIds();
+        render();
+    } else {
+        parsed.metadata[field] = String(value || '').trim();
+    }
+    saveProgress();
+    showReport();
+}
+
+function commitMetadataField(event, field, input) {
+    if (event.key !== 'Enter') return;
+    event.preventDefault();
+    updateMetadataField(field, input.value);
+    showBanner('Metadata saved!');
 }
 
 function showReport() {
@@ -588,7 +754,23 @@ function editField(qid, typeKey, field, btn) {
 
 function deleteQuestion(qid, typeKey) {
     questionToDelete = { qid, typeKey };
-    document.getElementById('confirmModal').classList.remove('hidden');
+    openConfirmModal({
+        title: 'Delete Question',
+        text: 'Are you sure you want to delete this item?',
+        confirmLabel: 'Delete',
+        confirmClass: 'bg-red-500 hover:bg-red-700',
+        onConfirm: currentTarget => runAction(currentTarget, 'Deleting...', () => {
+            if (questionToDelete) {
+                parsed[questionToDelete.typeKey] = parsed[questionToDelete.typeKey].filter(q => q.id !== questionToDelete.qid);
+                reindexAllIds();
+                saveProgress();
+                render();
+                showReport();
+                questionToDelete = null;
+            }
+            closeConfirmModal();
+        }, 'Deleted!')
+    });
 }
 
 function selectCorrect(qid, optId) {
@@ -624,6 +806,7 @@ async function parseAll(btn) {
         parsed = parseWholeNote(text);
         reindexAllIds();
         saveProgress();
+        syncMetadataInputs();
         render();
         showReport();
         return getAllItems().length;
@@ -646,6 +829,7 @@ function loadProgress() {
         inputText.value = saved.inputText || '';
         parsed = saved.parsed || emptyParsed();
     }
+    syncMetadataInputs();
     render();
     showReport();
 }
@@ -682,23 +866,41 @@ async function downloadJSON(btn) {
     }, 'Chapter JSON downloaded!');
 }
 
-document.getElementById('confirmDelete').addEventListener('click', event => {
-    runAction(event.currentTarget, 'Deleting...', () => {
-        if (questionToDelete) {
-            parsed[questionToDelete.typeKey] = parsed[questionToDelete.typeKey].filter(q => q.id !== questionToDelete.qid);
-            reindexAllIds();
-            saveProgress();
-            render();
-            showReport();
-            questionToDelete = null;
+function startPushFlow(btn) {
+    if (!parsed.metadata.chapterNumber) {
+        showBanner('Parse a chapter first!');
+        return;
+    }
+    dataPushTarget = btn;
+    openConfirmModal({
+        title: 'Push Chapter Data',
+        text: 'Push this chapter into notes-data.json? If the same class and chapter already exist, that chapter will be replaced.',
+        confirmLabel: 'Continue',
+        confirmClass: 'bg-sky-500 hover:bg-sky-700',
+        onConfirm: () => {
+            openConfirmModal({
+                title: 'Final Confirmation',
+                text: 'This writes directly to the real notes-data.json file. Are you absolutely sure?',
+                confirmLabel: 'Push Now',
+                confirmClass: 'bg-sky-600 hover:bg-sky-800',
+                onConfirm: currentTarget => {
+                    closeConfirmModal();
+                    return runAction(dataPushTarget || currentTarget, 'Pushing...', pushChapterToDataFile, 'Pushed to notes-data.json!');
+                }
+            });
         }
-        document.getElementById('confirmModal').classList.add('hidden');
-    }, 'Deleted!');
+    });
+}
+
+document.getElementById('confirmDelete').addEventListener('click', event => {
+    if (confirmActionState?.onConfirm) {
+        confirmActionState.onConfirm(event.currentTarget);
+    }
 });
 
 document.getElementById('cancelDelete').addEventListener('click', () => {
     questionToDelete = null;
-    document.getElementById('confirmModal').classList.add('hidden');
+    closeConfirmModal();
     showBanner('Cancelled!');
 });
 

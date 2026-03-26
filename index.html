@@ -6,139 +6,210 @@
     <title>Note Hub</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@300;400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@300;400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="hubBody min-h-screen text-slate-900">
-    <main class="hubShell">
-        <section class="heroPanel">
-            <div class="heroTopbar">
-                <div class="heroBadge">Workspace Hub</div>
-                <div class="heroMini">Notes, tools, and daily flow in one place</div>
+<body
+    class="min-h-screen text-slate-900 p-4 bg-[radial-gradient(circle_at_top_left,rgba(255,214,236,0.95),transparent_30%),radial-gradient(circle_at_85%_12%,rgba(190,234,255,0.95),transparent_24%),radial-gradient(circle_at_60%_85%,rgba(222,210,255,0.75),transparent_26%),linear-gradient(145deg,#fff2f8_0%,#f8edff_35%,#eef7ff_68%,#ffeef7_100%)]"
+    style="font-family: 'Sora', sans-serif;">
+    <nav
+        class="sticky top-4 z-50 mx-auto mb-5 w-[min(1220px,calc(100vw-2rem))] rounded-2xl border border-white/60 bg-white/65 px-4 py-3 shadow-[0_14px_30px_rgba(122,120,168,0.14)] backdrop-blur-xl">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+            <a href="index.html" class="flex items-center gap-2 text-sm font-extrabold tracking-wide text-slate-800">
+                <span
+                    class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[linear-gradient(135deg,#f8b8d7,#b7dfff)] text-slate-800 shadow-sm">
+                    <i class="fa-solid fa-house"></i>
+                </span>
+                Note Hub
+            </a>
+            <div class="flex flex-wrap items-center gap-2 text-sm font-semibold">
+                <a href="index.html" class="rounded-xl bg-white px-3 py-2 text-slate-800 shadow-sm">Home</a>
+                <a href="parser.html" class="rounded-xl px-3 py-2 text-slate-700 hover:bg-white/80">Parser</a>
+                <a href="viewer.html" class="rounded-xl px-3 py-2 text-slate-700 hover:bg-white/80">Viewer</a>
+                <a href="question-maker.html" class="rounded-xl px-3 py-2 text-slate-700 hover:bg-white/80">Question
+                    Maker</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="mx-auto w-[min(1220px,calc(100vw-2rem))] pb-8">
+        <section
+            class="relative overflow-hidden rounded-[2rem] border border-white/60 bg-[linear-gradient(135deg,rgba(255,255,255,0.7),rgba(250,238,255,0.62),rgba(233,244,255,0.75))] p-5 text-slate-900 shadow-[0_22px_60px_rgba(168,146,198,0.18)] backdrop-blur-xl">
+            <div
+                class="pointer-events-none absolute -right-12 -top-12 h-56 w-56 rounded-full bg-[rgba(255,177,214,0.42)] blur-lg">
+            </div>
+            <div
+                class="pointer-events-none absolute bottom-[-4rem] left-[40%] h-44 w-44 rounded-full bg-[rgba(157,219,255,0.32)] blur-lg">
             </div>
 
-            <div class="heroContent">
-                <div class="heroCopy">
-                    <p class="eyebrow">Note Parser Pro</p>
-                    <h1>One starting page for parsing, viewing, and building your study apps.</h1>
-                    <p class="heroText">
+            <div class="relative z-10 mb-5 flex items-center justify-between gap-4">
+                <div class="rounded-full bg-white/70 px-3 py-2 text-xs text-slate-700 shadow-sm backdrop-blur-sm">
+                    Workspace Hub</div>
+                <div class="rounded-full bg-white/70 px-3 py-2 text-xs text-slate-700 shadow-sm backdrop-blur-sm">Notes,
+                    tools, and daily flow</div>
+            </div>
+
+            <div class="relative z-10 grid items-stretch gap-4 lg:grid-cols-[minmax(0,1.7fr)_minmax(260px,0.9fr)]">
+                <div>
+                    <p class="mb-2 text-[0.76rem] uppercase tracking-[0.18em] text-slate-500">Note Parser Pro</p>
+                    <h1 class="max-w-[12ch] text-[clamp(2rem,4vw,3.6rem)] font-extrabold leading-[1.02]">One starting
+                        page for parsing, viewing, and building your study apps.</h1>
+                    <p class="mt-4 max-w-[52ch] text-base leading-[1.65] text-slate-600">
                         Launch the parser, jump into notes, keep a quick scratchpad, and glance at time and calendar
                         without leaving the workspace.
                     </p>
 
-                    <div class="heroActions">
-                        <a href="parser.html" class="hubPrimary">
+                    <div class="mt-5 flex flex-wrap gap-3">
+                        <a href="parser.html"
+                            class="inline-flex items-center gap-3 rounded-2xl bg-[linear-gradient(135deg,#ffb9d9,#ffd6ea)] px-5 py-4 font-bold text-slate-800 shadow-[0_12px_30px_rgba(255,181,216,0.24)] transition duration-200 hover:-translate-y-0.5">
                             <i class="fa-solid fa-wand-magic-sparkles"></i>
                             Open Parser
                         </a>
-                        <a href="viewer.html" class="hubSecondary">
+                        <a href="viewer.html"
+                            class="inline-flex items-center gap-3 rounded-2xl border border-sky-200 bg-[linear-gradient(135deg,#dff4ff,#e8e6ff)] px-5 py-4 font-bold text-slate-800 shadow-[0_10px_24px_rgba(171,214,255,0.18)] transition duration-200 hover:-translate-y-0.5">
                             <i class="fa-solid fa-book-open-reader"></i>
                             Open Viewer
                         </a>
                     </div>
                 </div>
 
-                <div class="timePanel">
-                    <div class="clockCard">
-                        <div class="clockLabel">Local Time</div>
-                        <div id="liveClock" class="liveClock">--:--:--</div>
-                        <div id="liveDate" class="liveDate">Loading date...</div>
+                <div class="grid gap-4">
+                    <div
+                        class="rounded-3xl border border-white/60 bg-white/55 p-4 shadow-[0_14px_30px_rgba(172,170,214,0.12)] backdrop-blur-md">
+                        <div class="text-xs text-slate-500">Local Time</div>
+                        <div id="liveClock" class="my-2 text-[clamp(2rem,4vw,3rem)] font-extrabold leading-none">
+                            --:--:--</div>
+                        <div id="liveDate" class="leading-6 text-slate-600">Loading date...</div>
                     </div>
-                    <div class="pulseCard">
-                        <div class="pulseLabel">Focus Pulse</div>
-                        <div class="pulseValue">Ready</div>
-                        <div class="pulseMeta">Open a tool and keep momentum going.</div>
+                    <div
+                        class="rounded-3xl border border-white/60 bg-white/55 p-4 shadow-[0_14px_30px_rgba(172,170,214,0.12)] backdrop-blur-md">
+                        <div class="text-xs text-slate-500">Focus Pulse</div>
+                        <div class="my-2 text-3xl font-extrabold">Ready</div>
+                        <div class="leading-6 text-slate-600">Open a tool and keep momentum going.</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="hubGrid">
-            <article class="navCard navParser">
-                <div class="navIcon"><i class="fa-solid fa-file-pen"></i></div>
-                <div class="navContent">
-                    <h2>Parser</h2>
-                    <p>Paste a full chapter note and turn it into structured MCQ, blanks, shorts, and word problems.</p>
-                    <a href="parser.html" class="navLink">Go To Parser</a>
+        <section class="relative z-10 mt-5 grid gap-4 lg:grid-cols-12">
+            <article
+                class="lg:col-span-4 grid min-h-56 grid-cols-[auto_1fr] gap-4 rounded-3xl border border-white/60 bg-white/70 p-5 shadow-[0_18px_45px_rgba(179,170,219,0.12)] backdrop-blur-md">
+                <div
+                    class="inline-flex h-[3.3rem] w-[3.3rem] items-center justify-center rounded-2xl bg-[linear-gradient(135deg,#91cfff,#b4e3ff)] text-xl text-slate-800 shadow-[inset_0_1px_0_rgba(255,255,255,0.2)]">
+                    <i class="fa-solid fa-file-pen"></i>
+                </div>
+                <div class="flex flex-col">
+                    <h2 class="mb-2 text-xl font-extrabold">Parser</h2>
+                    <p class="flex-1 leading-7 text-slate-600">Paste a full chapter note and turn it into structured
+                        MCQ, blanks, shorts, and word problems.</p>
+                    <a href="parser.html"
+                        class="mt-4 inline-flex items-center justify-center rounded-2xl bg-[linear-gradient(135deg,#9ecfff,#c8e7ff)] px-4 py-3 font-bold text-slate-800 transition duration-200 hover:-translate-y-0.5">Go
+                        To Parser</a>
                 </div>
             </article>
 
-            <article class="navCard navViewer">
-                <div class="navIcon"><i class="fa-solid fa-layer-group"></i></div>
-                <div class="navContent">
-                    <h2>Viewer</h2>
-                    <p>Browse class-wise notes, search across chapters, and jump directly to the section you need.</p>
-                    <a href="viewer.html" class="navLink">Go To Viewer</a>
+            <article
+                class="lg:col-span-4 grid min-h-56 grid-cols-[auto_1fr] gap-4 rounded-3xl border border-white/60 bg-white/70 p-5 shadow-[0_18px_45px_rgba(179,170,219,0.12)] backdrop-blur-md">
+                <div
+                    class="inline-flex h-[3.3rem] w-[3.3rem] items-center justify-center rounded-2xl bg-[linear-gradient(135deg,#fbb8d8,#ffd2e6)] text-xl text-slate-800 shadow-[inset_0_1px_0_rgba(255,255,255,0.2)]">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <div class="flex flex-col">
+                    <h2 class="mb-2 text-xl font-extrabold">Viewer</h2>
+                    <p class="flex-1 leading-7 text-slate-600">Browse class-wise notes, search across chapters, and jump
+                        directly to the section you need.</p>
+                    <a href="viewer.html"
+                        class="mt-4 inline-flex items-center justify-center rounded-2xl bg-[linear-gradient(135deg,#fbc2dc,#e9d7ff)] px-4 py-3 font-bold text-slate-800 transition duration-200 hover:-translate-y-0.5">Go
+                        To Viewer</a>
                 </div>
             </article>
 
-            <article class="navCard navMaker">
-                <div class="navIcon"><i class="fa-solid fa-bolt"></i></div>
-                <div class="navContent">
-                    <h2>Question Maker</h2>
-                    <p>Placeholder for the next app. Keep this slot ready for future generation and worksheet tools.</p>
-                    <button type="button" class="navLink navDisabled">Coming Soon</button>
+            <article
+                class="lg:col-span-4 grid min-h-56 grid-cols-[auto_1fr] gap-4 rounded-3xl border border-white/60 bg-white/70 p-5 shadow-[0_18px_45px_rgba(179,170,219,0.12)] backdrop-blur-md">
+                <div
+                    class="inline-flex h-[3.3rem] w-[3.3rem] items-center justify-center rounded-2xl bg-[linear-gradient(135deg,#d8c5ff,#bedbff)] text-xl text-slate-800 shadow-[inset_0_1px_0_rgba(255,255,255,0.2)]">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <div class="flex flex-col">
+                    <h2 class="mb-2 text-xl font-extrabold">Question Maker</h2>
+                    <p class="flex-1 leading-7 text-slate-600">Placeholder for the next app. Keep this slot ready for
+                        future generation and worksheet tools.</p>
+                    <a href="question-maker.html"
+                        class="mt-4 inline-flex items-center justify-center rounded-2xl bg-[linear-gradient(135deg,#d7c4ff,#bfdcff)] px-4 py-3 font-bold text-slate-800 transition duration-200 hover:-translate-y-0.5">Open
+                        Maker</a>
                 </div>
             </article>
 
-            <article class="utilityCard calendarCard">
-                <div class="utilityTop">
-                    <h3>Calendar</h3>
-                    <div id="calendarLabel" class="utilityMeta">Month</div>
+            <article
+                class="lg:col-span-4 min-h-60 rounded-3xl border border-white/60 bg-white/70 p-5 shadow-[0_18px_45px_rgba(179,170,219,0.12)] backdrop-blur-md">
+                <div class="mb-4 flex items-center justify-between gap-4">
+                    <h3 class="text-xl font-extrabold">Calendar</h3>
+                    <div id="calendarLabel" class="text-xs text-slate-500">Month</div>
                 </div>
-                <div class="calendarWeekdays">
-                    <span>Sun</span>
-                    <span>Mon</span>
-                    <span>Tue</span>
-                    <span>Wed</span>
-                    <span>Thu</span>
-                    <span>Fri</span>
-                    <span>Sat</span>
+                <div class="mb-2 grid grid-cols-7 gap-1.5">
+                    <span class="text-center text-[0.72rem] font-bold text-slate-500">Sun</span>
+                    <span class="text-center text-[0.72rem] font-bold text-slate-500">Mon</span>
+                    <span class="text-center text-[0.72rem] font-bold text-slate-500">Tue</span>
+                    <span class="text-center text-[0.72rem] font-bold text-slate-500">Wed</span>
+                    <span class="text-center text-[0.72rem] font-bold text-slate-500">Thu</span>
+                    <span class="text-center text-[0.72rem] font-bold text-slate-500">Fri</span>
+                    <span class="text-center text-[0.72rem] font-bold text-slate-500">Sat</span>
                 </div>
-                <div id="calendarGrid" class="calendarGrid"></div>
+                <div id="calendarGrid" class="grid grid-cols-7 gap-1.5"></div>
             </article>
 
-            <article class="utilityCard quickNoteCard">
-                <div class="utilityTop">
-                    <h3>Quick Note</h3>
-                    <div class="utilityMeta">Temporary scratchpad</div>
+            <article
+                class="lg:col-span-5 min-h-60 rounded-3xl border border-white/60 bg-white/70 p-5 shadow-[0_18px_45px_rgba(179,170,219,0.12)] backdrop-blur-md">
+                <div class="mb-4 flex items-center justify-between gap-4">
+                    <h3 class="text-xl font-extrabold">Quick Note</h3>
+                    <div class="text-xs text-slate-500">Temporary scratchpad</div>
                 </div>
-                <textarea id="quickNoteInput" class="quickNoteInput" rows="8"
+                <textarea id="quickNoteInput"
+                    class="min-h-48 w-full resize-y rounded-2xl border-0 bg-white/80 px-4 py-4 text-slate-800 shadow-[inset_0_0_0_1px_rgba(93,112,150,0.12)] outline-none focus:outline-2 focus:outline-[rgba(66,113,255,0.32)]"
                     placeholder="Write ideas, chapter reminders, app ideas, or to-dos..."></textarea>
-                <div class="quickNoteActions">
-                    <button id="saveQuickNoteBtn" type="button" class="hubMiniBtn">Save Note</button>
-                    <button id="clearQuickNoteBtn" type="button" class="hubMiniBtn hubMiniDanger">Clear</button>
+                <div class="mt-4 flex gap-3">
+                    <button id="saveQuickNoteBtn" type="button"
+                        class="inline-flex items-center justify-center rounded-2xl bg-slate-900 px-4 py-3 font-bold text-white transition duration-200 hover:-translate-y-0.5">Save
+                        Note</button>
+                    <button id="clearQuickNoteBtn" type="button"
+                        class="inline-flex items-center justify-center rounded-2xl bg-rose-500 px-4 py-3 font-bold text-white transition duration-200 hover:-translate-y-0.5">Clear</button>
                 </div>
             </article>
 
-            <article class="utilityCard shortcutsCard">
-                <div class="utilityTop">
-                    <h3>Quick Launch</h3>
-                    <div class="utilityMeta">Your common routes</div>
+            <article
+                class="lg:col-span-3 min-h-60 rounded-3xl border border-white/60 bg-white/70 p-5 shadow-[0_18px_45px_rgba(179,170,219,0.12)] backdrop-blur-md">
+                <div class="mb-4 flex items-center justify-between gap-4">
+                    <h3 class="text-xl font-extrabold">Quick Launch</h3>
+                    <div class="text-xs text-slate-500">Your common routes</div>
                 </div>
-                <div class="shortcutList">
-                    <a href="parser.html" class="shortcutItem">
+                <div class="flex flex-col gap-3">
+                    <a href="parser.html"
+                        class="inline-flex w-full items-center justify-between gap-3 rounded-2xl bg-white/85 px-4 py-4 font-bold text-slate-800 shadow-[inset_0_0_0_1px_rgba(67,86,122,0.08)] transition duration-200 hover:-translate-y-0.5">
                         <span>Parse new chapter</span>
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
-                    <a href="viewer.html" class="shortcutItem">
+                    <a href="viewer.html"
+                        class="inline-flex w-full items-center justify-between gap-3 rounded-2xl bg-white/85 px-4 py-4 font-bold text-slate-800 shadow-[inset_0_0_0_1px_rgba(67,86,122,0.08)] transition duration-200 hover:-translate-y-0.5">
                         <span>Review saved notes</span>
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
-                    <button type="button" class="shortcutItem shortcutDisabled">
+                    <a href="question-maker.html"
+                        class="inline-flex w-full items-center justify-between gap-3 rounded-2xl bg-white/85 px-4 py-4 font-bold text-slate-800 shadow-[inset_0_0_0_1px_rgba(67,86,122,0.08)] transition duration-200 hover:-translate-y-0.5">
                         <span>Open question maker</span>
-                        <i class="fa-solid fa-lock"></i>
-                    </button>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
                 </div>
             </article>
         </section>
     </main>
 
-    <div id="homeBanner" class="homeBanner hidden">
+    <div id="homeBanner"
+        class="homeBanner hidden fixed bottom-4 right-4 rounded-2xl bg-slate-900 px-4 py-3 text-white shadow-[0_16px_34px_rgba(18,24,34,0.25)]">
         <span id="homeBannerText"></span>
     </div>
 

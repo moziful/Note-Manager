@@ -10,9 +10,11 @@ let selectedClass = '';
 let selectedChapterKey = '';
 let bannerTimer = null;
 const VIEWER_STORAGE_KEY = 'noteViewerProState';
+const DEFAULT_DATA_CACHE_KEY = 'noteViewerDefaultCache';
 let dataSourceLabel = 'None';
 let searchTerm = '';
 let searchScope = 'chapter';
+let activeSourceMode = 'default';
 
 function showBanner(message) {
     const banner = document.getElementById('notificationBanner');
@@ -64,13 +66,25 @@ function getSelectedChapter() {
 
 function saveViewerState() {
     localStorage.setItem(VIEWER_STORAGE_KEY, JSON.stringify({
-        viewerData,
         selectedClass,
         selectedChapterKey,
-        dataSourceLabel,
         searchTerm,
         searchScope
     }));
+}
+
+function cacheDefaultData(data) {
+    localStorage.setItem(DEFAULT_DATA_CACHE_KEY, JSON.stringify(data));
+}
+
+function getCachedDefaultData() {
+    try {
+        const cached = JSON.parse(localStorage.getItem(DEFAULT_DATA_CACHE_KEY) || 'null');
+        return Array.isArray(cached?.chapters) ? cached : null;
+    } catch (error) {
+        console.error(error);
+        return null;
+    }
 }
 
 function restoreSelection() {
@@ -216,7 +230,7 @@ function renderChapterSelectors() {
 }
 
 function renderSectionHeading(key, label, count) {
-    return `<div id="section-${key}" class="sectionTitle px-4 py-2 rounded-xl shadow text-lg font-bold">${label} (${count})</div>`;
+    return `<div id="section-${key}" class="rounded-xl bg-white/70 px-4 py-2 text-lg font-bold shadow backdrop-blur-[2px]">${label} (${count})</div>`;
 }
 
 function renderMetaLine(item, index) {
@@ -228,12 +242,12 @@ function renderMetaLine(item, index) {
 
 function renderEditableBlock(title, value, amber = false, preserve = false) {
     const cls = amber ? 'bg-amber-50 border border-amber-200' : 'bg-slate-100';
-    const preserveClass = preserve ? 'preserveLines' : '';
+    const preserveClass = preserve ? 'whitespace-pre-wrap' : '';
     return `
-        <div class="editableRow ${cls} px-3 py-2 rounded-lg justify-between items-start mt-2">
+        <div class="mt-2 flex items-start justify-between gap-2 rounded-lg px-3 py-2 ${cls}">
             <div class="flex-1">
                 <div class="text-xs uppercase opacity-70 mb-1">${title}</div>
-                <div class="editableValue bnFont font-semibold ${preserveClass}">${formatFractions(value || '')}</div>
+                <div class="bnFont editableValue cursor-text font-semibold ${preserveClass}">${formatFractions(value || '')}</div>
             </div>
         </div>
     `;
@@ -241,13 +255,13 @@ function renderEditableBlock(title, value, amber = false, preserve = false) {
 
 function renderMcq(items) {
     return items.map((q, index) => `
-        <div class="card bg-white p-4 rounded-xl shadow">
+        <div class="bg-white p-4 rounded-xl shadow transition-all duration-200 hover:-translate-y-0.5">
             ${renderMetaLine(q, index)}
-            <div class="qtext px-2 py-1 rounded bg-slate-100 w-auto">
+            <div class="flex w-auto items-center gap-2 rounded bg-slate-100 px-2 py-1 transition-all duration-150">
                 <span class="bnFont font-semibold text-lg">${formatFractions(q.question)}</span>
             </div>
             <div class="bnFont grid grid-cols-2 lg:grid-cols-4 gap-2 mt-2">${(q.options || []).map(o => `<div
-                class="opt px-3 py-2 rounded-lg ${o.isCorrect ? 'bg-green-400 text-white border-green-400' : 'bg-slate-100 border-slate-200'}">
+                class="flex gap-2 rounded-lg px-3 py-2 transition-all duration-150 ${o.isCorrect ? 'border-green-400 bg-green-400 text-white' : 'border-slate-200 bg-slate-100'}">
                 <span class="w-full font-semibold">${formatFractions(o.text)}</span>
             </div>`).join('')}</div>
         </div>
@@ -256,7 +270,7 @@ function renderMcq(items) {
 
 function renderSimple(items, type) {
     return items.map((q, index) => `
-        <div class="card bg-white p-4 rounded-xl shadow">
+        <div class="bg-white p-4 rounded-xl shadow transition-all duration-200 hover:-translate-y-0.5">
             ${renderMetaLine(q, index)}
             ${renderEditableBlock('Question', q.question)}
             ${type !== 'words' ? renderEditableBlock('Answer', q.answer, true) : ''}
@@ -332,9 +346,10 @@ function selectChapter(key) {
     }
 }
 
-function loadData(data, sourceLabel = 'Loaded file', preserveSelection = false) {
+function loadData(data, sourceLabel = 'Loaded file', preserveSelection = false, sourceMode = 'default') {
     viewerData = Array.isArray(data?.chapters) ? data : { chapters: [] };
     dataSourceLabel = sourceLabel;
+    activeSourceMode = sourceMode;
     if (!preserveSelection) {
         selectedClass = '';
         selectedChapterKey = '';
@@ -351,22 +366,15 @@ function loadData(data, sourceLabel = 'Loaded file', preserveSelection = false) 
 function loadSavedState() {
     try {
         const saved = JSON.parse(localStorage.getItem(VIEWER_STORAGE_KEY) || 'null');
-        if (!saved || !Array.isArray(saved.viewerData?.chapters)) return false;
+        if (!saved) return false;
 
-        viewerData = saved.viewerData;
         selectedClass = saved.selectedClass || '';
         selectedChapterKey = saved.selectedChapterKey || '';
-        dataSourceLabel = saved.dataSourceLabel || 'Saved data';
         searchTerm = saved.searchTerm || '';
         searchScope = saved.searchScope === 'class' ? 'class' : 'chapter';
         const searchInput = document.getElementById('searchInput');
         if (searchInput) searchInput.value = searchTerm;
         updateSearchScopeButtons();
-        restoreSelection();
-        renderClassSelectors();
-        renderChapterSelectors();
-        renderReport();
-        renderOutput();
         return true;
     } catch (error) {
         console.error(error);
@@ -379,12 +387,21 @@ async function tryLoadDefaultData() {
         const response = await fetch('./notes-data.json', { cache: 'no-store' });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const data = await response.json();
-        loadData(data, 'notes-data.json');
-        showBanner('Loaded default notes-data.json!');
+        cacheDefaultData(data);
+        loadData(data, 'notes-data.json', true, 'default');
+        showBanner('Loaded latest notes-data.json!');
         return true;
     } catch (error) {
         return false;
     }
+}
+
+function tryLoadCachedDefaultData() {
+    const cached = getCachedDefaultData();
+    if (!cached) return false;
+    loadData(cached, 'notes-data.json (cached)', true, 'cache');
+    showBanner('Offline: loaded cached notes-data.json');
+    return true;
 }
 
 document.getElementById('jsonFileInput').addEventListener('change', event => {
@@ -395,8 +412,8 @@ document.getElementById('jsonFileInput').addEventListener('change', event => {
     reader.onload = e => {
         try {
             const data = JSON.parse(e.target.result);
-            loadData(data, file.name);
-            showBanner('Data file loaded!');
+            loadData(data, `${file.name} (manual override)`, false, 'manual');
+            showBanner('Manual file override loaded!');
         } catch (error) {
             console.error(error);
             showBanner('Invalid JSON file!');
@@ -456,16 +473,23 @@ document.getElementById('jumpWordBtn').addEventListener('click', () => {
     jumpToSection('words', 'Word');
 });
 
+window.addEventListener('online', async () => {
+    if (activeSourceMode === 'manual') return;
+    const loadedDefault = await tryLoadDefaultData();
+    if (loadedDefault) {
+        showBanner('Back online: notes-data.json refreshed!');
+    }
+});
+
 window.onload = async () => {
     updateSearchScopeButtons();
-    const restored = loadSavedState();
-    if (restored) {
-        showBanner('Loaded saved viewer data!');
-        return;
-    }
+    loadSavedState();
 
     const loadedDefault = await tryLoadDefaultData();
     if (loadedDefault) return;
+
+    const loadedCached = tryLoadCachedDefaultData();
+    if (loadedCached) return;
 
     renderClassSelectors();
     renderChapterSelectors();

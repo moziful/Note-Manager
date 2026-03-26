@@ -1547,7 +1547,7 @@
             "question": "৩৭৪ কে ১৩ দিয়ে গুণ করে গুণফলকে ১৭ দিয়ে ভাগ করলে ভাগফল কত হবে?",
             "answer": "২৮৬।",
             "chapter": "5",
-            "hardness": "Hard",
+            "hardness": "Medium",
             "tag": "Multiplication"
           },
           {
@@ -1747,7 +1747,7 @@
             "tag": "General"
           },
           {
-            "id": "0504001",
+            "id": "0504007",
             "type": "word_problem",
             "sectionType": "words",
             "question": "ভাগশেষ ৬। ভাজক ভাগশেষের ৩ গুণ। ভাগফল ভাজকের অর্ধেক। ভাজ্য কত?",
@@ -1761,7 +1761,7 @@
             "tag": "Multiplication"
           },
           {
-            "id": "0504002",
+            "id": "0504008",
             "type": "word_problem",
             "sectionType": "words",
             "question": "২২৫০টি আম কার্টনে ভরা হলো। প্রতি কার্টনে ২৫টি আম ধরে। যদি ৫টি কার্টন নষ্ট হয়ে যায়, তবে ভালো কার্টন কয়টি?",
@@ -1775,7 +1775,7 @@
             "tag": "General"
           },
           {
-            "id": "0504003",
+            "id": "0504009",
             "type": "word_problem",
             "sectionType": "words",
             "question": "এক ব্যক্তি বছরে ৯৬,০০০ টাকা আয় করেন। তার প্রতি মাসের খরচ ৫,৫০০ টাকা।",
@@ -1789,7 +1789,7 @@
             "tag": "General"
           },
           {
-            "id": "0504004",
+            "id": "0504010",
             "type": "word_problem",
             "sectionType": "words",
             "question": "একটি ট্রেন ৪ ঘণ্টায় ২৪০ কিমি যায়।",
@@ -1803,7 +1803,7 @@
             "tag": "General"
           },
           {
-            "id": "0504005",
+            "id": "0504011",
             "type": "word_problem",
             "sectionType": "words",
             "question": "৮টি শার্ট ও ৫টি প্যান্টের একত্রে মূল্য ৮,৫০০ টাকা। ১টি প্যান্টের মূল্য ৫০০ টাকা।",
@@ -1817,7 +1817,7 @@
             "tag": "General"
           },
           {
-            "id": "0504006",
+            "id": "0504012",
             "type": "word_problem",
             "sectionType": "words",
             "question": "একজন ফল বিক্রেতার কাছে ৯৮০টি আপেল ছিল। এর মধ্যে ২০টি আপেল পচে গেল। ভালো আপেলগুলো তিনি প্রতি বক্সে ১২টি করে রাখলেন।",
@@ -1831,7 +1831,7 @@
             "tag": "General"
           },
           {
-            "id": "0504007",
+            "id": "0504013",
             "type": "word_problem",
             "sectionType": "words",
             "question": "৬০০ পৃষ্ঠার একটি বইয়ের প্রতিদিন ১৫ পৃষ্ঠা করে পড়লে বইটি শেষ করতে কিছু দিন লাগে।",
@@ -1845,7 +1845,7 @@
             "tag": "General"
           },
           {
-            "id": "0504008",
+            "id": "0504014",
             "type": "word_problem",
             "sectionType": "words",
             "question": "একটি কারখানায় ১ সপ্তাহে ২৫২০টি গাড়ি তৈরি হয়।",
@@ -1859,7 +1859,7 @@
             "tag": "General"
           },
           {
-            "id": "0504009",
+            "id": "0504015",
             "type": "word_problem",
             "sectionType": "words",
             "question": "এক ডজন ডিমের দাম ১৪৪ টাকা।",
@@ -1873,7 +1873,7 @@
             "tag": "Division"
           },
           {
-            "id": "0504010",
+            "id": "0504016",
             "type": "word_problem",
             "sectionType": "words",
             "question": "৭ জন শ্রমিক ১৫ দিনে একটি কাজ করতে পারে।",
@@ -1887,7 +1887,7 @@
             "tag": "General"
           },
           {
-            "id": "0504011",
+            "id": "0504017",
             "type": "word_problem",
             "sectionType": "words",
             "question": "একটি কারখানায় ১৫ দিনে ৩৬০০টি যন্ত্রাংশ তৈরি হয়।",
@@ -1901,7 +1901,7 @@
             "tag": "Addition"
           },
           {
-            "id": "0504012",
+            "id": "0504018",
             "type": "word_problem",
             "sectionType": "words",
             "question": "একজন ব্যবসায়ী ৯৬টি মোবাইল ৪৮,০০০ টাকায় কিনলেন।",
@@ -1915,7 +1915,7 @@
             "tag": "Addition"
           },
           {
-            "id": "0504013",
+            "id": "0504019",
             "type": "word_problem",
             "sectionType": "words",
             "question": "১২ জন শ্রমিক ১৮ দিনে একটি কাজ শেষ করে।",
@@ -1929,7 +1929,7 @@
             "tag": "General"
           },
           {
-            "id": "0504014",
+            "id": "0504020",
             "type": "word_problem",
             "sectionType": "words",
             "question": "একটি কোম্পানির ৩টি শাখায় মোট ৫৪০০ জন কর্মচারী কাজ করেন।",
@@ -1943,7 +1943,7 @@
             "tag": "General"
           },
           {
-            "id": "0504015",
+            "id": "0504021",
             "type": "word_problem",
             "sectionType": "words",
             "question": "৮৫০টি চকলেট কিছু শিশুর মধ্যে ভাগ করে দেওয়া হলো। প্রত্যেকে ১৫টি করে চকলেট পেল এবং ১০টি চকলেট অবশিষ্ট রইল।",
@@ -1957,7 +1957,7 @@
             "tag": "Division"
           },
           {
-            "id": "0504016",
+            "id": "0504022",
             "type": "word_problem",
             "sectionType": "words",
             "question": "৫০০০ তা কাগজ দিয়ে খাতা তৈরি করা হচ্ছে। প্রতিটি খাতা তৈরি করতে ১২০ তা কাগজ লাগে।",
@@ -1971,7 +1971,7 @@
             "tag": "General"
           },
           {
-            "id": "0504017",
+            "id": "0504023",
             "type": "word_problem",
             "sectionType": "words",
             "question": "১ ডজন কলমের দাম ১৮০ টাকা। রিনার কাছে ৮০০ টাকা আছে।",
@@ -1989,15 +1989,15 @@
     },
     {
       "class": "5",
-      "chapterNumber": "2",
-      "chapterTitle": "সাধারণ ভগ্নাংশ",
+      "chapterNumber": "",
+      "chapterTitle": "",
       "content": {
         "mcq": [
           {
-            "id": "0021001",
+            "id": "0001001",
             "type": "mcq",
             "sectionType": "mcq",
-            "question": "মিশ্র ভগ্নাংশ ৫৭/১২-কে অপ্রকৃত ভগ্নাংশে রূপান্তর করলে \tলব কত হবে?",
+            "question": "মিশ্র ভগ্নাংশ ৫ ৭/১২ -কে অপ্রকৃত ভগ্নাংশে রূপান্তর করলে \tলব কত হবে?",
             "options": [
               {
                 "id": "a",
@@ -2029,10 +2029,10 @@
             "tag": "General"
           },
           {
-            "id": "0021002",
+            "id": "0001002",
             "type": "mcq",
             "sectionType": "mcq",
-            "question": "২৪/৩৬ভগ্নাংশটির লঘিষ্ঠ আকার কোনটি?",
+            "question": "২৪/৩৬ ভগ্নাংশটির লঘিষ্ঠ আকার কোনটি?",
             "options": [
               {
                 "id": "a",
@@ -2060,11 +2060,11 @@
               }
             ],
             "chapter": "",
-            "hardness": "Easy",
+            "hardness": "Hard",
             "tag": "General"
           },
           {
-            "id": "0021003",
+            "id": "0001003",
             "type": "mcq",
             "sectionType": "mcq",
             "question": "দুটি ভগ্নাংশের হর সমান হলে, কোন ভগ্নাংশটি বড় \tহবে?",
@@ -2099,42 +2099,42 @@
             "tag": "General"
           },
           {
-            "id": "0021004",
+            "id": "0001004",
             "type": "mcq",
             "sectionType": "mcq",
-            "question": "৫/৮এবং ৩/৫এর মধ্যে কোনটি বড় এবং কেন?",
+            "question": "৫/৮ এবং ৩/৫ এর মধ্যে কোনটি বড় এবং কেন?",
             "options": [
               {
                 "id": "a",
                 "key": "ক",
-                "text": "৫/৮, কারণ লব বড়",
+                "text": "৫/৮ , কারণ লব বড়",
                 "isCorrect": false
               },
               {
                 "id": "b",
                 "key": "খ",
-                "text": "৩/৫, কারণ হর ছোট",
+                "text": "৩/৫ , কারণ হর ছোট",
                 "isCorrect": false
               },
               {
                 "id": "c",
                 "key": "গ",
-                "text": "৫/৮, কারণ সমহর করলে ২৫/৪০>২৪/৪০",
+                "text": "৫/৮ , কারণ সমহর করলে ২৫/৪০ > ২৪/৪০",
                 "isCorrect": true
               },
               {
                 "id": "d",
                 "key": "ঘ",
-                "text": "৩/৫, কারণ সমহর করলে ২৪/৪০>২৫/৪০",
+                "text": "৩/৫ , কারণ সমহর করলে ২৪/৪০ > ২৫/৪০",
                 "isCorrect": false
               }
             ],
             "chapter": "",
-            "hardness": "Easy",
+            "hardness": "Hard",
             "tag": "General"
           },
           {
-            "id": "0021005",
+            "id": "0001005",
             "type": "mcq",
             "sectionType": "mcq",
             "question": "কোনো ভগ্নাংশকে লঘিষ্ঠ আকারে প্রকাশ করতে লব \tও হরকে কী দিয়ে ভাগ করতে হয়?",
@@ -2171,7 +2171,7 @@
         ],
         "blanks": [
           {
-            "id": "0022001",
+            "id": "0002001",
             "type": "blanks",
             "sectionType": "blanks",
             "question": "মিশ্র ভগ্নাংশ = পূর্ণ সংখ্যা + _______।",
@@ -2181,7 +2181,7 @@
             "tag": "General"
           },
           {
-            "id": "0022002",
+            "id": "0002002",
             "type": "blanks",
             "sectionType": "blanks",
             "question": "যে ভগ্নাংশের লব হরের চেয়ে বড়, তাকে _______ \tভগ্নাংশ বলে।",
@@ -2191,7 +2191,7 @@
             "tag": "General"
           },
           {
-            "id": "0022003",
+            "id": "0002003",
             "type": "blanks",
             "sectionType": "blanks",
             "question": "ভগ্নাংশের লব ও হরকে একই সংখ্যা দ্বারা গুণ \tকরলে \t_______ ভগ্নাংশ পাওয়া যায়।",
@@ -2201,7 +2201,7 @@
             "tag": "Multiplication"
           },
           {
-            "id": "0022004",
+            "id": "0002004",
             "type": "blanks",
             "sectionType": "blanks",
             "question": "ভগ্নাংশকে লঘিষ্ঠ আকারে প্রকাশ করতে লব ও \tহরকে তাদের _______ দ্বারা ভাগ করতে হয়।",
@@ -2211,7 +2211,7 @@
             "tag": "Division"
           },
           {
-            "id": "0022005",
+            "id": "0002005",
             "type": "blanks",
             "sectionType": "blanks",
             "question": "একাধিক ভগ্নাংশের হর একই হলে, যার _______ \tবড় সেই ভগ্নাংশটি বড়।",
@@ -2223,7 +2223,7 @@
         ],
         "shorts": [
           {
-            "id": "0023001",
+            "id": "0003001",
             "type": "short",
             "sectionType": "shorts",
             "question": "সমতুল ভগ্নাংশ কীভাবে পাওয়া যায়?",
@@ -2233,7 +2233,7 @@
             "tag": "General"
           },
           {
-            "id": "0023002",
+            "id": "0003002",
             "type": "short",
             "sectionType": "shorts",
             "question": "মিশ্র ভগ্নাংশ ও অপ্রকৃত ভগ্নাংশের মধ্যে মূল সম্পর্কটি কী?",
@@ -2243,7 +2243,7 @@
             "tag": "General"
           },
           {
-            "id": "0023003",
+            "id": "0003003",
             "type": "short",
             "sectionType": "shorts",
             "question": "কোনো ভগ্নাংশকে 'লঘিষ্ঠ আকারে প্রকাশ করা' \tবলতে \tকী বোঝায়?",
@@ -2253,7 +2253,7 @@
             "tag": "General"
           },
           {
-            "id": "0023004",
+            "id": "0003004",
             "type": "short",
             "sectionType": "shorts",
             "question": "ভিন্ন হরবিশিষ্ট ভগ্নাংশ যোগ বা বিয়োগ করার সময় \tকেন সমহর বিশিষ্ট করতে হয়?",
@@ -2263,25 +2263,25 @@
             "tag": "Addition"
           },
           {
-            "id": "0023005",
+            "id": "0003005",
             "type": "short",
             "sectionType": "shorts",
-            "question": "৩/৪এবং ৫/৭এর মধ্যে কোনটি বড় তা বের করার সহজ \tউপায় কী?",
-            "answer": "আড়াআড়ি গুণ পদ্ধতি। ৩×৭=২১এবং৪×৫= ২০। \tযেহেতু ২১>২০, তাই প্রথম ভগ্নাংশ ৩/৪বড়। অথবা সমহর \tকরেও বের করা যায়।",
+            "question": "৩/৪ এবং ৫/৭ এর মধ্যে কোনটি বড় তা বের করার সহজ উপায় কী?",
+            "answer": "আড়াআড়ি গুণ পদ্ধতি। ৩×৭=২১এবং৪×৫= ২০। \tযেহেতু ২১>২০ , তাই প্রথম ভগ্নাংশ ৩/৪ বড়। অথবা সমহর করেও বের করা যায়।",
             "chapter": "",
-            "hardness": "Easy",
-            "tag": "General"
+            "hardness": "Hard",
+            "tag": "Multiplication"
           }
         ],
         "words": [
           {
-            "id": "0024001",
+            "id": "0004001",
             "type": "word_problem",
             "sectionType": "words",
-            "question": "গীতার কাছে ১৫/৬লিটার ও মামুনের কাছে ১৩/৮লিটার জুস \tআছে। কার জুসের পরিমাণ বেশি এবং কত বেশি?",
+            "question": "গীতার কাছে ১৫/৬ লিটার ও মামুনের কাছে ১৩/৮ লিটার জুস \tআছে। কার জুসের পরিমাণ বেশি এবং কত বেশি?",
             "questionKo": "",
             "questionKho": "",
-            "solution": "দেওয়া আছে,\nগীতার জুস আছে = ১৫/৬লিটার \n= ((১×৬)+৫)/৬লিটার \n= ১১/৬লিটার।\nমামুনের জুস আছে = ১৩/৮লিটার।\nএখন, ৬ ও ৮ এর ল.সা.গু. = ২৪।\nভগ্নাংশগুলোকে সমহর বিশিষ্ট করে পাই:\nগীতার জুস: ১১/৬ = (১১×৪)/(৬×৪) = ৪৪/২৪\nমামুনের জুস: ১৩/৮ = (১৩×৩)/(৮×৩) = ৩৯/২৪\nযেহেতু ৪৪>৩৯, তাই ৪৪/২৪>৩৯/২৪।\nঅর্থাৎ, ১১/৬>১৩/৮।\nসুতরাং, গীতার জুসের পরিমাণ বেশি।\n∴পার্থক্য = (গীতার জুস - মামুনের জুস)\n= ৪৪/২৪ - ৩৯/২৪লিটার\n= ৪৪ -৩৯/২৪লিটার\n= ৫/২৪লিটার।\nউত্তর:গীতার জুসের পরিমাণ বেশি এবং ৫/২৪লিটার বেশি।",
+            "solution": "দেওয়া আছে,\nগীতার জুস আছে = ১৫/৬ লিটার \n= ((১×৬)+৫)/৬ লিটার \n= ১১/৬ লিটার।\nমামুনের জুস আছে = ১৩/৮ লিটার।\nএখন, ৬ ও ৮ এর ল.সা.গু. = ২৪।\nভগ্নাংশগুলোকে সমহর বিশিষ্ট করে পাই:\nগীতার জুস: ১১/৬ = (১১×৪)/(৬×৪) = ৪৪/২৪\nমামুনের জুস: ১৩/৮ = (১৩×৩)/(৮×৩) = ৩৯/২৪\nযেহেতু ৪৪>৩৯, তাই ৪৪/২৪ > ৩৯/২৪ ।\nঅর্থাৎ, ১১/৬ > ১৩/৮ ।\nসুতরাং, গীতার জুসের পরিমাণ বেশি।\n∴পার্থক্য = (গীতার জুস - মামুনের জুস)\n= ৪৪/২৪ - ৩৯/২৪ লিটার\n= ৪৪ -৩৯/২৪ লিটার\n= ৫/২৪ লিটার।\nউত্তর:গীতার জুসের পরিমাণ বেশি এবং ৫/২৪ লিটার বেশি।",
             "solutionKo": "",
             "solutionKho": "",
             "chapter": "",
@@ -2289,16 +2289,4202 @@
             "tag": "General"
           },
           {
-            "id": "0024002",
+            "id": "0004002",
             "type": "word_problem",
             "sectionType": "words",
-            "question": "৩ ৩/৪মিটার ও ২১/৩মিটার দৈর্ঘ্যের দুইটি ফিতা একত্রে কত \tমিটার?",
+            "question": "৩ ৩/৪ মিটার ও ২১/৩ মিটার দৈর্ঘ্যের দুইটি ফিতা একত্রে কত মিটার?",
             "questionKo": "",
             "questionKho": "",
-            "solution": "দেওয়া আছে,\n১ম ফিতার দৈর্ঘ্য = ৩ ৩/৪মিটার= ((৪×৩)+৩)/৪মিটার = ১৫/৪মিটার।\n২য় ফিতার দৈর্ঘ্য = ২১/৩মিটার = ((২×৩)+১)/৩মিটার = ৭/৩মিটার।\nগাণিতিক বাক্য: ১৫/৪ + ৭/৩ = ▢\n= (৪৫+২৮)/১২\n= ৭৩/১২\n= ৬১/১২\nউত্তর:দুইটি ফিতা একত্রে ৬১/১২মিটার।",
+            "solution": "দেওয়া আছে,\n১ম ফিতার দৈর্ঘ্য = ৩ ৩/৪ মিটার= ((৪×৩)+৩)/৪ মিটার = ১৫/৪ মিটার।\n২য় ফিতার দৈর্ঘ্য = ২১/৩ মিটার = ((২×৩)+১)/৩ মিটার = ৭/৩ মিটার।\nগাণিতিক বাক্য: ১৫/৪ + ৭/৩ = ▢\n= (৪৫+২৮)/১২\n= ৭৩/১২\n= ৬১/১২\nউত্তর:দুইটি ফিতা একত্রে ৬১/১২ মিটার।",
             "solutionKo": "",
             "solutionKho": "",
             "chapter": "",
+            "hardness": "Medium",
+            "tag": "General"
+          }
+        ]
+      }
+    },
+    {
+      "class": "4",
+      "chapterNumber": "3",
+      "chapterTitle": "গুণ",
+      "content": {
+        "mcq": [
+          {
+            "id": "0301001",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "গুণ্য ১০০০ এবং গুণক ৯৯৯ হলে গুণফল কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৯৯৯০০০",
+                "isCorrect": true
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৯৯০০০",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৯৯৯০৯৯",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "১৯০৯০০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0301002",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "গুণ্য ও গুণক উভয়কে ১০ গুণ করলে গুণফল কত গুণ বাড়বে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "১০ গুণ",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "২০ গুণ",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "১০০ গুণ",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "১০০০ গুণ",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0301003",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "কোনো সংখ্যাকে ৯৯৯ দ্বারা গুণ করার সহজ পদ্ধতি কোনটি?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "সংখ্যাটি × (১০০০ - ১)",
+                "isCorrect": true
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "সংখ্যাটি × (১০০ - ১)",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "সংখ্যাটি × (৯০০ + ৯৯)",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "সংখ্যাটি × (১০ - ১)",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0301004",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "৫৩২৬ × ১০০ এর গুণফলে দশকের ঘরে কোন অঙ্কটি বসবে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৬",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "২",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৩",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "০",
+                "isCorrect": true
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0301005",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "একটি কার্টনে ৫০০টি সাবান থাকলে, ২০০টি কার্টনে মোট কয়টি সাবান থাকবে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "১০০০০০ টি",
+                "isCorrect": true
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "১০০০০ টি",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৫০০০০ টি",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৫০০০০০ টি",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0301006",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "গুণ্য বা গুণকের যেকোনো একটি শূন্য হলে গুণফল কত হবে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "১",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "১০",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "০",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "অনির্ণেয়",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0301007",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "৮৯০ × ৯০০ = কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৮০১০০০",
+                "isCorrect": true
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৭০১০০০",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৮১০০০০",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৭৯১০০০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0301008",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "৯৯ × ৯৯৯ গুণ করার সহজ উপায় কোনটি?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৯৯ × (১০০০ - ১)",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৯৯ × (১০০ - ১)",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৯৯৯ × (১০০ - ১)",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৯৯৯ × (১০ - ১)",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0301009",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "১টি বইয়ের পৃষ্ঠা সংখ্যা ২৫৬ হলে ১০০০০টি বইয়ের পৃষ্ঠা সংখ্যা কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "২৫৬০০০০",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "২৫৬০০০০০",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "২৫৬০০০০০০",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "২৫৬০০০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0301010",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "১২৩৪ × ৫৬৭৮ = ৭০০৬৬৫২ হলে, \n\t৫৬৭৮ × ১২৩৪ = কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৭০০৬৬৫২",
+                "isCorrect": true
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৭০০৬৬৫৩",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "১২৩৪৫৬৭৮",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "কোনোটিই নয়",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0301011",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "৪ × ৫ × ০ × ৯ = কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "১৮০",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "২০",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "০",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৩৬০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0301012",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "একটি কলমের দাম ৫ টাকা হলে এক ডজন কলমের দাম কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৫০ টাকা",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৬০ টাকা",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৭০ টাকা",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৮০ টাকা",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0301013",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "গুণফলের সূত্র কোনটি?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "গুণক ÷ গুণ্য",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "গুণ্য × গুণক",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "গুণক + গুণ্য",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "গুণ্য - গুণক",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0301014",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "৫৩ × ১০১ = ৫৩৫৩ হলে, গুণক কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৫৩",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৫৩৫৩",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "১০১",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "১০০০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0301015",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "৯৯০০ × ১০০ = ?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৯৯০০০০",
+                "isCorrect": true
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৯৯০০০",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৯৯০০০০",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৯০৯০০০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0301016",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "১ রিমে ৫০০ তা কাগজ থাকলে ২০ রিমে কত তা কাগজ থাকবে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "১০০০",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "১০০০০",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৫০০০",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "২০০০০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0301017",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "গুণ্য ৩ অংকের বৃহত্তম সংখ্যা এবং গুণক ৩ অংকের ক্ষুদ্রতম সংখ্যা হলে গুণফল কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৯৯৯০০",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৯৯৯০০",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৯৯০০০",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৯৯০০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0301018",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "একটি ঝুড়িতে ১২৫টি আম ধরলে, ১০০টি ঝুড়িতে কতটি আম ধরবে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "১২৫০০০",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "১২৫০০",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "১২৫০",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "১২৫",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0301019",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "৭৫০ × ২০ = ১৫০০০। এখানে গুণ্য কোনটি?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "২০",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "১৫০০০",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৭৫০",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0301020",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "কোন সংখ্যাকে ১ দ্বারা গুণ করলে গুণফল কী হবে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "১",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "০",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "ঐ সংখ্যাটি",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "১০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0301021",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "গুণকের অপর নাম কী?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "যা দ্বারা গুণ করা হয়",
+                "isCorrect": true
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "যাকে গুণ করা হয়",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "যা পাওয়া যায়",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "ভাজক",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0301022",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "খালি ঘর পূরণ কর: ☐ × ১০০ = ৭৬০০",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৭৬",
+                "isCorrect": true
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৭৬০",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৭.৬",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৬৭",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0301023",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "৯ × ৮ = ৭২, এখানে ৭২ কে কী বলা হয়?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "গুণক",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "গুণ্য",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "গুণফল",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "ভাগফল",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0301024",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "নিচের কোনটিতে গুণের বিনিময় বিধি মানা হয়েছে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৫ × ৪ = ২০",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৫ × ৪ = ৪ × ৫",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৫ × ৪ = ১০ + ১০",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "কোনোটিই নয়",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0301025",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "১ দিনে ২৪ ঘণ্টা হলে, ১ বছরে কত ঘণ্টা?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৮৬৪০",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৮৭৬০",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৮৫০০",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৮৭০০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0301026",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "একটি প্যাকেটে ৩২টি বিস্কুট থাকলে, ১০০১টি প্যাকেটে কতটি বিস্কুট থাকবে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৩২০৩২",
+                "isCorrect": true
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৩২০০০",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৩২০৩০",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৩৩০০০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0301027",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "গুণ্য ২৫০০০০ এবং গুণক ১০ হলে গুণফল কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "২৫০০০০০",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "২৫০০০০০০",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "২৫০০০",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "২৫০০০০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0301028",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "৮ × ৫০ × ২০ এর মান কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৮০০০",
+                "isCorrect": true
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৮০০",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৪০০০",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "১৬০০০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0301029",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "গুণ্য ৪ এবং গুণফল ৩৬ হলে গুণক কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৬",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৮",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৯",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৭",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0301030",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "৩ × ১০ = ৩০। এখানে ৩ হলো—",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "গুণক",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "গুণফল",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "গুণ্য",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "ভাগশেষ",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "General"
+          }
+        ],
+        "blanks": [
+          {
+            "id": "0302001",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "গুণ্য × ______ = গুণফল।",
+            "answer": "গুণক",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0302002",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "৯৯৯ দ্বারা গুণ করার সহজ পদ্ধতি হলো \n\t(______ - \t১) দ্বারা গুণ করা।",
+            "answer": "১০০০",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0302003",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "যেকোনো সংখ্যাকে __ দ্বারা গুণ করলে গুণফল ০ হয়।",
+            "answer": "০ (শূন্য)",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0302004",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "______ এবং ______ স্থান পরিবর্তন করলেও গুণফল একই থাকে।",
+            "answer": "গুণ্য, গুণক",
+            "chapter": "3",
+            "hardness": "Hard",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0302005",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "১ ডজন = ১২টি, তাহলে ৫ ডজন = ______ টি।",
+            "answer": "৬০",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0302006",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "গুণফল ÷ গুণক = ______।",
+            "answer": "গুণ্য",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0302007",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "৭৫০ × ১০০ = ______।",
+            "answer": "৭৫০০০",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0302008",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "কোনো সংখ্যার এককের ঘরে ০ থাকলে, ১০ দিয়ে গুণ করলে গুণফলের শেষে ______ টি ০ থাকবে।",
+            "answer": "২",
+            "chapter": "3",
+            "hardness": "Hard",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0302009",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "৪৫৮৪৪ × ৩৫২ = ______।",
+            "answer": "১৬১৩৭০৮৮",
+            "chapter": "3",
+            "hardness": "Hard",
+            "tag": "General"
+          },
+          {
+            "id": "0302010",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "৯৯ = ১০০ - ______।",
+            "answer": "১",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0302011",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "৫৬০০ × ১০ = ______।",
+            "answer": "৫৬০০০",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0302012",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "একটি বইয়ে ১০০ পৃষ্ঠা থাকলে ১০টি বইয়ে ______ পৃষ্ঠা থাকবে।",
+            "answer": "১০০০",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0302013",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "১২ × ১১ = ______।",
+            "answer": "১৩২",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0302014",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "৩২১ × ______ = ৩২১০০।",
+            "answer": "১০০",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0302015",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "গুণ্য ২০ এবং গুণক ০ হলে গুণফল ______।",
+            "answer": "০",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0302016",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "৯৯ × ৫ = (১০০ - ১) × ______।",
+            "answer": "৫",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0302017",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "১০০০ টাকার ১০০টি নোট = ______ টাকা।",
+            "answer": "১\t০০\t০০০",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0302018",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "______ × ১ = ৫৩৫।",
+            "answer": "৫৩৫",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0302019",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "গুণের বিপরীত প্রক্রিয়া হলো ______।",
+            "answer": "ভাগ",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0302020",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "১ মাস = ৩০ দিন হলে, ১২ মাস = ______ দিন।",
+            "answer": "৩৬০",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0302021",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "১০০ × ১০০ = ______।",
+            "answer": "১০\n০০০",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0302022",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "১টি কলমের দাম ১০ টাকা হলে, ১০০টি কলমের দাম ______ টাকা।",
+            "answer": "১০০০",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0302023",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "৪ × ২৫ × ______ = ১০০০।",
+            "answer": "১০",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0302024",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "৭ × ৮ = ৫৬, এখানে গুণক ______।",
+            "answer": "৮",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0302025",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "৯৯০০ সংখ্যার সাথে ১০ গুণ করলে গুণফলের শেষে মোট ______ টি শূন্য থাকবে।",
+            "answer": "৩",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0302026",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "সহজ পদ্ধতিতে গুণের ক্ষেত্রে ৯৯৯ = ১০০০ - ______ ব্যবহার করা হয়।",
+            "answer": "১",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0302027",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "৫২১ × ২৮ = ২৮ × ______।",
+            "answer": "৫২১",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0302028",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "গুণ্য × গুণক = গুণক × ______।",
+            "answer": "গুণ্য",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0302029",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "শূন্য বাদে যেকোনো সংখ্যাকে ১ দিয়ে গুণ করলে গুণফল ______ হবে।",
+            "answer": "ঐ সংখ্যাটি",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0302030",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "১ দিনে ২৪ ঘণ্টা, তাহলে ৩০ দিনে ______ ঘণ্টা।",
+            "answer": "৭২০",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "General"
+          }
+        ],
+        "shorts": [
+          {
+            "id": "0303001",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "গুণ কাকে বলে?",
+            "answer": "যোগের সংক্ষিপ্ত রূপকে গুণ বলে।",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0303002",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "গুণ্য কাকে বলে?",
+            "answer": "যে সংখ্যাকে গুণ করা হয় তাকে গুণ্য বলে।",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0303003",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "গুণক কাকে বলে?",
+            "answer": "যে সংখ্যা দিয়ে গুণ করা হয় তাকে গুণক বলে।",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0303004",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "গুণফল নির্ণয়ের সূত্রটি লেখ।",
+            "answer": "গুণ্য × গুণক = গুণফল।",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0303005",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৯৯ কে সহজ পদ্ধতিতে গুণ করার জন্য কীভাবে লিখতে হয়?",
+            "answer": "(১০০ - ১)।",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0303006",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "একটি সংখ্যার শেষে তিনটি শূন্য আছে, অপর সংখ্যার শেষে দুইটি শূন্য আছে। এদের গুণফলের শেষে কমপক্ষে কয়টি শূন্য থাকবে?",
+            "answer": "৫টি।",
+            "chapter": "3",
+            "hardness": "Hard",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0303007",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "কোনো সংখ্যাকে ০ দ্বারা গুণ করলে গুণফল কত হবে?",
+            "answer": "০।",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0303008",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৫৩৫ × ২০০ গুণ করার সহজ নিয়ম কী?",
+            "answer": "৫৩৫ কে ২ দিয়ে গুণ করে গুণফলের ডানপাশে দুটি শূন্য বসিয়ে দেওয়া।",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0303009",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "১ রিমে ৫০০ তা কাগজ থাকলে ২ রিমে কত তা?",
+            "answer": "১০০০ তা।",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0303010",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "গুণ্য ২ এবং গুণফল ১০ হলে গুণক কত?",
+            "answer": "৫।",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0303011",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৯৯৯ × ৩২ কে সহজ পদ্ধতিতে প্রকাশ কর।",
+            "answer": "(১০০০ - ১) × ৩২।",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0303012",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "এক ডজন কলার দাম ৬০ টাকা হলে ৫ ডজন কলার দাম কত?",
+            "answer": "৩০০ টাকা।",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0303013",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "গুণের বিনিময় বিধি কী?",
+            "answer": "গুণ্য এবং গুণক স্থান পরিবর্তন করলেও গুণফল একই থাকে।",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0303014",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৪ × ২৫ × ৭ এর সহজ গুণফল কত?",
+            "answer": "৭০০।",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0303015",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "১টি গাড়ির চাকা ৪টি হলে, ২৫০টি গাড়ির চাকা কতটি?",
+            "answer": "১০০০টি।",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0303016",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "গুণফলকে গুণক দিয়ে ভাগ করলে কী পাওয়া যায়?",
+            "answer": "গুণ্য।",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0303017",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "১০১ × ৪৫ কে সহজ পদ্ধতিতে কীভাবে লেখা যায়?",
+            "answer": "(১০০ + ১) × ৪৫।",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0303018",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "১ কুড়ি সমান কত?",
+            "answer": "২০।",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0303019",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "একটি খাতার দাম ৩৫ টাকা হলে ১০টি খাতার দাম কত?",
+            "answer": "৩৫০ টাকা।",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0303020",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "ভাজক ও ভাগফল এর গুণফলকে কী বলে?",
+            "answer": "ভাজ্য।",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0303021",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৯৯০ কে সহজ পদ্ধতিতে প্রকাশ কর।",
+            "answer": "১০০০ - ১০।",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0303022",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৩৫৪ × ২৯ গুণ করার সময় ৩৫৪ কে প্রথমে কত দিয়ে গুণ করব?",
+            "answer": "৯ দিয়ে।",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0303023",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "১ দিনে কত সেকেন্ড?",
+            "answer": "৮৬৪০০ সেকেন্ড।",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0303024",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৩ অঙ্কের ক্ষুদ্রতম সংখ্যা ও ২ অঙ্কের বৃহত্তম সংখ্যার গুণফল কত?",
+            "answer": "৯৯০০।",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0303025",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৫ × ০ × ৯ × ২ = কত?",
+            "answer": "০।",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0303026",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "১৭৫ × ১০০০ = কত?",
+            "answer": "১৭৫০০০।",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0303027",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "গুণ করার সময় হাতের সংখ্যা কখন যোগ করতে হয়?",
+            "answer": "পরবর্তী স্থানের গুণফল নির্ণয়ের পর।",
+            "chapter": "3",
+            "hardness": "Easy",
+            "tag": "Addition"
+          },
+          {
+            "id": "0303028",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "একটি সংখ্যার ৫ গুণ ৩০ হলে সংখ্যাটি কত?",
+            "answer": "৬।",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0303029",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৯৯ × ৯৯ = কত?",
+            "answer": "৯৮০১।",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0303030",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৭ × ৮০০ = কত?",
+            "answer": "৫৬০০।",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          }
+        ],
+        "words": [
+          {
+            "id": "0304001",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "এক রিমে ৫০০ তা কাগজ থাকে। ১৬৩ রিম কাগজে কত তা কাগজ হবে?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "১ রিমে কাগজ থাকে ৫০০ তা \n\t∴১৬৩ রিমে কাগজ থাকে (১৬৩ × ৫০০) তা\n\t\t= ৮১৫০০ তা\nউত্তর: ৮১৫০০ তা কাগজ হবে।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0304002",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একজন শ্রমিক প্রতিদিন ৫২৫ টাকা আয় করেন। ৩ মাস ১৮ দিনে তার কত টাকা আয় হবে?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "আমরা জানি, ১ মাস = ৩০ দিন \n∴৩ মাস = (৩০ × ৩) দিন \n\t= ৯০ দিন \nমোট সময় = (৯০ + ১৮) দিন \n\t= ১০৮ দিন\nশ্রমিক ১ দিনে আয় করেন ৫২৫ টাকা \n∴১০৮ দিনে আয় করেন (৫২৫ × ১০৮) টাকা\n\t= ৫৬৭০০ টাকা\nউত্তর: ৫৬৭০০ টাকা।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0304003",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "সাবিহা সেলাই করে প্রতিদিন ৬৫০ টাকা আয় করেন। তিনি ২৩৫ দিনে কত টাকা আয় করেন?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "১ দিনে আয় করেন ৬৫০ টাকা \n\t∴২৩৫ দিনে আয় করেন (৬৫০ × ২৩৫) টাকা\n\t= ১৫২৭৫০ টাকা\nউত্তর: ১৫২৭৫০ টাকা।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0304004",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "৪৯টি বান্ডিলের প্রতিটিতে ৫০০টি করে ফুটবল ম্যাচের টিকেট রয়েছে। বান্ডিলগুলোতে মোট কতগুলো টিকেট রয়েছে?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "১টি বান্ডিলে টিকেট আছে ৫০০টি \n∴৪৯টি বান্ডিলে টিকেট আছে (৫০০ × ৪৯)টি\n\t\t= ২৪৫০০ টি\nউত্তর: ২৪৫০০টি টিকেট।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0304005",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি চকোলেটের বাক্সে ২৫০টি চকোলেট আছে। এরূপ ৬৪৭টি বাক্সে কতগুলো চকোলেট আছে?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "১টি বাক্সে চকোলেট আছে ২৫০টি \n∴৬৪৭টি বাক্সে চকোলেট আছে (২৫০ × ৬৪৭)টি\n\t\t= ১৬১৭৫০ টি\nউত্তর: ১৬১৭৫০টি চকোলেট।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0304006",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "মুহিব সাহেব প্রতি মাসে ২৩৪৫ টাকা করে সঞ্চয় করেন। তিনি ১৬ বছরে কত টাকা সঞ্চয় করবেন?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "আমরা জানি, ১ বছর = ১২ মাস \n∴১৬ বছর = (১৬ × ১২) মাস = ১৯২ মাস\nমুহিব সাহেব ১ মাসে সঞ্চয় করেন ২৩৪৫ টাকা \n∴১৯২ মাসে সঞ্চয় করেন (২৩৪৫ × ১৯২) টাকা\n\t= ৪৫০২৪০ টাকা\nউত্তর: ৪৫০২৪০ টাকা।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0304007",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি বাইসাইকেলের মূল্য ৮৯৭৫ টাকা। এরূপ ৪২৫টি বাইসাইকেলের মূল্য কত?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "১টি বাইসাইকেলের মূল্য ৮৯৭৫ টাকা \n∴৪২৫টি বাইসাইকেলের মূল্য (৮৯৭৫×৪২৫) টাকা\n\t\t= ৩৮১৪৩৭৫ টাকা\nউত্তর: ৩৮১৪৩৭৫ টাকা।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0304008",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "তোমার কাছে ২৫০ মিটার লম্বা একটি রশি রয়েছে। এরূপ ১৭টি রশির দৈর্ঘ্য মোট কত মিটার হবে?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "১টি রশির দৈর্ঘ্য ২৫০ মিটার \n\t∴১৭টি রশির দৈর্ঘ্য (২৫০ × ১৭) মিটার\n\t\t= ৪২৫০ মিটার\nউত্তর: ৪২৫০ মিটার।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0304009",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একজন শ্রমিক প্রতিদিন ২৫০ টাকা আয় করেন। তিনি অক্টোবর মাসে মোট কত টাকা আয় করবেন?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "আমরা জানি, অক্টোবর মাস = ৩১ দিন। \n১ দিনে আয় করেন ২৫০ টাকা \n∴ ৩১ দিনে আয় করেন (২৫০ × ৩১) টাকা\n\t\t= ৭৫০০ টাকা\nউত্তর: ৭৭৫০ টাকা",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0304010",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি বইয়ে ২৫৬টি পৃষ্ঠা আছে। এরূপ ৫০টি বইয়ে মোট কতটি পৃষ্ঠা আছে?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "১টি বইয়ে পৃষ্ঠা আছে ২৫৬টি \n∴ ৫০টি বইয়ে পৃষ্ঠা আছে (২৫৬ × ৫০) টি\n\t\t= ১২৮০০ টি\nউত্তর: ৫০টি বইয়ে মোট ১২৮০০টি পৃষ্ঠা আছে।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0304011",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "১ রিমে ৫০০ তা কাগজ থাকে। ২৫০ রিমে কত তা কাগজ থাকবে?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "১ রিমে কাগজ থাকে ৫০০ তা \n∴ ২৫০ রিমে কাগজ থাকে (৫০০ × ২৫০) তা \n\t\t=১২৫০০০ তা \nউত্তর: ১২৫০০০ তা কাগজ থাকবে।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0304012",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি ঝুড়িতে ৭৫০টি লিচু আছে। এরুপ ১২০টি ঝুড়িতে কতটি লিচু থাকবে?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "১টি ঝুড়িতে লিচু আছে ৭৫০টি \n∴ ১২০টি ঝুড়িতে লিচু আছে (৭৫০ × ১২০) টি\n\t\t= ৯০০০০ \nউত্তর: ৯০০০০টি লিচু থাকবে।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0304013",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "পিতা ও কন্যার বর্তমান বয়সের সমষ্টি ৮০ বছর। পিতার বয়স কন্যার বয়সের ৩ গুণ। পিতার বয়স কত?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "কন্যার বয়স \t= ১ গুণ \n\tপিতার বয়স \t= ৩ গুণ \n\tমোট বয়স \t= ৪ গুণ \nএখন,  \n ৪ গুণ = ৮০ বছর \n∴১ গুণ = (৮০ ÷ ৪) বছর\n\t       = ২০ বছর\n∴ কন্যার বয়স = ২০ বছর\n∴ পিতার বয়স = ২০ × ৩ = ৬০ বছর \nউত্তর: পিতার বয়স ৬০ বছর।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0304014",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি কার্টনে ২৪টি বিস্কুটের প্যাকেট আছে। প্রতিটি প্যাকেটে ১২টি করে বিস্কুট আছে। ১০টি কার্টনে মোট কতটি বিস্কুট আছে?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "১টি প্যাকেটে বিস্কুট আছে ১২টি \n∴ ২৪টি প্যাকেটে বিস্কুট আছে (২৪ × ১২) টি \n\t\t= ২৮৮টি\nআবার, \n   ১টি কার্টনে বিস্কুট আছে ২৮৮টি \n∴ ১০টি কার্টনে বিস্কুট আছে (২৮৮ × ১০)টি\n\t\t= ২৮৮০টি। \nউত্তর: ১০টি কার্টনে মোট ২৮৮০টি বিস্কুট আছে।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0304015",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "সহজ পদ্ধতিতে গুণ কর: ৯৯৯ × ৪৫",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "৯৯৯ × ৪৫ \n= (১০০০−১)×৪৫ \n= (১০০০×৪৫)−(১×৪৫) \n= ৪৫০০০−৪৫ \n= ৪৪৯৫৫ \nউত্তর: গুণফল ৪৪৯৫৫।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "3",
+            "hardness": "Hard",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0304016",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি নার্সারিতে ৩৫০টি চারা গাছ আছে। প্রতিটি চারা গাছের দাম ৭৫ টাকা হলে চারা গাছগুলোর মোট দাম কত?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "১টি চারা গাছের দাম ৭৫ টাকা \n∴ ৩৫০টি চারা গাছের দাম (৩৫০ × ৭৫) টাকা\n\t\t= ২৬২৫০ \nউত্তর: চারা গাছগুলোর মোট দাম ২৬২৫০ টাকা।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0304017",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একজন ব্যক্তি দৈনিক ৬৫০ টাকা আয় করেন। এক বছরে তিনি কত টাকা আয় করবেন?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "আমরা জানি, ১ বছর = ৩৬৫ দিন\n১ দিনে আয় করেন ৬৫০ টাকা \n∴ ৩৬৫ দিনে আয় করেন (৬৫০ × ৩৬৫) টাকা\n\t\t= ২৩৭২৫০ টাকা\nউত্তর: তিনি এক বছরে ২৩৭২৫০ টাকা আয় করবেন।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0304018",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি পানির ট্যাংকে প্রতি মিনিটে ৫০ লিটার পানি জমা হয়। ১ ঘণ্টায় কত লিটার পানি জমা হবে?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "আমরা জানি, ১ ঘণ্টা = ৬০ মিনিট\n১ মিনিটে জমা হয় ৫০ লিটার \n∴ ৬০ মিনিটে জমা হয় (৫০ × ৬০) লিটার \n\t\t= ৩০০০ লিটার \nউত্তর: ১ ঘণ্টায় ৩০০০ লিটার পানি জমা হবে।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0304019",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "রহিমা বেগম ২৫০০ টাকা দিয়ে একটি শাড়ি কিনলেন। তিনি এরুপ ১২টি শাড়ি কিনতে চান। তার কত টাকার প্রয়োজন?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "১টি শাড়ির দাম ২৫০০ টাকা \n∴ ১২টি শাড়ির দাম (২৫০০ × ১২) টাকা \n\t\t= ৩০০০০ টাকা \nউত্তর: তার ৩০০০০ টাকার প্রয়োজন।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0304020",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি গুদামে ৪০০ বস্তা চাল আছে। প্রতি বস্তায় চালের ওজন ৫০ কেজি। গুদামে মোট কত কেজি চাল আছে?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "১ বস্তায় চাল আছে ৫০ কেজি \n∴ ৪০০ বস্তায় চাল আছে (৫০ × ৪০০) কেজি \n\t\t= ২০০০০ কেজি \nউত্তর: গুদামে মোট ২০০০০ কেজি চাল আছে।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0304021",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "সহজ পদ্ধতিতে গুণ কর: ৯৯০ × ৬০",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "৯৯০ × ৬০ \n\t= (১০০০ − ১০)×৬০ \n\t= (১০০০×৬০) − (১০×৬০) \n\t= ৬০০০০ − ৬০০ \n\t= ৫৯৪০০ \nউত্তর: ৫৯৪০০।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "3",
+            "hardness": "Hard",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0304022",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি স্কুলে ১৩০০ জন ছাত্রছাত্রী আছে। প্রত্যেকের বার্ষিক ফি ৫৫০ টাকা হলে মোট কত টাকা আদায় হবে?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "১ জনের ফি ৫৫০ টাকা \n∴ ১৩০০ জনের ফি (৫৫০ × ১৩০০) টাকা\n\t\t= ৭১৫০০০ টাকা। \nউত্তর: মোট ৭১৫০০০ টাকা আদায় হবে।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0304023",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "৫ অংকের ক্ষুদ্রতম সংখ্যার সাথে ৯৯৯ গুণ করলে গুণফল কত হবে?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "৫ অংকের ক্ষুদ্রতম সংখ্যা = ১০০০০ \n∴ গুণফল = ১০০০০ × ৯৯৯ = ৯৯৯০০০০ \nউত্তর: গুণফল ৯৯৯০০০০।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0304024",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি লাইব্রেরিতে ১৫০টি আলমারি আছে। প্রতিটি আলমারিতে ১২০টি করে বই আছে। লাইব্রেরিতে মোট বইয়ের সংখ্যা কত?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "১টি আলমারিতে বই আছে ১২০টি \n∴ ১৫০টি আলমারিতে বই আছে (১২০ × ১৫০)টি\n\t\t= ১৮০০০ টি \nউত্তর: লাইব্রেরিতে মোট ১৮০০০টি বই আছে।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0304025",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি মোবাইল ফোনের দাম ১২৫০০ টাকা। একটি ল্যাপটপের দাম মোবাইল ফোনের দামের ৩ গুণ। ল্যাপটপটির দাম কত?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "মোবাইল ফোনের দাম = ১২৫০০ টাকা ল্যাপটপের দাম = মোবাইল ফোনের দাম × ৩ টাকা\n\t=১২৫০০×৩ টাকা \n\t= ৩৭৫০০ টাকা \nউত্তর: ল্যাপটপটির দাম ৩৭৫০০ টাকা।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0304026",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "মিনা প্রতিদিন ৩ ঘণ্টা করে পড়ে। ২৫ দিনে সে কত মিনিট পড়বে?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "আমরা জানি, ১ ঘণ্টা = ৬০ মিনিট \n∴ ৩ ঘণ্টা = (৩ × ৬০) মিনিট  = ১৮০ মিনিট \nএখন, ১ দিনে পড়ে ১৮০ মিনিট \n∴ ২৫ দিনে পড়ে (১৮০ × ২৫) মিনিট = ৪৫০০ মিনিট\nউত্তর: সে ২৫ দিনে ৪৫০০ মিনিট পড়বে।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0304027",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি বাক্সে ৫০০টি মার্বেল ধরে। এরুপ ১৪৪টি বাক্সে মোট কতটি মার্বেল ধরবে?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "১টি বাক্সে ধরে ৫০০টি মার্বেল \n∴ ১৪৪টি বাক্সে ধরে (৫০০ × ১৪৪)টি মার্বেল \n\t\t= ৭২০০০ \nউত্তর: মোট ৭২০০০টি মার্বেল ধরবে।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "3",
+            "hardness": "Medium",
+            "tag": "General"
+          }
+        ]
+      }
+    },
+    {
+      "class": "4",
+      "chapterNumber": "96",
+      "chapterTitle": "Demo Circle Geometry",
+      "content": {
+        "mcq": [],
+        "blanks": [],
+        "shorts": [],
+        "words": [
+          {
+            "id": "9604001",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "A circular garden has radius 7 m. Using 2 x 22/7 x r, find its circumference.",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "Circumference = 2 x 22/7 x 7 = 44 m.",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "96",
+            "hardness": "Medium",
+            "tag": "Geometry"
+          }
+        ]
+      }
+    },
+    {
+      "class": "4",
+      "chapterNumber": "97",
+      "chapterTitle": "Demo Triangle Geometry",
+      "content": {
+        "mcq": [],
+        "blanks": [],
+        "shorts": [],
+        "words": [
+          {
+            "id": "9704001",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "The three sides of a triangle are 5 cm, 6 cm, and 7 cm. Find its perimeter.",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "Perimeter = 5 + 6 + 7 = 18 cm.",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "97",
+            "hardness": "Easy",
+            "tag": "Geometry"
+          }
+        ]
+      }
+    },
+    {
+      "class": "4",
+      "chapterNumber": "98",
+      "chapterTitle": "Demo Square Geometry",
+      "content": {
+        "mcq": [],
+        "blanks": [],
+        "shorts": [],
+        "words": [
+          {
+            "id": "9804001",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "A square field has each side 12 m long. What is its perimeter?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "Perimeter of a square = 4 x side = 4 x 12 = 48 m.",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "98",
+            "hardness": "Hard",
+            "tag": "Geometry"
+          }
+        ]
+      }
+    },
+    {
+      "class": "5",
+      "chapterNumber": "96",
+      "chapterTitle": "Demo Circle Geometry",
+      "content": {
+        "mcq": [],
+        "blanks": [],
+        "shorts": [],
+        "words": [
+          {
+            "id": "9604001",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "A running track is circular with radius 14 m. Using 2 x 22/7 x r, find its circumference.",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "Circumference = 2 x 22/7 x 14 = 88 m.",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "96",
+            "hardness": "Medium",
+            "tag": "Geometry"
+          }
+        ]
+      }
+    },
+    {
+      "class": "5",
+      "chapterNumber": "97",
+      "chapterTitle": "Demo Triangle Geometry",
+      "content": {
+        "mcq": [],
+        "blanks": [],
+        "shorts": [],
+        "words": [
+          {
+            "id": "9704001",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "A triangle has sides 8 cm, 9 cm, and 10 cm. Find its perimeter.",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "Perimeter = 8 + 9 + 10 = 27 cm.",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "97",
+            "hardness": "Easy",
+            "tag": "Geometry"
+          }
+        ]
+      }
+    },
+    {
+      "class": "5",
+      "chapterNumber": "98",
+      "chapterTitle": "Demo Square Geometry",
+      "content": {
+        "mcq": [],
+        "blanks": [],
+        "shorts": [],
+        "words": [
+          {
+            "id": "9804001",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "A square playground has each side 9 cm long. What is its perimeter?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "Perimeter of a square = 4 x side = 4 x 9 = 36 cm.",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "98",
+            "hardness": "Hard",
+            "tag": "Geometry"
+          }
+        ]
+      }
+    },
+    {
+      "class": "4",
+      "chapterNumber": "4",
+      "chapterTitle": "ভাগ",
+      "content": {
+        "mcq": [
+          {
+            "id": "0401001",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "নিঃশেষে বিভাজ্যের ক্ষেত্রে নিচের কোনটি সবচেয়ে বড় হয়?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "ভাজক",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "ভাগফল",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "ভাজ্য",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "ভাগশেষ",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0401002",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "ভাজ্য নির্ণয়ের সঠিক সূত্র কোনটি?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "ভাজক ÷ ভাগফল",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "(ভাজক × ভাগফল) + ভাগশেষ",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "ভাজক + ভাগফল + ভাগশেষ",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "ভাগফল - ভাজক",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0401003",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "কোনো সংখ্যাকে ১ দ্বারা ভাগ করলে ভাগফল কী হবে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "১",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "০",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "সংখ্যাটি নিজেই",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "নির্ণয় করা সম্ভব নয়",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "Division"
+          },
+          {
+            "id": "0401004",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "'ভাজ্য = ভাজক × ভাগফল + ভাগশেষ'—এই সম্পর্কে ভাগশেষ সব সময় ভাজকের চেয়ে কেমন হবে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "সমান",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "বড়",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "ছোট",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "সমান বা বড়",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "Division"
+          },
+          {
+            "id": "0401005",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "০ কে কোনো সংখ্যা দিয়ে ভাগ করলে ভাগফল কী হবে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "ঐ সংখ্যাটি",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "১",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "০",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "অসীম",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "Division"
+          },
+          {
+            "id": "0401006",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "নিচের কোনটি ভাজক হতে পারে না?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "১",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "০",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "১০",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "১০০০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0401007",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "যদি ভাজক ৮ হয় এবং ভাগফল ১ হয়, তবে ভাগশেষ ৭ হলে ভাজ্য কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৮",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "১৫",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "১৬",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৭",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0401008",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "৯৯ কে ১০ দিয়ে ভাগ করলে ভাগশেষ কত হবে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "০",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "১",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৯",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "১০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0401009",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "ভাজক ৫, ভাগফল ১২ এবং ভাগশেষ ৩ হলে ভাজ্য কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৬০",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৬৩",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৫৭",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "১৫",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0401010",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "ভাজ্য থেকে ভাজক একবারও বিয়োগ করা না গেলে ভাগফল কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "১",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "ভাজ্য",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "০",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "ভাজক",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Subtraction"
+          },
+          {
+            "id": "0401011",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "ভাগের উত্তর সঠিক হয়েছে কি না তা যাচাই করতে ভাগশেষের সাথে কোনটির তুলনা করতে হয়?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "ভাজ্য",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "ভাগফল",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "ভাজক",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "উত্তর",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "Division"
+          },
+          {
+            "id": "0401012",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "৫৩৮ ÷ ৩ অঙ্কে ভাগফলের শতকের ঘরের অঙ্কটি কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "০",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "১",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "২",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৩",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0401013",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "কোনো সংখ্যাকে ওই একই সংখ্যা দ্বারা ভাগ করলে ভাগফল কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "০",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "১",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "সংখ্যাটি",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "১০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0401014",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "ভাজ্য ১৪৮ এবং ভাগফল ১৪৮ হলে ভাজক কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "০",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "১",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "১৪৮",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "২",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0401015",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "৭৫ মিটারের একটি দড়িকে ৮ মিটার করে টুকরো করলে কত মিটার দড়ি অবশিষ্ট থাকবে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৩ মিটার",
+                "isCorrect": true
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৫ মিটার",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৯ মিটার",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৮ মিটার",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0401016",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "ভাগের বিপরীত প্রক্রিয়া কোনটি?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "যোগ",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "বিয়োগ",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "গুণ",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "কোনোটিই নয়",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "Division"
+          },
+          {
+            "id": "0401017",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "ভাজ্য ৪৫ এবং ভাজক ৯ হলে ভাগশেষ কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৫",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৯",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "১",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "০",
+                "isCorrect": true
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0401018",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "ভাগের সময় ভাজ্যের কোনো অঙ্ক যদি ভাজকের চেয়ে ছোট হয়, তবে ভাগফলে কী বসাতে হয়?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "১",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "০",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "ভাজক",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "দশমিক",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "Division"
+          },
+          {
+            "id": "0401019",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "নিচের কোন সম্পর্কটি সঠিক?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "ভাগশেষ ≥ ভাজক",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "ভাগশেষ < ভাজক",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "ভাগশেষ = ভাগফল",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "ভাগশেষ > ভাজ্য",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0401020",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "০ ÷ ১০০ = কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "১০০",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "১",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "০",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "অসম্ভব",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0401021",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "প্রশ্নের অংকে \"কতটি দল হবে\" বা \"প্রতি দলে কয়টি থাকবে\" বের করতে সাধারণত কী করতে হয়?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "যোগ",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "বিয়োগ",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "গুণ",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "ভাগ",
+                "isCorrect": true
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0401022",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "যদি ৫০ ÷ ৫ = ১০ হয়, তবে ১০ × ৫ + ২ = কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৫০",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৫৫",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৫২",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৬০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0401023",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "২৫ ÷ ৪ = ৬ (ভাগশেষ ১) — এর সঠিক যাচাই পদ্ধতি নিচের কোনটি?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৬ × ৪ + ১ = ২৫",
+                "isCorrect": true
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৬ × ৪ - ১ = ২৩",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "২৫ × ১ + ৬ = ৩১",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৬ + ৪ + ১ = ১১",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "Division"
+          },
+          {
+            "id": "0401024",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "আপনার কাছে ৫০টি চকলেট আছে, প্রত্যেককে ১২টি করে দিলে কতজন বন্ধু চকলেট পাবে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৫ জন",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৩ জন",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৪ জন",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৬ জন",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0401025",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "ভাগের পর যে সংখ্যাটি অবশিষ্ট থাকে তাকে কী বলে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "ভাগফল",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "গুণফল",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "ভাজক",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "ভাগশেষ",
+                "isCorrect": true
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "Division"
+          },
+          {
+            "id": "0401026",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "ভাজক ৫ হলে ভাগশেষ কি ৫ হতে পারে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "হ্যাঁ",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "না",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "বড় সংখ্যায় পারে",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "মাঝে মাঝে",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "Division"
+          },
+          {
+            "id": "0401027",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "১০০ ÷ ১০ ÷ ২ = কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "২০",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৫",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৫০",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "২",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0401028",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "৫টি কলমের দাম ১০০ টাকা হলে, ১টি কলমের দাম কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৫০০ টাকা",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "২৫ টাকা",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "২০ টাকা",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "১০ টাকা",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0401029",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "ভাজ্য, ভাগফল ও ভাগশেষ জানা থাকলে ভাজক বের করার সূত্র কী?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "(ভাজ্য-ভাগশেষ)÷ভাগফল",
+                "isCorrect": true
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "ভাজ্য×ভাগফল+ভাগশেষ",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "(ভাজ্য+ভাগশেষ)÷ভাগফল",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "ভাজ্য÷ভাগশেষ",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "Division"
+          },
+          {
+            "id": "0401030",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "৪২ ÷ ৭ = ৬ গাণিতিক বাক্যে ৪২ সংখ্যাটিকে কী বলা হয়?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "ভাজক",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "ভাজ্য",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "ভাগফল",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "ভাগশেষ",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "General"
+          }
+        ],
+        "blanks": [
+          {
+            "id": "0402001",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "ভাজক যদি ৫২ হয়, তবে একটি ভাগের অংকে ভাগশেষের সর্বোচ্চ মান হতে পারে ________।",
+            "answer": "৫১",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0402002",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "১ থেকে ১০০ এর মধ্যে ৯ দ্বারা নিঃশেষে বিভাজ্য এমন সংখ্যা আছে ________ টি।",
+            "answer": "১১",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0402003",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "ভাজ্য = (________ × ভাগফল) + ভাগশেষ।",
+            "answer": "ভাজক",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "Division"
+          },
+          {
+            "id": "0402004",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "কোনো সংখ্যার এক-চতুর্থাংশ ২৫ হলে, সংখ্যাটির দ্বিগুণ হবে ________।",
+            "answer": "২০০",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0402005",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "৫, ০, ৯, ১, ৪ অঙ্কগুলো দিয়ে গঠিত ক্ষুদ্রতম বিজোড় সংখ্যাটি হলো ________।",
+            "answer": "১০৪৯৫",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0402006",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "একটি গাণিতিক বাক্যে গুণ ও ভাগ থাকলে যেটি ________ আসবে সেটি আগে সমাধান করতে হয়।",
+            "answer": "বামদিকে",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0402007",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "২৩০৪ মিটার তারকে ৯৬ ভাগে ভাগ করলে ৩টি ভাগের মোট দৈর্ঘ্য হবে ________ মিটার।",
+            "answer": "৭২",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "Division"
+          },
+          {
+            "id": "0402008",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "৯৭৫ টাকায় ১৫টি খাতা পাওয়া গেলে ৬৫০০ টাকায় খাতা পাওয়া যাবে ________ টি।",
+            "answer": "১০০",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0402009",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "একটি প্যাকেটে ২৫টি লজেন্স থাকলে ১ ডজন প্যাকেটে লজেন্স থাকবে ________ টি।",
+            "answer": "৩০০",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0402010",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "৩৬ জন লোকের মধ্যে ১৮২টি লিচু সমানভাবে ভাগ করলে প্রত্যেকের ভাগে ৫টি করে পড়ার পর অবশিষ্ট থাকে ________ টি।",
+            "answer": "২",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0402011",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "ভাজক ও ভাগফল উভয়েই ২৫ এবং ভাগশেষ ভাজকের এক-পঞ্চমাংশ হলে ভাজ্য হবে ________।",
+            "answer": "৬৩০",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "Division"
+          },
+          {
+            "id": "0402012",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "৮২১৭ কে ৩৪ দিয়ে ভাগ করলে ভাগফল হবে ২৪১ এবং ভাগশেষ হবে ________।",
+            "answer": "২৩",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "Division"
+          },
+          {
+            "id": "0402013",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "১০০০০ কে এমন একটি সংখ্যা দিয়ে ভাগ করা হলো যেন ভাগশেষ ১০০ থাকে। সম্ভাব্য ক্ষুদ্রতম ভাজকটি হলো ________।",
+            "answer": "১০১",
+            "chapter": "4",
+            "hardness": "Hard",
+            "tag": "Division"
+          },
+          {
+            "id": "0402014",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "১টি লেবুর দাম ৪ টাকা ৫০ পয়সা হলে ২ হালি লেবুর দাম ________ টাকা।",
+            "answer": "৩৬",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0402015",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "কোনো সংখ্যাকে ০ দিয়ে ভাগ করলে ভাগফল _____ হয়।",
+            "answer": "অসংজ্ঞায়িত",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "Division"
+          },
+          {
+            "id": "0402016",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "৪৪ × ৪৪ ÷ ৪৪ + ৪৪ এর মান ________।",
+            "answer": "৮৮",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0402017",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "গুণ ও ভাগ একে অপরের ________ প্রক্রিয়া।",
+            "answer": "বিপরীত",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0402018",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "৫০০ টাকার ২ টি নোটের সমপরিমাণ টাকা দিয়ে ২৫ টাকা দামের ________ টি কলম কেনা যাবে।",
+            "answer": "৪০",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0402019",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "একটি বইয়ের প্রথম থেকে শেষ পর্যন্ত পৃষ্ঠা নম্বর দিতে মোট ৯টি এক অঙ্কের এবং ৯০টি দুই অঙ্কের সংখ্যা লাগে। বইটিতে মোট পৃষ্ঠা আছে ________ টি।",
+            "answer": "৯৯",
+            "chapter": "4",
+            "hardness": "Hard",
+            "tag": "General"
+          },
+          {
+            "id": "0402020",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "১৫১২ কে ২৪ দ্বারা ভাগ করলে ভাগফল হয় ৬৩ এবং ভাগশেষ থাকে ________।",
+            "answer": "০",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "Division"
+          },
+          {
+            "id": "0402021",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "১ বিলিয়ন = ________ মিলিয়ন।",
+            "answer": "১০০০",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0402022",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "৩৯৪ কে ১২ দিয়ে ভাগ করলে ভাগশেষ হবে ________।",
+            "answer": "১০",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "Division"
+          },
+          {
+            "id": "0402023",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "ভাজ্য অপরিবর্তিত রেখে ভাজক দ্বিগুণ করলে ভাগফল ________ হয়ে যাবে।",
+            "answer": "অর্ধেক",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0402024",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "পরপর দুটি বিজোড় সংখ্যার বিয়োগফলকে ২ দিয়ে ভাগ করলে ভাগফল হবে ________।",
+            "answer": "১",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "Subtraction"
+          },
+          {
+            "id": "0402025",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "ভাজক ২৩, ভাগফল ১০৭ এবং ভাগশেষ ১২ হলে ভাজ্য = ________।",
+            "answer": "২৪৭৩",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "Division"
+          },
+          {
+            "id": "0402026",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "১০০ থেকে ১০ ________ বার বিয়োগ করা যাবে।",
+            "answer": "১০",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "Subtraction"
+          },
+          {
+            "id": "0402027",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "একটি ড্রামে ২০০ লিটার তেল ধরে। ৫ লিটারের ________ টি জগ দিয়ে ড্রামটি পূর্ণ করা যাবে।",
+            "answer": "৪০",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0402028",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "ভাজক ১ হলে ভাজ্য সর্বদা ________ এর সমান হয়।",
+            "answer": "ভাগফল",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0402029",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "১১৭৫টি ফুল দিয়ে ২৫টি করে ফুলের মালা বানালে মালা তৈরি হবে ________ টি।",
+            "answer": "৪৭",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0402030",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "১ বছর সমান ________ সপ্তাহ এবং ________ দিন।",
+            "answer": "৫২, ১",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "General"
+          }
+        ],
+        "shorts": [
+          {
+            "id": "0403001",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "একটি ভাগ অংকে ভাজক ভাগশেষের তিনগুণ এবং ভাগফল ১০। ভাগশেষ ৫ হলে ভাজ্য কত?",
+            "answer": "১৫৫।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0403002",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৪ অঙ্কের কোন বৃহত্তম সংখ্যা ৮৮ দ্বারা নিঃশেষে বিভাজ্য?",
+            "answer": "৯৯৪৪।",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0403003",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "কোনো সংখ্যাকে ৩৪ দ্বারা ভাগ করলে ভাগফল ৩ এবং ভাগশেষ ১০ হয়। সংখ্যাটির সাথে কত যোগ করলে তা ৩৪ দ্বারা নিঃশেষে বিভাজ্য হবে?",
+            "answer": "২৪ যোগ করলে।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Addition"
+          },
+          {
+            "id": "0403004",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "একটি গাণিতিক বাক্যে প্রথমে ভাগ, গুণ এবং তারপর বিয়োগ আছে। কোন কাজটি সবার শেষে করতে হবে?",
+            "answer": "বিয়োগের কাজ।",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "Subtraction"
+          },
+          {
+            "id": "0403005",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "একজন কৃষক ২,৪৫০ কেজি ধান বস্তায় ভরতে চান। প্রতি বস্তায় ৫০ কেজি ধান ধরলে কয়টি বস্তা লাগবে?",
+            "answer": "৪৯টি বস্তা।",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0403006",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "২৩০৪ মিটার লম্বা তারকে ৯৬ ভাগে ভাগ করার পর যদি প্রতিটি ভাগ থেকে ২ মিটার কেটে ফেলা হয়, তবে বর্তমান প্রতি ভাগের দৈর্ঘ্য কত?",
+            "answer": "২২ মিটার।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0403007",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "২৫ কেজি চালের দাম ২২৭৫ টাকা হলে, ১ কুইন্টাল চালের দাম কত?",
+            "answer": "৯১০০ টাকা।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0403008",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "ভাজক শূন্য হলে ভাগের ক্ষেত্রে কী ঘটে?",
+            "answer": "ভাগ করা সম্ভব নয় বা অসংজ্ঞায়িত।",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "Division"
+          },
+          {
+            "id": "0403009",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৫০০টি পেনসিল ১২টি করে বক্সে রাখলে যে ৮টি পেনসিল অবশিষ্ট থাকে, আর কয়টি পেনসিল দিলে আরও ১টি বক্স পূর্ণ হতো?",
+            "answer": "৪টি পেনসিল।",
+            "chapter": "4",
+            "hardness": "Hard",
+            "tag": "General"
+          },
+          {
+            "id": "0403010",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "২১২০৫ কে ২০ দিয়ে ভাগ করলে ভাগফল এবং ভাগশেষের গুণফল কত হবে?",
+            "answer": "৫৩০০।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0403011",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৩৬ জন লোকের মধ্যে ১৮২টি লিচু ভাগ করার পর অবশিষ্ট লিচুগুলো যদি শিশুদের দেওয়া হয়, তবে কয়জন শিশু ১টি করে লিচু পাবে?",
+            "answer": "২ জন শিশু।",
+            "chapter": "4",
+            "hardness": "Hard",
+            "tag": "Division"
+          },
+          {
+            "id": "0403012",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "১৫টি খাতার দাম ৯৭৫ টাকা। যদি ১টি খাতার দাম ৫ টাকা বেড়ে যায়, তবে ৩০টি খাতা কিনতে কত টাকা লাগবে?",
+            "answer": "২১০০ টাকা।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0403013",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৫৩৪৫ কে ৩৫ দিয়ে ভাগ করলে ভাগফল ১৫২ এবং ভাগশেষ ২৮ হয়। ভাজ্যের অঙ্কগুলোর সমষ্টি কত?",
+            "answer": "১৭।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0403014",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "দুটি সংখ্যার গুণফল ৩,২০০। একটি সংখ্যা ৮০ হলে, অপর সংখ্যাটি কত?",
+            "answer": "অপর সংখ্যাটি ৪০।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0403015",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "কোনো ক্ষুদ্রতম সংখ্যাকে ১২, ১৫ ও ২০ দিয়ে ভাগ করলে প্রতিবার ২ অবশিষ্ট থাকবে?",
+            "answer": "৬২।",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "Division"
+          },
+          {
+            "id": "0403016",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "একটি সংখ্যার ৩ গুণের সাথে ১০ যোগ করলে ১০০ হয়। সংখ্যাটি কত?",
+            "answer": "৩০।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Addition"
+          },
+          {
+            "id": "0403017",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৬৩৮ কে ২২ দিয়ে ভাগ করে ভাগফলকে ৩৫ দিয়ে গুণ করলে গুণফল কত হবে?",
+            "answer": "১০১৫।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0403018",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "নিঃশেষে বিভাজ্যের ক্ষেত্রে ভাজ্য নির্ণয়ের সূত্র কী?",
+            "answer": "ভাজ্য = ভাজক × ভাগফল।",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0403019",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৩৭৪ কে ১৩ দিয়ে গুণ করে গুণফলকে ১৭ দিয়ে ভাগ করলে ভাগফল কত হবে?",
+            "answer": "২৮৬।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0403020",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "এক ডজন কমলার মূল্য ৩১২ টাকা হলে, ৭৮ টাকায় কয়টি কমলা পাওয়া যাবে?",
+            "answer": "৩ টি কমলা।",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0403021",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "ভাজক ভাগফলের ১০ গুণ এবং ভাজ্য ১০০০ হলে ভাজক কত?",
+            "answer": "১০০।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0403022",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "১৫০০ টাকার ২/৫ অংশ কত টাকা?",
+            "answer": "৬০০ টাকা।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0403023",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "এমন একটি সংখ্যা নির্ণয় কর যাকে ৪৩ দ্বারা ভাগ করলে ভাগফল ১২৯ হয় এবং নিঃশেষে বিভাজ্য হয়।",
+            "answer": "৫৫৪৭।",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "Division"
+          },
+          {
+            "id": "0403024",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "২১০ কে ৫০ দিয়ে ভাগ করলে ভাগফল ও ভাগশেষের সমষ্টি কত?",
+            "answer": "১৪।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0403025",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "দুটি সংখ্যার গুণফল ২২৫। একটি সংখ্যা ২৫ হলে, সংখ্যা দুটির বিয়োগফল কত?",
+            "answer": "১৬।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Subtraction"
+          },
+          {
+            "id": "0403026",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৬৭৫ জন শিক্ষার্থী বনভোজনে যাবে। একটি বাসে ৪৫ জন শিক্ষার্থী বসতে পারলে কতটি বাস লাগবে?",
+            "answer": "১৫টি বাস।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0403027",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "১২০ কে ৪০ দিয়ে ভাগ করলে ভাগফল যা হয়, তার দ্বিগুণ কত?",
+            "answer": "৬।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0403028",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "১৫৪ কে ৯ দ্বারা ভাগ করলে ভাগশেষ কত থাকে?",
+            "answer": "১।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0403029",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৮০টি চকলেট ২০টি করে ছোট প্যাকেটে রাখলে কয়টি প্যাকেট হবে?",
+            "answer": "৪টি।",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0403030",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "গুণ্য × গুণক = গুণফল। গুণফলকে গুণ্য দিয়ে ভাগ করলে কী পাওয়া যায়?",
+            "answer": "গুণক।",
+            "chapter": "4",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          }
+        ],
+        "words": [
+          {
+            "id": "0404001",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "ভাজক ২৩, ভাগফল ১০৭ এবং ভাগশেষ ১২ হলে ভাজ্য কত?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "দেওয়া আছে, ভাজক = ২৩ \nভাগফল = ১০৭ \nভাগশেষ = ১২ \nআমরা জানি, ভাজ্য = (ভাজক × ভাগফল) + ভাগশেষ \n= (২৩ × ১০৭) + ১২ \n= ২৪৬১ + ১২ \n= ২৪৭৩\nউত্তর: ভাজ্য ২৪৭৩।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0404002",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "২৩০৪ মিটার লম্বা একটি তারকে ৯৬টি সমান ভাগে ভাগ করা হলে, প্রতি ভাগের দৈর্ঘ্য কত মিটার?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "তারের মোট দৈর্ঘ্য = ২৩০৪ মিটার \nমোট ভাগ সংখ্যা = ৯৬টি \n∴ প্রতিটি ভাগের দৈর্ঘ্য = (২৩০৪ ÷ ৯৬) মিটার\n\t\t= ২৪ মিটার\nউত্তর: প্রতি ভাগের দৈর্ঘ্য ২৪ মিটার।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0404003",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "৫০০টি পেনসিল থেকে প্রতি বক্সে ১২টি করে পেনসিল রাখলে কতটি বক্সের প্রয়োজন পড়বে এবং কতটি পেনসিল অবশিষ্ট থাকবে?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "মোট পেনসিল = ৫০০টি \nপ্রতি বক্সে রাখা হয় = ১২টি \n∴ প্রয়োজনীয় বক্সের সংখ্যা (৫০০ ÷ ১২) টি\n= ৪১ টি এবং ভাগশেষ ৮\nউত্তর: ৪১টি বক্সের প্রয়োজন পড়বে এবং ৮টি পেনসিল অবশিষ্ট থাকবে।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0404004",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "৩৬ জন লোকের মধ্যে ১৮২টি লিচু বিতরণ করলে প্রত্যেকে কতটি করে পাবে?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "মোট লিচু = ১৮২টি \nমোট লোকসংখ্যা = ৩৬ জন \n∴ প্রত্যেকে লিচু পাবে = (১৮২ ÷ ৩৬) টি\n= ৫ এবং ভাগশেষ ২\nউত্তর: প্রত্যেকে ৫টি করে লিচু পাবে এবং ২টি লিচু অবশিষ্ট থাকবে।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0404005",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "১৫টি খাতার দাম ৯৭৫ টাকা হলে, ৩০টি খাতার দাম কত?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "১৫টি খাতার দাম = ৯৭৫ টাকা \nসুতরাং, ১টি খাতার দাম (৯৭৫ ÷ ১৫) টাকা \n= ৬৫ টাকা। \n∴ ৩০টি খাতার দাম (৬৫ × ৩০) টাকা \n= ১৯৫০ টাকা।\nউত্তর: ৩০টি খাতার দাম ১৯৫০ টাকা।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0404006",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি দোকানে ১১৭৫টি ফুল আছে। একটি মালা তৈরি করতে ২৫টি ফুল লাগলে দোকানদার এরূপ কয়টি মালা তৈরি করতে পারবে?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "মোট ফুল = ১১৭৫টি \n১টি মালার জন্য ফুল লাগে = ২৫টি \n∴ মোট মালা তৈরি হবে = (১১৭৫ ÷ ২৫) টি\n= ৪৭ টি\nউত্তর: দোকানদার ৪৭টি মালা তৈরি করতে পারবে।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "4",
+            "hardness": "Hard",
+            "tag": "General"
+          },
+          {
+            "id": "0404007",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "ভাগশেষ ৬। ভাজক ভাগশেষের ৩ গুণ। ভাগফল ভাজকের অর্ধেক। ভাজ্য কত?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "ভাগশেষ = ৬ \n∴ ভাজক = ৬ × ৩ = ১৮ \n∴ ভাগফল = ১৮ ÷ ২ = ৯ \nআমরা জানি, ভাজ্য = (ভাজক × ভাগফল) + ভাগশেষ ভাজ্য = (১৮ × ৯) + ৬ \n= ১৬২ + ৬ \n= ১৬৮\nউত্তর: ভাজ্য ১৬৮।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0404008",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "২২৫০টি আম কার্টনে ভরা হলো। প্রতি কার্টনে ২৫টি আম ধরে। যদি ৫টি কার্টন নষ্ট হয়ে যায়, তবে ভালো কার্টন কয়টি?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "মোট আম = ২২৫০ \nপ্রতি কার্টনে আম ধরে = ২৫টি \n∴ মোট কার্টন (২২৫০ ÷ ২৫) টি \n= ৯০টি \nআবার, \nমোট কার্টন \t৯০টি\nনষ্ট কার্টন \t(-) ৫টি \n∴ ভাল কার্টন \t= ৮৫টি\nউত্তর: ৮৫টি।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "4",
+            "hardness": "Hard",
+            "tag": "General"
+          },
+          {
+            "id": "0404009",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "এক ব্যক্তি বছরে ৯৬,০০০ টাকা আয় করেন। তার প্রতি মাসের খরচ ৫,৫০০ টাকা।",
+            "questionKo": "তিনি ১ মাসে কত টাকা আয় করেন?",
+            "questionKho": "তিনি ১ বছরে মোট কত টাকা সঞ্চয় করবেন?",
+            "solution": "",
+            "solutionKo": "আমরা জানি, ১ বছর = ১২ মাস\n১২ মাসে আয় করেন ৯৬০০০ টাকা\n∴ ১ মাসে আয় করেন (৯৬০০০ ÷ ১২) টাকা \n\t\t\t= ৮০০০ টাকা\nউত্তর: তিনি ১ মাসে ৮০০০ টাকা আয় করেন।",
+            "solutionKho": "তার ১ মাসের আয় \t ৮০০০ টাকা\t(ক হতে)\nতার ১ মাসের খরচ \t৫৫০০ টাকা\n১ মাসে সঞ্চয় করেন \t= ২৫০০ টাকা\nঅতএব, ১ বছরে সঞ্চয় করবেন (২৫০০ × ১২) টাকা\n\t\t= ৩০০০০ টাকা। \nউত্তর: তিনি ১ বছরে ৩০০০০ টাকা সঞ্চয় করবেন।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0404010",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি ট্রেন ৪ ঘণ্টায় ২৪০ কিমি যায়।",
+            "questionKo": "ট্রেনটি ১ ঘণ্টায় কত কিমি যায়?",
+            "questionKho": "ট্রেনটি একই গতিতে ৬০০ কিমি যেতে কত ঘণ্টা সময় নেবে?",
+            "solution": "",
+            "solutionKo": "৪ ঘণ্টায় যায় ২৪০ কিমি \nঅতএব, ১ ঘণ্টায় যায় = ২৪০ ÷ ৪ = ৬০ কিমি। \nউত্তর: ট্রেনটি ১ ঘণ্টায় ৬০ কিমি যায়।",
+            "solutionKho": "মোট দূরত্ব = ৬০০ কিমি\nট্রেনটি ১ ঘণ্টায় যায় ৬০ কিমি\nঅতএব, ৬০০ কিমি যেতে সময় লাগবে (৬০০ ÷ ৬০) ঘণ্টা\n\t\t\t\t= ১০ ঘণ্টা \nউত্তর: ১০ ঘণ্টা সময় নেবে।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0404011",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "৮টি শার্ট ও ৫টি প্যান্টের একত্রে মূল্য ৮,৫০০ টাকা। ১টি প্যান্টের মূল্য ৫০০ টাকা।",
+            "questionKo": "৫টি প্যান্টের মূল্য কত?",
+            "questionKho": "১টি শার্টের মূল্য কত?",
+            "solution": "",
+            "solutionKo": "১টি প্যান্টের মূল্য = ৫০০ টাকা \nঅতএব, ৫টি প্যান্টের মূল্য (৫০০ × ৫) টাকা \n= ২৫০০ টাকা\nউত্তর: ৫টি প্যান্টের মূল্য ২৫০০ টাকা।",
+            "solutionKho": "৮টি শার্ট ও ৫টি প্যান্টের একত্রে মূল্য\t৮৫০০ টাকা\n৫টি প্যান্টের মূল্য\t(-) ২৫০০ টাকা\t(ক হতে) \nঅতএব, ৮টি শার্টের মূল্য \t= ৬০০০ টাকা\nসুতরাং, ১টি শার্টের মূল্য (৬০০০ ÷ ৮) টাকা\n\t\t\t= ৭৫০ টাকা\nউত্তর: ১টি শার্টের মূল্য ৭৫০ টাকা।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0404012",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একজন ফল বিক্রেতার কাছে ৯৮০টি আপেল ছিল। এর মধ্যে ২০টি আপেল পচে গেল। ভালো আপেলগুলো তিনি প্রতি বক্সে ১২টি করে রাখলেন।",
+            "questionKo": "ভালো আপেলের সংখ্যা কত?",
+            "questionKho": "আপেলগুলো প্যাকেট করতে কয়টি বক্স লাগবে এবং ৩টি বক্স বিক্রি করার পর আর কয়টি আপেল অবশিষ্ট থাকবে?",
+            "solution": "",
+            "solutionKo": "মোট আপেল \t৯৮০টি\nপচে গেল \t(-) ২০টি\nভালো আপেলের সংখ্যা \t= ৯৬০টি\nউত্তর: ভালো আপেলের সংখ্যা ৯৬০টি।",
+            "solutionKho": "মোট ভালো আপেল = ৯৬০টি\nপ্রতি বক্সে থাকে ১২টি\n∴প্যাকেট করতে বক্স লাগবে (৯৬০ ÷ ১২) টি  = ৮০টি\n৩টি বক্স বিক্রি করার পর অবশিষ্ট বক্স = (৮০ – ৩) টি \n\t\t= ৭৭টি\nঅতএব, অবশিষ্ট আপেলের সংখ্যা (৭৭ × ১২) টি \n\t\t= ৯২৪টি\nউত্তর: মোট ৮০টি বক্স লাগবে এবং ৩টি বক্স বিক্রির পর ৯২৪টি আপেল অবশিষ্ট থাকবে।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0404013",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "৬০০ পৃষ্ঠার একটি বইয়ের প্রতিদিন ১৫ পৃষ্ঠা করে পড়লে বইটি শেষ করতে কিছু দিন লাগে।",
+            "questionKo": "বইটি পড়া শেষ করতে কত দিন লাগবে?",
+            "questionKho": "বইটি যদি ১০ দিন আগে পড়া শেষ করতে হয়, তবে প্রতিদিন গড়ে কত পৃষ্ঠা পড়তে হবে?",
+            "solution": "",
+            "solutionKo": "মোট পৃষ্ঠা = ৬০০\nপ্রতিদিন পড়া হয় = ১৫ পৃষ্ঠা\n∴ সময় লাগবে (৬০০ ÷ ১৫) দিন \n= ৪০ দিন\nউত্তর: ৪০ দিন লাগবে।",
+            "solutionKho": "‘ক’ হতে পাই, সময় লাগে ৪০ দিন\n১০ দিন আগে শেষ করতে চাইলে সময় লাগবে = ৪০ - ১০ \n= ৩০ দিন\n৩০ দিনে পড়তে হবে ৬০০ পৃষ্ঠা\n∴ ১ দিনে পড়তে হবে (৬০০ ÷ ৩০) পৃষ্ঠা \n\t\t\t\t= ২০ পৃষ্ঠা\nউত্তর: প্রতিদিন গড়ে ২০ পৃষ্ঠা পড়তে হবে।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0404014",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি কারখানায় ১ সপ্তাহে ২৫২০টি গাড়ি তৈরি হয়।",
+            "questionKo": "কারখানাটিতে ১ দিনে কতটি গাড়ি তৈরি হয়?",
+            "questionKho": "যদি প্রতিদিন গাড়িগুলো সমানভাবে ১৫টি শোরুমে পাঠানো হয়, তবে প্রতিটি শোরুম ১ মাসে কতটি গাড়ি পাবে?",
+            "solution": "",
+            "solutionKo": "আমরা জানি, ১ সপ্তাহ = ৭ দিন\n৭ দিনে তৈরি হয় ২৫২০টি গাড়ি\n∴ ১ দিনে তৈরি হয় (২৫২০ ÷ ৭) টি গাড়ি\n= ৩৬০টি গাড়ি\nউত্তর: ১ দিনে ৩৬০টি গাড়ি তৈরি হয়।",
+            "solutionKho": "‘ক’ হতে পাই, ১ দিনে তৈরি হয় ৩৬০টি গাড়ি\nপ্রতিদিন ১৫টি শোরুমে সমানভাবে পাঠানো হলে, \n১টি শোরুম ১ দিনে গাড়ি পাবে (৩৬০ ÷ ১৫) টি\n= ২৪টি\n১টি শোরুম ১ দিনে পায় ২৪টি গাড়ি\nঅতএব, ৩০ দিনে পাবে (২৪ × ৩০)\n= ৭২০টি গাড়ি\nউত্তর: প্রতিটি শোরুম ৩০ দিনে ৭২০টি গাড়ি পাবে।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0404015",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "এক ডজন ডিমের দাম ১৪৪ টাকা।",
+            "questionKo": "১টি ডিমের দাম কত?",
+            "questionKho": "১০০০ টাকায় সর্বোচ্চ কয় ডজন ডিম কেনা যাবে এবং কত টাকা অবশিষ্ট থাকবে?",
+            "solution": "",
+            "solutionKo": "আমরা জানি, ১ ডজন = ১২টি\n১২টি ডিমের দাম ১৪৪ টাকা\n১টি ডিমের দাম (১৪৪ ÷ ১২) টাকা \n= ১২ টাকা। \nউত্তর: ১টি ডিমের দাম ১২ টাকা।",
+            "solutionKho": "১ ডজন ডিমের দাম ১৪৪ টাকা\nমোট টাকা আছে ১০০০\n∴ ডিম কেনা যাবে (১০০০÷১৪৪) ডজন\n\t\t\t= ৬ এবং ভাগশেষ ১৩৬\nউত্তর: সর্বোচ্চ ৬ ডজন ডিম কেনা যাবে এবং ১৩৬ টাকা অবশিষ্ট থাকবে।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0404016",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "৭ জন শ্রমিক ১৫ দিনে একটি কাজ করতে পারে।",
+            "questionKo": "১ জন শ্রমিকের ওই কাজ করতে কত দিন লাগবে?",
+            "questionKho": "কাজটি যদি ৫ দিনে শেষ করতে হয়, তবে অতিরিক্ত কতজন শ্রমিক নিয়োগ দিতে হবে?",
+            "solution": "",
+            "solutionKo": "৭ জন শ্রমিকের লাগে ১৫ দিন\n১ জন শ্রমিকের লাগবে = ১৫ × ৭ = ১০৫ দিন\nউত্তর: ১০৫ দিন লাগবে।",
+            "solutionKho": "‘ক’ হতে পাই, ১০৫ দিনে শেষ করে ১ জন শ্রমিক\n∴ ৫ দিনে শেষ করে (১০৫ ÷ ৫) জন শ্রমিক\n= ২১ জন শ্রমিক\nঅতএব, অতিরিক্ত শ্রমিক লাগবে (২১ – ৭) জন = ১৪ জন\nউত্তর: অতিরিক্ত ১৪ জন শ্রমিক নিয়োগ দিতে হবে।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0404017",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি কারখানায় ১৫ দিনে ৩৬০০টি যন্ত্রাংশ তৈরি হয়।",
+            "questionKo": "কারখানাটি ১ দিনে কতটি যন্ত্রাংশ তৈরি করে?",
+            "questionKho": "যদি প্রতিদিন ২০টি যন্ত্রাংশ নষ্ট হয়, তবে ২৫ দিনে মোট ব্যবহারযোগ্য যন্ত্রাংশ কত হবে?",
+            "solution": "",
+            "solutionKo": "১৫ দিনে যন্ত্রাংশ তৈরি হয় ৩৬০০ টি \n১ দিনে যন্ত্রাংশ তৈরি হয় (৩৬০০ ÷ ১৫) টি\n= ২৪০ টি\nউত্তর: ২৪০টি।",
+            "solutionKho": "‘ক’ হতে পাই, ১ দিনে যন্ত্রাংশ তৈরি হয় ২৪০ টি\n∴ ২৫ দিনে মোট উৎপাদন = ২৪০ × ২৫ = ৬০০০ টি\nনষ্ট হয় প্রতিদিন ২০টি\n∴ ২৫ দিনে নষ্ট হয় (২০ × ২৫) টি  = ৫০০ টি\n∴ ব্যবহারযোগ্য যন্ত্রাংশ (৬০০০ – ৫০০) টি = ৫৫০০টি\nউত্তর: ৫৫০০টি ব্যবহারযোগ্য যন্ত্রাংশ।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Addition"
+          },
+          {
+            "id": "0404018",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একজন ব্যবসায়ী ৯৬টি মোবাইল ৪৮,০০০ টাকায় কিনলেন।",
+            "questionKo": "১টি মোবাইলের ক্রয়মূল্য কত?",
+            "questionKho": "যদি ১২টি মোবাইল নষ্ট হয়ে যায় এবং বাকি মোবাইল ৭০০ টাকায় বিক্রি করেন, তবে লাভ বা ক্ষতি কত?",
+            "solution": "",
+            "solutionKo": "৯৬টি মোবাইলের দাম ৪৮০০০ টাক\n∴ ১টি মোবাইলের দাম (৪৮০০০ ÷ ৯৬) টাকা \n= ৫০০ টাকা\nউত্তর: ১টি মোবাইলের দাম ৫০০ টাকা।",
+            "solutionKho": "মোট মোবাইল \t৯৬টি\nনষ্ট মোবাইল \t(-) ১২ টি\n∴ বিক্রয়যোগ্য মোবাইল \t= ৮৪ টি\n∴ মোট বিক্রয়মূল্য = ৮৪ × ৭০০ = ৫৮৮০০ টাকা > ক্রয়মূল্য\n∴ লাভ = ৫৮৮০০ − ৪৮০০০ = ১০৮০০ টাকা\nউত্তর: ১০৮০০ টাকা লাভ।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Addition"
+          },
+          {
+            "id": "0404019",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "১২ জন শ্রমিক ১৮ দিনে একটি কাজ শেষ করে।",
+            "questionKo": "১ জন শ্রমিক একই কাজ করতে কত দিন লাগবে?",
+            "questionKho": "কাজটি ৯ দিনে শেষ করতে কতজন শ্রমিক প্রয়োজন?",
+            "solution": "",
+            "solutionKo": "১২ জন শ্রমিকের সময় লাগে ১৮ দিন\n∴ ১ জন শ্রমিকের সময় লাগে (১২ × ১৮) দিন\n= ২১৬ দিন\nউত্তর: ২১৬ দিন।",
+            "solutionKho": "১৮ দিনে শেষ করতে প্রয়োজন ১২ জন\n    ১ দিনে শেষ করতে প্রয়োজন ১২ × ১৮ জন\n৯ দিনে শেষ করতে প্রয়োজন (১২ × ১৮)/৯ জন\n= ২৪ জন\nউত্তর: ২৪ জন শ্রমিক।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0404020",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি কোম্পানির ৩টি শাখায় মোট ৫৪০০ জন কর্মচারী কাজ করেন।",
+            "questionKo": "যদি ৩টি শাখায় সমান সংখ্যক কর্মচারী থাকে, তবে প্রতিটি শাখায় কতজন কাজ করেন?",
+            "questionKho": "যদি কোম্পানিটি প্রতিটি কর্মচারীকে উৎসব ভাতা হিসেবে ২৫০০ টাকা করে দেয়, তবে কেবল ১টি শাখার কর্মচারীদের ভাতা দিতে কোম্পানির মোট কত টাকা খরচ হবে?",
+            "solution": "",
+            "solutionKo": "মোট কর্মচারী = ৫৪০০ জন, শাখা = ৩টি।\n∴ \tপ্রতিটি শাখায় কাজ করেন (৫৪০০ ÷ ৩) জন\n= ১৮০০ জন\n\tউত্তর: প্রতিটি শাখায় ১৮০০ জন কাজ করেন।",
+            "solutionKho": "‘ক’ হতে পাই, ১টি শাখায় কর্মচারী আছেন ১৮০০ জন।\n\t১ জন কর্মচারীর উৎসব ভাতা = ২৫০০ টাকা।\n∴ ১৮০০ জন কর্মচারীর উৎসব ভাতা (২৫০০ × ১৮০০) টাকা\n\t\t\t\t= ৪৫০০০০০ টাকা\nউত্তর: ১টি শাখার কর্মচারীদের ভাতা দিতে ৪৫০০০০০ টাকা খরচ হবে।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0404021",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "৮৫০টি চকলেট কিছু শিশুর মধ্যে ভাগ করে দেওয়া হলো। প্রত্যেকে ১৫টি করে চকলেট পেল এবং ১০টি চকলেট অবশিষ্ট রইল।",
+            "questionKo": "শিশুর সংখ্যা কত ছিল?",
+            "questionKho": "যদি কোনো চকলেট অবশিষ্ট না রেখে প্রত্যেক শিশুকে ২০টি করে চকলেট দিতে চাওয়া হয়, তবে মোট কতটি চকলেটের প্রয়োজন হবে এবং আরও কতটি চকলেট কিনতে হবে?",
+            "solution": "",
+            "solutionKo": "মোট চকলেট = ৮৫০টি\nঅবশিষ্ট চকলেট = ১০টি।\n∴ সমানভাবে ভাগ করা চকলেটের সংখ্যা (৮৫০ – ১০) টি\n= ৮৪০টি\n\tপ্রত্যেকে পেল = ১৫টি\n\tঅতএব, শিশুর সংখ্যা (৮৪০ ÷ ১৫) জন\n\t\t\t\t= ৫৬ জন \nউত্তর: শিশুর সংখ্যা ৫৬ জন।",
+            "solutionKho": "‘ক’ হতে পাই, শিশুর সংখ্যা ৫৬ জন।\nপ্রত্যেককে ২০টি করে চকলেট দিলে প্রয়োজন (৫৬ × ২০) টি\n= ১১২০টি চকলেট\n\tআগে থেকে চকলেট আছে ৮৫০টি।\n\tঅতএব, আরও কিনতে হবে (১১২০ – ৮৫০) টি\n= ২৭০টি চকলেট।\nউত্তর: মোট ১১২০টি চকলেটের প্রয়োজন হবে এবং আরও ২৭০টি চকলেট কিনতে হবে।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0404022",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "৫০০০ তা কাগজ দিয়ে খাতা তৈরি করা হচ্ছে। প্রতিটি খাতা তৈরি করতে ১২০ তা কাগজ লাগে।",
+            "questionKo": "কতটি সম্পূর্ণ খাতা তৈরি করা যাবে এবং কত তা কাগজ অবশিষ্ট থাকবে?",
+            "questionKho": "যদি মোট ৫০টি খাতা তৈরি করতে হয়, তবে আরও কত তা কাগজের প্রয়োজন হবে?",
+            "solution": "",
+            "solutionKo": "মোট কাগজ ৫০০০ তা\nপ্রতি খাতায় লাগে ১২০ তা\n∴ খাতার সংখ্যা (৫০০০ ÷ ১২০) টি \n= ৪১ টি এবং অবশিষ্ট ৮০ তা\nউত্তর: ৪১টি খাতা এবং ৮০ তা কাগজ অবশিষ্ট থাকবে।",
+            "solutionKho": "মোট ৫০টি খাতার জন্য কাগজ লাগবে (৫০ × ১২০) তা \n= ৬০০০ তা।\nআগে থেকে কাগজ আছে ৫০০০ তা\nঅতএব, আরও কাগজ প্রয়োজন (৬০০০ – ৫০০০) তা\n= ১০০০ তা\nউত্তর: আরও ১০০০ তা কাগজের প্রয়োজন হবে।",
+            "chapter": "4",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0404023",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "১ ডজন কলমের দাম ১৮০ টাকা। রিনার কাছে ৮০০ টাকা আছে।",
+            "questionKo": "১টি কলমের দাম কত?",
+            "questionKho": "রিনা তার সম্পূর্ণ টাকা দিয়ে সর্বোচ্চ কয়টি কলম কিনতে পারবে এবং তার কাছে কত টাকা অবশিষ্ট থাকবে? যদি সে ঠিক ৬০টি কলম কিনতে চায়, তবে তার আরও কত টাকা লাগবে?",
+            "solution": "",
+            "solutionKo": "আমরা জানি, ১ ডজন = ১২টি\n\t১২টি কলমের দাম ১৮০ টাকা\n\tঅতএব, ১টি কলমের দাম (১৮০ ÷ ১২) টাকা\n\t\t\t\t\t= ১৫ টাকা \nউত্তর: ১টি কলমের দাম ১৫ টাকা।",
+            "solutionKho": "রিনার কাছে আছে ৮০০ টাকা\n১টি কলমের দাম ১৫ টাকা\n∴ কলম কিনতে পারবে (৮০০ ÷ ১৫) টি\n= ৫৩ টি, অবশিষ্ট ৫ টাকা\nঅর্থাৎ ৫৩টি কলম কিনতে পারবে এবং ৫ টাকা অবশিষ্ট থাকবে।\nআবার, \n৬০টি কলমের দাম = ৬০ × ১৫ = ৯০০ টাকা।\nতার কাছে আছে ৮০০ টাকা\n∴ আরও টাকা লাগবে (৯০০ – ৮০০) টাকা\n= ১০০ টাকা।\nউত্তর: সে ৫৩টি কলম কিনতে পারবে ও ৫ টাকা অবশিষ্ট থাকবে। তার আরও ১০০ টাকা লাগবে।",
+            "chapter": "4",
             "hardness": "Medium",
             "tag": "General"
           }

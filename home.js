@@ -75,9 +75,6 @@ function clearQuickNote() {
 
 document.getElementById('saveQuickNoteBtn').addEventListener('click', saveQuickNote);
 document.getElementById('clearQuickNoteBtn').addEventListener('click', clearQuickNote);
-document.querySelector('.navDisabled').addEventListener('click', () => showHomeBanner('Question Maker is coming soon!'));
-document.querySelector('.shortcutDisabled').addEventListener('click', () => showHomeBanner('Question Maker is coming soon!'));
-
 window.onload = () => {
     updateClock();
     renderCalendar();
