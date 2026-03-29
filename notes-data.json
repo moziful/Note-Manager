@@ -6485,7 +6485,7 @@
             ],
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9001002",
@@ -6500,7 +6500,7 @@
             ],
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9001003",
@@ -6515,7 +6515,7 @@
             ],
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9001004",
@@ -6530,7 +6530,7 @@
             ],
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9001005",
@@ -6545,7 +6545,7 @@
             ],
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9001006",
@@ -6565,7 +6565,7 @@
             ],
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9001007",
@@ -6580,7 +6580,7 @@
             ],
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9001008",
@@ -6595,7 +6595,7 @@
             ],
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9001009",
@@ -6610,7 +6610,7 @@
             ],
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9001010",
@@ -6625,7 +6625,7 @@
             ],
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           }
         ],
 
@@ -6638,7 +6638,7 @@
             "answer": "সমান",
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9002002",
@@ -6648,7 +6648,7 @@
             "answer": "সমকোণ",
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9002003",
@@ -6658,7 +6658,7 @@
             "answer": "বাহু",
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9002004",
@@ -6668,7 +6668,7 @@
             "answer": "4a",
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9002005",
@@ -6678,7 +6678,7 @@
             "answer": "২",
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9002006",
@@ -6688,7 +6688,7 @@
             "answer": "৯০",
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9002007",
@@ -6698,7 +6698,7 @@
             "answer": "সমান",
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9002008",
@@ -6708,7 +6708,7 @@
             "answer": "চতুর্ভুজ",
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9002009",
@@ -6718,7 +6718,7 @@
             "answer": "সমকোণ",
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9002010",
@@ -6728,7 +6728,7 @@
             "answer": "সমান",
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           }
         ],
 
@@ -6741,7 +6741,7 @@
             "answer": "চারটি সমান বাহু ও চারটি সমকোণবিশিষ্ট চতুর্ভুজ।",
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9003002",
@@ -6751,7 +6751,7 @@
             "answer": "২টি।",
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9003003",
@@ -6761,7 +6761,7 @@
             "answer": "৩৬",
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9003004",
@@ -6771,7 +6771,7 @@
             "answer": "২৮",
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9003005",
@@ -6781,7 +6781,7 @@
             "answer": "৯০°",
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9003006",
@@ -6791,7 +6791,7 @@
             "answer": "সমান এবং সমকোণে ছেদ করে।",
             "chapter": "90",
             "hardness": "Medium",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9003007",
@@ -6801,7 +6801,7 @@
             "answer": "৬৪",
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9003008",
@@ -6811,7 +6811,7 @@
             "answer": "৩৬",
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9003009",
@@ -6821,7 +6821,7 @@
             "answer": "সমান",
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9003010",
@@ -6831,7 +6831,7 @@
             "answer": "একে অপরকে দ্বিখণ্ডিত করে।",
             "chapter": "90",
             "hardness": "Medium",
-            "tag": "Square"
+            "tag": "Geometry"
           }
         ],
 
@@ -6844,7 +6844,7 @@
             "solution": "ক্ষেত্রফল = ৫ × ৫ = ২৫ বর্গ সেমি",
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9004002",
@@ -6854,7 +6854,7 @@
             "solution": "পরিসীমা = 4×6 = ২৪ সেমি",
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9004003",
@@ -6864,7 +6864,7 @@
             "solution": "ক্ষেত্রফল = ১০×১০ = ১০০ বর্গমিটার",
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9004004",
@@ -6874,7 +6874,7 @@
             "solution": "পরিসীমা = ৪×১২ = ৪৮",
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9004005",
@@ -6884,7 +6884,7 @@
             "solution": "২০×২০ = ৪০০ বর্গমিটার",
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9004006",
@@ -6894,7 +6894,7 @@
             "solution": "৪০÷৪ = ১০",
             "chapter": "90",
             "hardness": "Medium",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9004007",
@@ -6904,7 +6904,7 @@
             "solution": "√৬৪ = ৮",
             "chapter": "90",
             "hardness": "Medium",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9004008",
@@ -6914,7 +6914,7 @@
             "solution": "৪×১৫ = ৬০",
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9004009",
@@ -6924,7 +6924,7 @@
             "solution": "√৮১ = ৯",
             "chapter": "90",
             "hardness": "Medium",
-            "tag": "Square"
+            "tag": "Geometry"
           },
           {
             "id": "9004010",
@@ -6934,7 +6934,7 @@
             "solution": "২৫×২৫ = ৬২৫ বর্গমিটার",
             "chapter": "90",
             "hardness": "Easy",
-            "tag": "Square"
+            "tag": "Geometry"
           }
         ]
       }

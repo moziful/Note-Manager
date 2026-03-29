@@ -307,7 +307,6 @@ function renderGeneratedSection(title, items, type) {
                             `).join('')}
                         </div>
                     ` : ''}
-                    ${item.answer ? `<div class="mt-3 rounded-lg bg-white px-3 py-2 text-sm bnFont"><span class="font-semibold">Answer:</span> ${formatFractions(item.answer)}</div>` : ''}
                     ${item.questionKo ? `<div class="mt-3 rounded-lg bg-white px-3 py-2 text-sm bnFont"><span class="font-semibold">(ক)</span> ${formatFractions(item.questionKo)}</div>` : ''}
                     ${item.questionKho ? `<div class="mt-2 rounded-lg bg-white px-3 py-2 text-sm bnFont"><span class="font-semibold">(খ)</span> ${formatFractions(item.questionKho)}</div>` : ''}
                 </article>
@@ -315,7 +314,78 @@ function renderGeneratedSection(title, items, type) {
         </section>
     `;
 }
+function renderAnswerBox(generated) {
 
+    function render(type, items) {
+        if (!items.length) return '';
+
+        return `
+            <div class="bg-white p-4 rounded-xl shadow">
+                <div class="font-bold text-lg mb-2">${type}</div>
+                ${items.map((item, i) => `
+                    <div class="text-sm flex gap-2">
+                        <span class="font-semibold">${i + 1}.</span>
+                        <span>${formatFractions(getAnswer(item) || '—')}</span>
+                    </div>
+                `).join('')}
+            </div>
+        `;
+    }
+
+    return `
+        <section class="bg-green-100 border-2 border-green-400 p-4 rounded-xl space-y-4">
+            <div class="text-xl font-bold text-green-800">Answer Sheet</div>
+
+            ${render('MCQ', generated.mcq)}
+            ${render('Blanks', generated.blanks)}
+            ${render('Short', generated.shorts)}
+            ${render('Word', generated.words)}
+            ${render('Geometry', generated.geometry)}
+        </section>
+    `;
+}
+function getAnswer(item) {
+    // MCQ
+    if (item.type === 'mcq' && item.options) {
+        const correct = item.options.find(o => o.isCorrect);
+        if (correct) return `${correct.key}) ${correct.text}`;
+    }
+
+    // Blanks or Shorts
+    if ((item.type === 'blanks' || item.type === 'short') && item.answer) {
+        return item.answer;
+    }
+
+    // Word problem
+    if (item.type === 'word_problem') {
+        const answers = [];
+
+        // Ko part
+        if (item.solutionKo) {
+            const lines = item.solutionKo.split('\n');
+            const ansLine = lines.reverse().find(line => line.trim().startsWith('উত্তর'));
+            if (ansLine) answers.push(`(ক) ${ansLine.replace('উত্তর:', '').trim()}`);
+        }
+
+        // Kho part
+        if (item.solutionKho) {
+            const lines = item.solutionKho.split('\n');
+            const ansLine = lines.reverse().find(line => line.trim().startsWith('উত্তর'));
+            if (ansLine) answers.push(`(খ) ${ansLine.replace('উত্তর:', '').trim()}`);
+        }
+
+        // Fallback to single solution field
+        if (!answers.length && item.solution) {
+            const lines = item.solution.split('\n');
+            const ansLine = lines.reverse().find(line => line.trim().startsWith('উত্তর'));
+            if (ansLine) answers.push(ansLine.replace('উত্তর:', '').trim());
+        }
+
+        return answers.join(' | ') || '—';
+    }
+
+    return '—'; // fallback if no answer found
+}
 function updateReport() {
     const pool = getPoolForSelection();
     const requested = getRequestedCounts();
@@ -339,29 +409,53 @@ async function loadData() {
 function generatePaper() {
     const chapterGroups = splitSelectedChapters();
     const requested = getRequestedCounts();
+
+    // Step 1: Pick 1 MCQ, 1 Blank, 1 Short from geometry chapters (if available)
+    const geomMCQ = pickChapterCovered(chapterGroups.geometry, 'mcq', 1, true);
+    const geomBlank = pickChapterCovered(chapterGroups.geometry, 'blanks', 1, true);
+    const geomShort = pickChapterCovered(chapterGroups.geometry, 'shorts', 1, true);
+
+    // Step 2: Adjust requested counts for regular chapters
+    const adjustedRequested = {
+        mcq: Math.max(0, requested.mcq - geomMCQ.length),
+        blanks: Math.max(0, requested.blanks - geomBlank.length),
+        shorts: Math.max(0, requested.shorts - geomShort.length),
+        words: requested.words,
+        geometry: Math.max(0, requested.geometry) // keep geometry words as before
+    };
+
+    // Step 3: Pick remaining questions from regular chapters
     const generated = {
-        mcq: pickChapterCovered(chapterGroups.regular, 'mcq', requested.mcq, true),
-        blanks: pickChapterCovered(chapterGroups.regular, 'blanks', requested.blanks, false),
-        shorts: pickChapterCovered(chapterGroups.regular, 'shorts', requested.shorts, false),
-        words: pickChapterCovered(chapterGroups.regular, 'words', requested.words, true),
-        geometry: pickChapterCovered(chapterGroups.geometry, 'geometry', requested.geometry, true)
+        mcq: [...pickChapterCovered(chapterGroups.regular, 'mcq', adjustedRequested.mcq, true), ...geomMCQ],
+        blanks: [...pickChapterCovered(chapterGroups.regular, 'blanks', adjustedRequested.blanks, false), ...geomBlank],
+        shorts: [...pickChapterCovered(chapterGroups.regular, 'shorts', adjustedRequested.shorts, false), ...geomShort],
+        words: pickChapterCovered(chapterGroups.regular, 'words', adjustedRequested.words, true),
+        geometry: pickChapterCovered(chapterGroups.geometry, 'geometry', adjustedRequested.geometry, true)
     };
 
     document.getElementById('qmOutput').innerHTML = `
-        <section class="bg-white p-4 rounded-xl shadow">
-            <div class="text-2xl font-bold">Generated Question Paper</div>
-            <div class="mt-2 text-slate-600">Class ${selectedClass || '-'} | Chapters ${getSelectedChapters().join(', ') || '-'} | Full Mark ${selectedFullMark} | ${selectedHardness} Mix</div>
-        </section>
-        ${renderGeneratedSection('MCQ', generated.mcq, 'MCQ')}
-        ${renderGeneratedSection('Blank', generated.blanks, 'Blank')}
-        ${renderGeneratedSection('Short', generated.shorts, 'Short')}
-        ${renderGeneratedSection('Word', generated.words, 'Word')}
-        ${renderGeneratedSection('Geometry', generated.geometry, 'Geometry')}
-    `;
+    <section class="bg-white p-4 rounded-xl shadow">
+        <div class="text-2xl font-bold">Generated Question Paper</div>
+        <div class="mt-2 text-slate-600">
+            Class ${selectedClass || '-'} | 
+            Chapters ${getSelectedChapters().join(', ') || '-'} | 
+            Full Mark ${selectedFullMark} | 
+            ${selectedHardness} Mix
+        </div>
+    </section>
+
+    ${renderGeneratedSection('MCQ', generated.mcq, 'MCQ')}
+    ${renderGeneratedSection('Blank', generated.blanks, 'Blank')}
+    ${renderGeneratedSection('Short', generated.shorts, 'Short')}
+    ${renderGeneratedSection('Word', generated.words, 'Word')}
+    ${renderGeneratedSection('Geometry', generated.geometry, 'Geometry')}
+
+    <!-- ✅ Separate Answer Box -->
+    ${renderAnswerBox(generated)}
+`;
 
     showBanner('Question paper generated!');
 }
-
 document.getElementById('toggleAllChaptersBtn').addEventListener('click', () => {
     const boxes = [...document.querySelectorAll('#qmChapterList input[type=\"checkbox\"]')];
     const shouldCheck = boxes.some(box => !box.checked);
