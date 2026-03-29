@@ -6455,6 +6455,489 @@
           }
         ]
       }
+    },
+    {
+      "class": "4",
+      "chapterNumber": "90",
+      "chapterTitle": "বর্গ",
+      "content": {
+        "mcq": [
+          {
+            "id": "9001001",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "বর্গের সব বাহু কেমন?",
+            "options": [
+              { "id": "a", "key": "ক", "text": "সমান", "isCorrect": true },
+              { "id": "b", "key": "খ", "text": "অসমান", "isCorrect": false },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "দুটি সমান",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "কোনোটিই নয়",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9001002",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "বর্গের প্রতিটি কোণ কত?",
+            "options": [
+              { "id": "a", "key": "ক", "text": "৯০°", "isCorrect": true },
+              { "id": "b", "key": "খ", "text": "৬০°", "isCorrect": false },
+              { "id": "c", "key": "গ", "text": "১২০°", "isCorrect": false },
+              { "id": "d", "key": "ঘ", "text": "১৮০°", "isCorrect": false }
+            ],
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9001003",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "বর্গের ক্ষেত্রফল কত?",
+            "options": [
+              { "id": "a", "key": "ক", "text": "a²", "isCorrect": true },
+              { "id": "b", "key": "খ", "text": "2a", "isCorrect": false },
+              { "id": "c", "key": "গ", "text": "a×b", "isCorrect": false },
+              { "id": "d", "key": "ঘ", "text": "πr²", "isCorrect": false }
+            ],
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9001004",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "বর্গের পরিসীমা কত?",
+            "options": [
+              { "id": "a", "key": "ক", "text": "4a", "isCorrect": true },
+              { "id": "b", "key": "খ", "text": "a²", "isCorrect": false },
+              { "id": "c", "key": "গ", "text": "2a", "isCorrect": false },
+              { "id": "d", "key": "ঘ", "text": "a+b", "isCorrect": false }
+            ],
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9001005",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "বর্গের কর্ণ সংখ্যা কত?",
+            "options": [
+              { "id": "a", "key": "ক", "text": "১", "isCorrect": false },
+              { "id": "b", "key": "খ", "text": "২", "isCorrect": true },
+              { "id": "c", "key": "গ", "text": "৩", "isCorrect": false },
+              { "id": "d", "key": "ঘ", "text": "৪", "isCorrect": false }
+            ],
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9001006",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "বর্গের কর্ণ কেমন?",
+            "options": [
+              { "id": "a", "key": "ক", "text": "সমান", "isCorrect": true },
+              { "id": "b", "key": "খ", "text": "অসমান", "isCorrect": false },
+              { "id": "c", "key": "গ", "text": "লম্ব নয়", "isCorrect": false },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "কোনোটিই নয়",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9001007",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "বর্গের কর্ণ একে অপরকে কত ডিগ্রিতে ছেদ করে?",
+            "options": [
+              { "id": "a", "key": "ক", "text": "৯০°", "isCorrect": true },
+              { "id": "b", "key": "খ", "text": "৬০°", "isCorrect": false },
+              { "id": "c", "key": "গ", "text": "১২০°", "isCorrect": false },
+              { "id": "d", "key": "ঘ", "text": "৩০°", "isCorrect": false }
+            ],
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9001008",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "বর্গ একটি কী?",
+            "options": [
+              { "id": "a", "key": "ক", "text": "ত্রিভুজ", "isCorrect": false },
+              { "id": "b", "key": "খ", "text": "চতুর্ভুজ", "isCorrect": true },
+              { "id": "c", "key": "গ", "text": "বৃত্ত", "isCorrect": false },
+              { "id": "d", "key": "ঘ", "text": "রেখা", "isCorrect": false }
+            ],
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9001009",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "বাহু ৪ হলে ক্ষেত্রফল কত?",
+            "options": [
+              { "id": "a", "key": "ক", "text": "১৬", "isCorrect": true },
+              { "id": "b", "key": "খ", "text": "৮", "isCorrect": false },
+              { "id": "c", "key": "গ", "text": "১২", "isCorrect": false },
+              { "id": "d", "key": "ঘ", "text": "২০", "isCorrect": false }
+            ],
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9001010",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "বাহু ৫ হলে পরিসীমা কত?",
+            "options": [
+              { "id": "a", "key": "ক", "text": "২০", "isCorrect": true },
+              { "id": "b", "key": "খ", "text": "২৫", "isCorrect": false },
+              { "id": "c", "key": "গ", "text": "১৫", "isCorrect": false },
+              { "id": "d", "key": "ঘ", "text": "৩০", "isCorrect": false }
+            ],
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          }
+        ],
+
+        "blanks": [
+          {
+            "id": "9002001",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "বর্গের সব বাহু ______।",
+            "answer": "সমান",
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9002002",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "বর্গের সব কোণ ______।",
+            "answer": "সমকোণ",
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9002003",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "ক্ষেত্রফল = ______²",
+            "answer": "বাহু",
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9002004",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "পরিসীমা = ______",
+            "answer": "4a",
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9002005",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "কর্ণ সংখ্যা ______",
+            "answer": "২",
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9002006",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "প্রতিটি কোণ ______ ডিগ্রি",
+            "answer": "৯০",
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9002007",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "কর্ণ ______ হয়",
+            "answer": "সমান",
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9002008",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "বর্গ একটি ______",
+            "answer": "চতুর্ভুজ",
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9002009",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "কর্ণ ______ কোণে ছেদ করে",
+            "answer": "সমকোণ",
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9002010",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "বিপরীত বাহু ______",
+            "answer": "সমান",
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          }
+        ],
+
+        "shorts": [
+          {
+            "id": "9003001",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "বর্গ কী?",
+            "answer": "চারটি সমান বাহু ও চারটি সমকোণবিশিষ্ট চতুর্ভুজ।",
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9003002",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "বর্গের কর্ণ কয়টি?",
+            "answer": "২টি।",
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9003003",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "বাহু ৬ হলে ক্ষেত্রফল কত?",
+            "answer": "৩৬",
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9003004",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "বাহু ৭ হলে পরিসীমা কত?",
+            "answer": "২৮",
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9003005",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "বর্গের প্রতিটি কোণ কত?",
+            "answer": "৯০°",
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9003006",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "বর্গের কর্ণের বৈশিষ্ট্য কী?",
+            "answer": "সমান এবং সমকোণে ছেদ করে।",
+            "chapter": "90",
+            "hardness": "Medium",
+            "tag": "Square"
+          },
+          {
+            "id": "9003007",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "বাহু ৮ হলে ক্ষেত্রফল কত?",
+            "answer": "৬৪",
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9003008",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "বাহু ৯ হলে পরিসীমা কত?",
+            "answer": "৩৬",
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9003009",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "বর্গের বিপরীত কোণ কেমন?",
+            "answer": "সমান",
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9003010",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "বর্গের কর্ণ কী করে?",
+            "answer": "একে অপরকে দ্বিখণ্ডিত করে।",
+            "chapter": "90",
+            "hardness": "Medium",
+            "tag": "Square"
+          }
+        ],
+
+        "words": [
+          {
+            "id": "9004001",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি বর্গের বাহু ৫ সেমি। এর ক্ষেত্রফল কত?",
+            "solution": "ক্ষেত্রফল = ৫ × ৫ = ২৫ বর্গ সেমি",
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9004002",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি বর্গের বাহু ৬ সেমি। এর পরিসীমা কত?",
+            "solution": "পরিসীমা = 4×6 = ২৪ সেমি",
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9004003",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি বর্গাকার জমির বাহু ১০ মিটার। এর ক্ষেত্রফল কত?",
+            "solution": "ক্ষেত্রফল = ১০×১০ = ১০০ বর্গমিটার",
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9004004",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি বর্গের বাহু ১২ হলে পরিসীমা কত?",
+            "solution": "পরিসীমা = ৪×১২ = ৪৮",
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9004005",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি বর্গাকার মাঠের বাহু ২০ মিটার। ক্ষেত্রফল কত?",
+            "solution": "২০×২০ = ৪০০ বর্গমিটার",
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9004006",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি বর্গের পরিসীমা ৪০। বাহু কত?",
+            "solution": "৪০÷৪ = ১০",
+            "chapter": "90",
+            "hardness": "Medium",
+            "tag": "Square"
+          },
+          {
+            "id": "9004007",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "ক্ষেত্রফল ৬৪ হলে বাহু কত?",
+            "solution": "√৬৪ = ৮",
+            "chapter": "90",
+            "hardness": "Medium",
+            "tag": "Square"
+          },
+          {
+            "id": "9004008",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি বর্গের বাহু ১৫। পরিসীমা কত?",
+            "solution": "৪×১৫ = ৬০",
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          },
+          {
+            "id": "9004009",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি বর্গের ক্ষেত্রফল ৮১। বাহু কত?",
+            "solution": "√৮১ = ৯",
+            "chapter": "90",
+            "hardness": "Medium",
+            "tag": "Square"
+          },
+          {
+            "id": "9004010",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি বর্গাকার বাগানের বাহু ২৫ মিটার। ক্ষেত্রফল কত?",
+            "solution": "২৫×২৫ = ৬২৫ বর্গমিটার",
+            "chapter": "90",
+            "hardness": "Easy",
+            "tag": "Square"
+          }
+        ]
+      }
     }
   ]
 }
