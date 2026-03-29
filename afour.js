@@ -24,7 +24,7 @@ const HARDNESS_PROFILES = {
 let notesData = { chapters: [] };
 let selectedClass = '';
 let selectedHardness = 'Hard';
-let selectedFullMark = '100';
+let selectedFullMark = '50';
 
 function showBanner(message) {
     const banner = document.getElementById('notificationBanner');
@@ -314,6 +314,41 @@ function renderGeneratedSection(title, items, type) {
         </section>
     `;
 }
+
+function englishToBanglaNumber(value) {
+    return String(value || '').replace(/[0-9]/g, d => '০১২৩৪৫৬৭৮৯'[Number(d)]);
+}
+
+function renderGeneratedSectionAFour(title, items, type) {
+    if (!items.length) return '';
+    return `
+        <section class="bg-yellow-200 p-4 rounded-xl shadow space-y-1 leading-none">
+            <div class="text-lg font-bold">${title}</div>
+            ${items.map((item, index) => `
+                <article>
+                    <div class="w-full flex">
+                        <div class="w-7">${englishToBanglaNumber(index + 1)}.</div>
+                        <div class="w-full bnFont bg-orange-400">${formatFractions(item.question || '')}
+                        ${Array.isArray(item.options) && item.options.length ? `
+                            <div class="grid grid-cols-4 gap-2 bnFont">
+                                ${item.options.map(option => `
+                                    <div>
+                                        <span>${escapeHtml(option.key || '')})</span>
+                                        <span>${formatFractions(option.text || '')}</span>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        ` : ''}
+                        ${item.questionKo ? `<div class="bnFont"><span>ক)</span> ${formatFractions(item.questionKo)}</div>` : ''}
+                        ${item.questionKho ? `<div class="bnFont"><span>খ)</span> ${formatFractions(item.questionKho)}</div>` : ''}
+                        </div>
+                    </div>
+                </article>
+            `).join('')}
+        </section>
+    `;
+}
+
 function renderAnswerBox(generated) {
 
     function render(type, items) {
@@ -433,7 +468,7 @@ function generatePaper() {
         geometry: pickChapterCovered(chapterGroups.geometry, 'geometry', adjustedRequested.geometry, true)
     };
 
-    const htmlOutput = `
+    document.getElementById('qmOutput').innerHTML = `
     <section class="bg-white p-4 rounded-xl shadow">
         <div class="text-2xl font-bold">Generated Question Paper</div>
         <div class="mt-2 text-slate-600">
@@ -454,191 +489,59 @@ function generatePaper() {
     ${renderAnswerBox(generated)}
 `;
 
-    document.getElementById('qmOutput').innerHTML = htmlOutput;
-    lastGeneratedHtml = htmlOutput;
-    isPdfFormatMode = false;
-
-    // Show Format PDF button after generate
-    document.getElementById('formatPdfBtn').classList.remove('hidden');
     showBanner('Question paper generated!');
 }
 
-// Store generated questions globally for PDF formatting
-let lastGeneratedQuestions = {};
-let lastGeneratedHtml = '';
-let isPdfFormatMode = false;
-function collectQuestionsFromOutput() {
-    const sections = document.querySelectorAll('#qmOutput section');
-    const collected = {
-        mcq: [],
-        blanks: [],
-        shorts: [],
-        words: [],
-        geometry: [],
-        metadata: {}
+function generatePaperAFour() {
+    const chapterGroups = splitSelectedChapters();
+    const requested = getRequestedCounts();
+
+    // Step 1: Pick 1 MCQ, 1 Blank, 1 Short from geometry chapters (if available)
+    const geomMCQ = pickChapterCovered(chapterGroups.geometry, 'mcq', 1, true);
+    const geomBlank = pickChapterCovered(chapterGroups.geometry, 'blanks', 1, true);
+    const geomShort = pickChapterCovered(chapterGroups.geometry, 'shorts', 1, true);
+
+    // Step 2: Adjust requested counts for regular chapters
+    const adjustedRequested = {
+        mcq: Math.max(0, requested.mcq - geomMCQ.length),
+        blanks: Math.max(0, requested.blanks - geomBlank.length),
+        shorts: Math.max(0, requested.shorts - geomShort.length),
+        words: requested.words,
+        geometry: Math.max(0, requested.geometry) // keep geometry words as before
     };
 
-    sections.forEach(section => {
-        const title = section.querySelector('.text-lg, .text-2xl, .text-xl');
-        const articles = section.querySelectorAll('article');
+    // Step 3: Pick remaining questions from regular chapters
+    const generated = {
+        mcq: [...pickChapterCovered(chapterGroups.regular, 'mcq', adjustedRequested.mcq, true), ...geomMCQ],
+        blanks: [...pickChapterCovered(chapterGroups.regular, 'blanks', adjustedRequested.blanks, false), ...geomBlank],
+        shorts: [...pickChapterCovered(chapterGroups.regular, 'shorts', adjustedRequested.shorts, false), ...geomShort],
+        words: pickChapterCovered(chapterGroups.regular, 'words', adjustedRequested.words, true),
+        geometry: pickChapterCovered(chapterGroups.geometry, 'geometry', adjustedRequested.geometry, true)
+    };
 
-        if (!title) return; // Skip if no title (like metadata section)
-
-        const titleText = title.textContent.toLowerCase();
-
-        articles.forEach((article, index) => {
-            const questionText = article.querySelector('.bnFont');
-            const header = article.querySelector('.text-xs.uppercase');
-
-            if (questionText) {
-                const item = {
-                    index: index + 1,
-                    sectionType: titleText,
-                    question: questionText.innerHTML,
-                    header: header ? header.textContent : '',
-                    html: article.innerHTML
-                };
-
-                if (titleText.includes('mcq')) collected.mcq.push(item);
-                else if (titleText.includes('blank')) collected.blanks.push(item);
-                else if (titleText.includes('short')) collected.shorts.push(item);
-                else if (titleText.includes('word')) collected.words.push(item);
-                else if (titleText.includes('geometry')) collected.geometry.push(item);
-            }
-        });
-    });
-
-    return collected;
-}
-
-// Render question item for A4 layout
-function renderA4QuestionItem(item) {
-    return `
-        <div class="a4-question-item">
-            <div class="question-header">${escapeHtml(item.header)}</div>
-            <div class="question-text">${item.question}</div>
+    document.getElementById('qmOutput').innerHTML = `
+    <section class="bg-blue-200 p-4 rounded-xl shadow">
+        <div class="text-2xl font-bold">Generated Question Paper</div>
+        <div class="mt-2 text-green-600">
+            Class ${selectedClass || '-'} | 
+            Chapters ${getSelectedChapters().join(', ') || '-'} | 
+            Full Mark ${selectedFullMark} | 
+            ${selectedHardness} Mix
         </div>
-    `;
+    </section>
+
+    ${renderGeneratedSectionAFour('বহুনির্বাচনী প্রশ্ন (সঠিক উত্তরটি খাতায় লিখ):', generated.mcq, 'MCQ')}
+    ${renderGeneratedSectionAFour('শূন্যস্থান পূরণ কর:', generated.blanks, 'Blank')}
+    ${renderGeneratedSectionAFour(`সংক্ষেপে উত্তর দাও (যেকোনো ${englishToBanglaNumber(generated.shorts.length - 2)} টি):`, generated.shorts, 'Short')}
+    ${renderGeneratedSectionAFour('১০ টি প্রশ্নের উত্তর দাও:', generated.words, 'Word')}
+    ${renderGeneratedSectionAFour('জ্যামিতি', generated.geometry, 'Geometry')}
+
+    <!-- ✅ Separate Answer Box: ${renderAnswerBox(generated)} -->
+    
+`;
+
+    showBanner('A4 Formatted!');
 }
-
-// Distribute questions into A4 pages following the pattern:
-// Single page: Left → Right
-// Two pages: Page1 Right → Page2 Left → Page2 Right → Page1 Left
-function distributeQuestionsToPages(allQuestions) {
-    const totalQuestions = allQuestions.length;
-
-    // Determine if we need 1 or 2 pages based on estimated space
-    // Assuming ~6-8 questions per column in A4 landscape
-    const need2Pages = totalQuestions > 12;
-
-    if (!need2Pages) {
-        // Single page: arrange in 2 columns (left first, then right)
-        const mid = Math.ceil(totalQuestions / 2);
-        return [{
-            columns: [
-                allQuestions.slice(0, mid),
-                allQuestions.slice(mid)
-            ]
-        }];
-    } else {
-        // Two pages with specific flow pattern:
-        // Flow order: Page1Right → Page2Left → Page2Right → Page1Left
-        // Visual layout (what user sees when printing):
-        // Page 1: [Left (empty/reserved), Right (questions)]
-        // Page 2: [Left (questions), Right (questions)]
-
-        // Divide questions into 4 roughly equal parts
-        const quarterSize = Math.ceil(totalQuestions / 4);
-
-        const page1Right = allQuestions.slice(0, quarterSize);
-        const page2Left = allQuestions.slice(quarterSize, quarterSize * 2);
-        const page2Right = allQuestions.slice(quarterSize * 2, quarterSize * 3);
-        const page1Left = allQuestions.slice(quarterSize * 3);
-
-        return [
-            {
-                columns: [page1Left, page1Right]
-            },
-            {
-                columns: [page2Left, page2Right]
-            }
-        ];
-    }
-}
-
-// Generate A4 PDF Layout
-function formatPdfLayout() {
-    const questions = collectQuestionsFromOutput();
-
-    // Combine all questions in order
-    const allQuestions = [
-        ...questions.mcq,
-        ...questions.blanks,
-        ...questions.shorts,
-        ...questions.words,
-        ...questions.geometry
-    ];
-
-    if (!allQuestions.length) {
-        showBanner('No questions to format. Generate a paper first!');
-        return;
-    }
-
-    const pages = distributeQuestionsToPages(allQuestions);
-
-    let pdfHtml = '<div class="a4-pdf-container">';
-
-    pages.forEach((page, pageIndex) => {
-        pdfHtml += `<div class="a4-page" data-page="${pageIndex + 1}">`;
-
-        page.columns.forEach((columnQuestions, colIndex) => {
-            const pageNum = pageIndex + 1;
-            const colName = colIndex === 0 ? 'Left' : 'Right';
-
-            pdfHtml += '<div class="a4-column">';
-            pdfHtml += `<div class="a4-page-label">Page ${pageNum} - ${colName}</div>`;
-
-            if (columnQuestions.length === 0) {
-                pdfHtml += '<div style="padding: 20px; text-align: center; color: #d1d5db;">Reserved for content</div>';
-            } else {
-                columnQuestions.forEach(q => {
-                    pdfHtml += renderA4QuestionItem(q);
-                });
-            }
-            pdfHtml += '</div>';
-        });
-
-        pdfHtml += '</div>';
-    });
-
-    pdfHtml += `
-    <div style="margin-top: 20px; padding: 10px; text-align: center;">
-        <button onclick="backToFullView()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Back to Full View
-        </button>
-        <button onclick="window.print()" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded ml-2">
-            Print PDF
-        </button>
-    </div>`;
-
-    pdfHtml += '</div>';
-
-    // Replace output with formatted PDF view
-    document.getElementById('qmOutput').innerHTML = pdfHtml;
-    isPdfFormatMode = true;
-    showBanner('PDF layout formatted! Ready to print.');
-}
-
-// Return to full question view
-function backToFullView() {
-    if (lastGeneratedHtml) {
-        document.getElementById('qmOutput').innerHTML = lastGeneratedHtml;
-        isPdfFormatMode = false;
-        showBanner('Switched back to full view.');
-    }
-}
-
-window.backToFullView = backToFullView;
 
 document.getElementById('toggleAllChaptersBtn').addEventListener('click', () => {
     const boxes = [...document.querySelectorAll('#qmChapterList input[type=\"checkbox\"]')];
@@ -656,9 +559,8 @@ document.getElementById('qmChapterList').addEventListener('change', updateReport
 document.getElementById('generatePaperBtn').addEventListener('click', () => runAction(document.getElementById('generatePaperBtn'), 'Generating...', async () => {
     generatePaper();
 }));
-
 document.getElementById('formatPdfBtn').addEventListener('click', () => runAction(document.getElementById('formatPdfBtn'), 'Formatting...', async () => {
-    formatPdfLayout();
+    generatePaperAFour();
 }));
 
 window.selectClass = selectClass;
@@ -673,6 +575,7 @@ window.onload = async () => {
         renderFullMarkSelectors();
         applyCountPreset();
         renderChapterList();
+        generatePaperAFour(); // Generate paper in A4 format on load for quick preview
     } catch (error) {
         console.error(error);
         showBanner(error.message || 'Failed to load question maker data.');

@@ -24,120 +24,6 @@
             scrollbar-width: none;
             /* Firefox */
         }
-
-        /* A4 Page Layout Styling */
-        .a4-page {
-            width: 297mm;
-            height: 210mm;
-            padding: 10mm;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10mm;
-            page-break-after: always;
-            background: white;
-            border: 1px solid #e5e7eb;
-            margin-bottom: 10px;
-            box-sizing: border-box;
-        }
-
-        .a4-column {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            overflow-y: auto;
-            padding-right: 5px;
-        }
-
-        .a4-column::-webkit-scrollbar {
-            width: 4px;
-        }
-
-        .a4-column::-webkit-scrollbar-track {
-            background: #f1f1f1;
-            border-radius: 10px;
-        }
-
-        .a4-column::-webkit-scrollbar-thumb {
-            background: #888;
-            border-radius: 10px;
-        }
-
-        .a4-question-item {
-            background: white;
-            border: 1px solid #d1d5db;
-            border-radius: 6px;
-            padding: 8px;
-            font-size: 12px;
-            flex-shrink: 0;
-        }
-
-        .a4-question-item .question-header {
-            font-size: 10px;
-            color: #6b7280;
-            margin-bottom: 4px;
-            font-weight: 600;
-        }
-
-        .a4-question-item .question-text {
-            font-weight: 600;
-            font-size: 12px;
-            color: #1f2937;
-            margin-bottom: 4px;
-        }
-
-        .a4-question-options {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4px;
-            margin-top: 4px;
-        }
-
-        .a4-option {
-            border: 1px solid #e5e7eb;
-            padding: 4px;
-            border-radius: 3px;
-            font-size: 11px;
-            background: #f9fafb;
-        }
-
-        .a4-pdf-container {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-top: 10px;
-        }
-
-        @media print {
-            .a4-page {
-                margin: 0;
-                padding: 10mm;
-                border: none;
-                box-shadow: none;
-                page-break-after: always;
-            }
-
-            .a4-column {
-                max-height: 190mm;
-                overflow: visible;
-            }
-
-            .a4-page-label {
-                display: none;
-            }
-        }
-
-        .a4-page-label {
-            font-size: 10px;
-            color: #9ca3af;
-            margin-bottom: 4px;
-            font-weight: 600;
-            padding: 4px;
-            border-bottom: 1px solid #e5e7eb;
-        }
-
-        .a4-toggle-view {
-            margin-bottom: 10px;
-        }
     </style>
 </head>
 
@@ -220,16 +106,22 @@
             <!-- Report -->
             <div id="qmReport" class="p-1 bg-slate-100 rounded-lg text-sm space-y-2"></div>
             <!-- Button -->
-            <button id="generatePaperBtn" class="w-full bg-purple-500 text-white px-4 py-3 rounded-lg action-btn">
+            <button id="generatePaperBtn"
+                class="hidden w-full bg-purple-500 text-white px-4 py-3 rounded-lg action-btn">
                 <span class="btn-label">Generate Paper</span>
             </button>
-            <button id="formatPdfBtn" class="w-full bg-green-600 text-white px-4 py-3 rounded-lg action-btn hidden">
+            <button id="formatPdfBtn" class="w-full bg-green-500 text-white px-4 py-3 rounded-lg action-btn">
                 <span class="btn-label">Format PDF</span>
+            </button>
+            <button id="downloadPdfBtn" class="w-full bg-blue-500 text-white px-4 py-3 rounded-lg action-btn">
+                <span class="btn-label">Download PDF</span>
             </button>
         </div>
 
         <main class="flex-1 space-y-4">
             <section id="qmOutput" class="space-y-4"></section>
+            <section id="pdfOutput" class="hidden"></section>
+
         </main>
     </div>
 
@@ -238,7 +130,7 @@
         <span id="bannerText"></span>
     </div>
 
-    <script src="question-maker.js"></script>
+    <script src="afour.js"></script>
 </body>
 
 </html>
