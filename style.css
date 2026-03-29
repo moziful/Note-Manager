@@ -9,24 +9,22 @@
   justify-content: center;
   vertical-align: middle;
   line-height: 1;
-  margin: 0 0.08rem;
-  min-width: 1.6em;
 }
 
 .fraction-top,
 .fraction-bottom {
   display: block;
   text-align: center;
-  padding: 0 0.15rem;
+  padding: 0 0.1rem;
 }
 
 .fraction-top {
   border-bottom: 1px solid currentColor;
-  padding-bottom: 0.08rem;
+  padding-bottom: 0.05rem;
 }
 
 .fraction-bottom {
-  padding-top: 0.08rem;
+  padding-top: 0.05rem;
 }
 
 .action-btn {

@@ -25,6 +25,10 @@ let notesData = { chapters: [] };
 let selectedClass = '';
 let selectedHardness = 'Hard';
 let selectedFullMark = '50';
+let examDate = null;
+let schoolName = null;
+let sections = null;
+let examYear = null;
 
 function showBanner(message) {
     const banner = document.getElementById('notificationBanner');
@@ -318,33 +322,208 @@ function renderGeneratedSection(title, items, type) {
 function englishToBanglaNumber(value) {
     return String(value || '').replace(/[0-9]/g, d => '০১২৩৪৫৬৭৮৯'[Number(d)]);
 }
+function getOptionGridCols(options) {
+    if (!Array.isArray(options) || !options.length) return 'grid-cols-4';
+    const maxLength = Math.max(...options.map(o => String(o.text || '').length));
+    return maxLength > 15 ? 'grid-cols-2' : 'grid-cols-4';
+}
 
+function getOptionTextSize(options) {
+    if (!Array.isArray(options) || !options.length) return 'text-sm';
+    const maxLength = Math.max(...options.map(o => String(o.text || '').length));
+    if (maxLength > 40) return 'text-xs';
+    if (maxLength > 20) return 'text-sm';
+    return 'text-base';
+} function hasFraction(text) {
+    return /(\/|fraction)/.test(String(text || ''));
+}
+
+function getExamDate() {
+    if (examDate) return examDate;
+    return new Date(Date.now() + 864e5).toISOString().split('T')[0].split('-').reverse().join('-');
+}
+
+function getSchoolName() {
+    return schoolName || 'পি.এন.';
+}
+
+function getSections() {
+    return sections || '3, 4';
+}
+
+function getClassName() {
+    const classMap = {
+        '3': 'তৃতীয়',
+        '4': 'চতুর্থ',
+        '5': 'পঞ্চম',
+        '6': 'ষষ্ঠ',
+        '7': 'সপ্তম'
+    };
+    return classMap[String(selectedClass)] || 'চতুর্থ';
+}
+
+function getExamTime() {
+    if (selectedFullMark === '100') {
+        return '২ ঘণ্টা ৩০ মিনিট';
+    } else {
+        return '১ ঘণ্টা ৩০ মিনিট';
+    }
+}
+
+function getFullMark() {
+    return englishToBanglaNumber(selectedFullMark);
+}
+
+function getExamYear() {
+    if (examYear) return examYear;
+    return String(new Date().getFullYear());
+}
+
+function editDate(container) {
+    const span = container.querySelector('span');
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.value = getExamDate();
+    input.classList.add('w-20', 'h-full', 'editing', 'border-2', 'px-1', 'text-xs');
+    span.replaceWith(input);
+    input.focus();
+    input.select();
+
+    const saveDate = () => {
+        if (input.value.trim()) {
+            examDate = input.value.trim();
+            const newSpan = document.createElement('span');
+            newSpan.textContent = englishToBanglaNumber(examDate);
+            input.replaceWith(newSpan);
+            showBanner('Date updated!');
+        }
+    };
+
+    input.addEventListener('keydown', e => {
+        if (e.key === 'Enter') {
+            saveDate();
+        }
+    });
+
+    input.addEventListener('blur', saveDate);
+}
+
+function editSchoolName(container) {
+    const p = container.querySelector('p');
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.value = getSchoolName();
+    input.classList.add('w-full', 'h-full', 'editing', 'border-2', 'px-1', 'text-sm');
+    p.replaceWith(input);
+    input.focus();
+    input.select();
+
+    const save = () => {
+        if (input.value.trim()) {
+            schoolName = input.value.trim();
+            const newP = document.createElement('p');
+            newP.classList.add('text-sm');
+            newP.textContent = schoolName;
+            input.replaceWith(newP);
+            showBanner('School name updated!');
+        }
+    };
+
+    input.addEventListener('keydown', e => {
+        if (e.key === 'Enter') {
+            save();
+        }
+    });
+
+    input.addEventListener('blur', save);
+}
+
+function editSections(container) {
+    const p = container.querySelector('p');
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.value = getSections();
+    input.classList.add('w-full', 'h-full', 'editing', 'border-2', 'px-1');
+    p.replaceWith(input);
+    input.focus();
+    input.select();
+
+    const save = () => {
+        if (input.value.trim()) {
+            sections = input.value.trim();
+            const newP = document.createElement('p');
+            newP.textContent = 'অ- ' + englishToBanglaNumber(sections);
+            input.replaceWith(newP);
+            showBanner('Sections updated!');
+        }
+    };
+
+    input.addEventListener('keydown', e => {
+        if (e.key === 'Enter') {
+            save();
+        }
+    });
+
+    input.addEventListener('blur', save);
+}
+
+function editExamYear(pElement) {
+    const span = pElement.querySelector('span.year-text');
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.value = getExamYear();
+    input.classList.add('w-10', 'h-full', 'editing', 'border-2', 'px-1', 'text-sm');
+    span.replaceWith(input);
+    input.focus();
+    input.select();
+
+    const save = () => {
+        if (input.value.trim()) {
+            examYear = input.value.trim();
+            const newSpan = document.createElement('span');
+            newSpan.classList.add('year-text');
+            newSpan.textContent = englishToBanglaNumber(examYear);
+            input.replaceWith(newSpan);
+            showBanner('Year updated!');
+        }
+    };
+
+    input.addEventListener('keydown', e => {
+        if (e.key === 'Enter') {
+            save();
+        }
+    });
+
+    input.addEventListener('blur', save);
+}
 function renderGeneratedSectionAFour(title, items, type) {
     if (!items.length) return '';
     return `
-        <section class="bg-yellow-200 p-4 rounded-xl shadow space-y-1 leading-none">
-            <div class="text-lg font-bold">${title}</div>
-            ${items.map((item, index) => `
-                <article>
-                    <div class="w-full flex">
-                        <div class="w-7">${englishToBanglaNumber(index + 1)}.</div>
-                        <div class="w-full bnFont bg-orange-400">${formatFractions(item.question || '')}
-                        ${Array.isArray(item.options) && item.options.length ? `
-                            <div class="grid grid-cols-4 gap-2 bnFont">
-                                ${item.options.map(option => `
-                                    <div>
-                                        <span>${escapeHtml(option.key || '')})</span>
-                                        <span>${formatFractions(option.text || '')}</span>
-                                    </div>
-                                `).join('')}
+        <section class="w-112 bg-yellow-200 p-4 rounded-xl shadow space-y-1 leading-none">
+            <div class="text-lg font-bold bnFont">${title}</div>
+            <div class="pl-2">
+                ${items.map((item, index) => `
+                    <article>
+                        <div class="w-full flex">
+                            <div class="bnFont w-7 ${hasFraction(item.question) ? 'pt-2' : ''}">${englishToBanglaNumber(index + 1)}.</div>
+                            <div class="w-full bnFont bg-orange-400">${formatFractions(item.question || '')}
+                            ${Array.isArray(item.options) && item.options.length ? `
+                                <div class="grid ${getOptionGridCols(item.options)} gap-2 bnFont ${getOptionTextSize(item.options)} break-words">
+                                    ${item.options.map(option => `
+                                        <div class="break-words">
+                                            <span>${escapeHtml(option.key || '')})</span>
+                                            <span>${formatFractions(option.text || '')}</span>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                            ` : ''}
+                            ${item.questionKo ? `<div class="bnFont"><span>ক)</span> ${formatFractions(item.questionKo)}</div>` : ''}
+                            ${item.questionKho ? `<div class="bnFont"><span>খ)</span> ${formatFractions(item.questionKho)}</div>` : ''}
                             </div>
-                        ` : ''}
-                        ${item.questionKo ? `<div class="bnFont"><span>ক)</span> ${formatFractions(item.questionKo)}</div>` : ''}
-                        ${item.questionKho ? `<div class="bnFont"><span>খ)</span> ${formatFractions(item.questionKho)}</div>` : ''}
                         </div>
-                    </div>
-                </article>
-            `).join('')}
+                    </article>
+                `).join('')}
+            </div>
         </section>
     `;
 }
@@ -435,6 +614,8 @@ function updateReport() {
 // Requested part from report function
 // <div><span class="font-semibold">Requested: </span>MCQ ${requested.mcq}, Blank ${requested.blanks}, Short ${requested.shorts}, Word ${requested.words}, Geometry ${requested.geometry}</div>
 
+
+
 async function loadData() {
     const response = await fetch('notes-data.json', { cache: 'no-store' });
     if (!response.ok) throw new Error('Could not load notes-data.json');
@@ -470,7 +651,8 @@ function generatePaper() {
 
     document.getElementById('qmOutput').innerHTML = `
     <section class="bg-white p-4 rounded-xl shadow">
-        <div class="text-2xl font-bold">Generated Question Paper</div>
+        
+        <div class="text-2xl text-red-500 font-bold">Generated Question Paper</div>
         <div class="mt-2 text-slate-600">
             Class ${selectedClass || '-'} | 
             Chapters ${getSelectedChapters().join(', ') || '-'} | 
@@ -520,7 +702,45 @@ function generatePaperAFour() {
     };
 
     document.getElementById('qmOutput').innerHTML = `
-    <section class="bg-blue-200 p-4 rounded-xl shadow">
+    <section class="bg-white p-4 rounded-xl shadow bnFont">
+        <div class="w-112 h-42 mx-auto border-3 p-[3px]">
+            <div class="w-full h-full mx-auto border-6 p-[3px]">
+                <div class="w-full h-full mx-auto grid grid-cols-60 grid-rows-20 border-3 p-[3px] bnFont">
+
+                    <img class="col-start-1 row-start-1 col-end-10 row-end-20 text-center leading-none"
+                        src="./Assets/Logo.png" alt="">
+                    <img class="col-start-10 row-start-1 col-end-61 row-end-5 pl-2" src="./Assets/Name.png" alt="">
+
+                    <div class="pl-1 col-start-1 row-start-13 col-end-20 row-end-17 cursor-pointer hover:bg-red-300 rounded-sm" onclick="editDate(this)" title="Click to edit">
+                        <p>
+                            তারিখ: <span>${englishToBanglaNumber(getExamDate())}</span>
+                        </p>
+                    </div>
+                    <div class="pl-1 col-start-1 row-start-17 col-end-20 row-end-21">
+                        <p>সময়: ${getExamTime()}</p>
+                    </div>
+
+                    <div class="col-start-17 row-start-9 col-end-45 row-end-19 text-center leading-none">
+                        <p class="text-xl font-semibold cursor-pointer hover:bg-red-300 rounded-sm" onclick="editExamYear(this)" title="Click to edit">প্রস্তুতিমূলক পরীক্ষা — <span class="year-text">${englishToBanglaNumber(getExamYear())}</span></p>
+                        <p>বিষয়: প্রাথমিক গণিত</p>
+                        <p>শ্রেণি: ${getClassName()}</p>
+                    </div>
+
+                    <div
+                        class="col-start-45 row-start-9 col-end-61 row-end-15 text-right pr-1 leading-none flex flex-col justify-center items-end cursor-pointer hover:bg-red-300 rounded-sm" onclick="editSchoolName(this)" title="Click to edit">
+                        <p class="text-sm">${getSchoolName()}</p>
+                    </div>
+
+                    <div class="col-start-45 row-start-15 col-end-61 row-end-18 text-right pr-1 leading-none cursor-pointer hover:bg-red-300 rounded-sm" onclick="editSections(this)" title="Click to edit">
+                        <p>অ- ${englishToBanglaNumber(getSections())}</p>
+                    </div>
+
+                    <div class="col-start-45 row-start-18 col-end-61 row-end-21 text-right pr-1 leading-none">
+                        <p class="font-semibold">পূর্ণমান: ${getFullMark()}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="text-2xl font-bold">Generated Question Paper</div>
         <div class="mt-2 text-green-600">
             Class ${selectedClass || '-'} | 
@@ -530,10 +750,10 @@ function generatePaperAFour() {
         </div>
     </section>
 
-    ${renderGeneratedSectionAFour('বহুনির্বাচনী প্রশ্ন (সঠিক উত্তরটি খাতায় লিখ):', generated.mcq, 'MCQ')}
-    ${renderGeneratedSectionAFour('শূন্যস্থান পূরণ কর:', generated.blanks, 'Blank')}
-    ${renderGeneratedSectionAFour(`সংক্ষেপে উত্তর দাও (যেকোনো ${englishToBanglaNumber(generated.shorts.length - 2)} টি):`, generated.shorts, 'Short')}
-    ${renderGeneratedSectionAFour('১০ টি প্রশ্নের উত্তর দাও:', generated.words, 'Word')}
+    ${renderGeneratedSectionAFour('১. বহুনির্বাচনী প্রশ্ন (সঠিক উত্তরটি খাতায় লিখ):', generated.mcq, 'MCQ')}
+    ${renderGeneratedSectionAFour('২. শূন্যস্থান পূরণ কর:', generated.blanks, 'Blank')}
+    ${renderGeneratedSectionAFour(`৩. সংক্ষেপে উত্তর দাও (যেকোনো ${englishToBanglaNumber(generated.shorts.length - 2)} টি):`, generated.shorts, 'Short')}
+    ${renderGeneratedSectionAFour('৪. ১০ টি প্রশ্নের উত্তর দাও:', generated.words, 'Word')}
     ${renderGeneratedSectionAFour('জ্যামিতি', generated.geometry, 'Geometry')}
 
     <!-- ✅ Separate Answer Box: ${renderAnswerBox(generated)} -->

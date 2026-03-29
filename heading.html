@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @font-face {
+            font-family: 'Bangla';
+            src: url('bangla.ttf') format('truetype');
+        }
+
+        .bnFont {
+            font-family: 'Bangla', serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w-112 h-42 mx-auto border-3 p-[3px]">
+        <div class="w-full h-full mx-auto border-6 p-[3px]">
+            <div class="w-full h-full mx-auto grid grid-cols-60 grid-rows-20 border-3 p-[3px] bnFont">
+
+                <img class="col-start-1 row-start-1 col-end-10 row-end-20 border text-center leading-none"
+                    src="./Assets/Logo.png" alt="">
+                <img class="col-start-10 row-start-1 col-end-61 row-end-5 border pl-2" src="./Assets/Name.png" alt="">
+
+                <div class="col-start-1 row-start-13 col-end-20 row-end-21 border">
+                    <p>তারিখ: ২৯-০৩-২০২৬</p>
+                    <p>সময়: ২ ঘণ্টা ৩০ মিনিট</p>
+                </div>
+
+                <div class="col-start-19 row-start-9 col-end-45 row-end-19 border text-center leading-none">
+                    <p class="text-xl font-semibold">প্রস্তুতিমূলক পরীক্ষা-২০২৬</p>
+                    <p>বিষয়: প্রাথমিক গণিত</p>
+                    <p>শ্রেণি: চতুর্থ</p>
+                </div>
+
+                <div
+                    class="col-start-45 row-start-9 col-end-61 row-end-15 border text-right pr-1 leading-none flex flex-col justify-center items-end">
+                    <p class="text-sm">পি.এন.</p>
+                </div>
+
+                <div class="col-start-45 row-start-15 col-end-61 row-end-18 border text-right pr-1 leading-none">
+                    <p>অ- ৩, ৪</p>
+                </div>
+
+                <div class="col-start-45 row-start-18 col-end-61 row-end-21 border text-right pr-1 leading-none">
+                    <p class="font-semibold">পূর্ণমান: ১০০</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
