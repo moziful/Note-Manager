@@ -368,6 +368,26 @@ async function appendBlockToPages(blockHtml, pages, startFromIndex = 0) {
         const candidate = node.cloneNode(true);
         pages[i].appendChild(candidate);
 
+        // Cascade down columns if options are too large
+        candidate.querySelectorAll('.option-grid').forEach(grid => {
+            const firstOpt = grid.children[0];
+            if (!firstOpt) return;
+
+            const lineHeight = parseFloat(window.getComputedStyle(firstOpt).lineHeight);
+
+            // Step 1: Check if 4 columns is too narrow
+            if (firstOpt.scrollHeight > lineHeight * 1.5) {
+                grid.classList.remove('grid-cols-4');
+                grid.classList.add('grid-cols-2');
+
+                // Step 2: The DOM updates instantly. Check if 2 columns is STILL too narrow
+                if (firstOpt.scrollHeight > lineHeight * 1.5) {
+                    grid.classList.remove('grid-cols-2');
+                    grid.classList.add('grid-cols-1');
+                }
+            }
+        });
+
         if (pages[i].scrollHeight <= pages[i].clientHeight) {
             await animateQuestionPush(candidate);
             if (ENABLE_PUSH_ANIMATION) {
@@ -445,7 +465,7 @@ function buildAFourSectionTitle(title, type) {
 
     const alignment = marksText ? 'justify-between' : 'justify-center';
 
-    return `<div class="flex ${alignment} text-sm font-bold bnFont mt-2 mb-1 underline underline-offset-2">
+    return `<div class="flex ${alignment} text-sm font-bold bnFont mt-2 mb-1">
         <span>${title}</span>
         ${marksText ? `<span>${marksText}</span>` : ''}
     </div>`;
@@ -454,11 +474,11 @@ function buildAFourSectionTitle(title, type) {
 function buildAFourQuestionItem(item, index) {
     return `
         <div class="flex leading-none mb-[3px]">
-            <div class="bnFont w-6 shrink-0 ${hasFraction(item.question) ? 'pt-2' : ''}">${englishToBanglaNumber(index)}.</div>
+            <div class="bnFont ml-3 w-6 shrink-0 ${hasFraction(item.question) ? 'pt-2' : ''}">${englishToBanglaNumber(index)}.</div>
             <div class="w-full bnFont">
                 <div>${formatFractions(item.question || '')}</div>
                 ${Array.isArray(item.options) && item.options.length ? `
-                    <div class="mt-1 grid ${getOptionGridCols(item.options)} gap-1 bnFont ${getOptionTextSize(item.options)} break-words">
+                    <div class="mt-1 grid grid-cols-4 gap-1 bnFont ${getOptionTextSize(item.options)} break-words option-grid">
                         ${item.options.map(option => `
                             <div class="break-words">
                                 <span>${escapeHtml(option.key || '')})</span>
@@ -596,11 +616,7 @@ function renderGeneratedSection(title, items, type, options = {}) {
 function englishToBanglaNumber(value) {
     return String(value || '').replace(/[0-9]/g, d => '০১২৩৪৫৬৭৮৯'[Number(d)]);
 }
-function getOptionGridCols(options) {
-    if (!Array.isArray(options) || !options.length) return 'grid-cols-4';
-    const maxLength = Math.max(...options.map(o => String(o.text || '').length));
-    return maxLength > 15 ? 'grid-cols-2' : 'grid-cols-4';
-}
+
 
 function getOptionTextSize(options) {
     if (!Array.isArray(options) || !options.length) return 'text-sm';
