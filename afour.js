@@ -470,25 +470,33 @@ function buildAFourSectionTitle(title, type) {
         ${marksText ? `<span>${marksText}</span>` : ''}
     </div>`;
 }
+function applySpecialMathFont(html) {
+    return html.split(/(<[^>]+>)/g).map(part => {
+        if (!part.startsWith('<')) {
+            return part.replace(/([():.])/g, '<span class="math-sym-font">$1</span>');
+        }
+        return part;
+    }).join('');
+}
 
 function buildAFourQuestionItem(item, index) {
     return `
         <div class="flex leading-none mb-[3px]">
-            <div class="bnFont ml-3 w-6 shrink-0 ${hasFraction(item.question) ? 'pt-2' : ''}">${englishToBanglaNumber(index)}.</div>
+            <div class="bnFont w-6 shrink-0 ${hasFraction(item.question) ? 'pt-2' : ''}">${englishToBanglaNumber(index)}<span class="math-sym-font">.</span></div>
             <div class="w-full bnFont">
-                <div>${formatFractions(item.question || '')}</div>
+                <div>${applySpecialMathFont(formatFractions(item.question || ''))}</div>
                 ${Array.isArray(item.options) && item.options.length ? `
                     <div class="mt-1 grid grid-cols-4 gap-1 bnFont ${getOptionTextSize(item.options)} break-words option-grid">
                         ${item.options.map(option => `
                             <div class="break-words">
-                                <span>${escapeHtml(option.key || '')})</span>
-                                <span>${formatFractions(option.text || '')}</span>
+                                <span>${escapeHtml(option.key || '')}<span class="math-sym-font">)</span></span>
+                                <span>${applySpecialMathFont(formatFractions(option.text || ''))}</span>
                             </div>
                         `).join('')}
                     </div>
                 ` : ''}
-                ${item.questionKo ? `<div class="mt-1 bnFont"><span>ক)</span> ${formatFractions(item.questionKo)}</div>` : ''}
-                ${item.questionKho ? `<div class="mt-1 bnFont"><span>খ)</span> ${formatFractions(item.questionKho)}</div>` : ''}
+                ${item.questionKo ? `<div class="mt-1 bnFont"><span>ক<span class="math-sym-font">)</span></span> ${applySpecialMathFont(formatFractions(item.questionKo))}</div>` : ''}
+                ${item.questionKho ? `<div class="mt-1 bnFont"><span>খ<span class="math-sym-font">)</span></span> ${applySpecialMathFont(formatFractions(item.questionKho))}</div>` : ''}
             </div>
         </div>
     `;
@@ -594,19 +602,19 @@ function renderGeneratedSection(title, items, type, options = {}) {
             ${renderableItems.map((item, index) => `
                 <article class="rounded-lg bg-slate-50 p-3">
                     <div class="mb-1 text-xs uppercase text-slate-500">#${index + 1} | ${type} | ${item.hardness || 'Easy'} | Chapter ${item.chapter || '-'}</div>
-                    <div class="bnFont font-semibold">${formatFractions(item.question || '')}</div>
+                    <div class="bnFont font-semibold">${applySpecialMathFont(formatFractions(item.question || ''))}</div>
                     ${Array.isArray(item.options) && item.options.length ? `
                         <div class="mt-3 grid grid-cols-1 gap-2 md:grid-cols-2 bnFont">
                             ${item.options.map(option => `
                                 <div class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm">
-                                    <span class="font-semibold">${escapeHtml(option.key || '')})</span>
-                                    <span>${formatFractions(option.text || '')}</span>
+                                    <span class="font-semibold">${escapeHtml(option.key || '')}<span class="math-sym-font">)</span></span>
+                                    <span>${applySpecialMathFont(formatFractions(option.text || ''))}</span>
                                 </div>
                             `).join('')}
                         </div>
                     ` : ''}
-                    ${item.questionKo ? `<div class="mt-3 rounded-lg bg-white px-3 py-2 text-sm bnFont"><span class="font-semibold">(ক)</span> ${formatFractions(item.questionKo)}</div>` : ''}
-                    ${item.questionKho ? `<div class="mt-2 rounded-lg bg-white px-3 py-2 text-sm bnFont"><span class="font-semibold">(খ)</span> ${formatFractions(item.questionKho)}</div>` : ''}
+                    ${item.questionKo ? `<div class="mt-3 rounded-lg bg-white px-3 py-2 text-sm bnFont"><span class="font-semibold">(ক<span class="math-sym-font">)</span></span> ${applySpecialMathFont(formatFractions(item.questionKo))}</div>` : ''}
+                    ${item.questionKho ? `<div class="mt-2 rounded-lg bg-white px-3 py-2 text-sm bnFont"><span class="font-semibold">(খ<span class="math-sym-font">)</span></span> ${applySpecialMathFont(formatFractions(item.questionKho))}</div>` : ''}
                 </article>
             `).join('')}
         </section>
@@ -903,6 +911,132 @@ function generatePaper() {
     showBanner('Question paper generated!');
 }
 
+
+function downloadPdf() {
+    const pdfOutput = document.getElementById('pdfOutput');
+    if (!pdfOutput || pdfOutput.classList.contains('hidden')) {
+        showBanner('Please format the paper first!');
+        return;
+    }
+
+    // Get the outer grid wrapper (the whole 2x2 layout)
+    const gridWrapper = pdfOutput.querySelector('section');
+
+    if (!gridWrapper) {
+        showBanner('No layout to download!');
+        return;
+    }
+
+    const printWindow = window.open('', '_blank');
+
+    // Copy all active stylesheets (Tailwind, custom fonts, etc) to the new window
+    const styles = Array.from(document.styleSheets)
+        .map(sheet => {
+            try {
+                return Array.from(sheet.cssRules).map(rule => rule.cssText).join('\n');
+            } catch (e) {
+                if (sheet.href) return `@import url('${sheet.href}');`;
+                return '';
+            }
+        })
+        .join('\n');
+
+    printWindow.document.write(`
+        <!DOCTYPE html>
+        <html lang="bn">
+        <head>
+            <meta charset="UTF-8">
+            <title>Question Paper PDF</title>
+            <style>
+                ${styles}
+                
+                /* Force landscape orientation for the print */
+                @page {
+                    size: landscape;
+                    margin: 0;
+                }
+
+                body {
+                    margin: 0;
+                    padding: 0;
+                    background: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 100vh;
+                }
+
+                /* Container maintains the exact screen dimensions */
+                .print-container {
+                    width: 297mm;
+                    height: 420mm;
+                    box-sizing: border-box;
+                    background: white;
+                }
+
+                /* Remove the cyan outer border */
+                .print-container > section {
+                    border: none !important;
+                    box-shadow: none !important;
+                }
+
+                /* Remove the red borders around the page content */
+                .print-container > section > div {
+                    border: none !important;
+                }
+                
+                .print-container > section > div > div {
+                    border: none !important;
+                }
+                
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="print-container">
+                ${gridWrapper.outerHTML}
+            </div>
+        </body>
+        </html>
+    `);
+
+    printWindow.document.close();
+
+    // Wait for images to load before triggering print
+    const images = printWindow.document.querySelectorAll('img');
+    let loadedCount = 0;
+    const totalImages = images.length;
+
+    function triggerPrint() {
+        setTimeout(() => {
+            printWindow.print();
+        }, 250);
+    }
+
+    if (totalImages === 0) {
+        triggerPrint();
+    } else {
+        images.forEach(img => {
+            const checkLoad = () => {
+                loadedCount++;
+                if (loadedCount === totalImages) {
+                    triggerPrint();
+                }
+            };
+
+            if (img.complete) {
+                checkLoad();
+            } else {
+                img.onload = checkLoad;
+                img.onerror = checkLoad;
+            }
+        });
+    }
+}
+
 document.getElementById('toggleAllChaptersBtn').addEventListener('click', () => {
     const boxes = [...document.querySelectorAll('#qmChapterList input[type="checkbox"]')];
     const shouldCheck = boxes.some(box => !box.checked);
@@ -920,7 +1054,23 @@ document.getElementById('generatePaperBtn').addEventListener('click', () => runA
     generatePaper();
 }));
 document.getElementById('formatPdfBtn').addEventListener('click', () => runAction(document.getElementById('formatPdfBtn'), 'Formatting...', async () => {
-    await generatePaperAFour();
+    const pdfOutput = document.getElementById('pdfOutput');
+
+    // Check if the A4 pages are already generated and have content
+    const existingPages = pdfOutput.querySelectorAll('.a4-page-content');
+    const hasContent = Array.from(existingPages).some(page => page.children.length > 0);
+
+    if (hasContent) {
+        // Just switch the view without regenerating
+        document.getElementById('qmOutput').classList.add('hidden');
+        pdfOutput.classList.remove('hidden');
+    } else {
+        // If empty or missing, generate it for the first time
+        await generatePaperAFour();
+    }
+}));
+document.getElementById('downloadPdfBtn').addEventListener('click', () => runAction(document.getElementById('downloadPdfBtn'), 'Preparing PDF...', async () => {
+    downloadPdf();
 }));
 
 window.selectClass = selectClass;
@@ -935,7 +1085,7 @@ window.onload = async () => {
         renderFullMarkSelectors();
         applyCountPreset();
         renderChapterList();
-        await generatePaperAFour();
+        // await generatePaperAFour();
     } catch (error) {
         console.error(error);
         showBanner(error.message || 'Failed to load question maker data.');

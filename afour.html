@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
@@ -32,6 +33,11 @@
 
         .bnFont {
             font-family: 'Bangla', serif;
+        }
+
+        .math-sym-font {
+            font-family: 'Baloo Da 2', sans-serif;
+            background-color: rgba(255, 0, 0, 0.3);
         }
     </style>
 </head>
@@ -58,7 +64,7 @@
         </div>
     </nav>
 
-    <div class="mx-auto flex w-[min(1220px,calc(100vw-2rem))] items-start gap-4">
+    <div class="mx-auto flex items-start gap-4">
         <div
             class="w-1/3 max-w-88 h-162 overflow-y-auto no-scrollbar sticky top-3 bg-blue-200 p-2 rounded-xl shadow space-y-2">
             <div class="flex items-center justify-between gap-2">
@@ -115,8 +121,7 @@
             <!-- Report -->
             <div id="qmReport" class="p-1 bg-slate-100 rounded-lg text-sm space-y-2"></div>
             <!-- Button -->
-            <button id="generatePaperBtn"
-                class="hidden w-full bg-purple-500 text-white px-4 py-3 rounded-lg action-btn">
+            <button id="generatePaperBtn" class="w-full bg-purple-500 text-white px-4 py-3 rounded-lg action-btn">
                 <span class="btn-label">Generate Paper</span>
             </button>
             <button id="formatPdfBtn" class="w-full bg-green-500 text-white px-4 py-3 rounded-lg action-btn">
