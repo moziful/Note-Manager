@@ -15,6 +15,21 @@ const QM_COUNT_PRESETS = {
     }
 };
 
+const SECTION_MARKS_CONFIG = {
+    100: {
+        mcq: { perMark: 1, count: 20, total: 20 },
+        blanks: { perMark: 1, count: 10, total: 10 },
+        shorts: { perMark: 2, count: 10, total: 20 },
+        words: { perMark: 5, count: 10, total: 50 }
+    },
+    50: {
+        mcq: { perMark: 1, count: 10, total: 10 },
+        blanks: { perMark: 1, count: 5, total: 5 },
+        shorts: { perMark: 2, count: 5, total: 10 },
+        words: { perMark: 5, count: 5, total: 25 }
+    }
+};
+
 const ENABLE_PUSH_ANIMATION = true;
 const PUSH_ANIMATION_DURATION_MS = 100;
 const PUSH_ANIMATION_DELAY_MS = 20;
@@ -422,8 +437,18 @@ function buildAFourPageHeader() {
     `;
 }
 
-function buildAFourSectionTitle(title) {
-    return `<div class="text-sm font-bold bnFont mt-2 mb-1 underline underline-offset-2">${title}</div>`;
+function buildAFourSectionTitle(title, type) {
+    const marks = SECTION_MARKS_CONFIG[selectedFullMark]?.[type];
+    const marksText = marks
+        ? `${englishToBanglaNumber(marks.perMark)}×${englishToBanglaNumber(marks.count)} = ${englishToBanglaNumber(marks.total)}`
+        : '';
+
+    const alignment = marksText ? 'justify-between' : 'justify-center';
+
+    return `<div class="flex ${alignment} text-sm font-bold bnFont mt-2 mb-1 underline underline-offset-2">
+        <span>${title}</span>
+        ${marksText ? `<span>${marksText}</span>` : ''}
+    </div>`;
 }
 
 function buildAFourQuestionItem(item, index) {
@@ -485,38 +510,48 @@ async function generatePaperAFour() {
     }
 
     // Collect all question blocks in order
+    // Collect all question blocks in order
     const blocks = [];
 
     const mcqRenderable = getRenderableQuestions(generated.mcq, 'MCQ', { requireMcqOptions: true });
     if (mcqRenderable.length) {
-        blocks.push(buildAFourSectionTitle('১. বহুনির্বাচনী প্রশ্ন (সঠিক উত্তরটি খাতায় লিখ):'));
+        blocks.push(buildAFourSectionTitle('১. বহুনির্বাচনী প্রশ্ন (সঠিক উত্তরটি খাতায় লিখ):', 'mcq'));
         mcqRenderable.forEach((item, i) => blocks.push(buildAFourQuestionItem(item, i + 1)));
     }
 
     const blankRenderable = getRenderableQuestions(generated.blanks, 'Blank');
     if (blankRenderable.length) {
-        blocks.push(buildAFourSectionTitle('২. শূন্যস্থান পূরণ কর:'));
+        blocks.push(buildAFourSectionTitle('২. শূন্যস্থান পূরণ কর:', 'blanks'));
         blankRenderable.forEach((item, i) => blocks.push(buildAFourQuestionItem(item, i + 1)));
     }
 
+    const shortCount = SECTION_MARKS_CONFIG[selectedFullMark]?.shorts?.count || 0;
     const shortRenderable = getRenderableQuestions(generated.shorts, 'Short');
     if (shortRenderable.length) {
-        blocks.push(buildAFourSectionTitle(`৩. সংক্ষেপে উত্তর দাও (যেকোনো ${englishToBanglaNumber(Math.max(0, shortRenderable.length - 2))} টি):`));
+        blocks.push(buildAFourSectionTitle(`৩. সংক্ষেপে উত্তর দাও (যেকোনো ${englishToBanglaNumber(shortCount)} টি):`, 'shorts'));
         shortRenderable.forEach((item, i) => blocks.push(buildAFourQuestionItem(item, i + 1)));
     }
 
+    const wordCount = SECTION_MARKS_CONFIG[selectedFullMark]?.words?.count || 0;
     const wordRenderable = getRenderableQuestions(generated.words, 'Word');
+
+    // Continuous numbering starts here for Words and Geometry
+    let continuousIndex = 1;
+
     if (wordRenderable.length) {
-        blocks.push(buildAFourSectionTitle('৪. ১০ টি প্রশ্নের উত্তর দাও:'));
-        wordRenderable.forEach((item, i) => blocks.push(buildAFourQuestionItem(item, i + 1)));
+        blocks.push(buildAFourSectionTitle(`৪. ${englishToBanglaNumber(wordCount)} টি প্রশ্নের উত্তর দাও:`, 'words'));
+        wordRenderable.forEach((item) => {
+            blocks.push(buildAFourQuestionItem(item, continuousIndex++));
+        });
     }
 
     const geomRenderable = getRenderableQuestions(generated.geometry, 'Geometry');
     if (geomRenderable.length) {
         blocks.push(buildAFourSectionTitle('জ্যামিতি'));
-        geomRenderable.forEach((item, i) => blocks.push(buildAFourQuestionItem(item, i + 1)));
+        geomRenderable.forEach((item) => {
+            blocks.push(buildAFourQuestionItem(item, continuousIndex++));
+        });
     }
-
     // Push each block one by one — fills page 1 first, then page 2, etc.
     // Push each block one by one — never goes back to a previous page
     let currentPageIndex = 0;
