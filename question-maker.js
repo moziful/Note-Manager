@@ -39,22 +39,21 @@ const PUSH_ANIMATION_DELAY_MS = 20;
 const A4_PAGE_COUNT = 4;
 const A4_GRID_DISPLAY_ORDER = [1, 2, 3, 0]; // Visual layout: 4 1 / 2 3
 
-let currentGeneratedPaper = null;
-
 const HARDNESS_PROFILES = {
-    Easy: { Easy: 0.6, Medium: 0.2, Hard: 0.2 },
-    Medium: { Easy: 0.2, Medium: 0.6, Hard: 0.2 },
-    Hard: { Easy: 0.2, Medium: 0.2, Hard: 0.6 }
+    Easy: { Easy: 0.6, Medium: 0.1, Hard: 0.3 },
+    Medium: { Easy: 0.1, Medium: 0.6, Hard: 0.3 },
+    Hard: { Easy: 0.1, Medium: 0.2, Hard: 0.7 }
 };
 
 let notesData = { chapters: [] };
 let selectedClass = '';
 let selectedHardness = 'Hard';
-let selectedFullMark = '50';
+let selectedFullMark = '100';
 let examDate = null;
 let schoolName = null;
 let sections = null;
 let examYear = null;
+let currentGeneratedPaper = null;
 
 function renderSchoolSelector() {
     const host = document.getElementById('schoolSelectorHost');
@@ -672,7 +671,6 @@ function englishToBanglaNumber(value) {
     return String(value || '').replace(/[0-9]/g, d => '০১২৩৪৫৬৭৮৯'[Number(d)]);
 }
 
-
 function getOptionTextSize(options) {
     if (!Array.isArray(options) || !options.length) return 'text-sm';
     const maxLength = Math.max(...options.map(o => String(o.text || '').length));
@@ -680,6 +678,7 @@ function getOptionTextSize(options) {
     if (maxLength > 20) return 'text-sm';
     return 'text-base';
 }
+
 function hasFraction(text) {
     return /(\/|fraction)/.test(String(text || ''));
 }
@@ -984,7 +983,6 @@ function generatePaper() {
 
     showBanner('Question paper generated!');
 }
-
 
 function downloadPdf() {
     const pdfOutput = document.getElementById('pdfOutput');
