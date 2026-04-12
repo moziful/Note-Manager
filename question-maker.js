@@ -15,6 +15,32 @@ const QM_COUNT_PRESETS = {
     }
 };
 
+const SECTION_MARKS_CONFIG = {
+    100: {
+        mcq: { perMark: 1, count: 20, total: 20 },
+        blanks: { perMark: 1, count: 10, total: 10 },
+        shorts: { perMark: 2, count: 10, total: 20 },
+        words: { perMark: 5, count: 10, total: 50 }
+    },
+    50: {
+        mcq: { perMark: 1, count: 10, total: 10 },
+        blanks: { perMark: 1, count: 5, total: 5 },
+        shorts: { perMark: 2, count: 5, total: 10 },
+        words: { perMark: 5, count: 5, total: 25 }
+    }
+};
+
+const AVAILABLE_SCHOOLS = ['P.N.', 'Coll', 'MMA', 'RU', 'Siro'];
+let selectedSchools = [];
+
+const ENABLE_PUSH_ANIMATION = true;
+const PUSH_ANIMATION_DURATION_MS = 100;
+const PUSH_ANIMATION_DELAY_MS = 20;
+const A4_PAGE_COUNT = 4;
+const A4_GRID_DISPLAY_ORDER = [1, 2, 3, 0]; // Visual layout: 4 1 / 2 3
+
+let currentGeneratedPaper = null;
+
 const HARDNESS_PROFILES = {
     Easy: { Easy: 0.6, Medium: 0.2, Hard: 0.2 },
     Medium: { Easy: 0.2, Medium: 0.6, Hard: 0.2 },
@@ -24,7 +50,47 @@ const HARDNESS_PROFILES = {
 let notesData = { chapters: [] };
 let selectedClass = '';
 let selectedHardness = 'Hard';
-let selectedFullMark = '100';
+let selectedFullMark = '50';
+let examDate = null;
+let schoolName = null;
+let sections = null;
+let examYear = null;
+
+function renderSchoolSelector() {
+    const host = document.getElementById('schoolSelectorHost');
+    if (!host) return;
+
+    // The heading showing the "+" combined string
+    const headingText = selectedSchools.length > 0 ? selectedSchools.join('+') : 'None selected';
+
+    host.innerHTML = `
+        <div class="mb-3">
+            <div class="text-xs text-slate-500 mb-1">Schools</div>
+            <div class="text-sm font-bold text-indigo-600 h-5">${headingText}</div>
+        </div>
+        <div class="flex flex-wrap gap-1">
+            ${AVAILABLE_SCHOOLS.map(code => `
+                <button 
+                    type="button"
+                    class="px-3 py-1 rounded-lg text-sm font-medium transition-all ${selectedSchools.includes(code) ? 'bg-indigo-500 text-white shadow-sm' : 'bg-slate-200 hover:bg-slate-300'}" 
+                    onclick="toggleSchool('${code}')"
+                >
+                    ${code}
+                </button>
+            `).join('')}
+        </div>
+    `;
+}
+
+function toggleSchool(code) {
+    const index = selectedSchools.indexOf(code);
+    if (index === -1) {
+        selectedSchools.push(code); // Add if not present
+    } else {
+        selectedSchools.splice(index, 1); // Remove if already present
+    }
+    renderSchoolSelector();
+}
 
 function showBanner(message) {
     const banner = document.getElementById('notificationBanner');
@@ -288,37 +354,501 @@ function pickChapterCovered(chapters, typeKey, count, required = false) {
     return selected.slice(0, count);
 }
 
-function renderGeneratedSection(title, items, type) {
-    if (!items.length) return '';
+function shouldRenderQuestion(item, type, options = {}) {
+    if (!item || !String(item.question || '').trim()) return false;
+
+    if (type === 'MCQ' && options.requireMcqOptions) {
+        return Array.isArray(item.options) && item.options.length > 0;
+    }
+
+    return true;
+}
+
+function getRenderableQuestions(items, type, options = {}) {
+    return (items || []).filter(item => shouldRenderQuestion(item, type, options));
+}
+
+function setOutputTarget(targetId, html) {
+    const qmOutput = document.getElementById('qmOutput');
+    const pdfOutput = document.getElementById('pdfOutput');
+
+    if (!qmOutput || !pdfOutput) return;
+
+    qmOutput.classList.toggle('hidden', targetId !== 'qmOutput');
+    pdfOutput.classList.toggle('hidden', targetId !== 'pdfOutput');
+    document.getElementById(targetId).innerHTML = html;
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function animateQuestionPush(node) {
+    if (!ENABLE_PUSH_ANIMATION || !node?.animate) return Promise.resolve();
+
+    const animation = node.animate([
+        { opacity: 0, transform: 'translateY(24px) scale(0.96)', filter: 'blur(2px)' },
+        { opacity: 1, transform: 'translateY(0) scale(1)', filter: 'blur(0px)' }
+    ], {
+        duration: PUSH_ANIMATION_DURATION_MS,
+        easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
+        fill: 'forwards'
+    });
+
+    return animation.finished.catch(() => { });
+}
+
+async function appendBlockToPages(blockHtml, pages, startFromIndex = 0) {
+    const template = document.createElement('template');
+    template.innerHTML = blockHtml.trim();
+    const node = template.content.firstElementChild;
+    if (!node) return { fitted: false, pageIndex: startFromIndex };
+
+    for (let i = startFromIndex; i < pages.length; i++) {
+        const candidate = node.cloneNode(true);
+        pages[i].appendChild(candidate);
+
+        // Cascade down columns if options are too large
+        candidate.querySelectorAll('.option-grid').forEach(grid => {
+            const firstOpt = grid.children[0];
+            if (!firstOpt) return;
+
+            const lineHeight = parseFloat(window.getComputedStyle(firstOpt).lineHeight);
+
+            // Step 1: Check if 4 columns is too narrow
+            if (firstOpt.scrollHeight > lineHeight * 1.5) {
+                grid.classList.remove('grid-cols-4');
+                grid.classList.add('grid-cols-2');
+
+                // Step 2: The DOM updates instantly. Check if 2 columns is STILL too narrow
+                if (firstOpt.scrollHeight > lineHeight * 1.5) {
+                    grid.classList.remove('grid-cols-2');
+                    grid.classList.add('grid-cols-1');
+                }
+            }
+        });
+
+        if (pages[i].scrollHeight <= pages[i].clientHeight) {
+            await animateQuestionPush(candidate);
+            if (ENABLE_PUSH_ANIMATION) {
+                await sleep(PUSH_ANIMATION_DELAY_MS);
+            }
+            return { fitted: true, pageIndex: i };
+        }
+
+        candidate.remove();
+    }
+
+    return { fitted: false, pageIndex: startFromIndex };
+}
+
+function buildAFourPages() {
+    return `
+        <section class="w-[297mm] h-[420mm] grid grid-cols-2 border-2 border-cyan-400">
+            ${Array.from({ length: A4_PAGE_COUNT }, (_, index) => `
+                <div class="mx-auto w-[148mm] h-[210mm] p-8 px-9 border-1 bg-white overflow-hidden" style="order: ${A4_GRID_DISPLAY_ORDER[index]}">
+                    <div class="a4-page-content h-full border-1 border-red-400 bnFont" data-page-index="${index}"></div>
+                </div>
+            `).join('')}
+        </section>
+    `;
+}
+
+function buildAFourPageHeader() {
+    return `
+        <div>
+            <div class="w-120 h-46 mx-auto border-3 p-[3px]">
+            <div class="w-full h-full mx-auto border-6 p-[3px]">
+                <div class="w-full h-full mx-auto grid grid-cols-60 grid-rows-20 border-3 p-[3px] bnFont">
+
+                    <img class="col-start-1 row-start-1 col-end-10 row-end-7 text-center leading-none"
+                        src="./Assets/Logo.png" alt="">
+                    <img class="col-start-10 row-start-1 col-end-61 row-end-5 pl-2" src="./Assets/Name.png" alt="">
+
+                    <div class="pl-1 col-start-1 row-start-14 col-end-20 row-end-18 cursor-pointer hover:bg-red-300 rounded-sm" onclick="editDate(this)" title="Click to edit">
+                        <p>
+                            ${applySpecialMathFont('তারিখ: ')}<span>${englishToBanglaNumber(getExamDate())}</span>
+                        </p>
+                    </div>
+                    <div class="pl-1 col-start-1 row-start-18 col-end-20 row-end-20">
+                        <p>${applySpecialMathFont('সময়:')} ${getExamTime()}</p>
+                    </div>
+
+                    <div class="col-start-18 row-start-9 col-end-46 row-end-19 text-center leading-none">
+                        <p class="text-xl font-semibold cursor-pointer hover:bg-red-300 rounded-sm" onclick="editExamYear(this)" title="Click to edit">প্রস্তুতিমূলক পরীক্ষা — <span class="year-text">${englishToBanglaNumber(getExamYear())}</span></p>
+                        <p class="text-lg">${applySpecialMathFont('বিষয়:')}  প্রাথমিক গণিত</p>
+                        <p>${applySpecialMathFont('শ্রেণি:')} ${getClassName()}</p>
+                    </div>
+
+                    <div
+                        class="col-start-45 row-start-9 col-end-61 row-end-15 text-right pr-1 leading-none flex flex-col justify-center items-end cursor-pointer hover:bg-red-300 rounded-sm" onclick="editSchoolName(this)" title="Click to edit">
+                        <p class="text-xs">${getSchoolName()}</p>
+                    </div>
+
+                    <div class="col-start-45 row-start-15 col-end-61 row-end-18 text-right pr-1 leading-none cursor-pointer hover:bg-red-300 rounded-sm" onclick="editSections(this)" title="Click to edit">
+                        <p>অ- ${englishToBanglaNumber(getSections())}</p>
+                    </div>
+
+                    <div class="col-start-45 row-start-18 col-end-61 row-end-21 text-right pr-1 leading-none">
+                        <p class="font-semibold">${applySpecialMathFont('পূর্ণমান:')} ${getFullMark()}</p>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+        <p class="text-center font-bold">ডানপাশের সংখ্যা পূর্ণমান জ্ঞাপক</p>
+        </div>
+          
+    `;
+}
+
+function buildAFourSectionTitle(title, type) {
+    const marks = SECTION_MARKS_CONFIG[selectedFullMark]?.[type];
+    const marksText = marks
+        ? `${englishToBanglaNumber(marks.perMark)}×${englishToBanglaNumber(marks.count)} = ${englishToBanglaNumber(marks.total)}`
+        : '';
+
+    const alignment = marksText ? 'justify-between' : 'justify-center';
+
+    return `<div class="flex ${alignment} text-sm font-semibold bnFont mt-2 mb-1">
+        <span>${applySpecialMathFont(title)}</span>
+        ${marksText ? `<span>${marksText}</span>` : ''}
+    </div>`;
+}
+function applySpecialMathFont(html) {
+    return html.split(/(<[^>]+>)/g).map(part => {
+        if (!part.startsWith('<')) {
+            return part.replace(/([():.])/g, '<span class="math-sym-font">$1</span>');
+        }
+        return part;
+    }).join('');
+}
+
+function buildAFourQuestionItem(item, index) {
+    return `
+        <div class="flex leading-none mb-[3px]">
+            <div class="bnFont w-6 shrink-0 ml-3 ${hasFraction(item.question) ? 'pt-2' : ''}">${englishToBanglaNumber(index)}<span class="math-sym-font">.</span></div>
+            <div class="w-full bnFont">
+                <div>${applySpecialMathFont(formatFractions(item.question || ''))}</div>
+                ${Array.isArray(item.options) && item.options.length ? `
+                    <div class="mt-1 grid grid-cols-4 gap-1 bnFont ${getOptionTextSize(item.options)} break-words option-grid">
+                        ${item.options.map(option => `
+                            <div class="break-words">
+                                <span>${escapeHtml(option.key || '')}<span class="math-sym-font">)</span></span>
+                                <span>${applySpecialMathFont(formatFractions(option.text || ''))}</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                ` : ''}
+                ${item.questionKo ? `<div class="mt-1 bnFont"><span>ক<span class="math-sym-font">)</span></span> ${applySpecialMathFont(formatFractions(item.questionKo))}</div>` : ''}
+                ${item.questionKho ? `<div class="mt-1 bnFont"><span>খ<span class="math-sym-font">)</span></span> ${applySpecialMathFont(formatFractions(item.questionKho))}</div>` : ''}
+            </div>
+        </div>
+    `;
+}
+
+async function generatePaperAFour(paperToFormat = null) {
+    // Use the saved questions if provided, otherwise fallback (shouldn't happen with new flow)
+    let generated = paperToFormat;
+
+    if (!generated) {
+        const chapterGroups = splitSelectedChapters();
+        const requested = getRequestedCounts();
+
+        const geomMCQ = pickChapterCovered(chapterGroups.geometry, 'mcq', 1, true);
+        const geomBlank = pickChapterCovered(chapterGroups.geometry, 'blanks', 1, true);
+        const geomShort = pickChapterCovered(chapterGroups.geometry, 'shorts', 1, true);
+
+        const adjustedRequested = {
+            mcq: Math.max(0, requested.mcq - geomMCQ.length),
+            blanks: Math.max(0, requested.blanks - geomBlank.length),
+            shorts: Math.max(0, requested.shorts - geomShort.length),
+            words: requested.words,
+            geometry: Math.max(0, requested.geometry)
+        };
+
+        generated = {
+            mcq: [...pickChapterCovered(chapterGroups.regular, 'mcq', adjustedRequested.mcq, true), ...geomMCQ],
+            blanks: [...pickChapterCovered(chapterGroups.regular, 'blanks', adjustedRequested.blanks, false), ...geomBlank],
+            shorts: [...pickChapterCovered(chapterGroups.regular, 'shorts', adjustedRequested.shorts, false), ...geomShort],
+            words: pickChapterCovered(chapterGroups.regular, 'words', adjustedRequested.words, true),
+            geometry: pickChapterCovered(chapterGroups.geometry, 'geometry', adjustedRequested.geometry, true)
+        };
+        currentGeneratedPaper = generated;
+    }
+
+    setOutputTarget('pdfOutput', buildAFourPages());
+
+    const pages = [...document.querySelectorAll('.a4-page-content')];
+
+    // Insert header into first page (no animation)
+    const headerTemplate = document.createElement('template');
+    headerTemplate.innerHTML = buildAFourPageHeader().trim();
+    if (headerTemplate.content.firstElementChild) {
+        pages[0].appendChild(headerTemplate.content.firstElementChild);
+    }
+
+    // Collect all question blocks in order
+    const blocks = [];
+
+    const mcqRenderable = getRenderableQuestions(generated.mcq, 'MCQ', { requireMcqOptions: true });
+    if (mcqRenderable.length) {
+        blocks.push(buildAFourSectionTitle('১. বহুনির্বাচনী প্রশ্ন (সঠিক উত্তরটি খাতায় লিখ):', 'mcq'));
+        mcqRenderable.forEach((item, i) => blocks.push(buildAFourQuestionItem(item, i + 1)));
+    }
+
+    const blankRenderable = getRenderableQuestions(generated.blanks, 'Blank');
+    if (blankRenderable.length) {
+        blocks.push(buildAFourSectionTitle('২. শূন্যস্থান পূরণ কর:', 'blanks'));
+        blankRenderable.forEach((item, i) => blocks.push(buildAFourQuestionItem(item, i + 1)));
+    }
+
+    const shortCount = SECTION_MARKS_CONFIG[selectedFullMark]?.shorts?.count || 0;
+    const shortRenderable = getRenderableQuestions(generated.shorts, 'Short');
+    if (shortRenderable.length) {
+        blocks.push(buildAFourSectionTitle(`৩. সংক্ষেপে উত্তর দাও (যেকোনো ${englishToBanglaNumber(shortCount)} টি):`, 'shorts'));
+        shortRenderable.forEach((item, i) => blocks.push(buildAFourQuestionItem(item, i + 1)));
+    }
+
+    const wordCount = SECTION_MARKS_CONFIG[selectedFullMark]?.words?.count || 0;
+    const wordRenderable = getRenderableQuestions(generated.words, 'Word');
+
+    let continuousIndex = 1;
+
+    if (wordRenderable.length) {
+        blocks.push(buildAFourSectionTitle(`৪. জ্যামিতি অংশ হতে কমপক্ষে ১টি সহ যেকোনো ${englishToBanglaNumber(wordCount)}টি প্রশ্নের উত্তর দাও:`, 'words'));
+        wordRenderable.forEach((item) => {
+            blocks.push(buildAFourQuestionItem(item, continuousIndex++));
+        });
+    }
+
+    const geomRenderable = getRenderableQuestions(generated.geometry, 'Geometry');
+    if (geomRenderable.length) {
+        blocks.push(buildAFourSectionTitle('জ্যামিতি'));
+        geomRenderable.forEach((item) => {
+            blocks.push(buildAFourQuestionItem(item, continuousIndex++));
+        });
+    }
+
+    let currentPageIndex = 0;
+
+    for (const html of blocks) {
+        const result = await appendBlockToPages(html, pages, currentPageIndex);
+        if (!result.fitted) break;
+        currentPageIndex = result.pageIndex;
+    }
+
+    showBanner('A4 Formatted!');
+}
+
+function renderGeneratedSection(title, items, type, options = {}) {
+    const renderableItems = getRenderableQuestions(items, type, options);
+    if (!renderableItems.length) return '';
     return `
         <section class="bg-white p-4 rounded-xl shadow space-y-3">
-            <div class="text-lg font-bold">${title} (${items.length})</div>
-            ${items.map((item, index) => `
+            <div class="text-lg font-bold">${title} (${renderableItems.length})</div>
+            ${renderableItems.map((item, index) => `
                 <article class="rounded-lg bg-slate-50 p-3">
                     <div class="mb-1 text-xs uppercase text-slate-500">#${index + 1} | ${type} | ${item.hardness || 'Easy'} | Chapter ${item.chapter || '-'}</div>
-                    <div class="bnFont font-semibold">${formatFractions(item.question || '')}</div>
+                    <div class="bnFont font-semibold">${applySpecialMathFont(formatFractions(item.question || ''))}</div>
                     ${Array.isArray(item.options) && item.options.length ? `
                         <div class="mt-3 grid grid-cols-1 gap-2 md:grid-cols-2 bnFont">
                             ${item.options.map(option => `
                                 <div class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm">
-                                    <span class="font-semibold">${escapeHtml(option.key || '')})</span>
-                                    <span>${formatFractions(option.text || '')}</span>
+                                    <span class="font-semibold">${escapeHtml(option.key || '')}<span class="math-sym-font">)</span></span>
+                                    <span>${applySpecialMathFont(formatFractions(option.text || ''))}</span>
                                 </div>
                             `).join('')}
                         </div>
                     ` : ''}
-                    ${item.questionKo ? `<div class="mt-3 rounded-lg bg-white px-3 py-2 text-sm bnFont"><span class="font-semibold">(ক)</span> ${formatFractions(item.questionKo)}</div>` : ''}
-                    ${item.questionKho ? `<div class="mt-2 rounded-lg bg-white px-3 py-2 text-sm bnFont"><span class="font-semibold">(খ)</span> ${formatFractions(item.questionKho)}</div>` : ''}
+                    ${item.questionKo ? `<div class="mt-3 rounded-lg bg-white px-3 py-2 text-sm bnFont"><span class="font-semibold">(ক<span class="math-sym-font">)</span></span> ${applySpecialMathFont(formatFractions(item.questionKo))}</div>` : ''}
+                    ${item.questionKho ? `<div class="mt-2 rounded-lg bg-white px-3 py-2 text-sm bnFont"><span class="font-semibold">(খ<span class="math-sym-font">)</span></span> ${applySpecialMathFont(formatFractions(item.questionKho))}</div>` : ''}
                 </article>
             `).join('')}
         </section>
     `;
 }
+
+function englishToBanglaNumber(value) {
+    return String(value || '').replace(/[0-9]/g, d => '০১২৩৪৫৬৭৮৯'[Number(d)]);
+}
+
+
+function getOptionTextSize(options) {
+    if (!Array.isArray(options) || !options.length) return 'text-sm';
+    const maxLength = Math.max(...options.map(o => String(o.text || '').length));
+    if (maxLength > 40) return 'text-xs';
+    if (maxLength > 20) return 'text-sm';
+    return 'text-base';
+}
+function hasFraction(text) {
+    return /(\/|fraction)/.test(String(text || ''));
+}
+
+function getExamDate() {
+    if (examDate) return examDate;
+    return new Date(Date.now() + 864e5).toISOString().split('T')[0].split('-').reverse().join('-');
+}
+
+function getSchoolName() {
+    // If manually edited, just return it (break-words in HTML handles long manual typing)
+    if (schoolName) return schoolName;
+
+    if (selectedSchools.length === 0) return '';
+
+    // If 3 or fewer, keep on one line
+    if (selectedSchools.length <= 3) {
+        return selectedSchools.join('+');
+    }
+
+    // If MORE than 3, split into two lines exactly after the 3rd item
+    const line1 = selectedSchools.slice(0, 3).join('+');
+    const line2 = selectedSchools.slice(3).join('+');
+
+    return `${line1}<br>${line2}`;
+}
+
+function getSections() {
+    return sections || '3, 4';
+}
+
+function getClassName() {
+    const classMap = {
+        '3': 'তৃতীয়',
+        '4': 'চতুর্থ',
+        '5': 'পঞ্চম',
+        '6': 'ষষ্ঠ',
+        '7': 'সপ্তম'
+    };
+    return classMap[String(selectedClass)] || 'চতুর্থ';
+}
+
+function getExamTime() {
+    if (selectedFullMark === '100') {
+        return '২ ঘণ্টা ৩০ মিনিট';
+    } else {
+        return '১ ঘণ্টা ৩০ মিনিট';
+    }
+}
+
+function getFullMark() {
+    return englishToBanglaNumber(selectedFullMark);
+}
+
+function getExamYear() {
+    if (examYear) return examYear;
+    return String(new Date().getFullYear());
+}
+
+function editDate(container) {
+    const span = container.querySelector('span');
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.value = getExamDate();
+    input.classList.add('w-20', 'h-full', 'editing', 'border-2', 'px-1', 'text-xs');
+    span.replaceWith(input);
+    input.focus();
+    input.select();
+
+    const saveDate = () => {
+        if (input.value.trim()) {
+            examDate = input.value.trim();
+            const newSpan = document.createElement('span');
+            newSpan.textContent = englishToBanglaNumber(examDate);
+            input.replaceWith(newSpan);
+            showBanner('Date updated!');
+        }
+    };
+
+    input.addEventListener('keydown', e => {
+        if (e.key === 'Enter') saveDate();
+    });
+    input.addEventListener('blur', saveDate);
+}
+
+function editSchoolName(container) {
+    const p = container.querySelector('p');
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.value = getSchoolName();
+    input.classList.add('w-full', 'h-full', 'editing', 'border-2', 'px-1', 'text-sm');
+    p.replaceWith(input);
+    input.focus();
+    input.select();
+
+    const save = () => {
+        if (input.value.trim()) {
+            schoolName = input.value.trim();
+            const newP = document.createElement('p');
+            newP.classList.add('text-sm');
+            newP.textContent = schoolName;
+            input.replaceWith(newP);
+            showBanner('School name updated!');
+        }
+    };
+
+    input.addEventListener('keydown', e => {
+        if (e.key === 'Enter') save();
+    });
+    input.addEventListener('blur', save);
+}
+
+function editSections(container) {
+    const p = container.querySelector('p');
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.value = getSections();
+    input.classList.add('w-full', 'h-full', 'editing', 'border-2', 'px-1');
+    p.replaceWith(input);
+    input.focus();
+    input.select();
+
+    const save = () => {
+        if (input.value.trim()) {
+            sections = input.value.trim();
+            const newP = document.createElement('p');
+            newP.textContent = 'অ- ' + englishToBanglaNumber(sections);
+            input.replaceWith(newP);
+            showBanner('Sections updated!');
+        }
+    };
+
+    input.addEventListener('keydown', e => {
+        if (e.key === 'Enter') save();
+    });
+    input.addEventListener('blur', save);
+}
+
+function editExamYear(pElement) {
+    const span = pElement.querySelector('span.year-text');
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.value = getExamYear();
+    input.classList.add('w-10', 'h-full', 'editing', 'border-2', 'px-1', 'text-sm');
+    span.replaceWith(input);
+    input.focus();
+    input.select();
+
+    const save = () => {
+        if (input.value.trim()) {
+            examYear = input.value.trim();
+            const newSpan = document.createElement('span');
+            newSpan.classList.add('year-text');
+            newSpan.textContent = englishToBanglaNumber(examYear);
+            input.replaceWith(newSpan);
+            showBanner('Year updated!');
+        }
+    };
+
+    input.addEventListener('keydown', e => {
+        if (e.key === 'Enter') save();
+    });
+    input.addEventListener('blur', save);
+}
+
 function renderAnswerBox(generated) {
 
     function render(type, items) {
         if (!items.length) return '';
-
         return `
             <div class="bg-white p-4 rounded-xl shadow">
                 <div class="font-bold text-lg mb-2">${type}</div>
@@ -335,7 +865,6 @@ function renderAnswerBox(generated) {
     return `
         <section class="bg-green-100 border-2 border-green-400 p-4 rounded-xl space-y-4">
             <div class="text-xl font-bold text-green-800">Answer Sheet</div>
-
             ${render('MCQ', generated.mcq)}
             ${render('Blanks', generated.blanks)}
             ${render('Short', generated.shorts)}
@@ -344,37 +873,32 @@ function renderAnswerBox(generated) {
         </section>
     `;
 }
+
 function getAnswer(item) {
-    // MCQ
     if (item.type === 'mcq' && item.options) {
         const correct = item.options.find(o => o.isCorrect);
         if (correct) return `${correct.key}) ${correct.text}`;
     }
 
-    // Blanks or Shorts
     if ((item.type === 'blanks' || item.type === 'short') && item.answer) {
         return item.answer;
     }
 
-    // Word problem
     if (item.type === 'word_problem') {
         const answers = [];
 
-        // Ko part
         if (item.solutionKo) {
             const lines = item.solutionKo.split('\n');
             const ansLine = lines.reverse().find(line => line.trim().startsWith('উত্তর'));
             if (ansLine) answers.push(`(ক) ${ansLine.replace('উত্তর:', '').trim()}`);
         }
 
-        // Kho part
         if (item.solutionKho) {
             const lines = item.solutionKho.split('\n');
             const ansLine = lines.reverse().find(line => line.trim().startsWith('উত্তর'));
             if (ansLine) answers.push(`(খ) ${ansLine.replace('উত্তর:', '').trim()}`);
         }
 
-        // Fallback to single solution field
         if (!answers.length && item.solution) {
             const lines = item.solution.split('\n');
             const ansLine = lines.reverse().find(line => line.trim().startsWith('উত্তর'));
@@ -384,11 +908,11 @@ function getAnswer(item) {
         return answers.join(' | ') || '—';
     }
 
-    return '—'; // fallback if no answer found
+    return '—';
 }
+
 function updateReport() {
     const pool = getPoolForSelection();
-    const requested = getRequestedCounts();
     const chapterGroups = splitSelectedChapters();
     const report = document.getElementById('qmReport');
     report.innerHTML = `
@@ -397,9 +921,6 @@ function updateReport() {
     `;
 }
 
-// Requested part from report function
-// <div><span class="font-semibold">Requested: </span>MCQ ${requested.mcq}, Blank ${requested.blanks}, Short ${requested.shorts}, Word ${requested.words}, Geometry ${requested.geometry}</div>
-
 async function loadData() {
     const response = await fetch('notes-data.json', { cache: 'no-store' });
     if (!response.ok) throw new Error('Could not load notes-data.json');
@@ -407,24 +928,27 @@ async function loadData() {
 }
 
 function generatePaper() {
+    // CLEAR previous formatted data
+    const pdfOutput = document.getElementById('pdfOutput');
+    pdfOutput.innerHTML = '';
+    currentGeneratedPaper = null; // Reset saved paper
+    schoolName = null; // Reset manual school name edits back to selector
+
     const chapterGroups = splitSelectedChapters();
     const requested = getRequestedCounts();
 
-    // Step 1: Pick 1 MCQ, 1 Blank, 1 Short from geometry chapters (if available)
     const geomMCQ = pickChapterCovered(chapterGroups.geometry, 'mcq', 1, true);
     const geomBlank = pickChapterCovered(chapterGroups.geometry, 'blanks', 1, true);
     const geomShort = pickChapterCovered(chapterGroups.geometry, 'shorts', 1, true);
 
-    // Step 2: Adjust requested counts for regular chapters
     const adjustedRequested = {
         mcq: Math.max(0, requested.mcq - geomMCQ.length),
         blanks: Math.max(0, requested.blanks - geomBlank.length),
         shorts: Math.max(0, requested.shorts - geomShort.length),
         words: requested.words,
-        geometry: Math.max(0, requested.geometry) // keep geometry words as before
+        geometry: Math.max(0, requested.geometry)
     };
 
-    // Step 3: Pick remaining questions from regular chapters
     const generated = {
         mcq: [...pickChapterCovered(chapterGroups.regular, 'mcq', adjustedRequested.mcq, true), ...geomMCQ],
         blanks: [...pickChapterCovered(chapterGroups.regular, 'blanks', adjustedRequested.blanks, false), ...geomBlank],
@@ -433,215 +957,162 @@ function generatePaper() {
         geometry: pickChapterCovered(chapterGroups.geometry, 'geometry', adjustedRequested.geometry, true)
     };
 
-    const htmlOutput = `
+    // SAVE THE EXACT QUESTIONS SO FORMAT DOESN'T RANDOMIZE THEM
+    currentGeneratedPaper = generated;
+
+    setOutputTarget('qmOutput', `
     <section class="bg-white p-4 rounded-xl shadow">
-        <div class="text-2xl font-bold">Generated Question Paper</div>
+        <div class="text-2xl text-red-500 font-bold">Generated Question Paper</div>
         <div class="mt-2 text-slate-600">
-            Class ${selectedClass || '-'} | 
-            Chapters ${getSelectedChapters().join(', ') || '-'} | 
-            Full Mark ${selectedFullMark} | 
+            Class ${selectedClass || '-'} |
+            Chapters ${getSelectedChapters().join(', ') || '-'} |
+            Full Mark ${selectedFullMark} |
             ${selectedHardness} Mix
         </div>
     </section>
-
-    ${renderGeneratedSection('MCQ', generated.mcq, 'MCQ')}
+    ${renderGeneratedSection('MCQ', generated.mcq, 'MCQ', { requireMcqOptions: true })}
     ${renderGeneratedSection('Blank', generated.blanks, 'Blank')}
     ${renderGeneratedSection('Short', generated.shorts, 'Short')}
     ${renderGeneratedSection('Word', generated.words, 'Word')}
     ${renderGeneratedSection('Geometry', generated.geometry, 'Geometry')}
-
-    <!-- ✅ Separate Answer Box -->
     ${renderAnswerBox(generated)}
-`;
+`);
 
-    document.getElementById('qmOutput').innerHTML = htmlOutput;
-    lastGeneratedHtml = htmlOutput;
-    isPdfFormatMode = false;
+    // Button states
+    document.getElementById('formatPdfBtn').disabled = false;
+    document.getElementById('downloadPdfBtn').disabled = true;
 
-    // Show Format PDF button after generate
-    document.getElementById('formatPdfBtn').classList.remove('hidden');
     showBanner('Question paper generated!');
 }
 
-// Store generated questions globally for PDF formatting
-let lastGeneratedQuestions = {};
-let lastGeneratedHtml = '';
-let isPdfFormatMode = false;
-function collectQuestionsFromOutput() {
-    const sections = document.querySelectorAll('#qmOutput section');
-    const collected = {
-        mcq: [],
-        blanks: [],
-        shorts: [],
-        words: [],
-        geometry: [],
-        metadata: {}
-    };
 
-    sections.forEach(section => {
-        const title = section.querySelector('.text-lg, .text-2xl, .text-xl');
-        const articles = section.querySelectorAll('article');
-
-        if (!title) return; // Skip if no title (like metadata section)
-
-        const titleText = title.textContent.toLowerCase();
-
-        articles.forEach((article, index) => {
-            const questionText = article.querySelector('.bnFont');
-            const header = article.querySelector('.text-xs.uppercase');
-
-            if (questionText) {
-                const item = {
-                    index: index + 1,
-                    sectionType: titleText,
-                    question: questionText.innerHTML,
-                    header: header ? header.textContent : '',
-                    html: article.innerHTML
-                };
-
-                if (titleText.includes('mcq')) collected.mcq.push(item);
-                else if (titleText.includes('blank')) collected.blanks.push(item);
-                else if (titleText.includes('short')) collected.shorts.push(item);
-                else if (titleText.includes('word')) collected.words.push(item);
-                else if (titleText.includes('geometry')) collected.geometry.push(item);
-            }
-        });
-    });
-
-    return collected;
-}
-
-// Render question item for A4 layout
-function renderA4QuestionItem(item) {
-    return `
-        <div class="a4-question-item">
-            <div class="question-header">${escapeHtml(item.header)}</div>
-            <div class="question-text">${item.question}</div>
-        </div>
-    `;
-}
-
-// Distribute questions into A4 pages following the pattern:
-// Single page: Left → Right
-// Two pages: Page1 Right → Page2 Left → Page2 Right → Page1 Left
-function distributeQuestionsToPages(allQuestions) {
-    const totalQuestions = allQuestions.length;
-
-    // Determine if we need 1 or 2 pages based on estimated space
-    // Assuming ~6-8 questions per column in A4 landscape
-    const need2Pages = totalQuestions > 12;
-
-    if (!need2Pages) {
-        // Single page: arrange in 2 columns (left first, then right)
-        const mid = Math.ceil(totalQuestions / 2);
-        return [{
-            columns: [
-                allQuestions.slice(0, mid),
-                allQuestions.slice(mid)
-            ]
-        }];
-    } else {
-        // Two pages with specific flow pattern:
-        // Flow order: Page1Right → Page2Left → Page2Right → Page1Left
-        // Visual layout (what user sees when printing):
-        // Page 1: [Left (empty/reserved), Right (questions)]
-        // Page 2: [Left (questions), Right (questions)]
-
-        // Divide questions into 4 roughly equal parts
-        const quarterSize = Math.ceil(totalQuestions / 4);
-
-        const page1Right = allQuestions.slice(0, quarterSize);
-        const page2Left = allQuestions.slice(quarterSize, quarterSize * 2);
-        const page2Right = allQuestions.slice(quarterSize * 2, quarterSize * 3);
-        const page1Left = allQuestions.slice(quarterSize * 3);
-
-        return [
-            {
-                columns: [page1Left, page1Right]
-            },
-            {
-                columns: [page2Left, page2Right]
-            }
-        ];
-    }
-}
-
-// Generate A4 PDF Layout
-function formatPdfLayout() {
-    const questions = collectQuestionsFromOutput();
-
-    // Combine all questions in order
-    const allQuestions = [
-        ...questions.mcq,
-        ...questions.blanks,
-        ...questions.shorts,
-        ...questions.words,
-        ...questions.geometry
-    ];
-
-    if (!allQuestions.length) {
-        showBanner('No questions to format. Generate a paper first!');
+function downloadPdf() {
+    const pdfOutput = document.getElementById('pdfOutput');
+    if (!pdfOutput || pdfOutput.classList.contains('hidden')) {
+        showBanner('Please format the paper first!');
         return;
     }
 
-    const pages = distributeQuestionsToPages(allQuestions);
+    // Get the outer grid wrapper (the whole 2x2 layout)
+    const gridWrapper = pdfOutput.querySelector('section');
 
-    let pdfHtml = '<div class="a4-pdf-container">';
+    if (!gridWrapper) {
+        showBanner('No layout to download!');
+        return;
+    }
 
-    pages.forEach((page, pageIndex) => {
-        pdfHtml += `<div class="a4-page" data-page="${pageIndex + 1}">`;
+    const printWindow = window.open('', '_blank');
 
-        page.columns.forEach((columnQuestions, colIndex) => {
-            const pageNum = pageIndex + 1;
-            const colName = colIndex === 0 ? 'Left' : 'Right';
-
-            pdfHtml += '<div class="a4-column">';
-            pdfHtml += `<div class="a4-page-label">Page ${pageNum} - ${colName}</div>`;
-
-            if (columnQuestions.length === 0) {
-                pdfHtml += '<div style="padding: 20px; text-align: center; color: #d1d5db;">Reserved for content</div>';
-            } else {
-                columnQuestions.forEach(q => {
-                    pdfHtml += renderA4QuestionItem(q);
-                });
+    // Copy all active stylesheets (Tailwind, custom fonts, etc) to the new window
+    const styles = Array.from(document.styleSheets)
+        .map(sheet => {
+            try {
+                return Array.from(sheet.cssRules).map(rule => rule.cssText).join('\n');
+            } catch (e) {
+                if (sheet.href) return `@import url('${sheet.href}');`;
+                return '';
             }
-            pdfHtml += '</div>';
+        })
+        .join('\n');
+
+    printWindow.document.write(`
+        <!DOCTYPE html>
+        <html lang="bn">
+        <head>
+            <meta charset="UTF-8">
+            <title>Question Paper PDF</title>
+            <style>
+                ${styles}
+                
+                /* Force landscape orientation for the print */
+                @page {
+                    size: landscape;
+                    margin: 0;
+                }
+
+                body {
+                    margin: 0;
+                    padding: 0;
+                    background: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 100vh;
+                }
+
+                /* Container maintains the exact screen dimensions */
+                .print-container {
+                    width: 297mm;
+                    height: 420mm;
+                    box-sizing: border-box;
+                    background: white;
+                }
+
+                /* Remove the cyan outer border */
+                .print-container > section {
+                    border: none !important;
+                    box-shadow: none !important;
+                }
+
+                /* Remove the red borders around the page content */
+                .print-container > section > div {
+                    border: none !important;
+                }
+                
+                .print-container > section > div > div {
+                    border: none !important;
+                }
+                
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="print-container">
+                ${gridWrapper.outerHTML}
+            </div>
+        </body>
+        </html>
+    `);
+
+    printWindow.document.close();
+
+    // Wait for images to load before triggering print
+    const images = printWindow.document.querySelectorAll('img');
+    let loadedCount = 0;
+    const totalImages = images.length;
+
+    function triggerPrint() {
+        setTimeout(() => {
+            printWindow.print();
+        }, 250);
+    }
+
+    if (totalImages === 0) {
+        triggerPrint();
+    } else {
+        images.forEach(img => {
+            const checkLoad = () => {
+                loadedCount++;
+                if (loadedCount === totalImages) {
+                    triggerPrint();
+                }
+            };
+
+            if (img.complete) {
+                checkLoad();
+            } else {
+                img.onload = checkLoad;
+                img.onerror = checkLoad;
+            }
         });
-
-        pdfHtml += '</div>';
-    });
-
-    pdfHtml += `
-    <div style="margin-top: 20px; padding: 10px; text-align: center;">
-        <button onclick="backToFullView()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Back to Full View
-        </button>
-        <button onclick="window.print()" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded ml-2">
-            Print PDF
-        </button>
-    </div>`;
-
-    pdfHtml += '</div>';
-
-    // Replace output with formatted PDF view
-    document.getElementById('qmOutput').innerHTML = pdfHtml;
-    isPdfFormatMode = true;
-    showBanner('PDF layout formatted! Ready to print.');
-}
-
-// Return to full question view
-function backToFullView() {
-    if (lastGeneratedHtml) {
-        document.getElementById('qmOutput').innerHTML = lastGeneratedHtml;
-        isPdfFormatMode = false;
-        showBanner('Switched back to full view.');
     }
 }
 
-window.backToFullView = backToFullView;
-
 document.getElementById('toggleAllChaptersBtn').addEventListener('click', () => {
-    const boxes = [...document.querySelectorAll('#qmChapterList input[type=\"checkbox\"]')];
+    const boxes = [...document.querySelectorAll('#qmChapterList input[type="checkbox"]')];
     const shouldCheck = boxes.some(box => !box.checked);
     boxes.forEach(box => {
         box.checked = shouldCheck;
@@ -656,23 +1127,50 @@ document.getElementById('qmChapterList').addEventListener('change', updateReport
 document.getElementById('generatePaperBtn').addEventListener('click', () => runAction(document.getElementById('generatePaperBtn'), 'Generating...', async () => {
     generatePaper();
 }));
-
 document.getElementById('formatPdfBtn').addEventListener('click', () => runAction(document.getElementById('formatPdfBtn'), 'Formatting...', async () => {
-    formatPdfLayout();
+    if (!currentGeneratedPaper) {
+        showBanner('Please generate the paper first!');
+        return;
+    }
+
+    const pdfOutput = document.getElementById('pdfOutput');
+    const existingPages = pdfOutput.querySelectorAll('.a4-page-content');
+    const hasContent = Array.from(existingPages).some(page => page.children.length > 0);
+
+    if (hasContent) {
+        document.getElementById('qmOutput').classList.add('hidden');
+        pdfOutput.classList.remove('hidden');
+    } else {
+        // Pass the exact saved paper so it formats WITHOUT randomizing
+        await generatePaperAFour(currentGeneratedPaper);
+    }
+
+    document.getElementById('downloadPdfBtn').disabled = false;
 }));
+document.getElementById('downloadPdfBtn').addEventListener('click', () => runAction(document.getElementById('downloadPdfBtn'), 'Preparing PDF...', async () => {
+    downloadPdf();
+}));
+
 
 window.selectClass = selectClass;
 window.selectPaperHardness = selectPaperHardness;
 window.selectFullMark = selectFullMark;
+window.toggleSchool = toggleSchool;
 
 window.onload = async () => {
     try {
         await loadData();
         renderClassSelectors();
+        renderSchoolSelector();
         renderHardnessSelectors();
         renderFullMarkSelectors();
         applyCountPreset();
         renderChapterList();
+
+        // Initialize button states
+        document.getElementById('formatPdfBtn').disabled = true;
+        document.getElementById('downloadPdfBtn').disabled = true;
+
     } catch (error) {
         console.error(error);
         showBanner(error.message || 'Failed to load question maker data.');
