@@ -34,8 +34,8 @@ const AVAILABLE_SCHOOLS = ['P.N.', 'Coll', 'MMA', 'RU', 'Siro'];
 let selectedSchools = [];
 
 const ENABLE_PUSH_ANIMATION = true;
-const PUSH_ANIMATION_DURATION_MS = 100;
-const PUSH_ANIMATION_DELAY_MS = 20;
+const PUSH_ANIMATION_DURATION_MS = 5;
+const PUSH_ANIMATION_DELAY_MS = 5;
 const A4_PAGE_COUNT = 4;
 const A4_GRID_DISPLAY_ORDER = [1, 2, 3, 0]; // Visual layout: 4 1 / 2 3
 
