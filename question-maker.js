@@ -484,7 +484,7 @@ function buildAFourPageHeader() {
                         <p class="text-xs">${getSchoolName()}</p>
                     </div>
 
-                    <div class="col-start-45 row-start-15 col-end-61 row-end-18 text-right pr-1 leading-none cursor-pointer hover:bg-red-300 rounded-sm overflow-hidden" onclick="editSections(this)" title="Click to edit">
+                    <div class="col-start-45 row-start-15 col-end-61 row-end-18 text-right pr-1 leading-none cursor-pointer hover:bg-red-300 rounded-sm" onclick="editSections(this)" title="Click to edit">
                         <p>অ- ${englishToBanglaNumber(getSections())}</p>
                     </div>
 
