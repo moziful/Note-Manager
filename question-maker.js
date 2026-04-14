@@ -465,7 +465,7 @@ function buildAFourPageHeader() {
                     <img class="col-start-10 row-start-1 col-end-61 row-end-5 pl-2" src="./Assets/Name.png" alt="">
 
                     <div class="pl-1 col-start-1 row-start-14 col-end-20 row-end-18 cursor-pointer hover:bg-red-300 rounded-sm overflow-hidden" onclick="editDate(this)" title="Click to edit">
-                        <p>
+                        <p class="mr-1">
                             ${applySpecialMathFont('তারিখ: ')}<span>${englishToBanglaNumber(getExamDate())}</span>
                         </p>
                     </div>
