@@ -469,7 +469,7 @@ function buildAFourPageHeader() {
                             ${applySpecialMathFont('তারিখ: ')}<span>${englishToBanglaNumber(getExamDate())}</span>
                         </p>
                     </div>
-                    <div class="pl-1 col-start-1 row-start-18 col-end-20 row-end-20">
+                    <div class="pl-1 col-start-1 row-start-18 col-end-20 row-end-21">
                         <p>${applySpecialMathFont('সময়:')} ${getExamTime()}</p>
                     </div>
 
