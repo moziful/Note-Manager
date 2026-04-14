@@ -464,12 +464,12 @@ function buildAFourPageHeader() {
                         src="./Assets/Logo.png" alt="">
                     <img class="col-start-10 row-start-1 col-end-61 row-end-5 pl-2" src="./Assets/Name.png" alt="">
 
-                    <div class="pl-1 col-start-1 row-start-14 col-end-20 row-end-18 cursor-pointer hover:bg-red-300 rounded-sm" onclick="editDate(this)" title="Click to edit">
+                    <div class="pl-1 col-start-1 row-start-14 col-end-20 row-end-18 cursor-pointer hover:bg-red-300 rounded-sm overflow-hidden" onclick="editDate(this)" title="Click to edit">
                         <p>
                             ${applySpecialMathFont('তারিখ: ')}<span>${englishToBanglaNumber(getExamDate())}</span>
                         </p>
                     </div>
-                    <div class="pl-1 col-start-1 row-start-18 col-end-20 row-end-20">
+                    <div class="pl-1 col-start-1 row-start-18 col-end-20 row-end-20 overflow-hidden">
                         <p>${applySpecialMathFont('সময়:')} ${getExamTime()}</p>
                     </div>
 
@@ -480,11 +480,11 @@ function buildAFourPageHeader() {
                     </div>
 
                     <div
-                        class="col-start-45 row-start-9 col-end-61 row-end-15 text-right pr-1 leading-none flex flex-col justify-center items-end cursor-pointer hover:bg-red-300 rounded-sm" onclick="editSchoolName(this)" title="Click to edit">
+                        class="col-start-45 row-start-9 col-end-61 row-end-15 text-right pr-1 leading-none flex flex-col justify-center items-end cursor-pointer hover:bg-red-300 rounded-sm overflow-hidden" onclick="editSchoolName(this)" title="Click to edit">
                         <p class="text-xs">${getSchoolName()}</p>
                     </div>
 
-                    <div class="col-start-45 row-start-15 col-end-61 row-end-18 text-right pr-1 leading-none cursor-pointer hover:bg-red-300 rounded-sm" onclick="editSections(this)" title="Click to edit">
+                    <div class="col-start-45 row-start-15 col-end-61 row-end-18 text-right pr-1 leading-none cursor-pointer hover:bg-red-300 rounded-sm overflow-hidden" onclick="editSections(this)" title="Click to edit">
                         <p>অ- ${englishToBanglaNumber(getSections())}</p>
                     </div>
 
