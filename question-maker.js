@@ -30,7 +30,7 @@ const SECTION_MARKS_CONFIG = {
     }
 };
 
-const AVAILABLE_SCHOOLS = ['P.N.', 'Coll', 'MMA', 'RU', 'Siro'];
+const AVAILABLE_SCHOOLS = ['পি.এন.', 'কলে', 'নজমুল', 'মমিএ', 'রাবি', 'সিরো', 'হমুমু', 'পু. লাইন্স'];
 let selectedSchools = [];
 
 const ENABLE_PUSH_ANIMATION = true;
