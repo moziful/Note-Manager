@@ -465,8 +465,8 @@ function buildAFourPageHeader() {
                     <img class="col-start-10 row-start-1 col-end-61 row-end-5 pl-2" src="./Assets/Name.png" alt="">
 
                     <div class="pl-1 col-start-1 row-start-14 col-end-20 row-end-18 cursor-pointer hover:bg-red-300 rounded-sm overflow-hidden" onclick="editDate(this)" title="Click to edit">
-                        <p class="mr-1">
-                            ${applySpecialMathFont('তারিখ: ')}<span>${englishToBanglaNumber(getExamDate())}</span>
+                        <p class="mr-1 whitespace-nowrap">
+                            ${applySpecialMathFont('তারিখ: ')}<span class="date-text">${englishToBanglaNumber(getExamDate())}</span>
                         </p>
                     </div>
                     <div class="pl-1 col-start-1 row-start-18 col-end-20 row-end-21">
@@ -739,7 +739,16 @@ function getExamYear() {
 }
 
 function editDate(container) {
-    const span = container.querySelector('span');
+    const activeInput = container.querySelector('input.editing');
+    if (activeInput) {
+        activeInput.focus();
+        activeInput.select();
+        return;
+    }
+
+    const span = container.querySelector('span.date-text');
+    if (!span) return;
+
     const input = document.createElement('input');
     input.type = 'text';
     input.value = getExamDate();
@@ -752,6 +761,7 @@ function editDate(container) {
         if (input.value.trim()) {
             examDate = input.value.trim();
             const newSpan = document.createElement('span');
+            newSpan.classList.add('date-text');
             newSpan.textContent = englishToBanglaNumber(examDate);
             input.replaceWith(newSpan);
             showBanner('Date updated!');
@@ -762,6 +772,7 @@ function editDate(container) {
         if (e.key === 'Enter') saveDate();
     });
     input.addEventListener('blur', saveDate);
+    input.addEventListener('click', e => e.stopPropagation());
 }
 
 function editSchoolName(container) {
@@ -980,6 +991,7 @@ function generatePaper() {
     // Button states
     document.getElementById('formatPdfBtn').disabled = false;
     document.getElementById('downloadPdfBtn').disabled = true;
+    document.getElementById('downloadWordBtn').disabled = true;
 
     showBanner('Question paper generated!');
 }
@@ -1109,6 +1121,330 @@ function downloadPdf() {
     }
 }
 
+/* ============================================================
+   WORD EXPORT FUNCTIONS
+   ============================================================ */
+
+/**
+ * Build the ordered block list from generated paper data.
+ * Shared logic so both screen and Word pagination stay in sync.
+ */
+function buildPaperBlocks(generated) {
+    const blocks = [];
+    blocks.push({ type: 'header' });
+
+    const mcqRenderable = getRenderableQuestions(generated.mcq, 'MCQ', { requireMcqOptions: true });
+    if (mcqRenderable.length) {
+        blocks.push({ type: 'section-title', data: { title: '১. বহুনির্বাচনী প্রশ্ন (সঠিক উত্তরটি খাতায় লিখ):', sectionType: 'mcq' } });
+        mcqRenderable.forEach((item, i) => blocks.push({ type: 'question', data: { item, index: i + 1 } }));
+    }
+
+    const blankRenderable = getRenderableQuestions(generated.blanks, 'Blank');
+    if (blankRenderable.length) {
+        blocks.push({ type: 'section-title', data: { title: '২. শূন্যস্থান পূরণ কর:', sectionType: 'blanks' } });
+        blankRenderable.forEach((item, i) => blocks.push({ type: 'question', data: { item, index: i + 1 } }));
+    }
+
+    const shortCount = SECTION_MARKS_CONFIG[selectedFullMark]?.shorts?.count || 0;
+    const shortRenderable = getRenderableQuestions(generated.shorts, 'Short');
+    if (shortRenderable.length) {
+        blocks.push({ type: 'section-title', data: { title: `৩. সংক্ষেপে উত্তর দাও (যেকোনো ${englishToBanglaNumber(shortCount)} টি):`, sectionType: 'shorts' } });
+        shortRenderable.forEach((item, i) => blocks.push({ type: 'question', data: { item, index: i + 1 } }));
+    }
+
+    const wordCount = SECTION_MARKS_CONFIG[selectedFullMark]?.words?.count || 0;
+    const wordRenderable = getRenderableQuestions(generated.words, 'Word');
+    let continuousIndex = 1;
+    if (wordRenderable.length) {
+        blocks.push({ type: 'section-title', data: { title: `৪. জ্যামিতি অংশ হতে কমপক্ষে ১টি সহ যেকোনো ${englishToBanglaNumber(wordCount)}টি প্রশ্নের উত্তর দাও:`, sectionType: 'words' } });
+        wordRenderable.forEach((item) => blocks.push({ type: 'question', data: { item, index: continuousIndex++ } }));
+    }
+
+    const geomRenderable = getRenderableQuestions(generated.geometry, 'Geometry');
+    if (geomRenderable.length) {
+        blocks.push({ type: 'section-title', data: { title: 'জ্যামিতি', sectionType: null } });
+        geomRenderable.forEach((item) => blocks.push({ type: 'question', data: { item, index: continuousIndex++ } }));
+    }
+
+    return blocks;
+}
+
+/**
+ * Paginate blocks by measuring actual DOM heights.
+ * Returns array of page arrays, each containing block indices.
+ */
+function paginateBlocksToPages(blocks) {
+    const existingPage = document.querySelector('.a4-page-content');
+    const pageW = existingPage ? existingPage.clientWidth : 490;
+    const pageH = existingPage ? existingPage.clientHeight : 693;
+
+    const box = document.createElement('div');
+    box.className = 'bnFont';
+    box.style.cssText = `position:fixed;left:-9999px;top:0;width:${pageW}px;height:${pageH}px;overflow:hidden;visibility:hidden;pointer-events:none;`;
+    document.body.appendChild(box);
+
+    const maxH = box.clientHeight;
+
+    function toScreenHtml(b) {
+        if (b.type === 'header') return buildAFourPageHeader();
+        if (b.type === 'section-title') return buildAFourSectionTitle(b.data.title, b.data.sectionType);
+        if (b.type === 'question') return buildAFourQuestionItem(b.data.item, b.data.index);
+        return '';
+    }
+
+    const pages = [];
+    let cur = [];
+    let curH = 0;
+
+    for (let i = 0; i < blocks.length; i++) {
+        const wrap = document.createElement('div');
+        wrap.innerHTML = toScreenHtml(blocks[i]);
+        box.appendChild(wrap);
+
+        // Cascade option grids same as appendBlockToPages
+        wrap.querySelectorAll('.option-grid').forEach(grid => {
+            const first = grid.children[0];
+            if (!first) return;
+            const lh = parseFloat(window.getComputedStyle(first).lineHeight) || 14;
+            if (first.scrollHeight > lh * 1.5) {
+                grid.classList.remove('grid-cols-4');
+                grid.classList.add('grid-cols-2');
+                if (first.scrollHeight > lh * 1.5) {
+                    grid.classList.remove('grid-cols-2');
+                    grid.classList.add('grid-cols-1');
+                }
+            }
+        });
+
+        const h = wrap.scrollHeight;
+        box.removeChild(wrap);
+
+        let fits = (curH + h <= maxH);
+
+        // Section-title stickiness: don't orphan a title without its first question
+        if (blocks[i].type === 'section-title' && fits && i + 1 < blocks.length) {
+            const nextWrap = document.createElement('div');
+            nextWrap.innerHTML = toScreenHtml(blocks[i + 1]);
+            box.appendChild(nextWrap);
+            const nextH = nextWrap.scrollHeight;
+            box.removeChild(nextWrap);
+            if (curH + h + nextH > maxH) fits = false;
+        }
+
+        if (!fits && cur.length > 0) {
+            pages.push([...cur]);
+            cur = [];
+            curH = 0;
+        }
+
+        cur.push(i);
+        curH += h;
+    }
+
+    if (cur.length) pages.push(cur);
+    document.body.removeChild(box);
+    return pages;
+}
+
+/** Convert a/b fractions to Word-friendly sup/sub inline format */
+function wordFraction(text) {
+    return escapeHtml(text || '').replace(
+        /([^\s/]+)\/([^\s/]+)/g,
+        '<sup style="font-size:65%;vertical-align:super;">$1</sup><span style="font-size:65%;">⁄</span><sub style="font-size:65%;vertical-align:sub;">$2</sub>'
+    );
+}
+
+/** Table-based header — works reliably in all Word versions */
+function buildWordHeader() {
+    const school = (getSchoolName() || '').replace(/<br\s*\/?>/gi, '<br/>');
+    return `
+<table style="width:100%;border-collapse:collapse;" cellspacing="0" cellpadding="0">
+  <tr><td style="border:3pt solid #000;padding:2pt;">
+    <table style="width:100%;border-collapse:collapse;" cellspacing="0" cellpadding="0">
+      <tr><td style="border:6pt solid #000;padding:2pt;" colspan="3">
+        <table style="width:100%;border-collapse:collapse;border:3pt solid #000;" cellspacing="0" cellpadding="2">
+          <tr>
+            <td style="width:55pt;border:none;text-align:center;vertical-align:middle;padding:4pt;" rowspan="2">
+              <img src="./Assets/Logo.png" style="height:50pt;width:auto;" />
+            </td>
+            <td style="border:none;padding:2pt 4pt;vertical-align:middle;">
+              <img src="./Assets/Name.png" style="height:16pt;width:100%;object-fit:contain;" />
+            </td>
+          </tr>
+          <tr><td style="border:none;"></td></tr>
+          <tr>
+            <td style="width:55pt;border:none;padding:2pt 4pt;font-size:9pt;vertical-align:top;">
+              <p style="margin:0 0 3pt 0;">তারিখ: ${englishToBanglaNumber(getExamDate())}</p>
+              <p style="margin:0;">সময়: ${getExamTime()}</p>
+            </td>
+            <td style="border:none;text-align:center;vertical-align:middle;padding:4pt;">
+              <p style="font-size:13pt;font-weight:bold;margin:0 0 2pt 0;">প্রস্তুতিমূলক পরীক্ষা — ${englishToBanglaNumber(getExamYear())}</p>
+              <p style="font-size:11pt;margin:0 0 2pt 0;">বিষয়: প্রাথমিক গণিত</p>
+              <p style="font-size:11pt;margin:0;">শ্রেণি: ${getClassName()}</p>
+            </td>
+            <td style="width:75pt;border:none;text-align:right;vertical-align:middle;padding:4pt;font-size:10pt;">
+              <p style="margin:0 0 3pt 0;">${school}</p>
+              <p style="margin:0 0 3pt 0;">অ- ${englishToBanglaNumber(getSections())}</p>
+              <p style="margin:0;font-weight:bold;">পূর্ণমান: ${getFullMark()}</p>
+            </td>
+          </tr>
+        </table>
+      </td></tr>
+    </table>
+  </td></tr>
+</table>
+<p style="text-align:center;font-weight:bold;font-size:8pt;margin:2pt 0 4pt 0;">ডানপাশের সংখ্যা পূর্ণমান জ্ঞাপক</p>`;
+}
+
+/** Section title with optional right-aligned marks */
+function buildWordSectionTitle(title, sectionType) {
+    const m = SECTION_MARKS_CONFIG[selectedFullMark]?.[sectionType];
+    const mrk = m ? `${englishToBanglaNumber(m.perMark)}×${englishToBanglaNumber(m.count)} = ${englishToBanglaNumber(m.total)}` : '';
+    if (mrk) {
+        return `<table style="width:100%;border:none;margin:6pt 0 3pt 0;" cellspacing="0" cellpadding="0">
+<tr><td style="font-weight:bold;font-size:11pt;border:none;padding:0;">${title}</td>
+<td style="font-weight:bold;font-size:11pt;border:none;text-align:right;padding:0;">${mrk}</td></tr></table>`;
+    }
+    return `<p style="font-weight:bold;font-size:11pt;margin:6pt 0 3pt 0;">${title}</p>`;
+}
+
+/** Single question with options as a table */
+function buildWordQuestion(item, index) {
+    const num = englishToBanglaNumber(index);
+    let h = `<p style="margin:0 0 3pt 0;line-height:1.35;font-size:10pt;">`;
+    h += `<span style="display:inline-block;width:16pt;vertical-align:top;">${num}.</span>`;
+    h += wordFraction(item.question || '');
+    h += `</p>`;
+
+    if (Array.isArray(item.options) && item.options.length) {
+        const maxLen = Math.max(...item.options.map(o => String(o.text || '').length));
+        const cols = maxLen > 15 ? 2 : 4;
+        const fs = maxLen > 40 ? 8 : maxLen > 20 ? 9 : 10;
+        h += `<table style="width:calc(100% - 16pt);margin-left:16pt;border-collapse:collapse;" cellspacing="0" cellpadding="0">`;
+        for (let i = 0; i < item.options.length; i += cols) {
+            h += `<tr style="vertical-align:top;">`;
+            for (let j = 0; j < cols; j++) {
+                const opt = item.options[i + j];
+                h += `<td style="width:${100 / cols}%;padding:0 4pt 3pt 0;font-size:${fs}pt;">`;
+                h += opt ? `${escapeHtml(opt.key || '')}) ${wordFraction(opt.text || '')}` : '';
+                h += `</td>`;
+            }
+            h += `</tr>`;
+        }
+        h += `</table>`;
+    }
+
+    if (item.questionKo) h += `<p style="margin:0 0 2pt 0;line-height:1.35;font-size:10pt;padding-left:16pt;">ক) ${wordFraction(item.questionKo)}</p>`;
+    if (item.questionKho) h += `<p style="margin:0 0 3pt 0;line-height:1.35;font-size:10pt;padding-left:16pt;">খ) ${wordFraction(item.questionKho)}</p>`;
+
+    return h;
+}
+
+/** Render one full page (bordered box) for Word */
+function buildWordPage(pageIndices, allBlocks) {
+    let h = `<div style="border:1pt solid #000;padding:6mm;min-height:192mm;box-sizing:border-box;">`;
+    for (const idx of pageIndices) {
+        const b = allBlocks[idx];
+        if (b.type === 'header') h += buildWordHeader();
+        else if (b.type === 'section-title') h += buildWordSectionTitle(b.data.title, b.data.sectionType);
+        else if (b.type === 'question') h += buildWordQuestion(b.data.item, b.data.index);
+    }
+    h += `</div>`;
+    return h;
+}
+
+/** Fetch a URL as base64 data URI */
+async function fetchBase64(url) {
+    try {
+        const r = await fetch(url);
+        if (!r.ok) return url;
+        const blob = await r.blob();
+        return await new Promise(res => {
+            const fr = new FileReader();
+            fr.onloadend = () => res(fr.result);
+            fr.readAsDataURL(blob);
+        });
+    } catch { return url; }
+}
+
+/** Main: download the formatted paper as a .doc file */
+async function downloadWord() {
+    if (!currentGeneratedPaper) {
+        showBanner('Generate and format the paper first!');
+        return;
+    }
+
+    const pdfOutput = document.getElementById('pdfOutput');
+    if (pdfOutput.classList.contains('hidden') || !document.querySelector('.a4-page-content')?.children.length) {
+        showBanner('Please format the paper first!');
+        return;
+    }
+
+    showBanner('Preparing Word file...');
+
+    const blocks = buildPaperBlocks(currentGeneratedPaper);
+    const pages = paginateBlocksToPages(blocks);
+
+    // Embed images as base64
+    const logoB64 = await fetchBase64('./Assets/Logo.png');
+    const nameB64 = await fetchBase64('./Assets/Name.png');
+
+    // Try to embed the Bangla font
+    let fontFaceRule = '';
+    try {
+        const fontBlob = await fetch('bangla.ttf').then(r => r.blob());
+        const fontB64 = await new Promise(res => {
+            const fr = new FileReader();
+            fr.onloadend = () => res(fr.result);
+            fr.readAsDataURL(fontBlob);
+        });
+        fontFaceRule = `@font-face{font-family:'Bangla';src:url('${fontB64}') format('truetype');}`;
+    } catch { /* Font will fall back to system Bangla fonts */ }
+
+    // Build all pages
+    let bodyHtml = '';
+    for (let i = 0; i < pages.length; i++) {
+        let pageHtml = buildWordPage(pages[i], blocks);
+        // Replace image sources with base64
+        pageHtml = pageHtml.replace('src="./Assets/Logo.png"', `src="${logoB64}"`);
+        pageHtml = pageHtml.replace('src="./Assets/Name.png"', `src="${nameB64}"`);
+        bodyHtml += pageHtml;
+        if (i < pages.length - 1) bodyHtml += `<br style="page-break-after:always;clear:both;" />`;
+    }
+
+    // Word-compatible HTML wrapper
+    const doc = `
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+      xmlns:w="urn:schemas-microsoft-com:office:word"
+      xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta charset="utf-8">
+<title>Question Paper</title>
+<!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View><w:Zoom>100</w:Zoom><w:DoNotOptimizeForBrowser/></w:WordDocument></xml><![endif]-->
+<style>
+ ${fontFaceRule}
+@page{size:148mm 210mm;margin:0;}
+body{margin:0;padding:0;font-family:'Bangla','Nikosh','SolaimanLipi','AponaLohit',serif;}
+p{margin:0;padding:0;}
+table{border-collapse:collapse;}
+img{max-width:100%;}
+</style>
+</head>
+<body>${bodyHtml}</body>
+</html>`;
+
+    const blob = new Blob(['\ufeff' + doc], { type: 'application/msword' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = `Question_Paper_Class_${selectedClass}_${getExamYear()}.doc`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(a.href);
+
+    showBanner('Word file downloaded!');
+}
+
 document.getElementById('toggleAllChaptersBtn').addEventListener('click', () => {
     const boxes = [...document.querySelectorAll('#qmChapterList input[type="checkbox"]')];
     const shouldCheck = boxes.some(box => !box.checked);
@@ -1144,9 +1480,14 @@ document.getElementById('formatPdfBtn').addEventListener('click', () => runActio
     }
 
     document.getElementById('downloadPdfBtn').disabled = false;
+    document.getElementById('downloadWordBtn').disabled = false;
 }));
 document.getElementById('downloadPdfBtn').addEventListener('click', () => runAction(document.getElementById('downloadPdfBtn'), 'Preparing PDF...', async () => {
     downloadPdf();
+}));
+
+document.getElementById('downloadWordBtn').addEventListener('click', () => runAction(document.getElementById('downloadWordBtn'), 'Preparing Word...', async () => {
+    await downloadWord();
 }));
 
 
@@ -1168,6 +1509,7 @@ window.onload = async () => {
         // Initialize button states
         document.getElementById('formatPdfBtn').disabled = true;
         document.getElementById('downloadPdfBtn').disabled = true;
+        document.getElementById('downloadWordBtn').disabled = true;
 
     } catch (error) {
         console.error(error);
