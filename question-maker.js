@@ -1330,63 +1330,6 @@ async function captureHeaderImage() {
 
     const clone = existingHeader.cloneNode(true);
 
-    // REMOVE the extra line of text ("ডানপাশের সংখ্যা পূর্ণমান জ্ঞাপক") from the clone
-    const extraText = clone.querySelector('p.text-center');
-    if (extraText) extraText.remove();
-
-    // Set container to exact screen width (w-120 is 30rem) so aspect ratio is perfect
-    const tempDiv = document.createElement('div');
-    tempDiv.style.cssText = 'position:fixed;left:-9999px;top:0;width:30rem;background:white;padding:5px;';
-    tempDiv.appendChild(clone);
-    document.body.appendChild(tempDiv);
-
-    try {
-        const canvas = await html2canvas(tempDiv, {
-            scale: 4,
-            backgroundColor: '#ffffff',
-            useCORS: true,
-            logging: false,
-            onclone: (clonedDoc) => {
-                // Fix unsupported oklch colors before rendering
-                const allElements = clonedDoc.body.querySelectorAll('*');
-                allElements.forEach(el => {
-                    const cs = clonedDoc.defaultView.getComputedStyle(el);
-                    const propsToCheck = [
-                        'border-top-color', 'border-right-color', 'border-bottom-color', 'border-left-color',
-                        'background-color', 'color', 'outline-color'
-                    ];
-                    propsToCheck.forEach(prop => {
-                        const val = cs.getPropertyValue(prop);
-                        if (val.includes('oklch')) {
-                            if (prop.includes('background')) {
-                                el.style.setProperty(prop, '#ffffff', 'important');
-                            } else if (prop === 'color') {
-                                el.style.setProperty(prop, '#000000', 'important');
-                            } else {
-                                el.style.setProperty(prop, '#000000', 'important');
-                            }
-                        }
-                    });
-                });
-            }
-        });
-
-        document.body.removeChild(tempDiv);
-        return canvas.toDataURL('image/png');
-    } catch (error) {
-        console.error("Snapshot failed, using fallback table.", error);
-        document.body.removeChild(tempDiv);
-        return null;
-    }
-}
-
-async function captureHeaderImage() {
-    const pdfOutput = document.getElementById('pdfOutput');
-    const existingHeader = pdfOutput.querySelector('.a4-page-content > div:first-child');
-    if (!existingHeader) return null;
-
-    const clone = existingHeader.cloneNode(true);
-
     const tempDiv = document.createElement('div');
     tempDiv.style.cssText = 'position:fixed;left:-9999px;top:0;width:500px;background:white;padding:5px;';
     tempDiv.appendChild(clone);
@@ -1526,7 +1469,6 @@ async function downloadWord() {
     }
 
     // --- QUESTIONS SECTION ---
-    // --- QUESTIONS SECTION ---
     for (const b of blocks) {
         if (b.type === 'section-title') {
             const m = SECTION_MARKS_CONFIG[selectedFullMark]?.[b.data.sectionType];
@@ -1550,22 +1492,17 @@ async function downloadWord() {
             // Tab after question number
             html += `<p style="margin: 3pt 0;"><span style="display:inline-block;width:22pt;">${num}.&#9;</span>${wordFraction(item.question || '')}</p>`;
 
+            // MCQ Options with Tabs
             if (Array.isArray(item.options) && item.options.length) {
-                const maxLen = Math.max(...item.options.map(o => String(o.text || '').length));
-                const cols = maxLen > 15 ? 2 : 4;
-
-                html += `<table style="width: 85%; margin-left: 22pt; margin-top: 2pt; margin-bottom: 3pt;" cellspacing="0" cellpadding="0">`;
-                for (let i = 0; i < item.options.length; i += cols) {
-                    html += `<tr>`;
-                    for (let j = 0; j < cols; j++) {
-                        const opt = item.options[i + j];
-                        html += `<td style="width: ${Math.floor(100 / cols)}%; padding-right: 8pt; font-size: ${maxLen > 20 ? '10pt' : '11pt'};">`;
-                        if (opt) html += `${escapeHtml(opt.key || '')}) ${wordFraction(opt.text || '')}`;
-                        html += `</td>`;
+                html += `<p style="margin: 2pt 0 4pt 22pt;">`;
+                item.options.forEach((opt, idx) => {
+                    if (opt) {
+                        // Add a tab before the very first option
+                        if (idx === 0) html += `&#9;`;
+                        html += `${escapeHtml(opt.key || '')}) ${wordFraction(opt.text || '')} &#9; `;
                     }
-                    html += `</tr>`;
-                }
-                html += `</table>`;
+                });
+                html = html.trimEnd() + `</p>`;
             }
 
             // Tab BEFORE and AFTER ক) and খ)
