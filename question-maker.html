@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://unpkg.com/html-docx-js/dist/html-docx.js"></script>
     <link rel="stylesheet" href="style.css">
     <style>
         /* Hide scrollbar but keep scrolling */
@@ -38,6 +40,40 @@
         .math-sym-font {
             font-family: 'Baloo Da 2', sans-serif;
         }
+
+
+
+        <style>@page {
+            size: A4 landscape;
+            margin: 15mm;
+        }
+
+        body {
+            font-family: 'Bangla', 'SolaimanLipi', 'AponaLohit', serif;
+            font-size: 11pt;
+            line-height: 1.0;
+        }
+
+        p {
+            margin: 3pt 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td {
+            vertical-align: top;
+            padding: 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
     </style>
 </head>
 
