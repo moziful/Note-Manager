@@ -8578,6 +8578,2035 @@
       }
     },
     {
+      "class": "4",
+      "chapterNumber": "6",
+      "chapterTitle": "গুণিতক ও গুননীয়ক",
+      "content": {
+        "mcq": [
+          {
+            "id": "0601001",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "কোনটি মৌলিক সংখ্যা নয়, আবার যৌগিক সংখ্যাও নয়?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "০",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "১",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "২",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৩",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0601002",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "৬০ এর মৌলিক গুণনীয়ক কয়টি?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "২",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৩",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৪",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৫",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0601003",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "২, ৫ এবং ১০ দ্বারা বিভাজ্য ক্ষুদ্রতম তিন অঙ্কের সংখ্যা কোনটি?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "১০০",
+                "isCorrect": true
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "১১০",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "১২০",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "১৫০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0601004",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "দুটি মৌলিক সংখ্যার গুণফল ৩৫ হলে, সংখ্যা দুটির যোগফল কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "১০",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "১২",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "২৪",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৩৬",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Medium",
+            "tag": "Addition"
+          },
+          {
+            "id": "0601005",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "নিচের কোন সংখ্যাটি ৯ দ্বারা বিভাজ্য কিন্তু ২ দ্বারা নয়?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "১৮",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৩৬",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৪৫",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৫৪",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0601006",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "১ থেকে ১০০ পর্যন্ত মৌলিক সংখ্যা কয়টি?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "২১",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "২৩",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "২৫",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "২৭",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0601007",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "সবচেয়ে ছোট জোড় মৌলিক সংখ্যা কোনটি?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "০",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "২",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৪",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "কোনোটিই নয়",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0601008",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "যদি কোনো সংখ্যার একক স্থানে ৫ থাকে, তবে সেটি কোন সংখ্যা দ্বারা অবশ্যই বিভাজ্য হবে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "২",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৩",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৫",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "১০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0601009",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "২৪ এর গুণনীয়কগুলোর মধ্যে কয়টি মৌলিক সংখ্যা রয়েছে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "১টি",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "২টি",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৩টি",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৪টি",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0601010",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "নিচের কোন জোড়া সংখ্যা দুটি পরস্পর মৌলিক?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "১৪, ২১",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "১৫, ২৫",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "১৬, ৩৩",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "১৮, ২৪",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0601011",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "১০০ এর সবচেয়ে বড় গুণনীয়ক কোনটি?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "১০",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "২৫",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৫০",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "১০০",
+                "isCorrect": true
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0601012",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "কোনো সংখ্যার গুণিতকের সংখ্যা কতটি?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "১টি",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "১০টি",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "১০০টি",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "অসংখ্য",
+                "isCorrect": true
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0601013",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "পরপর দুটি জোড় সংখ্যার মধ্যে সাধারণ গুণনীয়ক অন্তত কোনটি হবে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "২",
+                "isCorrect": true
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৩",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৪",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৫",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0601014",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "তিন অঙ্কের বৃহত্তম সংখ্যাটি নিচের কোনটি দ্বারা বিভাজ্য?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "২",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৫",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৯",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "১০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0601015",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "২৫ এবং ৩০ এর সাধারণ মৌলিক গুণনীয়ক কোনটি?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "২",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৩",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৫",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "১০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0601016",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "একটি সংখ্যার গুণনীয়কগুলো হলো ১, ২, ৩, ৪, ৬, ১২। সংখ্যাটি কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৬",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "১২",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "১৮",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "২৪",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0601017",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "নিচের কোনটি ১৫ এর গুণিতক কিন্তু ৩০ এর গুণিতক নয়?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৩০",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৪৫",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৬০",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৯০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0601018",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "৭২ সংখ্যাটিকে মৌলিক গুণনীয়কে বিশ্লেষণ করলে ২ কয়বার আসবে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "২ বার",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৩ বার",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৪ বার",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৫ বার",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0601019",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "এমন একটি সংখ্যা বল যা ২ এবং ৫ দ্বারা বিভাজ্য কিন্তু ১০ দ্বারা বিভাজ্য নয়।",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "২০",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "২৫",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "এমন সংখ্যা নেই",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "১৫",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0601020",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "কোনো বিজোড় সংখ্যাকে ২ দ্বারা গুণ করলে গুণফল সর্বদা কী হবে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "বিজোড়",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "জোড়",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "মৌলিক",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "শূন্য",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0601021",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "৯০ এর গুণনীয়ক কয়টি?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "১০টি",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "১২টি",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "১৪টি",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "১৬টি",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0601022",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "৬১ থেকে ৭০ এর মধ্যে মৌলিক সংখ্যা কয়টি?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "১টি",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "২টি",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৩টি",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৪টি",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0601023",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "যেকোনো মৌলিক সংখ্যার ঠিক কয়টি গুণনীয়ক থাকে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "১টি",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "২টি",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৩টি",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "অসংখ্য",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0601024",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "১ ব্যতীত অন্য যেকোনো সংখ্যার ন্যূনতম কয়টি গুণনীয়ক থাকে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "১টি",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "২টি",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৩টি",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "৪টি",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0601025",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "১০ এর গুণিতকগুলোর একক স্থানে সর্বদা কোন অঙ্ক থাকে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "০",
+                "isCorrect": true
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "২",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৫",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "০ অথবা ৫",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0601026",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "দুটি সংখ্যার গুণফল তাদের গুণনীয়কগুলোর কী নির্দেশ করে?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "লসাগু",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "গসাগু",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "একটি সাধারণ গুণিতক",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "যোগফল",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0601027",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "নিচের কোনটি ৪৮ এর মৌলিক গুণনীয়ক নয়?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "২",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৩",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৪",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "কোনোটিই নয়",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0601028",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "৫ দ্বারা বিভাজ্য তিন অঙ্কের বৃহত্তম সংখ্যা কোনটি?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৯৯০",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "৯৯৫",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "৯৯৯",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "১০০০",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0601029",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "৭ এর ৩য় এবং ৫ম গুণিতকের পার্থক্য কত?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "৭",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "১৪",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "২১",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "২৮",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0601030",
+            "type": "mcq",
+            "sectionType": "mcq",
+            "question": "নিচের কোন সংখ্যাটি নিজের গুণনীয়ক এবং গুণিতক উভয়ই?",
+            "options": [
+              {
+                "id": "a",
+                "key": "ক",
+                "text": "১",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "key": "খ",
+                "text": "০",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "key": "গ",
+                "text": "যেকোনো সংখ্যা নিজেই",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "key": "ঘ",
+                "text": "মৌলিক সংখ্যা",
+                "isCorrect": false
+              }
+            ],
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          }
+        ],
+        "blanks": [
+          {
+            "id": "0602001",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "কোনো সংখ্যাকে পূর্ণ সংখ্যা দ্বারা গুণ করলে গুণফলই হবে ঐ সংখ্যার ______।",
+            "answer": "গুণিতক",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0602002",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "১ মৌলিক সংখ্যাও নয় এবং ______ সংখ্যাও নয়।",
+            "answer": "যৌগিক",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0602003",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "যেকোনো সংখ্যার সবচেয়ে ছোট গুণনীয়কটি হলো ______।",
+            "answer": "১",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0602004",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "সবচেয়ে ছোট মৌলিক সংখ্যা হলো ______।",
+            "answer": "২",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0602005",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "১০ দ্বারা বিভাজ্য যেকোনো সংখ্যা অবশ্যই ______ এবং ৫ দ্বারাও বিভাজ্য হবে।",
+            "answer": "২",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0602006",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "কোনো সংখ্যার গুণনীয়ক সংখ্যা নির্দিষ্ট কিন্তু গুণিতকের সংখ্যা ______।",
+            "answer": "অনির্দিষ্ট",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0602007",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "দুই বা ততোধিক মৌলিক সংখ্যার সাধারণ গুণনীয়ক কেবল ______।",
+            "answer": "১",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0602008",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "যে সকল সংখ্যার একক স্থানে ০, ২, ৪, ৬, ৮ আছে সে সকল সংখ্যা ______ দ্বারা বিভাজ্য।",
+            "answer": "২",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0602009",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "১৫ এর মৌলিক গুণনীয়কগুলো হলো ৩ এবং ______।",
+            "answer": "৫",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0602010",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "দুটি বিজোড় সংখ্যার গুণফল সর্বদা একটি ______ সংখ্যা।",
+            "answer": "বিজোড়",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0602011",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "কোনো সংখ্যার গুণিতক ঐ সংখ্যার গুণনীয়ক দ্বারা নিঃশেষে ______।",
+            "answer": "বিভাজ্য",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0602012",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "২৪ এর সবচেয়ে বড় গুণনীয়ক হলো ______।",
+            "answer": "২৪",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0602013",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "৭ এর ৭ম গুণিতকটি হলো ______।",
+            "answer": "৪৯",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0602014",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "১ থেকে ১০০ পর্যন্ত মৌলিক সংখ্যাগুলোর মধ্যে জোড় সংখ্যা মাত্র ______ টি।",
+            "answer": "১",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0602015",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "যেসব সংখ্যার ২ এর অধিক গুণনীয়ক থাকে তাদের ______ সংখ্যা বলে।",
+            "answer": "যৌগিক",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0602016",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "একক স্থানে ০ অথবা ______ থাকলে সংখ্যাটি ৫ দ্বারা বিভাজ্য হবে।",
+            "answer": "৫",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0602017",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "৪৫ সংখ্যাটি ২ দ্বারা বিভাজ্য নয় কারণ এর একক স্থানের অঙ্কটি ______।",
+            "answer": "বিজোড়",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0602018",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "একটি সংখ্যার গুণনীয়কগুলো জোড়ায় জোড়ায় গুণ করলে গুণফল সর্বদা ঐ ______ সমান হয়।",
+            "answer": "সংখ্যার",
+            "chapter": "6",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0602019",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "যৌগিক সংখ্যাকে গুণনীয়ক হিসেবে মৌলিক সংখ্যায় প্রকাশ করাকে ______ উৎপাদকে বিশ্লেষণ বলে।",
+            "answer": "মৌলিক",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0602020",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "৩০ এর মৌলিক উৎপাদকে বিশ্লেষিত রূপ হলো ২ × ৩ × ______।",
+            "answer": "৫",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0602021",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "দুটি ক্রমিক জোড় সংখ্যার সাধারণ গুণনীয়ক অন্তত ______ হবে।",
+            "answer": "২",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0602022",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "২, ৩ এবং ৫ এর প্রথম সাধারণ গুণিতক হলো ______।",
+            "answer": "৩০",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0602023",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "৯৭ হলো দুই অঙ্কের সবচেয়ে বড় ______ সংখ্যা।",
+            "answer": "মৌলিক",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0602024",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "কোনো সংখ্যা যদি ৫ এবং ১০ উভয় দ্বারা বিভাজ্য হয়, তবে তার একক স্থানে অবশ্যই ______ থাকবে।",
+            "answer": "০",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0602025",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "৮ এর গুণনীয়কগুলো হলো ১, ২, ৪ এবং ______।",
+            "answer": "৮",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0602026",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "১০০ এর মৌলিক গুণনীয়কগুলো হলো ২ এবং ______।",
+            "answer": "৫",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0602027",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "তিন অঙ্কের ক্ষুদ্রতম মৌলিক সংখ্যাটি হলো ______।",
+            "answer": "১০১",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0602028",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "একটি সংখ্যা যদি ৪ দ্বারা বিভাজ্য হয়, তবে তা অবশ্যই ______ দ্বারা বিভাজ্য হবে।",
+            "answer": "২",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0602029",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "৬ এবং ৮ এর সবচেয়ে ছোট সাধারণ গুণিতক হলো ______।",
+            "answer": "২৪",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0602030",
+            "type": "blanks",
+            "sectionType": "blanks",
+            "question": "জোড় মৌলিক সংখ্যার বর্গের একক স্থানে _____ থাকে।",
+            "answer": "৪",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          }
+        ],
+        "shorts": [
+          {
+            "id": "0603001",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "গুণিতক কাকে বলে?",
+            "answer": "কোনো সংখ্যাকে পূর্ণ সংখ্যা দ্বারা গুণ করলে যে গুণফল পাওয়া যায়, তাকে ঐ সংখ্যার গুণিতক বলে।",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0603002",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "গুণনীয়কের অপর নাম কী?",
+            "answer": "উৎপাদক।",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0603003",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "মৌলিক সংখ্যা কাকে বলে?",
+            "answer": "যে সংখ্যার ১ এবং ঐ সংখ্যা ব্যতীত আর কোনো গুণনীয়ক নেই, তাকে মৌলিক সংখ্যা বলে।",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0603004",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "১ কেন মৌলিক সংখ্যা নয়?",
+            "answer": "কারণ ১ এর মাত্র ১টি গুণনীয়ক রয়েছে। মৌলিক সংখ্যা হতে হলে ঠিক ২টি গুণনীয়ক থাকতে হয়।",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0603005",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৫ দ্বারা বিভাজ্যতার নিয়ম কী?",
+            "answer": "কোনো সংখ্যার একক স্থানে ০ অথবা ৫ থাকলে সংখ্যাটি ৫ দ্বারা বিভাজ্য হবে।",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0603006",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "যৌগিক সংখ্যা কাকে বলে?",
+            "answer": "যেসব সংখ্যার ১ এবং ঐ সংখ্যাটি ছাড়াও এক বা একাধিক গুণনীয়ক থাকে (অর্থাৎ ২ এর অধিক গুণনীয়ক থাকে), তাদের যৌগিক সংখ্যা বলে।",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0603007",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৩৬ এর গুণনীয়ক কয়টি ও কী কী?",
+            "answer": "৯টি। এগুলো হলো: ১, ২, ৩, ৪, ৬, ৯, ১২, ১৮, ৩৬।",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0603008",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "মৌলিক গুণনীয়ক বলতে কী বোঝায়?",
+            "answer": "কোনো সংখ্যার যেসব গুণনীয়ক মৌলিক সংখ্যা, তাদের মৌলিক গুণনীয়ক বলে।",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0603009",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "১০ দ্বারা বিভাজ্যতার শর্ত লেখ।",
+            "answer": "কোনো সংখ্যার একক স্থানে ০ থাকলে সংখ্যাটি ১০ দ্বারা বিভাজ্য হবে।",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0603010",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "১২ কে মৌলিক উৎপাদকে বিশ্লেষণ করো।",
+            "answer": "১২ = ২ × ২ × ৩।",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0603011",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "দুটি ক্রমিক সংখ্যার সাধারণ গুণনীয়ক কত?",
+            "answer": "১।",
+            "chapter": "6",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0603012",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "কোনো সংখ্যার সবচেয়ে বড় গুণনীয়ক কোনটি?",
+            "answer": "সংখ্যাটি নিজেই।",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0603013",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "২৫ থেকে ৩০ এর মধ্যে মৌলিক সংখ্যা কোনটি?",
+            "answer": "২৯।",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0603014",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৩, ৫ এবং ৭ এর লঘিষ্ঠ সাধারণ গুণিতক কত?",
+            "answer": "১০৫।",
+            "chapter": "6",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0603015",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৪২ এর মৌলিক গুণনীয়কগুলো কী কী?",
+            "answer": "২, ৩, ৭।",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0603016",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "এমন একটি মৌলিক সংখ্যা লেখ যার একক স্থানে ৫ আছে।",
+            "answer": "৫।",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0603017",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "দুই অঙ্কের ক্ষুদ্রতম যৌগিক সংখ্যা কোনটি?",
+            "answer": "১০।",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0603018",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "কোনো বিজোড় সংখ্যা কি ২ দ্বারা বিভাজ্য হতে পারে?",
+            "answer": "না, পারে না।",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0603019",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "১০০ এর গুণনীয়ক কয়টি?",
+            "answer": "৯টি (১, ২, ৪, ৫, ১০, ২০, ২৫, ৫০, ১০০)।",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0603020",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "যেকোনো সংখ্যার গুণিতকের শেষ আছে কি?",
+            "answer": "না, গুণিতক অসীম।",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0603021",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৭ এর প্রথম পাঁচটি গুণিতক লেখ।",
+            "answer": "৭, ১৪, ২১, ২৮, ৩৫।",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0603022",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৮ এবং ১২ এর সাধারণ গুণনীয়কগুলো কী কী?",
+            "answer": "১, ২, ৪।",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0603023",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "২ এবং ৩ দ্বারা বিভাজ্য ক্ষুদ্রতম সংখ্যা কোনটি?",
+            "answer": "৬।",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0603024",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "১১ একটি মৌলিক সংখ্যা কেন?",
+            "answer": "কারণ ১১ এর মাত্র দুটি গুণনীয়ক আছে।",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0603025",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "সবচেয়ে ছোট বিজোড় মৌলিক সংখ্যা কোনটি?",
+            "answer": "৩।",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0603026",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "কোনো সংখ্যার গুণিতকগুলো কি ঐ সংখ্যার চেয়ে ছোট হতে পারে?",
+            "answer": "না, গুণিতকগুলো ঐ সংখ্যার সমান বা বড় হয়।",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0603027",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৮০ সংখ্যাটি কি ৫ এবং ১০ উভয় দ্বারা বিভাজ্য?",
+            "answer": "হ্যাঁ, বিভাজ্য।",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0603028",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "৬ এর মৌলিক গুণনীয়কগুলোর যোগফল কত?",
+            "answer": "৫ (২ + ৩)।",
+            "chapter": "6",
+            "hardness": "Medium",
+            "tag": "Addition"
+          },
+          {
+            "id": "0603029",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "এমন দুটি মৌলিক সংখ্যা লেখ যাদের পার্থক্য ২।",
+            "answer": "৩ ও ৫ (অথবা ৫ ও ৭, ১১ ও ১৩)।",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0603030",
+            "type": "short",
+            "sectionType": "shorts",
+            "question": "১০ এর গুণিতকগুলো কোন কোন সংখ্যা দ্বারা অবশ্যই বিভাজ্য?",
+            "answer": "১, ২, ৫ এবং ১০ দ্বারা।",
+            "chapter": "6",
+            "hardness": "Hard",
+            "tag": "Multiplication"
+          }
+        ],
+        "words": [
+          {
+            "id": "0604001",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "রাসেল তার জন্মদিন উপলক্ষ্যে ২৪টি চকোলেট কিনল। সে তার কতজন বন্ধুকে চকোলেটগুলো সমানভাবে ভাগ করে দিতে পারবে?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "২৪টি চকোলেট সমানভাবে ভাগ করে দিতে হলে ২৪ এর গুণনীয়কগুলো নির্ণয় করতে হবে।\n২৪ এর গুণনীয়কগুলো হলো:\n১ × ২৪ = ২৪\n২ × ১২ = ২৪\n৩ × ৮ = ২৪\n৪ × ৬ = ২৪\nঅতএব, ২৪ এর গুণনীয়কগুলো হলো: ১, ২, ৩, ৪, ৬, ৮, ১২, ২৪।\nরাসেল চকোলেটগুলো ১, ২, ৩, ৪, ৬, ৮, ১২ অথবা ২৪ জন বন্ধুকে সমানভাবে ভাগ করে দিতে পারবে।\nউত্তর: ১, ২, ৩, ৪, ৬, ৮, ১২ অথবা ২৪।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "6",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0604002",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি স্কুলের তৃতীয় শ্রেণির শিক্ষার্থীদের জন্য শিক্ষক কিছু খাতা ও কলম কিনলেন। খাতার সংখ্যা ৪৮টি।",
+            "questionKo": "৪৮ এর মৌলিক গুণনীয়কগুলো কী কী?",
+            "questionKho": "কলমের সংখ্যা ৩২টি হলে, তিনি খাতা ও কলমগুলো সর্বোচ্চ কতজন শিক্ষার্থীর মধ্যে সমানভাবে ভাগ করে দিতে পারবেন?",
+            "solution": "",
+            "solutionKo": "৪৮ কে মৌলিক উৎপাদকে বিশ্লেষণ করলে পাই: ৪৮ = ২ × ২ × ২ × ২ × ৩।\nঅতএব, ৪৮ এর মৌলিক গুণনীয়কগুলো হলো ২ এবং ৩।",
+            "solutionKho": "খাতাগুলো সমানভাবে ভাগ করতে হলে ৪৮ ও ৩২ এর গসাগু বের করতে হবে।\nএখানে,\n\t২\t|\t৪৮,\t৩২\n\t২\t|\t২৪,\t১৬\n\t২\t|\t১২,\t৮\n\t২\t|\t৬,\t৮\n\t\t\t৩,\t৪\n\tগসাগু = ২x২x২x২ = ১৬\nসুতরাং, তিনি সর্বোচ্চ ১৬ জন শিক্ষার্থীর মধ্যে সমানভাবে খাতাগুলো ভাগ করে দিতে পারবেন।",
+            "chapter": "6",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0604003",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "রাজশাহীর একটি লাইব্রেরিতে গণিতের ৭২টি এবং বিজ্ঞানের ৯০টি বই আছে।",
+            "questionKo": "বিজ্ঞান বইয়ের সংখ্যা কি ৫ এবং ১০ দ্বারা বিভাজ্য? কারণসহ লেখ।",
+            "questionKho": "গণিত বইগুলো সমানভাবে ভাগ করে কয়টি তাকে রাখা যেতে পারে তার সম্ভাব্য সংখ্যাগুলো বের করো।",
+            "solution": "",
+            "solutionKo": "৯০ এর একক স্থানে '০' (শূন্য) রয়েছে। \nআমরা জানি, একক স্থানে ০ থাকলে সংখ্যাটি ৫ এবং ১০ উভয় দ্বারাই বিভাজ্য হয়। \nতাই ৯০ সংখ্যাটি ৫ এবং ১০ দ্বারা বিভাজ্য।",
+            "solutionKho": "গণিতের বইয়ের সংখ্যা ৭২। সমানভাবে তাকে রাখতে হলে ৭২ এর গুণনীয়কগুলো নির্ণয় করতে হবে।\n৭২ = ১ × ৭২\n৭২ = ২ × ৩৬\n৭২ = ৩ × ২৪\n৭২ = ৪ × ১৮\n৭২ = ৬ × ১২\n৭২ = ৮ × ৯\nঅতএব, ৭২ এর গুণনীয়কগুলো হলো ১, ২, ৩, ৪, ৬, ৮, ৯, ১২, ১৮, ২৪, ৩৬, ৭২।\nবইগুলো এই সংখ্যক তাকে সমানভাবে রাখা যেতে পারে।",
+            "chapter": "6",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0604004",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি বাসে ৪০ জন এবং অপর একটি বাসে ৪৫ জন যাত্রী আছে।",
+            "questionKo": "কোন বাসের যাত্রীদের ৫ জনের দলে সমানভাবে ভাগ করা যাবে?",
+            "questionKho": "৪০ জন যাত্রীকে কোন কোন সংখ্যক দলে সমানভাবে ভাগ করা যায়?",
+            "solution": "",
+            "solutionKo": "৪০ এর একক স্থানে ০ এবং ৪৫ এর একক স্থানে ৫ আছে। \n৫ দ্বারা বিভাজ্যতার নিয়ম অনুযায়ী উভয় সংখ্যাই ৫ দ্বারা বিভাজ্য। \nসুতরাং, উভয় বাসের যাত্রীদেরই ৫ জনের দলে সমানভাবে ভাগ করা যাবে।",
+            "solutionKho": "৪০ এর গুণনীয়কগুলো বের করতে হবে:\n১ × ৪০ = ৪০, ২ × ২০ = ৪০, ৪ × ১০ = ৪০, ৫ × ৮ = ৪০।\nঅতএব, ৪০ জন যাত্রীকে ১, ২, ৪, ৫, ৮, ১০, ২০ এবং ৪০ জনের দলে সমানভাবে ভাগ করা যাবে।",
+            "chapter": "6",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0604005",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "তিনটি ঘণ্টার মধ্যে প্রথমটি ১০ মিনিট, দ্বিতীয়টি ১৫ মিনিট এবং তৃতীয়টি ২০ মিনিট পরপর বাজে।",
+            "questionKo": "১০, ১৫ ও ২০ এর মৌলিক গুণনীয়কগুলো লেখ।",
+            "questionKho": "ঘণ্টাগুলো প্রথমবার একসাথে বাজার কতক্ষণ পর পুনরায় একত্রে বাজবে?",
+            "solution": "",
+            "solutionKo": "১০ এর মৌলিক গুণনীয়ক: ২, ৫।\n১৫ এর মৌলিক গুণনীয়ক: ৩, ৫।\n২০ এর মৌলিক গুণনীয়ক: ২, ৫।",
+            "solutionKho": "পুনরায় একত্রে বাজার সময় বের করতে ১০, ১৫ ও ২০ এর লঘিষ্ঠ সাধারণ গুণিতক (লসাগু) নির্ণয় করতে হবে।\n১০, ১৫, ২০ এর গুণিতকগুলো থেকে লসাগু পাই: ৬০।\nসুতরাং, ঘণ্টাগুলো ৬০ মিনিট বা ১ ঘণ্টা পর পুনরায় একত্রে বাজবে।",
+            "chapter": "6",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0604006",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "রাজশাহীর একটি দোকানে ৫০টি লাল বল এবং ৬০টি নীল বল আছে। বলগুলো কয়েকটি প্যাকেটে এমনভাবে ভরতে হবে যেন প্রতিটি প্যাকেটে সমান সংখ্যক লাল এবং সমান সংখ্যক নীল বল থাকে। সর্বোচ্চ কতটি প্যাকেটে বলগুলো ভরা যাবে?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "সর্বোচ্চ প্যাকেটের সংখ্যা বের করতে হলে ৫০ এবং ৬০ এর গসাগু বের করতে হবে।\n৫০ এর গুণনীয়ক: ১, ২, ৫, ১০, ২৫, ৫০।\n৬০ এর গুণনীয়ক: ১, ২, ৩, ৪, ৫, ৬, ১০, ১২, ১৫, ২০, ৩০, ৬০।\nসাধারণ গুণনীয়কগুলো হলো: ১, ২, ৫, ১০।\nএর মধ্যে সবচেয়ে বড় হলো ১০\n∴ গসাগু = ১০\nউত্তর: সর্বোচ্চ ১০টি প্যাকেটে বলগুলো ভরা যাবে।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "6",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0604007",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি রেলওয়ে স্টেশনে তিনটি আলাদা রঙের সংকেত বাতি যথাক্রমে ১২ মিনিট, ১৫ মিনিট এবং ২০ মিনিট পরপর জ্বলে।",
+            "questionKo": "১২ ও ১৫ এর গসাগু নির্ণয় করো।",
+            "questionKho": "বাতিগুলো সকাল ৮টায় একত্রে জ্বলার পর পুনরায় কখন একত্রে জ্বলবে?",
+            "solution": "",
+            "solutionKo": "১২ ও ১৫ এর গসাগু নির্ণয় করি:\n    ৩ | ১২, ১৫\n \t৪,  ৫\nসুতরাং লসাগু = ৩\n    উত্তর: ৩।",
+            "solutionKho": "বাতিগুলো পুনরায় একত্রে জ্বলবে তাদের সময়ের লসাগু-এর সমান মিনিট পর।\n    ১২, ১৫ ও ২০ এর লসাগু নির্ণয় করি:\n    \t২\t|\t১২\t\t১৫,\t২০\n\t২\t|\t৬,\t\t১৫,\t১০\n\t৩\t|\t৩,\t\t১৫,\t৫\n\t৫\t|\t১,\t\t৫,\t৫\n\t\t\t১,\t\t১,\t১\nসুতরাং লসাগু = ২ × ২ × ৩ × ৫ = ৬০।\nসুতরাং, ৬০ মিনিট বা ১ ঘণ্টা পর বাতিগুলো পুনরায় একত্রে জ্বলবে।\nবাতিগুলো একত্রে জ্বলেছিল সকাল ৮টায়।\nপুনরায় একত্রে জ্বলবে = সকাল ৮টা + ১ ঘণ্টা = সকাল ৯টায়।\nউত্তর: সকাল ৯টায়।",
+            "chapter": "6",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0604008",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একজন দাতা ১৮০টি আপেল এবং ২২৫টি কমলা কিছু এতিম শিশুর মাঝে সমানভাবে ভাগ করে দিতে চান, যেন কোনো ফল অবশিষ্ট না থাকে।",
+            "questionKo": "১৮০ এবং ২২৫ এর সাধারণ মৌলিক গুণনীয়কগুলো কী কী?",
+            "questionKho": "সর্বোচ্চ কতজন শিশুর মাঝে ফলগুলো সমানভাবে ভাগ করে দেওয়া যাবে এবং প্রত্যেকে কয়টি করে আপেল ও কমলা পাবে?",
+            "solution": "",
+            "solutionKo": "১৮০ কে মৌলিক উৎপাদকে বিশ্লেষণ করলে পাই: \n১৮০ = ২ × ২ × ৩ × ৩ × ৫।\n    ২২৫ কে মৌলিক উৎপাদকে বিশ্লেষণ করলে পাই: \n২২৫ = ৩ × ৩ × ৫ × ৫।\nসুতরাং, ১৮০ এর মৌলিক গুণনীয়কগুলো হলো ২, ৩, ৫ এবং ২২৫ এর মৌলিক গুণনীয়কগুলো হলো ৩, ৫\n∴ সাধারণ মৌলিক গুণনীয়কগুলো হলো ৩, ৫\nউত্তর: সাধারণ মৌলিক গুণনীয়কগুলো হলো ৩, ৫",
+            "solutionKho": "সর্বোচ্চ শিশুর সংখ্যা হবে ১৮০ এবং ২২৫ এর গসাগু এর সমান।\n    ১৮০ এবং ২২৫ এর গসাগু নির্ণয় করি:\n    ১৮০) ২২৫ (১\n          ১৮০\n          ---\n           ৪৫) ১৮০ (৪\n               ১৮০\n               ---\n                 ০\nগসাগু = ৪৫।\nসুতরাং, সর্বোচ্চ ৪৫ জন শিশুর মাঝে ফলগুলো ভাগ করে দেওয়া যাবে।\nপ্রত্যেকে আপেল পাবে = (১৮০ ÷ ৪৫) = ৪টি।\nপ্রত্যেকে কমলা পাবে = (২২৫ ÷ ৪৫) = ৫টি।\nউত্তর: ৪৫ জন শিশুর মাঝে; প্রত্যেকে ৪টি আপেল ও ৫টি কমলা পাবে।",
+            "chapter": "6",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0604009",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি অডিটোরিয়ামের মেঝে লম্বায় ৪৮ ফুট এবং চওড়ায় ৩৬ ফুট। মেঝেকে সম্পূর্ণভাবে ঢাকার জন্য মেঝেতে বর্গাকার টাইলস বসানো হবে।",
+            "questionKo": "৪৮ ও ৩৬ এর গসাগু নির্ণয় করো।",
+            "questionKho": "সবচেয়ে বড় কত মাপের বর্গাকার টাইলস ব্যবহার করলে কোনো টাইলস ভাঙতে হবে না এবং সম্পূর্ণ মেঝে ঢাকতে মোট কতটি টাইলস লাগবে?",
+            "solution": "",
+            "solutionKo": "৪৮ ও ৩৬ এর গসাগু নির্ণয় করি:\n    ২ | ৪৮, ৩৬\n    ২ | ২৪, ১৮\n    ৩ | ১২,  ৯\n         ৪,  ৩\nসুতরাং গসাগু = ২ × ২ × ৩ = ১২।\nউত্তর: ১২।",
+            "solutionKho": "সবচেয়ে বড় বর্গাকার টাইলসের বাহুর দৈর্ঘ্য হবে মেঝেটির দৈর্ঘ্য ও প্রস্থের গসাগু এর সমান।\n'ক' হতে পাই গসাগু = ১২।\nসুতরাং সবচেয়ে বড় টাইলসের বাহুর দৈর্ঘ্য = ১২ ফুট।\nএখন, টাইলস বসানোর জন্য মেঝের লম্বায় টাইলস লাগবে = (৪৮ ÷ ১২) = ৪টি।\nমেঝের চওড়ায় টাইলস লাগবে = (৩৬ ÷ ১২) = ৩টি।\nসম্পূর্ণ মেঝে ঢাকতে মোট টাইলস লাগবে = (৪ × ৩) = ১২টি।\nউত্তর: টাইলসের মাপ ১২ ফুট এবং মোট ১২টি টাইলস লাগবে।",
+            "chapter": "6",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0604010",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "তিনটি বড় ড্রামে যথাক্রমে ২২৫ লিটার, ৩৫০ লিটার এবং ৪৫৫ লিটার দুধ আছে।",
+            "questionKo": "২২৫ এবং ৩৫০ এর গসাগু কত?",
+            "questionKho": "সবচেয়ে বড় কোন মাপের পাত্র দিয়ে তিনটি ড্রামের দুধই পূর্ণসংখ্যক বার মাপা যাবে? ঐ পাত্র দিয়ে ড্রামগুলোর সম্পূর্ণ দুধ মাপতে মোট কতবার মাপতে হবে?",
+            "solution": "",
+            "solutionKo": "২২৫ ও ৩৫০ এর গসাগু নির্ণয় করি:\n    ২২৫) ৩৫০ (১\n         ২২৫\n         ---\n         ১২৫) ২২৫ (১\n              ১২৫\n              ---\n              ১০০) ১২৫ (১\n                   ১০০\n                   ---\n                    ২৫) ১০০ (৪\n                        ১০০\n                        ---\n                          ০\nসুতরাং গসাগু = ২৫।\nউত্তর: ২৫।",
+            "solutionKho": "সবচেয়ে বড় পাত্রের ধারণক্ষমতা হবে ড্রাম তিনটির দুধের পরিমাণের (২২৫, ৩৫০ এবং ৪৫৫ এর) গসাগু এর সমান।\n    'ক' হতে প্রাপ্ত ২২৫ ও ৩৫০ এর গসাগু = ২৫।\n    এখন ২৫ এবং ৪৫৫ এর গসাগু নির্ণয় করি:\n    ২৫) ৪৫৫ (১৮\n        ২৫\n        ---\n        ২০৫\n        ২০০\n        ---\n          ৫) ২৫ (৫\n             ২৫\n             ---\n              ০\nসুতরাং তিনটি সংখ্যার গসাগু = ৫। সবচেয়ে বড় পাত্রের মাপ হবে ৫ লিটার।\nপ্রথম ড্রাম মাপতে হবে = (২২৫ ÷ ৫) = ৪৫ বার।\nদ্বিতীয় ড্রাম মাপতে হবে = (৩৫০ ÷ ৫) = ৭০ বার।\nতৃতীয় ড্রাম মাপতে হবে = (৪৫৫ ÷ ৫) = ৯১ বার।\nমোট মাপতে হবে = (৪৫ + ৭০ + ৯১) = ২০৬ বার।\nউত্তর: সবচেয়ে বড় পাত্র ৫ লিটারের এবং মোট ২০৬ বার মাপতে হবে।",
+            "chapter": "6",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0604011",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "শফিকের কাছে কিছু মার্বেল আছে। সে যদি মার্বেলগুলো ৮ জন, ১২ জন বা ১৫ জনের মাঝে সমানভাবে ভাগ করে দিতে চায়, তবে প্রতিবারই তার কাছে ৩টি মার্বেল অবশিষ্ট থেকে যায়।",
+            "questionKo": "৮, ১২ ও ১৫ এর লসাগু নির্ণয় করো।",
+            "questionKho": "শফিকের কাছে কমপক্ষে কতটি মার্বেল আছে?",
+            "solution": "",
+            "solutionKo": "৮, ১২ ও ১৫ এর লসাগু নির্ণয় করি:\n    ২ | ৮, ১২, ১৫\n    ২ | ৪,  ৬, ১৫\n    ৩ | ২,  ৩, ১৫\n        ২,  ১,  ৫\n    লসাগু = ২ × ২ × ৩ × ২ × ৫ = ১২০।\n    উত্তর: ১২০।",
+            "solutionKho": "'ক' হতে পাই, ৮, ১২ ও ১৫ এর লসাগু ১২০।\nলসাগু ১২০ হলো এমন সবচেয়ে ছোট সংখ্যা যা ৮, ১২ ও ১৫ দ্বারা নিঃশেষে বিভাজ্য। অর্থাৎ ১২০টি মার্বেল থাকলে তা ওই শিশুদের মাঝে সমানভাবে ভাগ করে দেওয়া যেত, কোনো অবশিষ্ট থাকত না।\nকিন্তু প্রশ্নে বলা হয়েছে প্রতিবারই ৩টি মার্বেল অবশিষ্ট থাকে।\nতাই নির্ণেয় কমপক্ষে মার্বেলের সংখ্যা হবে লসাগু থেকে ৩ বেশি।\nঅতএব, শফিকের কাছে কমপক্ষে মার্বেল আছে = ১২০ + ৩ = ১২৩টি।\nউত্তর: ১২৩টি।",
+            "chapter": "6",
+            "hardness": "Medium",
+            "tag": "Division"
+          },
+          {
+            "id": "0604012",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "তিনটি ভিন্ন রঙের ঘণ্টা যথাক্রমে ৯, ১২ এবং ১৫ মিনিট পরপর বাজে।",
+            "questionKo": "৯ এবং ১২ এর সাধারণ গুণিতকগুলো থেকে ক্ষুদ্রতম সাধারণ গুণিতক নির্ণয় করো।",
+            "questionKho": "ঘণ্টাগুলো যদি সকাল ৯ টায় একত্রে বাজে, তবে পুনরায় কখন তারা একত্রে বাজবে?",
+            "solution": "",
+            "solutionKo": "৯ এর গুণিতক: ৯, ১৮, ২৭, ৩৬, ৪৫, ৫৪, ৬৩, ৭২, ৮১, ৯০...\n১২ এর গুণিতক: ১২, ২৪, ৩৬, ৪৮, ৬০, ৭২, ৮৪, ৯৬...\nসাধারণ গুণিতক: ৩৬, ৭২...\nক্ষুদ্রতম সাধারণ গুণিতক (লসাগু) = ৩৬।",
+            "solutionKho": "ঘণ্টাগুলো পুনরায় একত্রে বাজার সময় হবে ৯, ১২ এবং ১৫ এর লসাগু।\n৩ | ৯, ১২, ১৫\n     ৩, ৪, ৫\nসুতরাং লসাগু = ৩ × ৩ × ৪ × ৫ = ১৮০।\n১৮০ মিনিট = (১৮০ ÷ ৬০) ঘণ্টা = ৩ ঘণ্টা।\nসকাল ৯টার ৩ ঘণ্টা পর হলো (৯ + ৩) = দুপুর ১২টা।\nউত্তর: দুপুর ১২ টায়।",
+            "chapter": "6",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0604013",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "রহিমের কাছে ৬০টি মার্বেল এবং করিমের কাছে ৪৫টি মার্বেল আছে। তারা মার্বেলগুলো কিছু থলিতে এমনভাবে ভাগ করে রাখতে চায় যেন কোনো মার্বেল অবশিষ্ট না থাকে।",
+            "questionKo": "৬০ এর মৌলিক গুণনীয়কগুলো নির্ণয় করো।",
+            "questionKho": "সর্বোচ্চ কতটি থলিতে মার্বেলগুলো সমানভাবে ভাগ করে রাখা যাবে?",
+            "solution": "",
+            "solutionKo": "৬০ কে মৌলিক উৎপাদকে বিশ্লেষণ করি:\n৬০ = ২ × ৩০\n= ২ × ২ × ১৫\n= ২ × ২ × ৩ × ৫\n৬০ এর মৌলিক গুণনীয়কগুলো হলো ২, ৩ ও ৫।",
+            "solutionKho": "সর্বোচ্চ থলির সংখ্যা হবে ৬০ ও ৪৫ এর গসাগু।\n৬০ এর গুণনীয়ক: ১, ২, ৩, ৪, ৫, ৬, ১০, ১২, ১৫, ২০, ৩০, ৬০।\n৪৫ এর গুণনীয়ক: ১, ৩, ৫, ৯, ১৫, ৪৫।\nসাধারণ গুণনীয়ক: ১, ৩, ৫, ১৫।\nবৃহত্তম সাধারণ গুণনীয়ক (গসাগু) = ১৫।\nসুতরাং সর্বোচ্চ ১৫টি থলিতে মার্বেলগুলো ভাগ করে রাখা যাবে।\nউত্তর: ১৫টি।",
+            "chapter": "6",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0604014",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি বাসস্ট্যান্ড থেকে ক-কোম্পানির বাস ১৫ মিনিট পরপর এবং খ-কোম্পানির বাস ২০ মিনিট পরপর ছাড়ে।",
+            "questionKo": "২০ এর ৫টি গুণিতক লেখো।",
+            "questionKho": "সকাল ৮:৩০ এ যদি উভয় কোম্পানির বাস একত্রে ছাড়ে, তবে পরবর্তী কোন সময়ে আবার তারা একত্রে ছাড়বে?",
+            "solution": "",
+            "solutionKo": "২০ এর ৫টি গুণিতক হলো: ২০, ৪০, ৬০, ৮০ ও ১০০।",
+            "solutionKho": "বাসগুলো পুনরায় একত্রে ছাড়ার সময় হবে ১৫ ও ২০ এর লসাগু।\n৫ | ১৫, ২০\n    ৩, ৪\nসুতরাং লসাগু = ৫ × ৩ × ৪ = ৬০।\n৬০ মিনিট = ১ ঘণ্টা।\nসকাল ৮:৩০ এর ১ ঘণ্টা পর হলো সকাল ৯:৩০।\nউত্তর: সকাল ৯:৩০ মিনিটে।",
+            "chapter": "6",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0604015",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "দুটি সংখ্যার গুণফল ২৫২ এবং তাদের লসাগু ৩৬।",
+            "questionKo": "৩৬ সংখ্যাটি ১০ দ্বারা বিভাজ্য কি না কারণসহ লেখো।",
+            "questionKho": "সংখ্যা দুটির গসাগু নির্ণয় করো।",
+            "solution": "",
+            "solutionKo": "আমরা জানি, যে সকল সংখ্যার একক স্থানে ০ থাকে সেই সকল সংখ্যা ১০ দ্বারা বিভাজ্য। \n৩৬ এর একক স্থানে ৬ আছে, ০ নেই। \nতাই, ৩৬ সংখ্যাটি ১০ দ্বারা বিভাজ্য নয়।",
+            "solutionKho": "আমরা জানি, দুটি সংখ্যার গুণফল = সংখ্যা দুটির লসাগু × গসাগু।\nবা, ২৫২ = ৩৬ × গসাগু\nবা, গসাগু = ২৫২ ÷ ৩৬\nবা, গসাগু = ৭\nসুতরাং গসাগু = ৭\nউত্তর: ৭।",
+            "chapter": "6",
+            "hardness": "Hard",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0604016",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "জাহিদ সাহেব ১০০টি আপেল এবং ১৭৫টি কমলা তার আত্মীয়দের মধ্যে সমানভাবে ভাগ করে দিতে চান।",
+            "questionKo": "১৭৫ সংখ্যাটি ২, ৫ ও ১০ এর মধ্যে কোনগুলো দ্বারা বিভাজ্য নির্ণয় করো।",
+            "questionKho": "সর্বোচ্চ কতজন আত্মীয়ের মধ্যে ফলগুলো সমানভাবে ভাগ করে দেওয়া যাবে?",
+            "solution": "",
+            "solutionKo": "১৭৫ সংখ্যাটির একক স্থানে ৫ আছে (বিজোড়)। তাই এটি ২ দ্বারা বিভাজ্য নয়।\nএকক স্থানে ৫ থাকায় এটি ৫ দ্বারা বিভাজ্য।\nএকক স্থানে ০ না থাকায় এটি ১০ দ্বারা বিভাজ্য নয়।",
+            "solutionKho": "সর্বোচ্চ আত্মীয়ের সংখ্যা হবে ১০০ ও ১৭৫ এর গসাগু।\n১০০ এর গুণনীয়ক: ১, ২, ৪, ৫, ১০, ২০, ২৫, ৫০, ১০০।\n১৭৫ এর গুণনীয়ক: ১, ৫, ৭, ২৫, ৩৫, ১৭৫।\nসাধারণ গুণনীয়ক: ১, ৫, ২৫।\nগসাগু = ২৫।\nসুতরাং ২৫ জন আত্মীয়ের মধ্যে ফলগুলো ভাগ করে দেওয়া যাবে।\nউত্তর: ২৫ জন।",
+            "chapter": "6",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0604017",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি শ্রেণিতে ৬০ জন ছাত্র এবং ৪৮ জন ছাত্রী আছে। ছাত্র-ছাত্রীদেরকে সমান সংখ্যক সদস্য নিয়ে এমনভাবে কয়েকটি দলে ভাগ করা হলো যেন কোনো সদস্য অবশিষ্ট না থাকে। সর্বোচ্চ কতটি দল গঠন করা যাবে?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "সর্বোচ্চ দলের সংখ্যা বের করতে ৬০ এবং ৪৮ এর গসাগু নির্ণয় করতে হবে।\n৬০ এর গুণনীয়ক: ১, ২, ৩, ৪, ৫, ৬, ১০, ১২, ১৫, ২০, ৩০, ৬০\n৪৮ এর গুণনীয়ক: ১, ২, ৩, ৪, ৬, ৮, ১২, ১৬, ২৪, ৪৮\nসাধারণ গুণনীয়ক: ১, ২, ৩, ৪, ৬, ১২\nগসাগু = ১২\nউত্তর: সর্বোচ্চ ১২টি দল।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "6",
+            "hardness": "Medium",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0604018",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "তিনটি ঘণ্টা একত্রে বাজার পর যথাক্রমে ১২, ১৫ এবং ২০ মিনিট পরপর বাজতে লাগল। কমপক্ষে কতক্ষণ পর আবার একত্রে বাজবে?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "১২, ১৫ ও ২০ এর লসাগু নির্ণয় করতে হবে।\n২ | ১২, ১৫, ২০\n২ | ৬, ১৫, ১০\n৩ | ৩, ১৫, ৫\n৫ | ১, ৫, ৫\n৫ | ১, ১, ১\nলসাগু = ২ × ২ × ৩ × ৫ = ৬০ মিনিট = ১ ঘণ্টা\nউত্তর: ১ ঘণ্টা পর।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "6",
+            "hardness": "Medium",
+            "tag": "General"
+          },
+          {
+            "id": "0604019",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একটি আয়তাকার বাগানের দৈর্ঘ্য ৫৬ মিটার এবং প্রস্থ ৩২ মিটার। সমান আকারের বর্গাকার ইটের বৃহত্তম বাহুর দৈর্ঘ্য কত?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "৫৬ ও ৩২ এর গসাগু নির্ণয় করতে হবে।\n৫৬ এর গুণনীয়ক: ১, ২, ৪, ৭, ৮, ১৪, ২৮, ৫৬\n৩২ এর গুণনীয়ক: ১, ২, ৪, ৮, ১৬, ৩২\nসাধারণ গুণনীয়ক: ১, ২, ৪, ৮\nগসাগু = ৮\nউত্তর: ৮ মিটার।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0604020",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "কমপক্ষে কতটি আপেল থাকলে তা ১০, ১২ ও ১৫ জনের মধ্যে সমানভাবে ভাগ করা যাবে?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "১০, ১২ ও ১৫ এর লসাগু নির্ণয় করতে হবে।\n২ | ১০, ১২, ১৫\n৩ | ৫, ৬, ১৫\n৫ | ৫, ২, ৫\n২ | ১, ২, ১\nলসাগু = ২ × ৩ × ৫ × ২ = ৬০\nউত্তর: ৬০টি আপেল।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Division"
+          },
+          {
+            "id": "0604021",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "দুটি দড়ির দৈর্ঘ্য ২৫ মিটার ও ৪৫ মিটার। সমান বড় টুকরো করতে সর্বোচ্চ দৈর্ঘ্য কত?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "২৫ ও ৪৫ এর গসাগু নির্ণয় করতে হবে।\n২৫: ১, ৫, ২৫\n৪৫: ১, ৩, ৫, ৯, ১৫, ৪৫\nসাধারণ গুণনীয়ক: ১, ৫\nগসাগু = ৫\nউত্তর: ৫ মিটার।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0604022",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "একজন দোকানদার ৫ মিনিট পর চকোলেট ও ৮ মিনিট পর বিস্কুট সাজান। সকাল ১০টায় একত্রে শুরু করলে আবার কখন একত্রে করবেন?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "৫ ও ৮ এর লসাগু = ৫ × ৮ = ৪০ মিনিট\n১০:০০ + ৪০ মিনিট = ১০:৪০\nউত্তর: সকাল ১০:৪০ মিনিটে।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0604023",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "৯০টি আম ও ১০৫টি লিচু সর্বোচ্চ কতজন শিক্ষার্থীর মধ্যে সমানভাবে ভাগ করা যাবে?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "৯০ ও ১০৫ এর গসাগু নির্ণয় করতে হবে।\n৯০: ১, ২, ৩, ৫, ৬, ৯, ১০, ১৫, ১৮, ৩০, ৪৫, ৯০\n১০৫: ১, ৩, ৫, ৭, ১৫, ২১, ৩৫, ১০৫\nসাধারণ গুণনীয়ক: ১, ৩, ৫, ১৫\nগসাগু = ১৫\nউত্তর: ১৫ জন।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0604024",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "তিনটি লাঠির দৈর্ঘ্য ১৪, ২১ ও ২৮ সেমি। সবচেয়ে বড় সমান টুকরোর দৈর্ঘ্য কত?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "১৪, ২১ ও ২৮ এর গসাগু নির্ণয় করতে হবে।\n১৪: ১, ২, ৭, ১৪\n২১: ১, ৩, ৭, ২১\n২৮: ১, ২, ৪, ৭, ১৪, ২৮\nসাধারণ গুণনীয়ক: ১, ৭\nগসাগু = ৭\nউত্তর: ৭ সেমি।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Multiplication"
+          },
+          {
+            "id": "0604025",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "২০, ৩০ ও ৪৫ মিনিট পরপর বাস ছাড়ে। কত সময় পর আবার একত্রে ছাড়বে?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "২০, ৩০ ও ৪৫ এর লসাগু নির্ণয় করতে হবে।\n২ | ২০, ৩০, ৪৫\n৩ | ১০, ১৫, ৪৫\n৫ | ১০, ৫, ১৫\n২ | ২, ১, ৩\n৩ | ১, ১, ৩\nলসাগু = ১৮০ মিনিট = ৩ ঘণ্টা\nউত্তর: ৩ ঘণ্টা পর।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "General"
+          },
+          {
+            "id": "0604026",
+            "type": "word_problem",
+            "sectionType": "words",
+            "question": "চকোলেটগুলো ৪, ৬ ও ৮টি করে ভাগ করলে অবশিষ্ট থাকে না। কমপক্ষে কতটি চকোলেট আছে?",
+            "questionKo": "",
+            "questionKho": "",
+            "solution": "৪, ৬ ও ৮ এর লসাগু নির্ণয় করতে হবে।\n২ | ৪, ৬, ৮\n২ | ২, ৩, ৪\n২ | ১, ৩, ২\n৩ | ১, ৩, ১\nলসাগু = ২৪\nউত্তর: ২৪টি চকোলেট।",
+            "solutionKo": "",
+            "solutionKho": "",
+            "chapter": "6",
+            "hardness": "Easy",
+            "tag": "Division"
+          }
+        ]
+      }
+    },
+    {
       "class": "5",
       "chapterNumber": "3",
       "chapterTitle": "ভগ্নাংশ",
@@ -9047,1958 +11076,6 @@
             "chapter": "98",
             "hardness": "Hard",
             "tag": "Geometry"
-          }
-        ]
-      }
-    },
-    {
-      "class": "4",
-      "chapterNumber": "4",
-      "chapterTitle": "ভাগ",
-      "content": {
-        "mcq": [
-          {
-            "id": "0401001",
-            "type": "mcq",
-            "sectionType": "mcq",
-            "question": "নিঃশেষে বিভাজ্যের ক্ষেত্রে নিচের কোনটি সবচেয়ে বড় হয়?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "ভাজক",
-                "isCorrect": false
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "ভাগফল",
-                "isCorrect": false
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "ভাজ্য",
-                "isCorrect": true
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "ভাগশেষ",
-                "isCorrect": false
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "General"
-          },
-          {
-            "id": "0401002",
-            "type": "mcq",
-            "sectionType": "mcq",
-            "question": "ভাজ্য নির্ণয়ের সঠিক সূত্র কোনটি?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "ভাজক ÷ ভাগফল",
-                "isCorrect": false
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "(ভাজক × ভাগফল) + ভাগশেষ",
-                "isCorrect": true
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "ভাজক + ভাগফল + ভাগশেষ",
-                "isCorrect": false
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "ভাগফল - ভাজক",
-                "isCorrect": false
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "General"
-          },
-          {
-            "id": "0401003",
-            "type": "mcq",
-            "sectionType": "mcq",
-            "question": "কোনো সংখ্যাকে ১ দ্বারা ভাগ করলে ভাগফল কী হবে?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "১",
-                "isCorrect": false
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "০",
-                "isCorrect": false
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "সংখ্যাটি নিজেই",
-                "isCorrect": true
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "নির্ণয় করা সম্ভব নয়",
-                "isCorrect": false
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Division"
-          },
-          {
-            "id": "0401004",
-            "type": "mcq",
-            "sectionType": "mcq",
-            "question": "'ভাজ্য = ভাজক × ভাগফল + ভাগশেষ'—এই সম্পর্কে ভাগশেষ সব সময় ভাজকের চেয়ে কেমন হবে?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "সমান",
-                "isCorrect": false
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "বড়",
-                "isCorrect": false
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "ছোট",
-                "isCorrect": true
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "সমান বা বড়",
-                "isCorrect": false
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Division"
-          },
-          {
-            "id": "0401005",
-            "type": "mcq",
-            "sectionType": "mcq",
-            "question": "নিচের কোনটি ভাজক হতে পারে না?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "১",
-                "isCorrect": false
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "০",
-                "isCorrect": true
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "১০",
-                "isCorrect": false
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "১০০০",
-                "isCorrect": false
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "General"
-          },
-          {
-            "id": "0401006",
-            "type": "mcq",
-            "sectionType": "mcq",
-            "question": "যদি ভাজক ৮ হয় এবং ভাগফল ১ হয়, তবে ভাগশেষ ৭ হলে ভাজ্য কত?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "৮",
-                "isCorrect": false
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "১৫",
-                "isCorrect": true
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "১৬",
-                "isCorrect": false
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "৭",
-                "isCorrect": false
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Division"
-          },
-          {
-            "id": "0401007",
-            "type": "mcq",
-            "sectionType": "mcq",
-            "question": "৯৯ কে ১০ দিয়ে ভাগ করলে ভাগশেষ কত হবে?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "০",
-                "isCorrect": false
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "১",
-                "isCorrect": false
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "৯",
-                "isCorrect": true
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "১০",
-                "isCorrect": false
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Division"
-          },
-          {
-            "id": "0401008",
-            "type": "mcq",
-            "sectionType": "mcq",
-            "question": "ভাজক ৫, ভাগফল ১২ এবং ভাগশেষ ৩ হলে ভাজ্য কত?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "৬০",
-                "isCorrect": false
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "৬৩",
-                "isCorrect": true
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "৫৭",
-                "isCorrect": false
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "১৫",
-                "isCorrect": false
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Division"
-          },
-          {
-            "id": "0401009",
-            "type": "mcq",
-            "sectionType": "mcq",
-            "question": "ভাজ্য থেকে ভাজক একবারও বিয়োগ করা না গেলে ভাগফল কত?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "১",
-                "isCorrect": false
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "ভাজ্য",
-                "isCorrect": false
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "০",
-                "isCorrect": true
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "ভাজক",
-                "isCorrect": false
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Multiplication"
-          },
-          {
-            "id": "0401010",
-            "type": "mcq",
-            "sectionType": "mcq",
-            "question": "ভাগের উত্তর সঠিক হয়েছে কি না তা যাচাই করতে ভাগশেষের সাথে কোনটির তুলনা করতে হয়?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "ভাজ্য",
-                "isCorrect": false
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "ভাগফল",
-                "isCorrect": false
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "ভাজক",
-                "isCorrect": true
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "উত্তর",
-                "isCorrect": false
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Division"
-          },
-          {
-            "id": "0401011",
-            "type": "mcq",
-            "sectionType": "mcq",
-            "question": "৫৩৮ ÷ ৩ অঙ্কে ভাগফলের শতকের ঘরের অঙ্কটি কত?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "০",
-                "isCorrect": false
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "১",
-                "isCorrect": true
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "২",
-                "isCorrect": false
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "৩",
-                "isCorrect": false
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Division"
-          },
-          {
-            "id": "0401012",
-            "type": "mcq",
-            "sectionType": "mcq",
-            "question": "কোনো সংখ্যাকে ওই একই সংখ্যা দ্বারা ভাগ করলে ভাগফল কত?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "০",
-                "isCorrect": false
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "১",
-                "isCorrect": true
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "সংখ্যাটি",
-                "isCorrect": false
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "১০",
-                "isCorrect": false
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Division"
-          },
-          {
-            "id": "0401013",
-            "type": "mcq",
-            "sectionType": "mcq",
-            "question": "ভাজ্য ১৪৮ এবং ভাগফল ১৪৮ হলে ভাজক কত?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "০",
-                "isCorrect": false
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "১",
-                "isCorrect": true
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "১৪৮",
-                "isCorrect": false
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "২",
-                "isCorrect": false
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Division"
-          },
-          {
-            "id": "0401014",
-            "type": "mcq",
-            "sectionType": "mcq",
-            "question": "৭৫ মিটারের একটি দড়িকে ৮ মিটার করে টুকরো করলে কত মিটার দড়ি অবশিষ্ট থাকবে?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "৩ মিটার",
-                "isCorrect": true
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "৫ মিটার",
-                "isCorrect": false
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "৯ মিটার",
-                "isCorrect": false
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "৮ মিটার",
-                "isCorrect": false
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "General"
-          },
-          {
-            "id": "0401015",
-            "type": "mcq",
-            "sectionType": "mcq",
-            "question": "ভাগের বিপরীত প্রক্রিয়া কোনটি?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "যোগ",
-                "isCorrect": false
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "বিয়োগ",
-                "isCorrect": false
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "গুণ",
-                "isCorrect": true
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "কোনোটিই নয়",
-                "isCorrect": false
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Division"
-          },
-          {
-            "id": "0401016",
-            "type": "mcq",
-            "sectionType": "mcq",
-            "question": "ভাজ্য ৪৫ এবং ভাজক ৯ হলে ভাগশেষ কত?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "৫",
-                "isCorrect": false
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "৯",
-                "isCorrect": false
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "১",
-                "isCorrect": false
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "০",
-                "isCorrect": true
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Division"
-          },
-          {
-            "id": "0401017",
-            "type": "mcq",
-            "sectionType": "mcq",
-            "question": "ভাগের সময় ভাজ্যের কোনো অঙ্ক যদি ভাজকের চেয়ে ছোট হয়, তবে ভাগফলে কী বসাতে হয়?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "১",
-                "isCorrect": false
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "০",
-                "isCorrect": true
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "ভাজক",
-                "isCorrect": false
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "দশমিক",
-                "isCorrect": false
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Division"
-          },
-          {
-            "id": "0401018",
-            "type": "mcq",
-            "sectionType": "mcq",
-            "question": "নিচের কোন সম্পর্কটি সঠিক?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "ভাগশেষ ≥ ভাজক",
-                "isCorrect": false
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "ভাগশেষ < ভাজক",
-                "isCorrect": true
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "ভাগশেষ = ভাগফল",
-                "isCorrect": false
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "ভাগশেষ > ভাজ্য",
-                "isCorrect": false
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "General"
-          },
-          {
-            "id": "0401019",
-            "type": "mcq",
-            "sectionType": "mcq",
-            "question": "০ ÷ ১০০ = কত?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "১০০",
-                "isCorrect": false
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "১",
-                "isCorrect": false
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "০",
-                "isCorrect": true
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "অসম্ভব",
-                "isCorrect": false
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "General"
-          },
-          {
-            "id": "0401020",
-            "type": "mcq",
-            "sectionType": "mcq",
-            "question": "প্রশ্নের অংকে \"কতটি দল হবে\" বা \"প্রতি দলে কয়টি থাকবে\" বের করতে সাধারণত কী করতে হয়?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "যোগ",
-                "isCorrect": false
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "বিয়োগ",
-                "isCorrect": false
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "গুণ",
-                "isCorrect": false
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "ভাগ",
-                "isCorrect": true
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "General"
-          },
-          {
-            "id": "0401021",
-            "type": "mcq",
-            "sectionType": "mcq",
-            "question": "যদি ৫০ ÷ ৫ = ১০ হয়, তবে ১০ × ৫ + ২ = কত?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "৫০",
-                "isCorrect": false
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "৫৫",
-                "isCorrect": false
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "৫২",
-                "isCorrect": true
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "৬০",
-                "isCorrect": false
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "General"
-          },
-          {
-            "id": "0401022",
-            "type": "mcq",
-            "sectionType": "mcq",
-            "question": "২৫ ÷ ৪ = ৬ (ভাগশেষ ১) — এর সঠিক যাচাই পদ্ধতি নিচের কোনটি?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "৬ × ৪ + ১ = ২৫",
-                "isCorrect": true
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "৬ × ৪ - ১ = ২৩",
-                "isCorrect": false
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "২৫ × ১ + ৬ = ৩১",
-                "isCorrect": false
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "৬ + ৪ + ১ = ১১",
-                "isCorrect": false
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Division"
-          },
-          {
-            "id": "0401023",
-            "type": "mcq",
-            "sectionType": "mcq",
-            "question": "আপনার কাছে ৫০টি চকলেট আছে, প্রত্যেককে ১২টি করে দিলে কতজন বন্ধু চকলেট পাবে?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "৫ জন",
-                "isCorrect": false
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "৩ জন",
-                "isCorrect": false
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "৪ জন",
-                "isCorrect": true
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "৬ জন",
-                "isCorrect": false
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "General"
-          },
-          {
-            "id": "0401024",
-            "type": "mcq",
-            "sectionType": "mcq",
-            "question": "ভাগের পর যে সংখ্যাটি অবশিষ্ট থাকে তাকে কী বলে?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "ভাগফল",
-                "isCorrect": false
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "গুণফল",
-                "isCorrect": false
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "ভাজক",
-                "isCorrect": false
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "ভাগশেষ",
-                "isCorrect": true
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Division"
-          },
-          {
-            "id": "0401025",
-            "type": "mcq",
-            "sectionType": "mcq",
-            "question": "ভাজক ৫ হলে ভাগশেষ কি ৫ হতে পারে?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "হ্যাঁ",
-                "isCorrect": false
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "না",
-                "isCorrect": true
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "বড় সংখ্যায় পারে",
-                "isCorrect": false
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "মাঝে মাঝে",
-                "isCorrect": false
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Division"
-          },
-          {
-            "id": "0401026",
-            "type": "mcq",
-            "sectionType": "mcq",
-            "question": "১০০ ÷ ১০ ÷ ২ = কত?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "২০",
-                "isCorrect": false
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "৫",
-                "isCorrect": true
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "৫০",
-                "isCorrect": false
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "২",
-                "isCorrect": false
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "General"
-          },
-          {
-            "id": "0401027",
-            "type": "mcq",
-            "sectionType": "mcq",
-            "question": "৫টি কলমের দাম ১০০ টাকা হলে, ১টি কলমের দাম কত?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "৫০০ টাকা",
-                "isCorrect": false
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "২৫ টাকা",
-                "isCorrect": false
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "২০ টাকা",
-                "isCorrect": true
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "১০ টাকা",
-                "isCorrect": false
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "General"
-          },
-          {
-            "id": "0401028",
-            "type": "mcq",
-            "sectionType": "mcq",
-            "question": "ভাজ্য, ভাগফল ও ভাগশেষ জানা থাকলে ভাজক বের করার সূত্র কী?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "(ভাজ্য-ভাগশেষ)÷ভাগফল",
-                "isCorrect": true
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "ভাজ্য×ভাগফল+ভাগশেষ",
-                "isCorrect": false
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "(ভাজ্য+ভাগশেষ)÷ভাগফল",
-                "isCorrect": false
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "ভাজ্য÷ভাগশেষ",
-                "isCorrect": false
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Division"
-          },
-          {
-            "id": "0401029",
-            "type": "mcq",
-            "sectionType": "mcq",
-            "question": "৪২ ÷ ৭ = ৬ গাণিতিক বাক্যে ৪২ সংখ্যাটিকে কী বলা হয়?",
-            "options": [
-              {
-                "id": "a",
-                "key": "ক",
-                "text": "ভাজক",
-                "isCorrect": false
-              },
-              {
-                "id": "b",
-                "key": "খ",
-                "text": "ভাজ্য",
-                "isCorrect": true
-              },
-              {
-                "id": "c",
-                "key": "গ",
-                "text": "ভাগফল",
-                "isCorrect": false
-              },
-              {
-                "id": "d",
-                "key": "ঘ",
-                "text": "ভাগশেষ",
-                "isCorrect": false
-              }
-            ],
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "General"
-          }
-        ],
-        "blanks": [
-          {
-            "id": "0402001",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "ভাজক যদি ৫২ হয়, তবে একটি ভাগের অংকে ভাগশেষের সর্বোচ্চ মান হতে পারে ________।",
-            "answer": "৫১",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Division"
-          },
-          {
-            "id": "0402002",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "১ থেকে ১০০ এর মধ্যে ৯ দ্বারা নিঃশেষে বিভাজ্য এমন সংখ্যা আছে ________ টি।",
-            "answer": "১১",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "General"
-          },
-          {
-            "id": "0402003",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "ভাজ্য = (________ × ভাগফল) + ভাগশেষ।",
-            "answer": "ভাজক",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Division"
-          },
-          {
-            "id": "0402004",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "কোনো সংখ্যার এক-চতুর্থাংশ ২৫ হলে, সংখ্যাটির দ্বিগুণ হবে ________।",
-            "answer": "২০০",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Multiplication"
-          },
-          {
-            "id": "0402005",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "৫, ০, ৯, ১, ৪ অঙ্কগুলো দিয়ে গঠিত ক্ষুদ্রতম বিজোড় সংখ্যাটি হলো ________।",
-            "answer": "১০৪৯৫",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "General"
-          },
-          {
-            "id": "0402006",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "একটি গাণিতিক বাক্যে গুণ ও ভাগ থাকলে যেটি ________ আসবে সেটি আগে সমাধান করতে হয়।",
-            "answer": "বামদিকে",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Multiplication"
-          },
-          {
-            "id": "0402007",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "২৩০৪ মিটার তারকে ৯৬ ভাগে ভাগ করলে ৩টি ভাগের মোট দৈর্ঘ্য হবে ________ মিটার।",
-            "answer": "৭২",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Division"
-          },
-          {
-            "id": "0402008",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "৯৭৫ টাকায় ১৫টি খাতা পাওয়া গেলে ৬৫০০ টাকায় খাতা পাওয়া যাবে ________ টি।",
-            "answer": "১০০",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "General"
-          },
-          {
-            "id": "0402009",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "একটি প্যাকেটে ২৫টি লজেন্স থাকলে ১ ডজন প্যাকেটে লজেন্স থাকবে ________ টি।",
-            "answer": "৩০০",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "General"
-          },
-          {
-            "id": "0402010",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "৩৬ জন লোকের মধ্যে ১৮২টি লিচু সমানভাবে ভাগ করলে প্রত্যেকের ভাগে ৫টি করে পড়ার পর অবশিষ্ট থাকে ________ টি।",
-            "answer": "২",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Division"
-          },
-          {
-            "id": "0402011",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "ভাজক ও ভাগফল উভয়েই ২৫ এবং ভাগশেষ ভাজকের এক-পঞ্চমাংশ হলে ভাজ্য হবে ________।",
-            "answer": "৬৩০",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Division"
-          },
-          {
-            "id": "0402012",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "৮২১৭ কে ৩৪ দিয়ে ভাগ করলে ভাগফল হবে ২৪১ এবং ভাগশেষ হবে ________।",
-            "answer": "২৩",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Division"
-          },
-          {
-            "id": "0402013",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "১০০০০ কে এমন একটি সংখ্যা দিয়ে ভাগ করা হলো যেন ভাগশেষ ১০০ থাকে। সম্ভাব্য ক্ষুদ্রতম ভাজকটি হলো ________।",
-            "answer": "১০১",
-            "chapter": "4",
-            "hardness": "Hard",
-            "tag": "Division"
-          },
-          {
-            "id": "0402014",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "১টি লেবুর দাম ৪ টাকা ৫০ পয়সা হলে ২ হালি লেবুর দাম ________ টাকা।",
-            "answer": "৩৬",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "General"
-          },
-          {
-            "id": "0402015",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "কোনো সংখ্যাকে ০ দিয়ে ভাগ করলে ভাগফল _____ হয়।",
-            "answer": "অসংজ্ঞায়িত",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Division"
-          },
-          {
-            "id": "0402016",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "৪৪ × ৪৪ ÷ ৪৪ + ৪৪ এর মান ________।",
-            "answer": "৮৮",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "General"
-          },
-          {
-            "id": "0402017",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "গুণ ও ভাগ একে অপরের ________ প্রক্রিয়া।",
-            "answer": "বিপরীত",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Multiplication"
-          },
-          {
-            "id": "0402018",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "৫০০ টাকার ২ টি নোটের সমপরিমাণ টাকা দিয়ে ২৫ টাকা দামের ________ টি কলম কেনা যাবে।",
-            "answer": "৪০",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "General"
-          },
-          {
-            "id": "0402019",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "একটি বইয়ের প্রথম থেকে শেষ পর্যন্ত পৃষ্ঠা নম্বর দিতে মোট ৯টি এক অঙ্কের এবং ৯০টি দুই অঙ্কের সংখ্যা লাগে। বইটিতে মোট পৃষ্ঠা আছে ________ টি।",
-            "answer": "৯৯",
-            "chapter": "4",
-            "hardness": "Hard",
-            "tag": "General"
-          },
-          {
-            "id": "0402020",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "১৫১২ কে ২৪ দ্বারা ভাগ করলে ভাগফল হয় ৬৩ এবং ভাগশেষ থাকে ________।",
-            "answer": "০",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Division"
-          },
-          {
-            "id": "0402021",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "১ বিলিয়ন = ________ মিলিয়ন।",
-            "answer": "১০০০",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "General"
-          },
-          {
-            "id": "0402022",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "৩৯৪ কে ১২ দিয়ে ভাগ করলে ভাগশেষ হবে ________।",
-            "answer": "১০",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Division"
-          },
-          {
-            "id": "0402023",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "ভাজ্য অপরিবর্তিত রেখে ভাজক দ্বিগুণ করলে ভাগফল ________ হয়ে যাবে।",
-            "answer": "অর্ধেক",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Multiplication"
-          },
-          {
-            "id": "0402024",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "পরপর দুটি বিজোড় সংখ্যার বিয়োগফলকে ২ দিয়ে ভাগ করলে ভাগফল হবে ________।",
-            "answer": "১",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Subtraction"
-          },
-          {
-            "id": "0402025",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "ভাজক ২৩, ভাগফল ১০৭ এবং ভাগশেষ ১২ হলে ভাজ্য = ________।",
-            "answer": "২৪৭৩",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Division"
-          },
-          {
-            "id": "0402026",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "১০০ থেকে ১০ ________ বার বিয়োগ করা যাবে।",
-            "answer": "১০",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Subtraction"
-          },
-          {
-            "id": "0402027",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "একটি ড্রামে ২০০ লিটার তেল ধরে। ৫ লিটারের ________ টি জগ দিয়ে ড্রামটি পূর্ণ করা যাবে।",
-            "answer": "৪০",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "General"
-          },
-          {
-            "id": "0402028",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "ভাজক ১ হলে ভাজ্য সর্বদা ________ এর সমান হয়।",
-            "answer": "ভাগফল",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "General"
-          },
-          {
-            "id": "0402029",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "১১৭৫টি ফুল দিয়ে ২৫টি করে ফুলের মালা বানালে মালা তৈরি হবে ________ টি।",
-            "answer": "৪৭",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "General"
-          },
-          {
-            "id": "0402030",
-            "type": "blanks",
-            "sectionType": "blanks",
-            "question": "১ বছর সমান ________ সপ্তাহ এবং ________ দিন।",
-            "answer": "৫২, ১",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "General"
-          }
-        ],
-        "shorts": [
-          {
-            "id": "0403001",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "একটি ভাগ অংকে ভাজক ভাগশেষের তিনগুণ এবং ভাগফল ১০। ভাগশেষ ৫ হলে ভাজ্য কত?",
-            "answer": "১৫৫।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Multiplication"
-          },
-          {
-            "id": "0403002",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "৪ অঙ্কের কোন বৃহত্তম সংখ্যা ৮৮ দ্বারা নিঃশেষে বিভাজ্য?",
-            "answer": "৯৯৪৪।",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "General"
-          },
-          {
-            "id": "0403003",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "কোনো সংখ্যাকে ৩৪ দ্বারা ভাগ করলে ভাগফল ৩ এবং ভাগশেষ ১০ হয়। সংখ্যাটির সাথে কত যোগ করলে তা ৩৪ দ্বারা নিঃশেষে বিভাজ্য হবে?",
-            "answer": "২৪ যোগ করলে।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Addition"
-          },
-          {
-            "id": "0403004",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "একটি গাণিতিক বাক্যে প্রথমে ভাগ, গুণ এবং তারপর বিয়োগ আছে। কোন কাজটি সবার শেষে করতে হবে?",
-            "answer": "বিয়োগের কাজ।",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Subtraction"
-          },
-          {
-            "id": "0403005",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "একজন কৃষক ২,৪৫০ কেজি ধান বস্তায় ভরতে চান। প্রতি বস্তায় ৫০ কেজি ধান ধরলে কয়টি বস্তা লাগবে?",
-            "answer": "৪৯টি বস্তা।",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "General"
-          },
-          {
-            "id": "0403006",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "২৩০৪ মিটার লম্বা তারকে ৯৬ ভাগে ভাগ করার পর যদি প্রতিটি ভাগ থেকে ২ মিটার কেটে ফেলা হয়, তবে বর্তমান প্রতি ভাগের দৈর্ঘ্য কত?",
-            "answer": "২২ মিটার।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Division"
-          },
-          {
-            "id": "0403007",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "২৫ কেজি চালের দাম ২২৭৫ টাকা হলে, ১ কুইন্টাল চালের দাম কত?",
-            "answer": "৯১০০ টাকা।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "General"
-          },
-          {
-            "id": "0403008",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "ভাজক শূন্য হলে ভাগের ক্ষেত্রে কী ঘটে?",
-            "answer": "ভাগ করা সম্ভব নয় বা অসংজ্ঞায়িত।",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Division"
-          },
-          {
-            "id": "0403009",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "৫০০টি পেনসিল ১২টি করে বক্সে রাখলে যে ৮টি পেনসিল অবশিষ্ট থাকে, আর কয়টি পেনসিল দিলে আরও ১টি বক্স পূর্ণ হতো?",
-            "answer": "৪টি পেনসিল।",
-            "chapter": "4",
-            "hardness": "Hard",
-            "tag": "General"
-          },
-          {
-            "id": "0403010",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "২১২০৫ কে ২০ দিয়ে ভাগ করলে ভাগফল এবং ভাগশেষের গুণফল কত হবে?",
-            "answer": "৫৩০০।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Multiplication"
-          },
-          {
-            "id": "0403011",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "৩৬ জন লোকের মধ্যে ১৮২টি লিচু ভাগ করার পর অবশিষ্ট লিচুগুলো যদি শিশুদের দেওয়া হয়, তবে কয়জন শিশু ১টি করে লিচু পাবে?",
-            "answer": "২ জন শিশু।",
-            "chapter": "4",
-            "hardness": "Hard",
-            "tag": "Division"
-          },
-          {
-            "id": "0403012",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "১৫টি খাতার দাম ৯৭৫ টাকা। যদি ১টি খাতার দাম ৫ টাকা বেড়ে যায়, তবে ৩০টি খাতা কিনতে কত টাকা লাগবে?",
-            "answer": "২১০০ টাকা।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "General"
-          },
-          {
-            "id": "0403013",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "৫৩৪৫ কে ৩৫ দিয়ে ভাগ করলে ভাগফল ১৫২ এবং ভাগশেষ ২৮ হয়। ভাজ্যের অঙ্কগুলোর সমষ্টি কত?",
-            "answer": "১৭।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Division"
-          },
-          {
-            "id": "0403014",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "দুটি সংখ্যার গুণফল ৩,২০০। একটি সংখ্যা ৮০ হলে, অপর সংখ্যাটি কত?",
-            "answer": "অপর সংখ্যাটি ৪০।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Multiplication"
-          },
-          {
-            "id": "0403015",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "কোনো ক্ষুদ্রতম সংখ্যাকে ১২, ১৫ ও ২০ দিয়ে ভাগ করলে প্রতিবার ২ অবশিষ্ট থাকবে?",
-            "answer": "৬২।",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Division"
-          },
-          {
-            "id": "0403016",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "একটি সংখ্যার ৩ গুণের সাথে ১০ যোগ করলে ১০০ হয়। সংখ্যাটি কত?",
-            "answer": "৩০।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Addition"
-          },
-          {
-            "id": "0403017",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "৬৩৮ কে ২২ দিয়ে ভাগ করে ভাগফলকে ৩৫ দিয়ে গুণ করলে গুণফল কত হবে?",
-            "answer": "১০১৫।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Multiplication"
-          },
-          {
-            "id": "0403018",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "নিঃশেষে বিভাজ্যের ক্ষেত্রে ভাজ্য নির্ণয়ের সূত্র কী?",
-            "answer": "ভাজ্য = ভাজক × ভাগফল।",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "General"
-          },
-          {
-            "id": "0403019",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "৩৭৪ কে ১৩ দিয়ে গুণ করে গুণফলকে ১৭ দিয়ে ভাগ করলে ভাগফল কত হবে?",
-            "answer": "২৮৬।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Multiplication"
-          },
-          {
-            "id": "0403020",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "এক ডজন কমলার মূল্য ৩১২ টাকা হলে, ৭৮ টাকায় কয়টি কমলা পাওয়া যাবে?",
-            "answer": "৩ টি কমলা।",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "General"
-          },
-          {
-            "id": "0403021",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "ভাজক ভাগফলের ১০ গুণ এবং ভাজ্য ১০০০ হলে ভাজক কত?",
-            "answer": "১০০।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Multiplication"
-          },
-          {
-            "id": "0403022",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "১৫০০ টাকার ২/৫ অংশ কত টাকা?",
-            "answer": "৬০০ টাকা।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "General"
-          },
-          {
-            "id": "0403023",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "এমন একটি সংখ্যা নির্ণয় কর যাকে ৪৩ দ্বারা ভাগ করলে ভাগফল ১২৯ হয় এবং নিঃশেষে বিভাজ্য হয়।",
-            "answer": "৫৫৪৭।",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Division"
-          },
-          {
-            "id": "0403024",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "২১০ কে ৫০ দিয়ে ভাগ করলে ভাগফল ও ভাগশেষের সমষ্টি কত?",
-            "answer": "১৪।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Division"
-          },
-          {
-            "id": "0403025",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "দুটি সংখ্যার গুণফল ২২৫। একটি সংখ্যা ২৫ হলে, সংখ্যা দুটির বিয়োগফল কত?",
-            "answer": "১৬।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Subtraction"
-          },
-          {
-            "id": "0403026",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "৬৭৫ জন শিক্ষার্থী বনভোজনে যাবে। একটি বাসে ৪৫ জন শিক্ষার্থী বসতে পারলে কতটি বাস লাগবে?",
-            "answer": "১৫টি বাস।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "General"
-          },
-          {
-            "id": "0403027",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "১২০ কে ৪০ দিয়ে ভাগ করলে ভাগফল যা হয়, তার দ্বিগুণ কত?",
-            "answer": "৬।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Multiplication"
-          },
-          {
-            "id": "0403028",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "১৫৪ কে ৯ দ্বারা ভাগ করলে ভাগশেষ কত থাকে?",
-            "answer": "১।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Division"
-          },
-          {
-            "id": "0403029",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "৮০টি চকলেট ২০টি করে ছোট প্যাকেটে রাখলে কয়টি প্যাকেট হবে?",
-            "answer": "৪টি।",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "General"
-          },
-          {
-            "id": "0403030",
-            "type": "short",
-            "sectionType": "shorts",
-            "question": "গুণ্য × গুণক = গুণফল। গুণফলকে গুণ্য দিয়ে ভাগ করলে কী পাওয়া যায়?",
-            "answer": "গুণক।",
-            "chapter": "4",
-            "hardness": "Easy",
-            "tag": "Multiplication"
-          }
-        ],
-        "words": [
-          {
-            "id": "0404001",
-            "type": "word_problem",
-            "sectionType": "words",
-            "question": "ভাজক ২৩, ভাগফল ১০৭ এবং ভাগশেষ ১২ হলে ভাজ্য কত?",
-            "questionKo": "",
-            "questionKho": "",
-            "solution": "দেওয়া আছে, ভাজক = ২৩ \nভাগফল = ১০৭ \nভাগশেষ = ১২ \nআমরা জানি, ভাজ্য = (ভাজক × ভাগফল) + ভাগশেষ \n= (২৩ × ১০৭) + ১২ \n= ২৪৬১ + ১২ \n= ২৪৭৩\nউত্তর: ভাজ্য ২৪৭৩।",
-            "solutionKo": "",
-            "solutionKho": "",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Division"
-          },
-          {
-            "id": "0404002",
-            "type": "word_problem",
-            "sectionType": "words",
-            "question": "২৩০৪ মিটার লম্বা একটি তারকে ৯৬টি সমান ভাগে ভাগ করা হলে, প্রতি ভাগের দৈর্ঘ্য কত মিটার?",
-            "questionKo": "",
-            "questionKho": "",
-            "solution": "তারের মোট দৈর্ঘ্য = ২৩০৪ মিটার \nমোট ভাগ সংখ্যা = ৯৬টি \n∴ প্রতিটি ভাগের দৈর্ঘ্য = (২৩০৪ ÷ ৯৬) মিটার\n\t\t= ২৪ মিটার\nউত্তর: প্রতি ভাগের দৈর্ঘ্য ২৪ মিটার।",
-            "solutionKo": "",
-            "solutionKho": "",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Division"
-          },
-          {
-            "id": "0404003",
-            "type": "word_problem",
-            "sectionType": "words",
-            "question": "৫০০টি পেনসিল থেকে প্রতি বক্সে ১২টি করে পেনসিল রাখলে কতটি বক্সের প্রয়োজন পড়বে এবং কতটি পেনসিল অবশিষ্ট থাকবে?",
-            "questionKo": "",
-            "questionKho": "",
-            "solution": "মোট পেনসিল = ৫০০টি \nপ্রতি বক্সে রাখা হয় = ১২টি \n∴ প্রয়োজনীয় বক্সের সংখ্যা (৫০০ ÷ ১২) টি\n= ৪১ টি এবং ভাগশেষ ৮\nউত্তর: ৪১টি বক্সের প্রয়োজন পড়বে এবং ৮টি পেনসিল অবশিষ্ট থাকবে।",
-            "solutionKo": "",
-            "solutionKho": "",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Division"
-          },
-          {
-            "id": "0404004",
-            "type": "word_problem",
-            "sectionType": "words",
-            "question": "৩৬ জন লোকের মধ্যে ১৮২টি লিচু বিতরণ করলে প্রত্যেকে কতটি করে পাবে?",
-            "questionKo": "",
-            "questionKho": "",
-            "solution": "মোট লিচু = ১৮২টি \nমোট লোকসংখ্যা = ৩৬ জন \n∴ প্রত্যেকে লিচু পাবে = (১৮২ ÷ ৩৬) টি\n= ৫ এবং ভাগশেষ ২\nউত্তর: প্রত্যেকে ৫টি করে লিচু পাবে এবং ২টি লিচু অবশিষ্ট থাকবে।",
-            "solutionKo": "",
-            "solutionKho": "",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Division"
-          },
-          {
-            "id": "0404005",
-            "type": "word_problem",
-            "sectionType": "words",
-            "question": "১৫টি খাতার দাম ৯৭৫ টাকা হলে, ৩০টি খাতার দাম কত?",
-            "questionKo": "",
-            "questionKho": "",
-            "solution": "১৫টি খাতার দাম = ৯৭৫ টাকা \nসুতরাং, ১টি খাতার দাম (৯৭৫ ÷ ১৫) টাকা \n= ৬৫ টাকা। \n∴ ৩০টি খাতার দাম (৬৫ × ৩০) টাকা \n= ১৯৫০ টাকা।\nউত্তর: ৩০টি খাতার দাম ১৯৫০ টাকা।",
-            "solutionKo": "",
-            "solutionKho": "",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "General"
-          },
-          {
-            "id": "0404006",
-            "type": "word_problem",
-            "sectionType": "words",
-            "question": "একটি দোকানে ১১৭৫টি ফুল আছে। একটি মালা তৈরি করতে ২৫টি ফুল লাগলে দোকানদার এরূপ কয়টি মালা তৈরি করতে পারবে?",
-            "questionKo": "",
-            "questionKho": "",
-            "solution": "মোট ফুল = ১১৭৫টি \n১টি মালার জন্য ফুল লাগে = ২৫টি \n∴ মোট মালা তৈরি হবে = (১১৭৫ ÷ ২৫) টি\n= ৪৭ টি\nউত্তর: দোকানদার ৪৭টি মালা তৈরি করতে পারবে।",
-            "solutionKo": "",
-            "solutionKho": "",
-            "chapter": "4",
-            "hardness": "Hard",
-            "tag": "General"
-          },
-          {
-            "id": "0404007",
-            "type": "word_problem",
-            "sectionType": "words",
-            "question": "ভাগশেষ ৬। ভাজক ভাগশেষের ৩ গুণ। ভাগফল ভাজকের অর্ধেক। ভাজ্য কত?",
-            "questionKo": "",
-            "questionKho": "",
-            "solution": "ভাগশেষ = ৬ \n∴ ভাজক = ৬ × ৩ = ১৮ \n∴ ভাগফল = ১৮ ÷ ২ = ৯ \nআমরা জানি, ভাজ্য = (ভাজক × ভাগফল) + ভাগশেষ ভাজ্য = (১৮ × ৯) + ৬ \n= ১৬২ + ৬ \n= ১৬৮\nউত্তর: ভাজ্য ১৬৮।",
-            "solutionKo": "",
-            "solutionKho": "",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Multiplication"
-          },
-          {
-            "id": "0404008",
-            "type": "word_problem",
-            "sectionType": "words",
-            "question": "২২৫০টি আম কার্টনে ভরা হলো। প্রতি কার্টনে ২৫টি আম ধরে। যদি ৫টি কার্টন নষ্ট হয়ে যায়, তবে ভালো কার্টন কয়টি?",
-            "questionKo": "",
-            "questionKho": "",
-            "solution": "মোট আম = ২২৫০ \nপ্রতি কার্টনে আম ধরে = ২৫টি \n∴ মোট কার্টন (২২৫০ ÷ ২৫) টি \n= ৯০টি \nআবার, \nমোট কার্টন \t৯০টি\nনষ্ট কার্টন \t(-) ৫টি \n∴ ভাল কার্টন \t= ৮৫টি\nউত্তর: ৮৫টি।",
-            "solutionKo": "",
-            "solutionKho": "",
-            "chapter": "4",
-            "hardness": "Hard",
-            "tag": "General"
-          },
-          {
-            "id": "0404009",
-            "type": "word_problem",
-            "sectionType": "words",
-            "question": "এক ব্যক্তি বছরে ৯৬,০০০ টাকা আয় করেন। তার প্রতি মাসের খরচ ৫,৫০০ টাকা।",
-            "questionKo": "তিনি ১ মাসে কত টাকা আয় করেন?",
-            "questionKho": "তিনি ১ বছরে মোট কত টাকা সঞ্চয় করবেন?",
-            "solution": "",
-            "solutionKo": "আমরা জানি, ১ বছর = ১২ মাস\n১২ মাসে আয় করেন ৯৬০০০ টাকা\n∴ ১ মাসে আয় করেন (৯৬০০০ ÷ ১২) টাকা \n\t\t\t= ৮০০০ টাকা\nউত্তর: তিনি ১ মাসে ৮০০০ টাকা আয় করেন।",
-            "solutionKho": "তার ১ মাসের আয় \t ৮০০০ টাকা\t(ক হতে)\nতার ১ মাসের খরচ \t৫৫০০ টাকা\n১ মাসে সঞ্চয় করেন \t= ২৫০০ টাকা\nঅতএব, ১ বছরে সঞ্চয় করবেন (২৫০০ × ১২) টাকা\n\t\t= ৩০০০০ টাকা। \nউত্তর: তিনি ১ বছরে ৩০০০০ টাকা সঞ্চয় করবেন।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "General"
-          },
-          {
-            "id": "0404010",
-            "type": "word_problem",
-            "sectionType": "words",
-            "question": "একটি ট্রেন ৪ ঘণ্টায় ২৪০ কিমি যায়।",
-            "questionKo": "ট্রেনটি ১ ঘণ্টায় কত কিমি যায়?",
-            "questionKho": "ট্রেনটি একই গতিতে ৬০০ কিমি যেতে কত ঘণ্টা সময় নেবে?",
-            "solution": "",
-            "solutionKo": "৪ ঘণ্টায় যায় ২৪০ কিমি \nঅতএব, ১ ঘণ্টায় যায় = ২৪০ ÷ ৪ = ৬০ কিমি। \nউত্তর: ট্রেনটি ১ ঘণ্টায় ৬০ কিমি যায়।",
-            "solutionKho": "মোট দূরত্ব = ৬০০ কিমি\nট্রেনটি ১ ঘণ্টায় যায় ৬০ কিমি\nঅতএব, ৬০০ কিমি যেতে সময় লাগবে (৬০০ ÷ ৬০) ঘণ্টা\n\t\t\t\t= ১০ ঘণ্টা \nউত্তর: ১০ ঘণ্টা সময় নেবে।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "General"
-          },
-          {
-            "id": "0404011",
-            "type": "word_problem",
-            "sectionType": "words",
-            "question": "৮টি শার্ট ও ৫টি প্যান্টের একত্রে মূল্য ৮,৫০০ টাকা। ১টি প্যান্টের মূল্য ৫০০ টাকা।",
-            "questionKo": "৫টি প্যান্টের মূল্য কত?",
-            "questionKho": "১টি শার্টের মূল্য কত?",
-            "solution": "",
-            "solutionKo": "১টি প্যান্টের মূল্য = ৫০০ টাকা \nঅতএব, ৫টি প্যান্টের মূল্য (৫০০ × ৫) টাকা \n= ২৫০০ টাকা\nউত্তর: ৫টি প্যান্টের মূল্য ২৫০০ টাকা।",
-            "solutionKho": "৮টি শার্ট ও ৫টি প্যান্টের একত্রে মূল্য\t৮৫০০ টাকা\n৫টি প্যান্টের মূল্য\t(-) ২৫০০ টাকা\t(ক হতে) \nঅতএব, ৮টি শার্টের মূল্য \t= ৬০০০ টাকা\nসুতরাং, ১টি শার্টের মূল্য (৬০০০ ÷ ৮) টাকা\n\t\t\t= ৭৫০ টাকা\nউত্তর: ১টি শার্টের মূল্য ৭৫০ টাকা।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "General"
-          },
-          {
-            "id": "0404012",
-            "type": "word_problem",
-            "sectionType": "words",
-            "question": "একজন ফল বিক্রেতার কাছে ৯৮০টি আপেল ছিল। এর মধ্যে ২০টি আপেল পচে গেল। ভালো আপেলগুলো তিনি প্রতি বক্সে ১২টি করে রাখলেন।",
-            "questionKo": "ভালো আপেলের সংখ্যা কত?",
-            "questionKho": "আপেলগুলো প্যাকেট করতে কয়টি বক্স লাগবে এবং ৩টি বক্স বিক্রি করার পর আর কয়টি আপেল অবশিষ্ট থাকবে?",
-            "solution": "",
-            "solutionKo": "মোট আপেল \t৯৮০টি\nপচে গেল \t(-) ২০টি\nভালো আপেলের সংখ্যা \t= ৯৬০টি\nউত্তর: ভালো আপেলের সংখ্যা ৯৬০টি।",
-            "solutionKho": "মোট ভালো আপেল = ৯৬০টি\nপ্রতি বক্সে থাকে ১২টি\n∴প্যাকেট করতে বক্স লাগবে (৯৬০ ÷ ১২) টি  = ৮০টি\n৩টি বক্স বিক্রি করার পর অবশিষ্ট বক্স = (৮০ – ৩) টি \n\t\t= ৭৭টি\nঅতএব, অবশিষ্ট আপেলের সংখ্যা (৭৭ × ১২) টি \n\t\t= ৯২৪টি\nউত্তর: মোট ৮০টি বক্স লাগবে এবং ৩টি বক্স বিক্রির পর ৯২৪টি আপেল অবশিষ্ট থাকবে।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "General"
-          },
-          {
-            "id": "0404013",
-            "type": "word_problem",
-            "sectionType": "words",
-            "question": "৬০০ পৃষ্ঠার একটি বইয়ের প্রতিদিন ১৫ পৃষ্ঠা করে পড়লে বইটি শেষ করতে কিছু দিন লাগে।",
-            "questionKo": "বইটি পড়া শেষ করতে কত দিন লাগবে?",
-            "questionKho": "বইটি যদি ১০ দিন আগে পড়া শেষ করতে হয়, তবে প্রতিদিন গড়ে কত পৃষ্ঠা পড়তে হবে?",
-            "solution": "",
-            "solutionKo": "মোট পৃষ্ঠা = ৬০০\nপ্রতিদিন পড়া হয় = ১৫ পৃষ্ঠা\n∴ সময় লাগবে (৬০০ ÷ ১৫) দিন \n= ৪০ দিন\nউত্তর: ৪০ দিন লাগবে।",
-            "solutionKho": "‘ক’ হতে পাই, সময় লাগে ৪০ দিন\n১০ দিন আগে শেষ করতে চাইলে সময় লাগবে = ৪০ - ১০ \n= ৩০ দিন\n৩০ দিনে পড়তে হবে ৬০০ পৃষ্ঠা\n∴ ১ দিনে পড়তে হবে (৬০০ ÷ ৩০) পৃষ্ঠা \n\t\t\t\t= ২০ পৃষ্ঠা\nউত্তর: প্রতিদিন গড়ে ২০ পৃষ্ঠা পড়তে হবে।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "General"
-          },
-          {
-            "id": "0404014",
-            "type": "word_problem",
-            "sectionType": "words",
-            "question": "একটি কারখানায় ১ সপ্তাহে ২৫২০টি গাড়ি তৈরি হয়।",
-            "questionKo": "কারখানাটিতে ১ দিনে কতটি গাড়ি তৈরি হয়?",
-            "questionKho": "যদি প্রতিদিন গাড়িগুলো সমানভাবে ১৫টি শোরুমে পাঠানো হয়, তবে প্রতিটি শোরুম ১ মাসে কতটি গাড়ি পাবে?",
-            "solution": "",
-            "solutionKo": "আমরা জানি, ১ সপ্তাহ = ৭ দিন\n৭ দিনে তৈরি হয় ২৫২০টি গাড়ি\n∴ ১ দিনে তৈরি হয় (২৫২০ ÷ ৭) টি গাড়ি\n= ৩৬০টি গাড়ি\nউত্তর: ১ দিনে ৩৬০টি গাড়ি তৈরি হয়।",
-            "solutionKho": "‘ক’ হতে পাই, ১ দিনে তৈরি হয় ৩৬০টি গাড়ি\nপ্রতিদিন ১৫টি শোরুমে সমানভাবে পাঠানো হলে, \n১টি শোরুম ১ দিনে গাড়ি পাবে (৩৬০ ÷ ১৫) টি\n= ২৪টি\n১টি শোরুম ১ দিনে পায় ২৪টি গাড়ি\nঅতএব, ৩০ দিনে পাবে (২৪ × ৩০)\n= ৭২০টি গাড়ি\nউত্তর: প্রতিটি শোরুম ৩০ দিনে ৭২০টি গাড়ি পাবে।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "General"
-          },
-          {
-            "id": "0404015",
-            "type": "word_problem",
-            "sectionType": "words",
-            "question": "এক ডজন ডিমের দাম ১৪৪ টাকা।",
-            "questionKo": "১টি ডিমের দাম কত?",
-            "questionKho": "১০০০ টাকায় সর্বোচ্চ কয় ডজন ডিম কেনা যাবে এবং কত টাকা অবশিষ্ট থাকবে?",
-            "solution": "",
-            "solutionKo": "আমরা জানি, ১ ডজন = ১২টি\n১২টি ডিমের দাম ১৪৪ টাকা\n১টি ডিমের দাম (১৪৪ ÷ ১২) টাকা \n= ১২ টাকা। \nউত্তর: ১টি ডিমের দাম ১২ টাকা।",
-            "solutionKho": "১ ডজন ডিমের দাম ১৪৪ টাকা\nমোট টাকা আছে ১০০০\n∴ ডিম কেনা যাবে (১০০০÷১৪৪) ডজন\n\t\t\t= ৬ এবং ভাগশেষ ১৩৬\nউত্তর: সর্বোচ্চ ৬ ডজন ডিম কেনা যাবে এবং ১৩৬ টাকা অবশিষ্ট থাকবে।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Division"
-          },
-          {
-            "id": "0404016",
-            "type": "word_problem",
-            "sectionType": "words",
-            "question": "৭ জন শ্রমিক ১৫ দিনে একটি কাজ করতে পারে।",
-            "questionKo": "১ জন শ্রমিকের ওই কাজ করতে কত দিন লাগবে?",
-            "questionKho": "কাজটি যদি ৫ দিনে শেষ করতে হয়, তবে অতিরিক্ত কতজন শ্রমিক নিয়োগ দিতে হবে?",
-            "solution": "",
-            "solutionKo": "৭ জন শ্রমিকের লাগে ১৫ দিন\n১ জন শ্রমিকের লাগবে = ১৫ × ৭ = ১০৫ দিন\nউত্তর: ১০৫ দিন লাগবে।",
-            "solutionKho": "‘ক’ হতে পাই, ১০৫ দিনে শেষ করে ১ জন শ্রমিক\n∴ ৫ দিনে শেষ করে (১০৫ ÷ ৫) জন শ্রমিক\n= ২১ জন শ্রমিক\nঅতএব, অতিরিক্ত শ্রমিক লাগবে (২১ – ৭) জন = ১৪ জন\nউত্তর: অতিরিক্ত ১৪ জন শ্রমিক নিয়োগ দিতে হবে।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "General"
-          },
-          {
-            "id": "0404017",
-            "type": "word_problem",
-            "sectionType": "words",
-            "question": "একটি কারখানায় ১৫ দিনে ৩৬০০টি যন্ত্রাংশ তৈরি হয়।",
-            "questionKo": "কারখানাটি ১ দিনে কতটি যন্ত্রাংশ তৈরি করে?",
-            "questionKho": "যদি প্রতিদিন ২০টি যন্ত্রাংশ নষ্ট হয়, তবে ২৫ দিনে মোট ব্যবহারযোগ্য যন্ত্রাংশ কত হবে?",
-            "solution": "",
-            "solutionKo": "১৫ দিনে যন্ত্রাংশ তৈরি হয় ৩৬০০ টি \n১ দিনে যন্ত্রাংশ তৈরি হয় (৩৬০০ ÷ ১৫) টি\n= ২৪০ টি\nউত্তর: ২৪০টি।",
-            "solutionKho": "‘ক’ হতে পাই, ১ দিনে যন্ত্রাংশ তৈরি হয় ২৪০ টি\n∴ ২৫ দিনে মোট উৎপাদন = ২৪০ × ২৫ = ৬০০০ টি\nনষ্ট হয় প্রতিদিন ২০টি\n∴ ২৫ দিনে নষ্ট হয় (২০ × ২৫) টি  = ৫০০ টি\n∴ ব্যবহারযোগ্য যন্ত্রাংশ (৬০০০ – ৫০০) টি = ৫৫০০টি\nউত্তর: ৫৫০০টি ব্যবহারযোগ্য যন্ত্রাংশ।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Addition"
-          },
-          {
-            "id": "0404018",
-            "type": "word_problem",
-            "sectionType": "words",
-            "question": "একজন ব্যবসায়ী ৯৬টি মোবাইল ৪৮,০০০ টাকায় কিনলেন।",
-            "questionKo": "১টি মোবাইলের ক্রয়মূল্য কত?",
-            "questionKho": "যদি ১২টি মোবাইল নষ্ট হয়ে যায় এবং বাকি মোবাইল ৭০০ টাকায় বিক্রি করেন, তবে লাভ বা ক্ষতি কত?",
-            "solution": "",
-            "solutionKo": "৯৬টি মোবাইলের দাম ৪৮০০০ টাক\n∴ ১টি মোবাইলের দাম (৪৮০০০ ÷ ৯৬) টাকা \n= ৫০০ টাকা\nউত্তর: ১টি মোবাইলের দাম ৫০০ টাকা।",
-            "solutionKho": "মোট মোবাইল \t৯৬টি\nনষ্ট মোবাইল \t(-) ১২ টি\n∴ বিক্রয়যোগ্য মোবাইল \t= ৮৪ টি\n∴ মোট বিক্রয়মূল্য = ৮৪ × ৭০০ = ৫৮৮০০ টাকা > ক্রয়মূল্য\n∴ লাভ = ৫৮৮০০ − ৪৮০০০ = ১০৮০০ টাকা\nউত্তর: ১০৮০০ টাকা লাভ।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Addition"
-          },
-          {
-            "id": "0404019",
-            "type": "word_problem",
-            "sectionType": "words",
-            "question": "১২ জন শ্রমিক ১৮ দিনে একটি কাজ শেষ করে।",
-            "questionKo": "১ জন শ্রমিক একই কাজ করতে কত দিন লাগবে?",
-            "questionKho": "কাজটি ৯ দিনে শেষ করতে কতজন শ্রমিক প্রয়োজন?",
-            "solution": "",
-            "solutionKo": "১২ জন শ্রমিকের সময় লাগে ১৮ দিন\n∴ ১ জন শ্রমিকের সময় লাগে (১২ × ১৮) দিন\n= ২১৬ দিন\nউত্তর: ২১৬ দিন।",
-            "solutionKho": "১৮ দিনে শেষ করতে প্রয়োজন ১২ জন\n    ১ দিনে শেষ করতে প্রয়োজন ১২ × ১৮ জন\n৯ দিনে শেষ করতে প্রয়োজন (১২ × ১৮)/৯ জন\n= ২৪ জন\nউত্তর: ২৪ জন শ্রমিক।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "General"
-          },
-          {
-            "id": "0404020",
-            "type": "word_problem",
-            "sectionType": "words",
-            "question": "একটি কোম্পানির ৩টি শাখায় মোট ৫৪০০ জন কর্মচারী কাজ করেন।",
-            "questionKo": "যদি ৩টি শাখায় সমান সংখ্যক কর্মচারী থাকে, তবে প্রতিটি শাখায় কতজন কাজ করেন?",
-            "questionKho": "যদি কোম্পানিটি প্রতিটি কর্মচারীকে উৎসব ভাতা হিসেবে ২৫০০ টাকা করে দেয়, তবে কেবল ১টি শাখার কর্মচারীদের ভাতা দিতে কোম্পানির মোট কত টাকা খরচ হবে?",
-            "solution": "",
-            "solutionKo": "মোট কর্মচারী = ৫৪০০ জন, শাখা = ৩টি।\n∴ \tপ্রতিটি শাখায় কাজ করেন (৫৪০০ ÷ ৩) জন\n= ১৮০০ জন\n\tউত্তর: প্রতিটি শাখায় ১৮০০ জন কাজ করেন।",
-            "solutionKho": "‘ক’ হতে পাই, ১টি শাখায় কর্মচারী আছেন ১৮০০ জন।\n\t১ জন কর্মচারীর উৎসব ভাতা = ২৫০০ টাকা।\n∴ ১৮০০ জন কর্মচারীর উৎসব ভাতা (২৫০০ × ১৮০০) টাকা\n\t\t\t\t= ৪৫০০০০০ টাকা\nউত্তর: ১টি শাখার কর্মচারীদের ভাতা দিতে ৪৫০০০০০ টাকা খরচ হবে।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "General"
-          },
-          {
-            "id": "0404021",
-            "type": "word_problem",
-            "sectionType": "words",
-            "question": "৮৫০টি চকলেট কিছু শিশুর মধ্যে ভাগ করে দেওয়া হলো। প্রত্যেকে ১৫টি করে চকলেট পেল এবং ১০টি চকলেট অবশিষ্ট রইল।",
-            "questionKo": "শিশুর সংখ্যা কত ছিল?",
-            "questionKho": "যদি কোনো চকলেট অবশিষ্ট না রেখে প্রত্যেক শিশুকে ২০টি করে চকলেট দিতে চাওয়া হয়, তবে মোট কতটি চকলেটের প্রয়োজন হবে এবং আরও কতটি চকলেট কিনতে হবে?",
-            "solution": "",
-            "solutionKo": "মোট চকলেট = ৮৫০টি\nঅবশিষ্ট চকলেট = ১০টি।\n∴ সমানভাবে ভাগ করা চকলেটের সংখ্যা (৮৫০ – ১০) টি\n= ৮৪০টি\n\tপ্রত্যেকে পেল = ১৫টি\n\tঅতএব, শিশুর সংখ্যা (৮৪০ ÷ ১৫) জন\n\t\t\t\t= ৫৬ জন \nউত্তর: শিশুর সংখ্যা ৫৬ জন।",
-            "solutionKho": "‘ক’ হতে পাই, শিশুর সংখ্যা ৫৬ জন।\nপ্রত্যেককে ২০টি করে চকলেট দিলে প্রয়োজন (৫৬ × ২০) টি\n= ১১২০টি চকলেট\n\tআগে থেকে চকলেট আছে ৮৫০টি।\n\tঅতএব, আরও কিনতে হবে (১১২০ – ৮৫০) টি\n= ২৭০টি চকলেট।\nউত্তর: মোট ১১২০টি চকলেটের প্রয়োজন হবে এবং আরও ২৭০টি চকলেট কিনতে হবে।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "Division"
-          },
-          {
-            "id": "0404022",
-            "type": "word_problem",
-            "sectionType": "words",
-            "question": "৫০০০ তা কাগজ দিয়ে খাতা তৈরি করা হচ্ছে। প্রতিটি খাতা তৈরি করতে ১২০ তা কাগজ লাগে।",
-            "questionKo": "কতটি সম্পূর্ণ খাতা তৈরি করা যাবে এবং কত তা কাগজ অবশিষ্ট থাকবে?",
-            "questionKho": "যদি মোট ৫০টি খাতা তৈরি করতে হয়, তবে আরও কত তা কাগজের প্রয়োজন হবে?",
-            "solution": "",
-            "solutionKo": "মোট কাগজ ৫০০০ তা\nপ্রতি খাতায় লাগে ১২০ তা\n∴ খাতার সংখ্যা (৫০০০ ÷ ১২০) টি \n= ৪১ টি এবং অবশিষ্ট ৮০ তা\nউত্তর: ৪১টি খাতা এবং ৮০ তা কাগজ অবশিষ্ট থাকবে।",
-            "solutionKho": "মোট ৫০টি খাতার জন্য কাগজ লাগবে (৫০ × ১২০) তা \n= ৬০০০ তা।\nআগে থেকে কাগজ আছে ৫০০০ তা\nঅতএব, আরও কাগজ প্রয়োজন (৬০০০ – ৫০০০) তা\n= ১০০০ তা\nউত্তর: আরও ১০০০ তা কাগজের প্রয়োজন হবে।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "General"
-          },
-          {
-            "id": "0404023",
-            "type": "word_problem",
-            "sectionType": "words",
-            "question": "১ ডজন কলমের দাম ১৮০ টাকা। রিনার কাছে ৮০০ টাকা আছে।",
-            "questionKo": "১টি কলমের দাম কত?",
-            "questionKho": "রিনা তার সম্পূর্ণ টাকা দিয়ে সর্বোচ্চ কয়টি কলম কিনতে পারবে এবং তার কাছে কত টাকা অবশিষ্ট থাকবে? যদি সে ঠিক ৬০টি কলম কিনতে চায়, তবে তার আরও কত টাকা লাগবে?",
-            "solution": "",
-            "solutionKo": "আমরা জানি, ১ ডজন = ১২টি\n\t১২টি কলমের দাম ১৮০ টাকা\n\tঅতএব, ১টি কলমের দাম (১৮০ ÷ ১২) টাকা\n\t\t\t\t\t= ১৫ টাকা \nউত্তর: ১টি কলমের দাম ১৫ টাকা।",
-            "solutionKho": "রিনার কাছে আছে ৮০০ টাকা\n১টি কলমের দাম ১৫ টাকা\n∴ কলম কিনতে পারবে (৮০০ ÷ ১৫) টি\n= ৫৩ টি, অবশিষ্ট ৫ টাকা\nঅর্থাৎ ৫৩টি কলম কিনতে পারবে এবং ৫ টাকা অবশিষ্ট থাকবে।\nআবার, \n৬০টি কলমের দাম = ৬০ × ১৫ = ৯০০ টাকা।\nতার কাছে আছে ৮০০ টাকা\n∴ আরও টাকা লাগবে (৯০০ – ৮০০) টাকা\n= ১০০ টাকা।\nউত্তর: সে ৫৩টি কলম কিনতে পারবে ও ৫ টাকা অবশিষ্ট থাকবে। তার আরও ১০০ টাকা লাগবে।",
-            "chapter": "4",
-            "hardness": "Medium",
-            "tag": "General"
           }
         ]
       }
